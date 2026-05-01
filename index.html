@@ -467,13 +467,20 @@
         flex: 1; min-width: 0;
         white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       }
-      .board-row .arrow {
-        width: 16px; height: 16px;
+      .board-row .visibility {
+        width: 24px; height: 24px;
+        padding: 0;
+        background: transparent;
+        border: 0;
+        border-radius: 4px;
         color: var(--text-muted);
-        opacity: 0;
+        cursor: pointer;
         display: inline-flex; align-items: center; justify-content: center;
+        flex: 0 0 24px;
       }
-      .board-row.focused .arrow { opacity: 1; }
+      .board-row .visibility:hover { color: var(--text); background: rgba(86, 101, 137, 0.08); }
+      .board-row .visibility svg { width: 16px; height: 16px; display: block; }
+      .board-row .name b { font-weight: 600; }
       .popover-footer {
         display: flex; gap: 24px; align-items: center;
         padding: 12px;
@@ -868,7 +875,7 @@
           <input type="text" id="all-boards-input" placeholder="Search boards" autocomplete="off" />
         </div>
         <div class="popover-body">
-          <div class="popover-section-header">Recent</div>
+          <div class="popover-section-header" id="all-boards-header">Recent</div>
           <div class="popover-list" id="all-boards-list"></div>
         </div>
         <div class="popover-footer">
@@ -939,10 +946,8 @@
           if (!raw) return structuredClone(DEFAULT_NAV);
           const parsed = JSON.parse(raw);
           if (!Array.isArray(parsed)) return structuredClone(DEFAULT_NAV);
-          // Migration: drop any items previously marked as hidden
-          for (const s of parsed) {
-            if (s.items) s.items = s.items.filter((it) => !it.hidden);
-          }
+          for (const s of parsed)
+            for (const it of s.items || []) if (it.hidden == null) it.hidden = false;
           return parsed;
         } catch {
           return structuredClone(DEFAULT_NAV);
@@ -1013,7 +1018,7 @@
           list.dataset.sectionId = section.id;
 
           for (const item of section.items) {
-            list.appendChild(renderItem(item, section.id));
+            if (!item.hidden) list.appendChild(renderItem(item, section.id));
           }
 
           secEl.appendChild(list);
@@ -1117,10 +1122,7 @@
           startRename(itemEl, item);
         });
         menu.querySelector('[data-a="hide"]').addEventListener("click", () => {
-          for (const s of state) {
-            const idx = s.items.findIndex((i) => i.id === item.id);
-            if (idx !== -1) { s.items.splice(idx, 1); break; }
-          }
+          item.hidden = true;
           closeMenu();
           saveState();
           renderNav();
@@ -1246,7 +1248,16 @@
       // ---------- Sync state from DOM after drag ----------
       function syncStateFromDom() {
         const allItems = new Map();
-        for (const s of state) for (const it of s.items) allItems.set(it.id, it);
+        const hiddenByOriginalSection = new Map();
+        for (const s of state) {
+          for (const it of s.items) {
+            allItems.set(it.id, it);
+            if (it.hidden) {
+              if (!hiddenByOriginalSection.has(s.id)) hiddenByOriginalSection.set(s.id, []);
+              hiddenByOriginalSection.get(s.id).push(it);
+            }
+          }
+        }
 
         const newState = [];
         for (const secEl of navRoot.querySelectorAll(".nav-section")) {
@@ -1262,6 +1273,19 @@
               ? { ...original, items }
               : { id: sectionId, title: sectionId, items }
           );
+        }
+
+        // Re-attach hidden items to their original section
+        for (const [sectionId, hiddenItems] of hiddenByOriginalSection) {
+          let target = newState.find((s) => s.id === sectionId);
+          if (!target) {
+            const original = state.find((s) => s.id === sectionId);
+            target = original ? { ...original, items: [] } : { id: sectionId, title: sectionId, items: [] };
+            newState.push(target);
+          }
+          for (const it of hiddenItems) {
+            if (!target.items.some((x) => x.id === it.id)) target.items.push(it);
+          }
         }
 
         state = newState;
@@ -1329,10 +1353,29 @@
       const allBoardsOverlay = document.getElementById("all-boards-overlay");
       const allBoardsInput = document.getElementById("all-boards-input");
       const allBoardsList = document.getElementById("all-boards-list");
+      const allBoardsHeader = document.getElementById("all-boards-header");
       const pageFlagEl = document.getElementById("page-flag");
       const pageNameEl = document.getElementById("page-name");
       const pageSubtitleEl = document.getElementById("page-subtitle");
       let popoverFocusIdx = 0;
+
+      const EYE_OPEN_SVG = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M1.5 8s2.4-4.5 6.5-4.5S14.5 8 14.5 8 12.1 12.5 8 12.5 1.5 8 1.5 8z"/><circle cx="8" cy="8" r="2"/></svg>';
+      const EYE_OFF_SVG = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 2.5l11 11"/><path d="M6.5 4a7.7 7.7 0 0 1 1.5-.15c4.1 0 6.5 4.15 6.5 4.15a13.6 13.6 0 0 1-2.1 2.6"/><path d="M10 9.9a2 2 0 0 1-2.8-2.8"/><path d="M4.4 5.6A13 13 0 0 0 1.5 8s2.4 4.5 6.5 4.5a7.6 7.6 0 0 0 2.4-.4"/></svg>';
+
+      function buildHighlighted(text, query) {
+        const frag = document.createDocumentFragment();
+        if (!query) { frag.appendChild(document.createTextNode(text)); return frag; }
+        const idx = text.toLowerCase().indexOf(query.toLowerCase());
+        if (idx === -1) { frag.appendChild(document.createTextNode(text)); return frag; }
+        if (idx > 0) frag.appendChild(document.createTextNode(text.substring(0, idx)));
+        const b = document.createElement("b");
+        b.textContent = text.substring(idx, idx + query.length);
+        frag.appendChild(b);
+        if (idx + query.length < text.length) {
+          frag.appendChild(document.createTextNode(text.substring(idx + query.length)));
+        }
+        return frag;
+      }
 
       function getAllBoards() {
         const boards = [];
@@ -1345,11 +1388,13 @@
       }
 
       function renderBoardList(filter = "") {
-        const f = filter.toLowerCase().trim();
+        const f = filter.trim();
+        const lower = f.toLowerCase();
         const boards = getAllBoards().filter(b =>
-          !f || b.item.label.toLowerCase().includes(f) || b.sectionTitle.toLowerCase().includes(f)
+          !lower || b.item.label.toLowerCase().includes(lower) || b.sectionTitle.toLowerCase().includes(lower)
         );
         if (popoverFocusIdx >= boards.length) popoverFocusIdx = Math.max(0, boards.length - 1);
+        allBoardsHeader.textContent = f ? `Search results (${boards.length})` : "Recent";
         allBoardsList.innerHTML = "";
         if (!boards.length) {
           const empty = document.createElement("div");
@@ -1365,13 +1410,22 @@
             <span class="emoji"></span>
             <span class="name"></span>
             <span class="section"></span>
-            <span class="arrow">
-              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3L11 8L6 13"/></svg>
-            </span>
+            <button class="visibility" type="button" aria-label=""></button>
           `;
           row.querySelector(".emoji").textContent = b.item.icon;
-          row.querySelector(".name").textContent = b.item.label;
+          const nameEl = row.querySelector(".name");
+          nameEl.appendChild(buildHighlighted(b.item.label, f));
           row.querySelector(".section").textContent = b.sectionTitle;
+          const visBtn = row.querySelector(".visibility");
+          visBtn.innerHTML = b.item.hidden ? EYE_OFF_SVG : EYE_OPEN_SVG;
+          visBtn.setAttribute("aria-label", b.item.hidden ? "Show in sidebar" : "Hide from sidebar");
+          visBtn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            b.item.hidden = !b.item.hidden;
+            saveState();
+            renderNav();
+            renderBoardList(allBoardsInput.value);
+          });
           row.addEventListener("click", () => selectBoard(b.item));
           row.addEventListener("mouseenter", () => {
             popoverFocusIdx = i;
