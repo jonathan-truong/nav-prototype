@@ -1,0 +1,1461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freightnex — Nav prototype</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js"></script>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --sidebar-bg: #ffffff;
+        --canvas-bg: #f7f8fa;
+        --border: #dbe1e9;
+        --text: #0f1623;
+        --text-muted: #2c3852;
+        --text-subtle: #566589;
+        --primary: #225ed2;
+        --primary-bg: rgba(34, 94, 210, 0.1);
+        --primary-bg-solid: #ecf3fe;
+        --primary-border: #6398ff;
+        --row-hover: #f1f4f8;
+        --chip-booked-bg: #eaf3ff;
+        --chip-booked-fg: #1f5fcf;
+        --chip-transit-bg: #f1ecff;
+        --chip-transit-fg: #5b42c7;
+        --chip-invoiced-bg: #fff2e6;
+        --chip-invoiced-fg: #a96016;
+        --chip-delivered-bg: #e8f7ee;
+        --chip-delivered-fg: #207a4a;
+        --chip-cancelled-bg: #fde8e8;
+        --chip-cancelled-fg: #b42626;
+        --chip-rejected-bg: #fff1db;
+        --chip-rejected-fg: #8a5a10;
+        --chip-expired-bg: #ffe9e1;
+        --chip-expired-fg: #9e3c1a;
+        --chip-new-bg: #e8eef7;
+        --chip-new-fg: #2a3a58;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; height: 100%; }
+      body {
+        font-family: "Noto Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: var(--text);
+        background: var(--canvas-bg);
+        font-size: 14px;
+        line-height: 16px;
+        overflow: hidden;
+      }
+      .app { display: grid; grid-template-columns: 240px 1fr; height: 100vh; }
+
+      /* ---------- Sidebar ---------- */
+      .sidebar {
+        background: var(--sidebar-bg);
+        border-right: 1px solid var(--border);
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+      }
+      .workspace {
+        display: flex; align-items: center; gap: 4px;
+        margin: 8px; padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer; user-select: none;
+        height: 32px;
+      }
+      .workspace:hover { background: var(--row-hover); }
+      .workspace-dot {
+        width: 16px; height: 16px; border-radius: 50%;
+        background: #0f1623; color: #fff;
+        display: grid; place-items: center;
+        font-size: 10px; font-weight: 700;
+        border: 1px solid var(--border);
+        flex: 0 0 16px;
+      }
+      .workspace-name {
+        font-weight: 700; flex: 1;
+        font-size: 14px; line-height: 16px;
+        color: var(--text-muted);
+      }
+      .chev {
+        color: var(--text-muted);
+        display: inline-flex; align-items: center; justify-content: center;
+        width: 16px; height: 16px;
+      }
+
+      /* Split create button */
+      .create-button-wrap {
+        position: relative;
+        margin: 0 8px 12px;
+      }
+      .create-split {
+        display: flex;
+        height: 32px;
+        border-radius: 4px;
+        overflow: hidden;
+      }
+      .create-split .main {
+        flex: 1;
+        background: var(--primary);
+        color: #fff;
+        border: 0;
+        border-right: 1px solid var(--primary-border);
+        font: inherit; font-weight: 700; font-size: 14px;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center; gap: 4px;
+        padding: 0 12px;
+      }
+      .create-split .main:hover { background: #1d51ba; }
+      .create-split .toggle {
+        width: 24px;
+        background: var(--primary);
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+        padding: 0;
+      }
+      .create-split .toggle:hover { background: #1d51ba; }
+      .create-split .toggle svg { transition: transform 0.15s ease; }
+      .create-split .toggle.open svg { transform: rotate(180deg); }
+
+      /* Create dropdown menu */
+      .create-menu {
+        position: absolute;
+        top: calc(100% + 4px);
+        left: 0;
+        right: 0;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+        padding: 4px;
+        z-index: 100;
+      }
+      .create-menu[hidden] { display: none; }
+      .create-menu .menu-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 13px;
+        border-radius: 4px;
+        cursor: pointer;
+        color: var(--text);
+        font-size: 14px;
+        line-height: 20px;
+        user-select: none;
+        border: 1px solid transparent;
+      }
+      .create-menu .menu-item:hover { background: rgba(86, 101, 137, 0.1); }
+      .create-menu .menu-item .icon {
+        width: 16px; height: 16px; flex: 0 0 16px;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: var(--text-muted);
+      }
+      .create-menu .menu-item .icon svg { width: 16px; height: 16px; display: block; }
+
+      .nav { flex: 1; overflow-y: auto; padding: 2px 8px 16px; }
+
+      .nav-section {
+        margin-top: 2px;
+        border-radius: 6px;
+      }
+      .nav-section:first-child { margin-top: 0; }
+      .nav-section.section-drag { background: #fff; box-shadow: 0 10px 24px rgba(15,23,42,.14); }
+      .nav-section.collapsed .nav-list { display: none; }
+
+      .nav-section-title {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 16px;
+        color: var(--text-muted);
+        padding: 8px;
+        display: flex; align-items: center; gap: 8px;
+        cursor: grab;
+        user-select: none;
+        border-radius: 4px;
+        position: relative;
+      }
+      .nav-section-title:hover { background: var(--row-hover); }
+      .nav-section-title:active { cursor: grabbing; }
+      .nav-section-title .caret {
+        width: 16px; height: 16px; flex: 0 0 16px;
+        display: inline-flex; align-items: center; justify-content: center;
+        color: var(--text-muted);
+        cursor: pointer;
+        line-height: 0;
+        transition: transform 0.15s ease;
+        user-select: none;
+        border-radius: 4px;
+      }
+      .nav-section-title .caret:hover { background: rgba(86,101,137,0.08); color: var(--text); }
+      .nav-section-title .caret svg { width: 10px; height: 10px; display: block; }
+      .nav-section.collapsed .nav-section-title .caret { transform: rotate(-90deg); }
+      .nav-section-title .title-text {
+        flex: 1;
+        overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+        line-height: 16px;
+      }
+      .nav-section-title .section-actions {
+        display: flex; gap: 2px;
+        opacity: 0;
+        transition: opacity 0.12s;
+      }
+      .nav-section-title:hover .section-actions,
+      .nav-section-title.menu-open .section-actions { opacity: 1; }
+      .nav-section-title .action-btn {
+        width: 20px; height: 20px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent; border: 0;
+        border-radius: 4px;
+        color: var(--text-muted);
+        cursor: pointer;
+      }
+      .nav-section-title .action-btn:hover { background: #e5e7eb; color: var(--text); }
+      .nav-section-title .action-btn svg { width: 14px; height: 14px; display: block; }
+      .nav-section-title.is-renaming { padding: 0; cursor: default; }
+      .nav-section-title.is-renaming:hover { background: transparent; }
+      .nav-section-title.is-renaming .caret,
+      .nav-section-title.is-renaming .section-actions { display: none; }
+      .nav-section-title .title-input {
+        flex: 1; min-width: 0; width: 100%;
+        border: 1px solid var(--primary);
+        border-radius: 4px;
+        padding: 4px 12px;
+        font: inherit; font-size: 14px; font-weight: 400;
+        line-height: 20px;
+        color: var(--text);
+        outline: none;
+        background: #fff;
+        box-shadow: 0 0 0 2px rgba(34, 94, 210, 0.3);
+      }
+      .nav-section.is-uncategorized .nav-section-title {
+        color: var(--text-muted);
+      }
+      .menu.section-menu,
+      .menu.item-menu {
+        position: fixed;
+        width: 240px;
+        min-width: 0;
+        padding: 4px 0;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0 8px 16px rgba(86, 101, 137, 0.2);
+        overflow: hidden;
+        z-index: 200;
+      }
+      .menu.section-menu button,
+      .menu.item-menu button {
+        padding: 12px;
+        gap: 8px;
+        border-radius: 0;
+        font-size: 14px;
+        line-height: 16px;
+        color: var(--text);
+      }
+      .menu.section-menu button:hover,
+      .menu.item-menu button:hover { background: rgba(86, 101, 137, 0.1); }
+      .menu.section-menu button.danger,
+      .menu.item-menu button.danger { color: #c71830; }
+      .menu.section-menu button.danger:hover,
+      .menu.item-menu button.danger:hover { background: rgba(86, 101, 137, 0.1); }
+
+      .nav-list {
+        display: flex; flex-direction: column; gap: 0;
+        min-height: 6px; padding: 2px 0;
+        border-radius: 6px;
+        transition: background 0.12s;
+      }
+      .nav-list.drag-over { background: rgba(37, 99, 235, 0.05); }
+
+      .nav-item {
+        display: flex; align-items: center; gap: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: grab;
+        color: var(--text);
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+        user-select: none;
+        position: relative;
+      }
+      .nav-item:hover { background: var(--row-hover); }
+      .nav-item:active { cursor: grabbing; }
+      .nav-item.active { background: var(--primary-bg); color: var(--primary); font-weight: 600; }
+      .nav-item .icon {
+        width: 16px; height: 16px; flex: 0 0 16px;
+        display: grid; place-items: center;
+        font-size: 14px; line-height: 16px;
+        text-align: center;
+      }
+      .nav-item .label {
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        min-width: 0;
+      }
+      .nav-item .label-input {
+        flex: 1; min-width: 0;
+        border: 1px solid var(--primary);
+        border-radius: 4px;
+        padding: 2px 6px;
+        font: inherit;
+        font-size: 14px;
+        line-height: 16px;
+        outline: none;
+        background: #fff;
+        color: var(--text);
+      }
+      .nav-item .item-actions {
+        display: flex; gap: 2px; opacity: 0;
+        transition: opacity 0.12s;
+      }
+      .nav-item:hover .item-actions,
+      .nav-item.menu-open .item-actions { opacity: 1; }
+      .nav-item .action-btn {
+        width: 20px; height: 20px;
+        padding: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent; border: 0;
+        border-radius: 4px;
+        color: var(--text-muted);
+        cursor: pointer;
+      }
+      .nav-item .action-btn:hover { background: #e5e7eb; color: var(--text); }
+      .nav-item .action-btn svg { width: 14px; height: 14px; display: block; }
+      .nav-item.sortable-ghost { opacity: 0.4; background: #eef3fb; }
+      .nav-item.sortable-chosen { cursor: grabbing; }
+      .nav-item.sortable-drag {
+        background: #fff;
+        box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14), 0 1px 0 rgba(15, 23, 42, 0.06);
+        cursor: grabbing;
+      }
+
+      /* Popover menu */
+      .menu {
+        position: absolute;
+        top: 28px; right: 6px;
+        min-width: 140px;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 10px 24px rgba(15,23,42,.12);
+        padding: 4px;
+        z-index: 50;
+      }
+      .menu button {
+        display: flex; align-items: center; gap: 8px;
+        width: 100%;
+        background: transparent;
+        border: 0;
+        padding: 6px 8px;
+        font: inherit;
+        text-align: left;
+        color: var(--text);
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .menu button:hover { background: var(--row-hover); }
+      .menu button.danger { color: #b42626; }
+      .menu button.danger:hover { background: #fdeaea; }
+
+      /* All boards popover */
+      .all-boards-overlay {
+        position: fixed; inset: 0;
+        background: rgba(15, 22, 35, 0.25);
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 120px;
+      }
+      .all-boards-overlay[hidden] { display: none; }
+      .all-boards-popover {
+        width: 640px; max-height: 70vh;
+        background: #fff;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        box-shadow: 0 16px 32px rgba(15, 22, 35, 0.2);
+        display: flex; flex-direction: column;
+        overflow: hidden;
+      }
+      .popover-search {
+        display: flex; align-items: center; gap: 8px;
+        padding: 8px 12px;
+        border-bottom: 1px solid var(--border);
+      }
+      .popover-search .search-icon {
+        width: 16px; height: 16px;
+        color: var(--text-subtle);
+        display: inline-flex; align-items: center; justify-content: center;
+      }
+      .popover-search input {
+        flex: 1; border: 0; outline: none;
+        font: inherit; font-size: 14px; line-height: 20px;
+        color: var(--text);
+        background: transparent;
+        padding: 2px 0;
+      }
+      .popover-search input::placeholder { color: var(--text-subtle); }
+      .popover-body {
+        flex: 1; overflow-y: auto;
+        padding: 4px;
+      }
+      .popover-section-header {
+        font-size: 11px; font-weight: 600;
+        color: var(--text-subtle);
+        padding: 8px 12px 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.4px;
+      }
+      .popover-list { display: flex; flex-direction: column; }
+      .popover-empty {
+        padding: 24px 12px;
+        text-align: center;
+        color: var(--text-subtle);
+        font-size: 13px;
+      }
+      .board-row {
+        display: flex; align-items: center; gap: 8px;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .board-row.focused { background: rgba(86, 101, 137, 0.1); }
+      .board-row .emoji {
+        width: 16px; flex: 0 0 16px;
+        font-size: 14px;
+        text-align: center;
+      }
+      .board-row .name {
+        font-size: 14px;
+        color: var(--text);
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      }
+      .board-row .section {
+        font-size: 12px;
+        color: var(--text-subtle);
+        flex: 1; min-width: 0;
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      }
+      .board-row .arrow {
+        width: 16px; height: 16px;
+        color: var(--text-muted);
+        opacity: 0;
+        display: inline-flex; align-items: center; justify-content: center;
+      }
+      .board-row.focused .arrow { opacity: 1; }
+      .popover-footer {
+        display: flex; gap: 24px; align-items: center;
+        padding: 12px;
+        border-top: 1px solid var(--border);
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+      .popover-footer .shortcut {
+        display: inline-flex; align-items: center; gap: 6px;
+      }
+      .popover-footer kbd {
+        display: inline-flex; align-items: center; justify-content: center;
+        min-width: 20px; height: 18px;
+        padding: 0 5px;
+        background: #f1f4f8;
+        border: 1px solid var(--border);
+        border-radius: 3px;
+        font: inherit; font-size: 11px;
+        color: var(--text-muted);
+      }
+
+      .sidebar-footer {
+        display: flex; align-items: center;
+        border-top: 1px solid var(--border);
+        padding: 4px 8px;
+        gap: 8px;
+        height: 40px;
+      }
+      .sidebar-footer button {
+        flex: 1; background: transparent; border: 0;
+        padding: 4px 8px;
+        font: inherit; font-size: 12px; font-weight: 700;
+        color: var(--text-muted);
+        border-radius: 4px; cursor: pointer;
+        display: flex; align-items: center; justify-content: center; gap: 4px;
+        height: 24px;
+      }
+      .sidebar-footer button:hover { background: var(--row-hover); color: var(--text); }
+      .sidebar-footer button svg { width: 16px; height: 16px; flex: 0 0 16px; }
+      .sidebar-footer .divider {
+        width: 1px; height: 16px;
+        background: var(--border);
+        flex: 0 0 1px;
+      }
+
+      /* ---------- Main ---------- */
+      .main { display: flex; flex-direction: column; min-width: 0; background: var(--canvas-bg); }
+      .topbar {
+        display: flex; align-items: center; gap: 10px;
+        padding: 10px 16px;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+      }
+      .topbar .logo {
+        width: 22px; height: 22px; border-radius: 5px;
+        background: #111; color: #fff;
+        display: grid; place-items: center;
+        font-size: 11px; font-weight: 700;
+      }
+      .topbar .nav-arrows { display: flex; gap: 4px; margin-left: 6px; }
+      .topbar .icon-btn {
+        width: 28px; height: 28px;
+        display: grid; place-items: center;
+        border-radius: 6px; border: 0;
+        background: transparent;
+        color: var(--text-muted); cursor: pointer;
+      }
+      .topbar .icon-btn:hover { background: var(--row-hover); }
+      .topbar .search {
+        flex: 1; max-width: 560px; margin: 0 auto;
+        background: #fff; border: 1px solid var(--border);
+        border-radius: 8px; padding: 6px 10px;
+        color: var(--text-subtle);
+        display: flex; align-items: center; gap: 8px;
+        font-size: 12.5px;
+      }
+      .topbar .spacer { flex: 1; }
+      .topbar .right-group { display: flex; align-items: center; gap: 6px; }
+      .avatar {
+        width: 26px; height: 26px; border-radius: 50%;
+        background: linear-gradient(135deg, #6366f1, #a855f7);
+        color: #fff;
+        display: grid; place-items: center;
+        font-size: 11px; font-weight: 600;
+      }
+      .page-head { padding: 16px 22px 10px; }
+      .page-title {
+        display: flex; align-items: center; gap: 8px;
+        font-size: 16px; font-weight: 600;
+      }
+      .page-title .flag { font-size: 18px; }
+      .page-title .subtitle {
+        color: var(--text-subtle); font-weight: 400;
+        font-size: 13px; margin-left: 10px;
+      }
+      .page-title .share {
+        margin-left: auto;
+        background: transparent;
+        border: 1px solid var(--border);
+        padding: 5px 10px;
+        border-radius: 6px;
+        color: var(--text); cursor: pointer; font: inherit;
+      }
+      .page-title .share:hover { background: var(--row-hover); }
+
+      .tabs {
+        display: flex; gap: 2px; padding: 0 14px;
+        border-bottom: 1px solid var(--border);
+        overflow-x: auto;
+      }
+      .tab {
+        padding: 8px 12px; font-size: 12.5px;
+        color: var(--text-muted);
+        border-bottom: 2px solid transparent;
+        cursor: pointer; white-space: nowrap;
+        display: flex; align-items: center; gap: 6px;
+      }
+      .tab:hover { color: var(--text); }
+      .tab.active { color: var(--primary); border-bottom-color: var(--primary); font-weight: 500; }
+      .tab .add { color: var(--text-subtle); }
+
+      .toolbar {
+        display: flex; align-items: center; gap: 10px;
+        padding: 10px 14px;
+        background: #fff;
+        border-bottom: 1px solid var(--border);
+      }
+      .toolbar .config {
+        border: 1px solid var(--border); padding: 5px 10px;
+        border-radius: 6px; font: inherit;
+        background: #fff; color: var(--text); cursor: pointer;
+        display: inline-flex; align-items: center; gap: 6px;
+      }
+      .toolbar .filter {
+        flex: 1;
+        border: 1px solid var(--border); padding: 6px 10px;
+        border-radius: 6px; background: #fff;
+        color: var(--text-subtle); font-size: 12.5px;
+      }
+      .toolbar .create-order {
+        background: #fff; color: var(--primary);
+        border: 1px solid var(--primary-border);
+        padding: 5px 10px; border-radius: 6px;
+        font: inherit; font-weight: 600; cursor: pointer;
+        display: inline-flex; align-items: center; gap: 6px;
+      }
+
+      .table-wrap { flex: 1; overflow: auto; background: #fff; }
+      table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+      thead th {
+        text-align: left; font-weight: 500;
+        color: var(--text-muted);
+        padding: 10px 12px;
+        background: #fbfcfd;
+        border-bottom: 1px solid var(--border);
+        position: sticky; top: 0;
+        white-space: nowrap;
+      }
+      tbody td {
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--border);
+        white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+        max-width: 280px;
+      }
+      tbody tr:hover { background: #fafbfc; }
+      .order-link { color: var(--primary); text-decoration: none; }
+      .order-link:hover { text-decoration: underline; }
+
+      .chip {
+        display: inline-block; padding: 2px 8px; border-radius: 999px;
+        font-size: 11.5px; font-weight: 500; border: 1px solid transparent;
+      }
+      .chip.booked { background: var(--chip-booked-bg); color: var(--chip-booked-fg); }
+      .chip.in-transit { background: var(--chip-transit-bg); color: var(--chip-transit-fg); }
+      .chip.invoiced { background: var(--chip-invoiced-bg); color: var(--chip-invoiced-fg); }
+      .chip.delivered { background: var(--chip-delivered-bg); color: var(--chip-delivered-fg); }
+      .chip.cancelled { background: var(--chip-cancelled-bg); color: var(--chip-cancelled-fg); }
+      .chip.rejected { background: var(--chip-rejected-bg); color: var(--chip-rejected-fg); }
+      .chip.expired { background: var(--chip-expired-bg); color: var(--chip-expired-fg); }
+      .chip.new { background: var(--chip-new-bg); color: var(--chip-new-fg); }
+
+      .pagination {
+        display: flex; align-items: center; justify-content: flex-end;
+        gap: 12px; padding: 8px 14px;
+        background: #fff;
+        border-top: 1px solid var(--border);
+        color: var(--text-muted); font-size: 12px;
+      }
+      .pagination .page-size {
+        border: 1px solid var(--border); border-radius: 6px;
+        padding: 4px 8px; cursor: pointer;
+      }
+      .pagination .pager { display: flex; gap: 2px; }
+      .pagination .pager button {
+        width: 26px; height: 26px;
+        border: 0; background: transparent;
+        border-radius: 4px; cursor: pointer; color: var(--text-muted);
+      }
+      .pagination .pager button:hover { background: var(--row-hover); }
+      .reset-link {
+        background: transparent; border: 0;
+        color: var(--text-subtle); cursor: pointer;
+        font: inherit; font-size: 11px; text-decoration: underline;
+      }
+      .reset-link:hover { color: var(--primary); }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <!-- Sidebar -->
+      <aside class="sidebar" aria-label="Primary">
+        <div class="workspace">
+          <span class="workspace-dot">F</span>
+          <span class="workspace-name">Freightnex</span>
+          <span class="chev">
+            <svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+          </span>
+        </div>
+
+        <div class="create-button-wrap">
+          <div class="create-split">
+            <button class="main">
+              <span>Create record</span>
+            </button>
+            <button class="toggle" id="create-menu-toggle" aria-label="More create options" aria-expanded="false">
+              <svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+            </button>
+          </div>
+          <div class="create-menu" id="create-menu" hidden>
+            <div class="menu-item" data-action="order">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5L8 2L13.5 5L8 8L2.5 5z"/><path d="M2.5 5v6L8 14"/><path d="M13.5 5v6L8 14V8"/></svg>
+              </span>
+              <span>Create order</span>
+            </div>
+            <div class="menu-item" data-action="quote">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2h6.5L13 5.5V14H3V2z"/><path d="M9.5 2v3.5H13"/><path d="M8 7v4.5M6.5 8h2.25a1.25 1.25 0 0 1 0 2.5H7.25a1.25 1.25 0 0 0 0 2.5H9.5"/></svg>
+              </span>
+              <span>Create quote</span>
+            </div>
+            <div class="menu-item" data-action="manifest">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="2.5" width="10" height="11" rx="1.5"/><path d="M6 2.5v1.5a0.5 0.5 0 0 0 0.5 0.5h3A0.5 0.5 0 0 0 10 4V2.5"/><line x1="5.5" y1="7.5" x2="10.5" y2="7.5"/><line x1="5.5" y1="10" x2="9" y2="10"/></svg>
+              </span>
+              <span>Create manifest</span>
+            </div>
+            <div class="menu-item" data-action="task">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5.5"/><path d="M5.5 8.2l2 2 3-4"/></svg>
+              </span>
+              <span>Create task</span>
+            </div>
+            <div class="menu-item" data-action="customer">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="6" r="2.5"/><path d="M3 13.5C3 11 5 9.5 8 9.5s5 1.5 5 4"/></svg>
+              </span>
+              <span>Create customer</span>
+            </div>
+            <div class="menu-item" data-action="invoice">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="3" width="11" height="10" rx="1"/><line x1="2.5" y1="6.5" x2="13.5" y2="6.5"/><line x1="5" y1="9.5" x2="8" y2="9.5"/><line x1="5" y1="11" x2="7" y2="11"/></svg>
+              </span>
+              <span>Create invoice</span>
+            </div>
+            <div class="menu-item" data-action="board">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="11" height="11" rx="1"/><line x1="2.5" y1="6" x2="13.5" y2="6"/><line x1="6" y1="6" x2="6" y2="13.5"/></svg>
+              </span>
+              <span>Create board</span>
+            </div>
+            <div class="menu-item" data-action="section" id="create-section">
+              <span class="icon">
+                <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="11" height="4" rx="1"/><rect x="2.5" y="9" width="11" height="4.5" rx="1"/></svg>
+              </span>
+              <span>Create section</span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="nav" id="nav"></nav>
+
+        <div class="sidebar-footer">
+          <button>
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="8" cy="8" r="2.2"/>
+              <path d="M13 8a5 5 0 0 0-.07-.83l1.3-1-1.5-2.6-1.55.62a5 5 0 0 0-1.45-.83L9.5 1.7h-3l-.23 1.66a5 5 0 0 0-1.45.83l-1.55-.62-1.5 2.6 1.3 1A5 5 0 0 0 3 8a5 5 0 0 0 .07.83l-1.3 1 1.5 2.6 1.55-.62a5 5 0 0 0 1.45.83l.23 1.66h3l.23-1.66a5 5 0 0 0 1.45-.83l1.55.62 1.5-2.6-1.3-1A5 5 0 0 0 13 8z"/>
+            </svg>
+            Settings
+          </button>
+          <span class="divider"></span>
+          <button id="all-boards-btn">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="12" height="10" rx="1.5"/>
+              <path d="M2 6.5h12M5.5 6.5v6.5M10.5 6.5v6.5"/>
+            </svg>
+            All boards
+          </button>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="topbar">
+          <span class="logo">F</span>
+          <div class="nav-arrows">
+            <button class="icon-btn" aria-label="Back">←</button>
+            <button class="icon-btn" aria-label="Forward">→</button>
+            <button class="icon-btn" aria-label="Refresh">⟳</button>
+          </div>
+          <div class="search">
+            <span>⌕</span><span>Global search (⌘K)</span>
+          </div>
+          <div class="spacer"></div>
+          <div class="right-group">
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <span class="avatar">J</span>
+          </div>
+        </div>
+
+        <div class="page-head">
+          <div class="page-title">
+            <span class="flag" id="page-flag">🇨🇦</span>
+            <span id="page-name">Canada orders</span>
+            <span class="chev">
+              <svg viewBox="0 0 12 12" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+            </span>
+            <span class="subtitle" id="page-subtitle">Orders within Canada</span>
+            <button class="share">↗ Share</button>
+          </div>
+        </div>
+
+        <div class="tabs">
+          <div class="tab active">▦ Default</div>
+          <div class="tab">◉ Ontario</div>
+          <div class="tab">◉ Quebec</div>
+          <div class="tab">◉ Alberta</div>
+          <div class="tab">◉ British Columbia</div>
+          <div class="tab">◉ Fragile</div>
+          <div class="tab">◉ Express</div>
+          <div class="tab">◉ Hazmat</div>
+          <div class="tab">4 more…</div>
+          <div class="tab add">+ Add view</div>
+        </div>
+
+        <div class="toolbar">
+          <button class="config">⚙︎ Configure</button>
+          <button class="icon-btn">⇅</button>
+          <div class="filter">Filter or search by keyword or number</div>
+          <button class="create-order">Create order ▾</button>
+          <button class="icon-btn">⟳</button>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th style="width: 32px"><input type="checkbox" /></th>
+                <th>🔗 Order ID</th>
+                <th>◐ Status</th>
+                <th>🔗 Customer</th>
+                <th>▤ First pickup</th>
+                <th>▤ Last delivery</th>
+                <th>🔗 Partner(s)</th>
+              </tr>
+            </thead>
+            <tbody id="orders-body"></tbody>
+          </table>
+        </div>
+
+        <div class="pagination">
+          <button class="reset-link" id="reset-nav">Reset nav</button>
+          <div style="flex:1"></div>
+          <div class="page-size">50 per page ▾</div>
+          <span>1 - 50 of 3000</span>
+          <div class="pager">
+            <button>«</button><button>‹</button><button>›</button><button>»</button>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- All boards popover -->
+    <div class="all-boards-overlay" id="all-boards-overlay" hidden>
+      <div class="all-boards-popover" role="dialog" aria-label="All boards">
+        <div class="popover-search">
+          <span class="search-icon">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5L13.5 13.5"/>
+            </svg>
+          </span>
+          <input type="text" id="all-boards-input" placeholder="Search boards" autocomplete="off" />
+        </div>
+        <div class="popover-body">
+          <div class="popover-section-header">Recent</div>
+          <div class="popover-list" id="all-boards-list"></div>
+        </div>
+        <div class="popover-footer">
+          <span class="shortcut"><kbd>↵</kbd> Open</span>
+          <span class="shortcut"><kbd>⌘ ↵</kbd> Open in new tab</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // ---------- Default data ----------
+      const DEFAULT_NAV = [
+        {
+          id: "week", title: "Orders for this week",
+          items: [
+            { id: "urgent", icon: "🚨", label: "Urgent orders" },
+            { id: "canada", icon: "🇨🇦", label: "Canada orders", active: true },
+            { id: "us", icon: "🇺🇸", label: "US orders" },
+          ],
+        },
+        {
+          id: "ops", title: "Operations",
+          items: [
+            { id: "quotes", icon: "💰", label: "Important quotes" },
+            { id: "unpaid", icon: "🧾", label: "Unpaid invoices" },
+          ],
+        },
+        {
+          id: "modules", title: "Important modules",
+          items: [
+            { id: "customers", icon: "👥", label: "Customers" },
+            { id: "assets", icon: "🚚", label: "Assets" },
+            { id: "tariffs", icon: "📊", label: "Tariffs" },
+            { id: "zones", icon: "🗺️", label: "Zones" },
+            { id: "fuel", icon: "⛽", label: "Fuel" },
+          ],
+        },
+        {
+          id: "special", title: "Special orders",
+          items: [
+            { id: "hazmat", icon: "⚠️", label: "Hazmat orders" },
+            { id: "reefer", icon: "❄️", label: "Reefer required" },
+            { id: "fragile", icon: "🫧", label: "Fragile goods" },
+          ],
+        },
+        {
+          id: "financials", title: "Financials",
+          items: [
+            { id: "invoices", icon: "📄", label: "Invoices" },
+            { id: "expenses", icon: "💸", label: "Expenses" },
+            { id: "bills", icon: "🧾", label: "Bills" },
+          ],
+        },
+        {
+          id: "shared", title: "Shared with me",
+          items: [
+            { id: "furniture", icon: "🪑", label: "Furniture orders" },
+            { id: "jtech", icon: "🔧", label: "Jtechtronics" },
+          ],
+        },
+      ];
+
+      const STORAGE_KEY = "rr-nav-prototype-state-v2";
+
+      function loadState() {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEY);
+          if (!raw) return structuredClone(DEFAULT_NAV);
+          const parsed = JSON.parse(raw);
+          if (!Array.isArray(parsed)) return structuredClone(DEFAULT_NAV);
+          // Migration: drop any items previously marked as hidden
+          for (const s of parsed) {
+            if (s.items) s.items = s.items.filter((it) => !it.hidden);
+          }
+          return parsed;
+        } catch {
+          return structuredClone(DEFAULT_NAV);
+        }
+      }
+      function saveState() { localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+
+      let state = loadState();
+
+      // ---------- Render ----------
+      const navRoot = document.getElementById("nav");
+
+      function pruneEmptyUncategorized() {
+        const idx = state.findIndex((s) => s.id === "uncategorized");
+        if (idx !== -1 && state[idx].items.length === 0) {
+          state.splice(idx, 1);
+        }
+      }
+
+      function renderNav() {
+        closeMenu();
+        pruneEmptyUncategorized();
+        navRoot.innerHTML = "";
+
+        for (const section of state) {
+          const isUncat = section.id === "uncategorized";
+          const secEl = document.createElement("div");
+          secEl.className =
+            "nav-section" +
+            (isUncat ? " is-uncategorized" : "") +
+            (section.collapsed ? " collapsed" : "");
+          secEl.dataset.sectionId = section.id;
+
+          const title = document.createElement("div");
+          title.className = "nav-section-title";
+          title.innerHTML = `
+            <span class="caret" aria-label="Toggle section">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4.5L6 7.5L9 4.5"/></svg>
+            </span>
+            <span class="title-text"></span>
+            <span class="section-actions">
+              <button class="action-btn section-menu-btn" aria-label="More">
+                <svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.4"/><circle cx="8" cy="8" r="1.4"/><circle cx="12.5" cy="8" r="1.4"/></svg>
+              </button>
+            </span>
+          `;
+          title.querySelector(".title-text").textContent = section.title;
+          title.querySelector(".caret").addEventListener("click", (e) => {
+            e.stopPropagation();
+            section.collapsed = !section.collapsed;
+            secEl.classList.toggle("collapsed", section.collapsed);
+            saveState();
+          });
+          title
+            .querySelector(".section-menu-btn")
+            .addEventListener("click", (e) => {
+              e.stopPropagation();
+              openSectionMenu(title, section);
+            });
+          title.querySelector(".title-text").addEventListener("dblclick", (e) => {
+            e.stopPropagation();
+            startSectionRename(title, section);
+          });
+          secEl.appendChild(title);
+
+          const list = document.createElement("div");
+          list.className = "nav-list";
+          list.dataset.sectionId = section.id;
+
+          for (const item of section.items) {
+            list.appendChild(renderItem(item, section.id));
+          }
+
+          secEl.appendChild(list);
+          navRoot.appendChild(secEl);
+
+          new Sortable(list, {
+            group: "nav-items",
+            animation: 160,
+            ghostClass: "sortable-ghost",
+            chosenClass: "sortable-chosen",
+            dragClass: "sortable-drag",
+            draggable: ".nav-item",
+            onStart() {
+              document.querySelectorAll(".nav-list").forEach((l) => l.classList.add("drag-over"));
+              closeMenu();
+            },
+            onEnd() {
+              document.querySelectorAll(".nav-list").forEach((l) => l.classList.remove("drag-over"));
+              syncStateFromDom();
+            },
+          });
+        }
+
+        // Section-level sortable (drag by title)
+        new Sortable(navRoot, {
+          animation: 180,
+          handle: ".nav-section-title",
+          draggable: ".nav-section",
+          filter: ".action-btn, .menu, .title-input, .caret",
+          preventOnFilter: false,
+          ghostClass: "sortable-ghost",
+          dragClass: "section-drag",
+          onStart() { closeMenu(); },
+          onEnd() { syncStateFromDom(); },
+        });
+      }
+
+      function renderItem(item, sectionId) {
+        const el = document.createElement("div");
+        el.className = "nav-item" + (item.active ? " active" : "");
+        el.dataset.itemId = item.id;
+        el.dataset.sectionId = sectionId;
+        el.innerHTML = `
+          <span class="icon"></span>
+          <span class="label"></span>
+          <span class="item-actions">
+            <button class="action-btn" data-action="menu" aria-label="More">
+              <svg viewBox="0 0 16 16" fill="currentColor"><circle cx="3.5" cy="8" r="1.4"/><circle cx="8" cy="8" r="1.4"/><circle cx="12.5" cy="8" r="1.4"/></svg>
+            </button>
+          </span>
+        `;
+        el.querySelector(".icon").textContent = item.icon;
+        el.querySelector(".label").textContent = item.label;
+
+        const menuBtn = el.querySelector('[data-action="menu"]');
+        menuBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          openMenuFor(el, item, sectionId);
+        });
+
+        // Double-click label to rename
+        el.querySelector(".label").addEventListener("dblclick", (e) => {
+          e.stopPropagation();
+          startRename(el, item);
+        });
+
+        return el;
+      }
+
+      // ---------- Menu ----------
+      let currentMenu = null;
+
+      function closeMenu() {
+        if (currentMenu) {
+          currentMenu.el.remove();
+          currentMenu.host.classList.remove("menu-open");
+          currentMenu = null;
+          document.removeEventListener("click", onDocClickCloseMenu, true);
+        }
+      }
+      function onDocClickCloseMenu(e) {
+        if (currentMenu && !currentMenu.el.contains(e.target)) closeMenu();
+      }
+
+      function openMenuFor(itemEl, item) {
+        closeMenu();
+        itemEl.classList.add("menu-open");
+
+        const menu = document.createElement("div");
+        menu.className = "menu item-menu";
+        menu.innerHTML = `
+          <button data-a="rename">Rename</button>
+          <button data-a="hide" class="danger">Hide</button>
+        `;
+        menu.addEventListener("click", (e) => e.stopPropagation());
+        menu.querySelector('[data-a="rename"]').addEventListener("click", () => {
+          closeMenu();
+          startRename(itemEl, item);
+        });
+        menu.querySelector('[data-a="hide"]').addEventListener("click", () => {
+          for (const s of state) {
+            const idx = s.items.findIndex((i) => i.id === item.id);
+            if (idx !== -1) { s.items.splice(idx, 1); break; }
+          }
+          closeMenu();
+          saveState();
+          renderNav();
+        });
+        document.body.appendChild(menu);
+        const trigger = itemEl.querySelector('[data-action="menu"]');
+        const rect = trigger.getBoundingClientRect();
+        menu.style.left = Math.round(rect.right + 6) + "px";
+        menu.style.top = Math.round(rect.top) + "px";
+        currentMenu = { el: menu, host: itemEl };
+        setTimeout(() => document.addEventListener("click", onDocClickCloseMenu, true), 0);
+      }
+
+      // ---------- Section menu / rename / delete ----------
+      function openSectionMenu(titleEl, section) {
+        closeMenu();
+        titleEl.classList.add("menu-open");
+        const canDelete = section.id !== "uncategorized";
+        const menu = document.createElement("div");
+        menu.className = "menu section-menu";
+        menu.innerHTML = `
+          <button data-a="rename">Rename section</button>
+          ${canDelete ? '<button data-a="delete" class="danger">Delete section</button>' : ""}
+        `;
+        menu.addEventListener("click", (e) => e.stopPropagation());
+        menu.querySelector('[data-a="rename"]').addEventListener("click", () => {
+          closeMenu();
+          startSectionRename(titleEl, section);
+        });
+        const delBtn = menu.querySelector('[data-a="delete"]');
+        if (delBtn) {
+          delBtn.addEventListener("click", () => {
+            closeMenu();
+            deleteSection(section.id);
+          });
+        }
+        document.body.appendChild(menu);
+        const trigger = titleEl.querySelector(".section-menu-btn");
+        const rect = trigger.getBoundingClientRect();
+        menu.style.left = Math.round(rect.right + 6) + "px";
+        menu.style.top = Math.round(rect.top) + "px";
+        currentMenu = { el: menu, host: titleEl };
+        setTimeout(() => document.addEventListener("click", onDocClickCloseMenu, true), 0);
+      }
+
+      function startSectionRename(titleEl, section) {
+        const textEl = titleEl.querySelector(".title-text");
+        if (!textEl) return;
+        titleEl.classList.add("is-renaming");
+        const input = document.createElement("input");
+        input.className = "title-input";
+        input.type = "text";
+        input.value = section.title;
+        textEl.replaceWith(input);
+        input.focus();
+        input.select();
+        let done = false;
+        const commit = (save) => {
+          if (done) return;
+          done = true;
+          if (save) {
+            const v = input.value.trim();
+            if (v) section.title = v;
+          }
+          saveState();
+          renderNav();
+        };
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") { e.preventDefault(); commit(true); }
+          else if (e.key === "Escape") { e.preventDefault(); commit(false); }
+        });
+        input.addEventListener("blur", () => commit(true));
+        input.addEventListener("mousedown", (e) => e.stopPropagation());
+      }
+
+      function deleteSection(sectionId) {
+        if (sectionId === "uncategorized") return;
+        const idx = state.findIndex((s) => s.id === sectionId);
+        if (idx === -1) return;
+        const removed = state[idx];
+        state.splice(idx, 1);
+        let target = state.find((s) => s.id === "uncategorized");
+        if (!target) {
+          target = { id: "uncategorized", title: "Uncategorized", items: [] };
+          state.push(target);
+        }
+        for (const it of removed.items) target.items.push(it);
+        saveState();
+        renderNav();
+      }
+
+      // ---------- Item rename ----------
+      function startRename(itemEl, item) {
+        const labelEl = itemEl.querySelector(".label");
+        const input = document.createElement("input");
+        input.className = "label-input";
+        input.type = "text";
+        input.value = item.label;
+        labelEl.replaceWith(input);
+        input.focus();
+        input.select();
+
+        let done = false;
+        const commit = (save) => {
+          if (done) return;
+          done = true;
+          if (save) {
+            const v = input.value.trim();
+            if (v) item.label = v;
+          }
+          saveState();
+          renderNav();
+        };
+        input.addEventListener("keydown", (e) => {
+          if (e.key === "Enter") { e.preventDefault(); commit(true); }
+          else if (e.key === "Escape") { e.preventDefault(); commit(false); }
+        });
+        input.addEventListener("blur", () => commit(true));
+        // Prevent drag from starting on the input
+        input.addEventListener("mousedown", (e) => e.stopPropagation());
+      }
+
+      // ---------- Sync state from DOM after drag ----------
+      function syncStateFromDom() {
+        const allItems = new Map();
+        for (const s of state) for (const it of s.items) allItems.set(it.id, it);
+
+        const newState = [];
+        for (const secEl of navRoot.querySelectorAll(".nav-section")) {
+          const sectionId = secEl.dataset.sectionId;
+          const original = state.find((s) => s.id === sectionId);
+          const items = [];
+          for (const itemEl of secEl.querySelectorAll(".nav-item")) {
+            const it = allItems.get(itemEl.dataset.itemId);
+            if (it) items.push(it);
+          }
+          newState.push(
+            original
+              ? { ...original, items }
+              : { id: sectionId, title: sectionId, items }
+          );
+        }
+
+        state = newState;
+        pruneEmptyUncategorized();
+        saveState();
+      }
+
+      document.getElementById("reset-nav").addEventListener("click", () => {
+        localStorage.removeItem(STORAGE_KEY);
+        state = structuredClone(DEFAULT_NAV);
+        renderNav();
+      });
+
+      function createSection() {
+        const id = "section-" + Date.now();
+        const newSection = { id, title: "New section", items: [] };
+        state.unshift(newSection);
+        saveState();
+        renderNav();
+        navRoot.scrollTop = 0;
+        const titleEl = navRoot.querySelector(
+          `.nav-section[data-section-id="${id}"] .nav-section-title`
+        );
+        if (titleEl) startSectionRename(titleEl, newSection);
+      }
+
+      // ---------- Create dropdown menu ----------
+      const createMenuToggle = document.getElementById("create-menu-toggle");
+      const createMenuEl = document.getElementById("create-menu");
+
+      function openCreateMenu() {
+        createMenuEl.hidden = false;
+        createMenuToggle.classList.add("open");
+        createMenuToggle.setAttribute("aria-expanded", "true");
+        setTimeout(() => document.addEventListener("click", onDocClickCloseCreateMenu, true), 0);
+      }
+      function closeCreateMenu() {
+        createMenuEl.hidden = true;
+        createMenuToggle.classList.remove("open");
+        createMenuToggle.setAttribute("aria-expanded", "false");
+        document.removeEventListener("click", onDocClickCloseCreateMenu, true);
+      }
+      function onDocClickCloseCreateMenu(e) {
+        if (!createMenuEl.contains(e.target) && e.target !== createMenuToggle && !createMenuToggle.contains(e.target)) {
+          closeCreateMenu();
+        }
+      }
+
+      createMenuToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (createMenuEl.hidden) openCreateMenu();
+        else closeCreateMenu();
+      });
+
+      createMenuEl.addEventListener("click", (e) => {
+        const item = e.target.closest(".menu-item");
+        if (!item) return;
+        const action = item.dataset.action;
+        closeCreateMenu();
+        if (action === "section") createSection();
+      });
+
+      // ---------- All boards popover ----------
+      const allBoardsBtn = document.getElementById("all-boards-btn");
+      const allBoardsOverlay = document.getElementById("all-boards-overlay");
+      const allBoardsInput = document.getElementById("all-boards-input");
+      const allBoardsList = document.getElementById("all-boards-list");
+      const pageFlagEl = document.getElementById("page-flag");
+      const pageNameEl = document.getElementById("page-name");
+      const pageSubtitleEl = document.getElementById("page-subtitle");
+      let popoverFocusIdx = 0;
+
+      function getAllBoards() {
+        const boards = [];
+        for (const section of state) {
+          for (const item of section.items) {
+            boards.push({ item, sectionTitle: section.title });
+          }
+        }
+        return boards;
+      }
+
+      function renderBoardList(filter = "") {
+        const f = filter.toLowerCase().trim();
+        const boards = getAllBoards().filter(b =>
+          !f || b.item.label.toLowerCase().includes(f) || b.sectionTitle.toLowerCase().includes(f)
+        );
+        if (popoverFocusIdx >= boards.length) popoverFocusIdx = Math.max(0, boards.length - 1);
+        allBoardsList.innerHTML = "";
+        if (!boards.length) {
+          const empty = document.createElement("div");
+          empty.className = "popover-empty";
+          empty.textContent = "No boards match your search";
+          allBoardsList.appendChild(empty);
+          return;
+        }
+        boards.forEach((b, i) => {
+          const row = document.createElement("div");
+          row.className = "board-row" + (i === popoverFocusIdx ? " focused" : "");
+          row.innerHTML = `
+            <span class="emoji"></span>
+            <span class="name"></span>
+            <span class="section"></span>
+            <span class="arrow">
+              <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3L11 8L6 13"/></svg>
+            </span>
+          `;
+          row.querySelector(".emoji").textContent = b.item.icon;
+          row.querySelector(".name").textContent = b.item.label;
+          row.querySelector(".section").textContent = b.sectionTitle;
+          row.addEventListener("click", () => selectBoard(b.item));
+          row.addEventListener("mouseenter", () => {
+            popoverFocusIdx = i;
+            allBoardsList.querySelectorAll(".board-row").forEach((r, j) =>
+              r.classList.toggle("focused", j === i)
+            );
+          });
+          allBoardsList.appendChild(row);
+        });
+      }
+
+      function selectBoard(item) {
+        for (const section of state) {
+          for (const it of section.items) it.active = (it.id === item.id);
+        }
+        saveState();
+        renderNav();
+        pageFlagEl.textContent = item.icon;
+        pageNameEl.textContent = item.label;
+        pageSubtitleEl.textContent = "";
+        closeAllBoards();
+      }
+
+      function openAllBoards() {
+        allBoardsOverlay.hidden = false;
+        allBoardsInput.value = "";
+        popoverFocusIdx = 0;
+        renderBoardList();
+        setTimeout(() => allBoardsInput.focus(), 0);
+      }
+      function closeAllBoards() {
+        allBoardsOverlay.hidden = true;
+      }
+
+      allBoardsBtn.addEventListener("click", openAllBoards);
+
+      allBoardsOverlay.addEventListener("click", (e) => {
+        if (e.target === allBoardsOverlay) closeAllBoards();
+      });
+
+      allBoardsInput.addEventListener("input", () => {
+        popoverFocusIdx = 0;
+        renderBoardList(allBoardsInput.value);
+      });
+
+      allBoardsInput.addEventListener("keydown", (e) => {
+        const rows = allBoardsList.querySelectorAll(".board-row");
+        if (e.key === "Escape") {
+          closeAllBoards();
+        } else if (e.key === "ArrowDown") {
+          e.preventDefault();
+          if (!rows.length) return;
+          popoverFocusIdx = Math.min(popoverFocusIdx + 1, rows.length - 1);
+          rows.forEach((r, i) => r.classList.toggle("focused", i === popoverFocusIdx));
+          rows[popoverFocusIdx].scrollIntoView({ block: "nearest" });
+        } else if (e.key === "ArrowUp") {
+          e.preventDefault();
+          if (!rows.length) return;
+          popoverFocusIdx = Math.max(popoverFocusIdx - 1, 0);
+          rows.forEach((r, i) => r.classList.toggle("focused", i === popoverFocusIdx));
+          rows[popoverFocusIdx].scrollIntoView({ block: "nearest" });
+        } else if (e.key === "Enter") {
+          e.preventDefault();
+          rows[popoverFocusIdx]?.click();
+        }
+      });
+
+      renderNav();
+
+      // ---------- Orders table filler ----------
+      const ORDERS = [
+        ["O-3741", "booked", "Booked", "123 Maple Street, Toronto, ON,…", "234 Terra Crescent, Toronto, O…"],
+        ["O-5829", "in-transit", "In transit", "456 Oak Avenue, Vancouver, B…", "567 Branch Street, Vancouver,…"],
+        ["O-1943", "invoiced", "Invoiced", "789 Pine Road, Calgary, AB, T2…", "890 Jam Avenue, Calgary, AB, T…"],
+        ["O-8296", "in-transit", "In transit", "321 Birch Lane, Montreal, QC,…", "432 Rose Boulevard, Montreal,…"],
+        ["O-4652", "delivered", "Delivered", "654 Cedar Drive, Ottawa, ON, K…", "765 Van Lane, Ottawa, ON, K1A…"],
+        ["O-7384", "cancelled", "Cancelled", "987 Spruce Way, Edmonton, AB…", "321 Water Crescent, Edmonton,…"],
+        ["O-9125", "booked", "Booked", "135 Willow Crescent, Halifax, N…", "147 Hollow Street, Halifax, NS,…"],
+        ["O-2673", "in-transit", "In transit", "246 Elm Street, Winnipeg, MB,…", "258 Hype Avenue, Winnipeg, M…"],
+        ["O-3548", "rejected", "Rejected", "357 Cherry Boulevard, Victoria,…", "369 Fir Lane, Quebec City, QC,…"],
+        ["O-4810", "booked", "Booked", "468 Fir Court, Quebec City, QC,…", "159 Chestnut Court, Victoria, B…"],
+        ["O-6207", "cancelled", "Cancelled", "579 Maplewood Drive, St. John'…", "753 Sand Crescent, St. John's, NL,…"],
+        ["O-8934", "expired", "Expired", "680 Ash Street, Regina, SK, S4P…", "852 Water Boulevard, Regina, S…"],
+        ["O-1572", "delivered", "Delivered", "791 Dogwood Avenue, Saskato…", "951 Poplar Avenue, Saskatoon,…"],
+        ["O-3049", "in-transit", "In transit", "802 Hawthorn Lane, Charlottet…", "159 Larch Lane, Charlottetown,…"],
+        ["O-7481", "new", "New", "913 Larch Road, Fredericton, N…", "753 Walnut Way, Fredericton,…"],
+        ["O-9320", "in-transit", "In transit", "024 Poplar Way, Yellowknife,…", "852 Acacia Lane, Yellowknife,…"],
+      ];
+      const body = document.getElementById("orders-body");
+      body.innerHTML = ORDERS.map(
+        ([id, cls, label, pickup, delivery]) => `
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td><a class="order-link" href="#">${id}</a></td>
+            <td><span class="chip ${cls}">${label}</span></td>
+            <td><a class="order-link" href="#">Link</a></td>
+            <td>${pickup}</td>
+            <td>${delivery}</td>
+            <td><a class="order-link" href="#">Link</a></td>
+          </tr>`
+      ).join("");
+    </script>
+  </body>
+</html>
