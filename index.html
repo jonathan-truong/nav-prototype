@@ -247,7 +247,6 @@
         position: fixed;
         width: 240px;
         min-width: 0;
-        padding: 4px 0;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: #fff;
@@ -255,8 +254,9 @@
         overflow: hidden;
         z-index: 200;
       }
-      .menu.section-menu button,
-      .menu.item-menu button {
+      .menu.section-menu { padding: 4px 0; }
+      .menu.item-menu { padding: 4px; }
+      .menu.section-menu button {
         padding: 12px;
         gap: 8px;
         border-radius: 0;
@@ -264,12 +264,26 @@
         line-height: 16px;
         color: var(--text);
       }
-      .menu.section-menu button:hover,
+      .menu.section-menu button:hover { background: rgba(86, 101, 137, 0.1); }
+      .menu.section-menu button.danger { color: #c71830; }
+      .menu.section-menu button.danger:hover { background: rgba(86, 101, 137, 0.1); }
+      .menu.item-menu button {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 4px;
+        padding: 9px 13px;
+        border-radius: 4px;
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--text);
+      }
       .menu.item-menu button:hover { background: rgba(86, 101, 137, 0.1); }
-      .menu.section-menu button.danger,
-      .menu.item-menu button.danger { color: #c71830; }
-      .menu.section-menu button.danger:hover,
-      .menu.item-menu button.danger:hover { background: rgba(86, 101, 137, 0.1); }
+      .menu.item-menu button .desc {
+        font-size: 12px;
+        line-height: 16px;
+        color: var(--text-subtle);
+        white-space: normal;
+      }
 
       .nav-list {
         display: flex; flex-direction: column; gap: 0;
@@ -1091,8 +1105,11 @@
         const menu = document.createElement("div");
         menu.className = "menu item-menu";
         menu.innerHTML = `
-          <button data-a="rename">Rename</button>
-          <button data-a="hide" class="danger">Hide</button>
+          <button data-a="rename">Rename board</button>
+          <button data-a="hide">
+            <span>Hide board</span>
+            <span class="desc">You’ll retain access to this board, but it won’t show in your sidebar</span>
+          </button>
         `;
         menu.addEventListener("click", (e) => e.stopPropagation());
         menu.querySelector('[data-a="rename"]').addEventListener("click", () => {
