@@ -1,0 +1,52 @@
+{
+  "id": "1dc675e5-ab27-46d7-b07d-91113e5a1fc9",
+  "type": "boardView",
+  "name": "New Only",
+  "json": {
+    "id": "1dc675e5-ab27-46d7-b07d-91113e5a1fc9",
+    "name": "New Only",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [],
+    "labelId": "New Only",
+    "ordinal": 14,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "platformTags",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "partner",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "accessorials",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "sellQuoteFullId"
+    ],
+    "createdAt": "2023-11-01T19:21:02.396Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-09-11T20:03:51.411Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": "Only the status: New orders",
+    "searchTermList": [],
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByColumnKey": "status",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

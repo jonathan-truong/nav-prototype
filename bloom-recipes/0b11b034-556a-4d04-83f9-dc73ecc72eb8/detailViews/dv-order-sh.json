@@ -1,0 +1,74 @@
+{
+  "configKey": "detailView",
+  "key": "dv_order_sh__c",
+  "json": {
+    "key": "dv_order_sh__c",
+    "label": "Shipper Order Tracker",
+    "sections": [
+      {
+        "key": "orderDetails",
+        "label": "Order Details",
+        "fields": [
+          {
+            "key": "lastKnownLocation",
+            "cell": {
+              "typeKey": "object",
+              "labelPath": "formattedAddressEld",
+              "isLabelPlainText": true
+            },
+            "path": "lastKnownLocation",
+            "configKey": "detailField",
+            "widgetKey": "order-LastKnownLocationRefetch",
+            "isEditable": false,
+            "showOnTemplate": true
+          },
+          {
+            "key": "currentLocation",
+            "path": "currentLocation",
+            "label": "Current location (manual)",
+            "configKey": "detailField",
+            "widgetKey": "order-SetCurrentLocation",
+            "isEditable": false
+          },
+          {
+            "key": "timeToDelivery__c",
+            "path": "timeToDelivery__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "stops",
+            "path": "stops",
+            "configKey": "detailField"
+          },
+          {
+            "key": "derivedStops",
+            "path": "derivedStops",
+            "configKey": "detailField"
+          },
+          {
+            "key": "stopsV2",
+            "path": "stopsV2",
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Order Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "general",
+        "label": "General",
+        "fields": [],
+        "labelId": "General",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-08-26T15:49:34.346Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetSequence": "$custom_externalTechoBlocSdflkjsdflkjsdf-order_7055bf82-b1ae-478d-a450-90d6a2abdd1a"
+  }
+}

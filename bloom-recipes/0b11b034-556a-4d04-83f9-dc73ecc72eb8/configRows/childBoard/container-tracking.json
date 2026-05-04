@@ -1,0 +1,70 @@
+{
+  "id": "53091dbb-4734-4343-805f-4e26127fea5a",
+  "type": "childBoard",
+  "name": "Container Tracking",
+  "json": {
+    "id": "53091dbb-4734-4343-805f-4e26127fea5a",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Container Tracking",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "services",
+      "documentCountLabel",
+      "$createdByFullName"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "services",
+        "documentCountLabel",
+        "$createdByFullName"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "$createdByFullName",
+            "value": "Milos Svilaric",
+            "operator": "equals",
+            "fieldType": "TextField",
+            "filterKey": "$createdByFullName"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

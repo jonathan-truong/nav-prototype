@@ -1,0 +1,63 @@
+{
+  "configKey": "board",
+  "key": "$custom_$custom_bikeBoard__c",
+  "json": {
+    "key": "$custom_$custom_bikeBoard__c",
+    "columns": [
+      {
+        "key": "connection__c",
+        "path": "connection__c",
+        "labelId": "Connection",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "orderAppointmentNotes__c",
+        "path": "orderAppointmentNotes__c",
+        "labelId": "order appointment notes",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "carrierInformationOnOrder__c",
+        "path": "carrierInformationOnOrder__c",
+        "labelId": "Carrier Information on order",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      }
+    ],
+    "filters": [
+      {
+        "key": "connection__c",
+        "path": "connection__c",
+        "labelId": "Connection",
+        "columnKey": "connection__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "orderAppointmentNotes__c",
+        "path": "orderAppointmentNotes__c",
+        "labelId": "order appointment notes",
+        "columnKey": "orderAppointmentNotes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "carrierInformationOnOrder__c",
+        "path": "carrierInformationOnOrder__c",
+        "labelId": "Carrier Information on order",
+        "columnKey": "carrierInformationOnOrder__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2026-01-20T16:16:31.328Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "$custom_bikeBoard__c",
+    "updatedAt": "2026-04-23T20:20:18.513Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

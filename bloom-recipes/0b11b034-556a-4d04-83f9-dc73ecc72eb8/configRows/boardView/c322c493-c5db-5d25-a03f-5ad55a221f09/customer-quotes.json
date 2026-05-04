@@ -1,0 +1,62 @@
+{
+  "id": "7ed8ad98-2d78-456a-a579-9a687f3792ca",
+  "type": "boardView",
+  "name": "Customer Quotes",
+  "json": {
+    "id": "7dc19704-23c9-4c1d-9ec7-eea4d9d0b0af",
+    "orgId": "9fd81271-0a24-43aa-b5fb-d5ff275265b0",
+    "boardId": "c322c493-c5db-5d25-a03f-5ad55a221f09",
+    "filters": [
+      {
+        "path": "quoteType",
+        "value": [
+          "sell"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "quoteType"
+      }
+    ],
+    "labelId": "Customer Quotes",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "quoteType",
+      "customer",
+      "totalAmount",
+      "totalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "platformTags",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "commodities",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "specialInstructions",
+      "accessorials",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "order"
+    ],
+    "createdAt": "2025-01-03T16:12:41.024Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-01-03T16:12:41.024Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": "These are the Customer Quotes",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

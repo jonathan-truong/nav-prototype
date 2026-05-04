@@ -1,0 +1,92 @@
+{
+  "id": "e35e230f-ddb8-4bb4-9a90-e8df245d5d1c",
+  "type": "boardView",
+  "name": "Not Invoiced",
+  "json": {
+    "id": "e35e230f-ddb8-4bb4-9a90-e8df245d5d1c",
+    "name": "Test view 3",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "invoiced"
+        ],
+        "operator": "notIn",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Not Invoiced",
+    "ordinal": 6,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "assetWithLastKnownLocation",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "partner",
+      "totalEarnings",
+      "totalCost",
+      "multiCurrencyTotalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "drivers",
+      "assets",
+      "manifests",
+      "platformTags",
+      "commodities",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "invoices",
+      "csrs",
+      "accountManagers",
+      "buyQuotes",
+      "assetType",
+      "serviceType",
+      "services",
+      "currentLocation_formattedAddress",
+      "lastUpdated",
+      "driverName",
+      "dataSourceLabel",
+      "commissionees"
+    ],
+    "createdAt": "2024-08-14T14:35:44.008Z",
+    "createdBy": "f1763850-1579-4874-b345-9b36be3d7e6c",
+    "isDefault": false,
+    "updatedAt": "2026-03-02T17:22:38.857Z",
+    "updatedBy": "f1763850-1579-4874-b345-9b36be3d7e6c",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "fullId": 190,
+      "pod__c": 64,
+      "status": 149,
+      "partner": 113,
+      "originCity__c": 133,
+      "$createdByFullName": 129,
+      "consignee_formattedAddress": 296
+    },
+    "searchTermList": [],
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

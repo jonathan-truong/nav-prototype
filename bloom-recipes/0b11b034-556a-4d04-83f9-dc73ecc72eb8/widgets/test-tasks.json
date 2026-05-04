@@ -1,0 +1,43 @@
+{
+  "configKey": "widget",
+  "key": "testTasks__c",
+  "json": {
+    "key": "testTasks__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "testField__c",
+        "path": "testField__c",
+        "label": "Test field 3"
+      },
+      {
+        "key": "poNum",
+        "path": "poNum",
+        "label": "Po No."
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "Test widget please ignore"
+        },
+        "title": "TEST Tasks"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-04-05T18:38:01.328Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

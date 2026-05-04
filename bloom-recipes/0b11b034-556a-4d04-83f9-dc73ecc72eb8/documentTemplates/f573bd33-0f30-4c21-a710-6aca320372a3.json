@@ -1,0 +1,17 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "f573bd33-0f30-4c21-a710-6aca320372a3",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 51,
+      "formattedValue": "DOCT-51"
+    },
+    "$source": "manual",
+    "version": 2,
+    "$widgets": [],
+    "documentType": "invoice",
+    "rootObjectKey": "invoice",
+    "dataFormatVersion": "1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "configKey": "board",
+  "key": "$custom_orderDocument",
+  "json": {
+    "key": "$custom_orderDocument",
+    "columns": [],
+    "filters": [],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-05-05T15:02:49.801Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "orderDocument",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

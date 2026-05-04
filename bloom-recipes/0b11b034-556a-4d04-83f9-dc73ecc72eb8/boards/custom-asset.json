@@ -1,0 +1,63 @@
+{
+  "configKey": "board",
+  "key": "$custom_asset",
+  "json": {
+    "key": "$custom_asset",
+    "columns": [
+      {
+        "key": "newTest1__c",
+        "path": "newTest1__c",
+        "labelId": "New Test 1",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "newTest2__c",
+        "path": "newTest2__c",
+        "labelId": "new test 2",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "lastSeenTest__c",
+        "path": "lastSeenTest__c",
+        "labelId": "Last seen test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "newTest1__c",
+        "path": "newTest1__c",
+        "labelId": "New Test 1",
+        "columnKey": "newTest1__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "newTest2__c",
+        "path": "newTest2__c",
+        "labelId": "new test 2",
+        "columnKey": "newTest2__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "lastSeenTest__c",
+        "path": "lastSeenTest__c",
+        "labelId": "Last seen test",
+        "columnKey": "lastSeenTest__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-05-27T17:14:34.002Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "asset",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

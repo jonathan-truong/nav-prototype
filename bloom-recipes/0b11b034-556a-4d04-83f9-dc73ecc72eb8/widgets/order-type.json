@@ -1,0 +1,38 @@
+{
+  "configKey": "widget",
+  "key": "orderType__c",
+  "json": {
+    "key": "orderType__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "tags",
+        "path": "tags",
+        "label": "Tags"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "FTL or LTL?"
+        },
+        "title": "Order Type"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

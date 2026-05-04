@@ -1,0 +1,52 @@
+{
+  "id": "42199277-011e-4f04-8edf-e71a07618e26",
+  "type": "boardView",
+  "name": "testView",
+  "json": {
+    "id": "defaultView",
+    "boardId": "19b9554b-b2ab-4287-aaf1-664b66b7e86a",
+    "filters": [],
+    "labelId": "testView",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "manifests",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "services",
+      "lastUpdated",
+      "driverName",
+      "testField__c",
+      "newField__c",
+      "testSelect__c",
+      "testMaxNumber__c",
+      "division__c",
+      "seyanTestField__c",
+      "hasPod__c",
+      "pod__c",
+      "pars__c"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

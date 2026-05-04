@@ -1,0 +1,167 @@
+{
+  "configKey": "object",
+  "key": "$custom_stop",
+  "json": {
+    "key": "$custom_stop",
+    "fields": [
+      {
+        "key": "status",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "arrived",
+              "labelId": "Arrived"
+            },
+            {
+              "color": "status-cyan",
+              "value": "onroute",
+              "labelId": "On Route"
+            },
+            {
+              "color": "status-cyan",
+              "value": "pending",
+              "labelId": "Pending"
+            },
+            {
+              "color": "status-cyan",
+              "value": "cancelled",
+              "labelId": "Cancelled"
+            },
+            {
+              "color": "status-cyan",
+              "value": "completed",
+              "labelId": "Completed"
+            }
+          ],
+          "statusMap": {
+            "arrived": {
+              "color": "status-cyan",
+              "labelId": "Arrived"
+            },
+            "onroute": {
+              "color": "status-cyan",
+              "labelId": "On Route"
+            },
+            "pending": {
+              "color": "status-cyan",
+              "labelId": "Pending"
+            },
+            "cancelled": {
+              "color": "status-cyan",
+              "labelId": "Cancelled"
+            },
+            "completed": {
+              "color": "status-cyan",
+              "labelId": "Completed"
+            }
+          }
+        }
+      },
+      {
+        "key": "pickupWindows",
+        "before": "firstPickupWindow",
+        "configKey": "field"
+      },
+      {
+        "key": "firstPickupWindow",
+        "before": "lastPickupWindow",
+        "configKey": "field"
+      },
+      {
+        "key": "uniqueCommodities",
+        "before": "stopHeaderDocBuilder",
+        "configKey": "field"
+      },
+      {
+        "key": "stopHeaderDocBuilder",
+        "before": "completedAtDocBuilder",
+        "configKey": "field"
+      },
+      {
+        "key": "templateFullId",
+        "before": "canvas",
+        "configKey": "field"
+      },
+      {
+        "key": "canvas",
+        "before": "systemFingerprint",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "systemFingerprint",
+        "before": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "promptTokens",
+        "before": "llmPromptSuggestions",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "llmPromptSuggestions",
+        "before": "uniqueCommoditiesTotalWeight",
+        "configKey": "field"
+      },
+      {
+        "key": "uniqueCommoditiesTotalWeight",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "nonLegTasks",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "nonLegTasks",
+        "before": "$widgets",
+        "configKey": "field"
+      },
+      {
+        "key": "$widgets",
+        "before": "$widgetToOpen",
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueEvent",
+        "before": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "$evaluateWidgets",
+        "before": null,
+        "configKey": "method"
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-06-11T14:13:56.277Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "stop",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

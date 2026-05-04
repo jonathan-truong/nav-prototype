@@ -1,0 +1,53 @@
+{
+  "id": "02e4234b-778e-446a-af73-b304488ed347",
+  "type": "boardView",
+  "name": "Milos' View",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "65f90539-528b-4fa9-bec6-425680d5f47e",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new",
+          "booked"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Milos' View",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "partner",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "totalCommoditiesQuantity",
+      "commodities",
+      "manifests",
+      "estimatedDurationFormatted",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "totalMiles",
+      "buyQuotes"
+    ],
+    "createdAt": "2024-05-29T15:01:03.678Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2024-05-29T15:01:03.678Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

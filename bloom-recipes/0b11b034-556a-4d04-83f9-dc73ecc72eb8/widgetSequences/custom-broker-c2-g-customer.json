@@ -1,0 +1,34 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_brokerC2G-customer",
+  "json": {
+    "key": "$custom_brokerC2G-customer",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "lead__c",
+        "before": "platformCustomer-AddCompanyDetails",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "lead__c"
+      },
+      {
+        "key": "platformCustomer-AddCompanyDetails",
+        "before": "platformCustomer-EditCommissionedUsers",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "platformCustomer-EditCommissionedUsers",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "brokerC2G-customer",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

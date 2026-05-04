@@ -1,0 +1,93 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_moduleVibeWaterfallTenderingTier2VibeTenderDetailView",
+  "json": {
+    "key": "$custom_moduleVibeWaterfallTenderingTier2VibeTenderDetailView",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "partnerCarrier__c",
+            "path": "partnerCarrier__c",
+            "before": "stuff__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "stuff__c",
+            "path": "stuff__c",
+            "before": "status",
+            "isCustom": true,
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "order__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "order__c",
+            "path": "order__c",
+            "before": "fullId",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "before": "partner",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastUpdated",
+            "before": "tenderStatus__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "tenderStatus__c",
+            "path": "tenderStatus__c",
+            "before": "declineNotes__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "declineNotes__c",
+            "path": "declineNotes__c",
+            "before": "partnerRatingTier__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerRatingTier__c",
+            "path": "partnerRatingTier__c",
+            "before": null,
+            "isCustom": true,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "orderDetails",
+        "fields": [
+          {
+            "key": "origin",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Order details",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "moduleVibeWaterfallTenderingTier2VibeTenderDetailView",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

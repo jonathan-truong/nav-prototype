@@ -1,0 +1,221 @@
+{
+  "configKey": "object",
+  "key": "$custom_driverProfile",
+  "json": {
+    "key": "$custom_driverProfile",
+    "fields": [
+      {
+        "key": "orgId",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "contactPhone",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "contactEmail",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "phone",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "email",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "payTypeId",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "notes",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isDriverMobileInvited",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "hasDriverMobileAccess",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "lastLoginAt",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "source",
+        "before": "orgRoleName",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "orgRoleName",
+        "type": "any",
+        "before": "formattedAddress",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "formattedAddress",
+        "before": "$createdAt",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "userProfile",
+        "configKey": "field"
+      },
+      {
+        "key": "userProfile",
+        "before": "terminalEldId",
+        "configKey": "field"
+      },
+      {
+        "key": "terminalEldId",
+        "type": "any",
+        "before": "terminalEldSource",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "terminalEldSource",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "availableBreakTime",
+        "before": "isFuelDeductionEnabled",
+        "configKey": "field"
+      },
+      {
+        "key": "isFuelDeductionEnabled",
+        "before": "fuelCards",
+        "configKey": "field"
+      },
+      {
+        "key": "fuelCards",
+        "before": "driverELDCurrentStatus",
+        "configKey": "field"
+      },
+      {
+        "key": "driverELDCurrentStatus",
+        "before": "documents",
+        "configKey": "field"
+      },
+      {
+        "key": "documents",
+        "before": "isActive",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isActive",
+        "before": "insuranceExpiry__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "insuranceExpiry__c",
+        "type": "date",
+        "label": "Insurance Expiry",
+        "before": "yearsOfService__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_driverProfile",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "yearsOfService__c",
+        "type": "number",
+        "label": "Years of Service",
+        "before": "currentManifest__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitLabel": ""
+        },
+        "$declarator": {
+          "key": "$custom_driverProfile",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "currentManifest__c",
+        "type": {
+          "key": "manifest",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Current Manifest",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_driverProfile",
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-06-13T16:57:19.702Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "driverProfile",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "id": "b1c7045b-75bd-4715-97a8-0b6c226f5a3e",
+  "type": "boardView",
+  "name": "Bill Manifest Order Invoice",
+  "json": {
+    "id": "defaultView",
+    "boardId": "5d751f79-b049-5402-a573-097f48902e96",
+    "filters": [],
+    "labelId": "Bill Manifest Order Invoice",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "orderFullId",
+      "manifestFullId",
+      "invoiceS__c"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

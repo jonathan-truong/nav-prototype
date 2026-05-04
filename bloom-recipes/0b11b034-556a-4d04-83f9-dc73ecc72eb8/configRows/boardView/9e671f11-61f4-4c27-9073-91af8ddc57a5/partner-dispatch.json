@@ -1,0 +1,30 @@
+{
+  "id": "588134c2-5d83-4e56-bff6-e347b524c941",
+  "type": "boardView",
+  "name": "Partner Dispatch",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "9e671f11-61f4-4c27-9073-91af8ddc57a5",
+    "filters": [],
+    "labelId": "Partner Dispatch",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "partner",
+      "ordersFullId"
+    ],
+    "createdAt": "2025-01-09T14:50:50.697Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-01-09T14:50:50.697Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

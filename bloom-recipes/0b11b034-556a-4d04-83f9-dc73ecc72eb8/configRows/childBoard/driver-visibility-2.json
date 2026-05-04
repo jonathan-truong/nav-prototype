@@ -1,0 +1,85 @@
+{
+  "id": "d25f7334-5acc-4496-9390-89586953da70",
+  "type": "childBoard",
+  "name": "Driver Visibility",
+  "json": {
+    "id": "d25f7334-5acc-4496-9390-89586953da70",
+    "icon": "🚛",
+    "source": "manual",
+    "labelId": "Driver Visibility",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "drivers",
+        "status",
+        "assetWithLastKnownLocation",
+        "deliveryEta",
+        "assets",
+        "totalMiles",
+        "estimatedDurationFormatted",
+        "shipper_formattedAddress",
+        "requestedPickupWindow",
+        "consignee_formattedAddress",
+        "requestedDeliveryWindow"
+      ],
+      "description": "This is a Board to track where your drivers are and what they are working on",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId",
+        "drivers",
+        "status",
+        "assetWithLastKnownLocation",
+        "deliveryEta",
+        "assets",
+        "totalMiles",
+        "estimatedDurationFormatted"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "25bbaaca-0bad-4a5a-9f39-e5e47cdbc3b7"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

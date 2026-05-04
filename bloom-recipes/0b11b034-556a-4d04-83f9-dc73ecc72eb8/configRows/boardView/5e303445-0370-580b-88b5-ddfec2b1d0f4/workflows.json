@@ -1,0 +1,53 @@
+{
+  "id": "fce17585-c303-42f0-8957-d063ca51fa6a",
+  "type": "boardView",
+  "name": "Workflows",
+  "json": {
+    "id": "337ba74d-506c-4e0e-89d9-32cd2e58fb9c",
+    "orgId": "c25888e4-b717-4ef8-8369-f0fd6977db71",
+    "boardId": "5e303445-0370-580b-88b5-ddfec2b1d0f4",
+    "filters": [
+      {
+        "path": "category__c",
+        "value": [
+          "workflows"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "category__c"
+      }
+    ],
+    "labelId": "Workflows",
+    "ordinal": 8,
+    "isPinned": false,
+    "columnIds": [
+      "sortOrder__c",
+      "status__c",
+      "title__c",
+      "description__c",
+      "videoLink__c",
+      "helpCentreLink__c",
+      "module__c",
+      "category__c",
+      "difficulty__c",
+      "estimatedTimeToCompletion__c",
+      "businessType__c",
+      "notes__c"
+    ],
+    "createdAt": "2025-06-19T14:46:45.618Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-06-19T14:47:08.547Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "title__c": 268
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "sortOrder__c",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "title__c"
+  }
+}

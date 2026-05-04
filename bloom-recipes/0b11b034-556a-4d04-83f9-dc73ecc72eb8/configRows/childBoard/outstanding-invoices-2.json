@@ -1,0 +1,68 @@
+{
+  "id": "6b6ba864-2ed9-4663-833b-bf2faf2882a1",
+  "type": "childBoard",
+  "name": "Outstanding invoices",
+  "json": {
+    "icon": "❌",
+    "source": "manual",
+    "labelId": "Outstanding invoices",
+    "parents": [
+      {
+        "id": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+        "key": "platformInvoice",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "objectKey": "invoice",
+    "parentKey": "platformInvoice",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "customer",
+      "status",
+      "dueDate",
+      "totalAmount",
+      "invoiceDate",
+      "orderId",
+      "deliveryTime",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sentAt",
+      "lastModifiedAt"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "customer",
+        "status",
+        "dueDate",
+        "totalAmount",
+        "invoiceDate",
+        "orderId",
+        "deliveryTime",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sentAt",
+        "lastModifiedAt"
+      ],
+      "description": "This is a Board that reflects invoices that have been sent and are outstanding",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId",
+        "customer",
+        "status",
+        "dueDate",
+        "totalAmount"
+      ],
+      "orderByColumnKey": "fullId",
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "templateKey": "platformInvoice"
+  }
+}

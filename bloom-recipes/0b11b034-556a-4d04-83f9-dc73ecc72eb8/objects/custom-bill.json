@@ -1,0 +1,940 @@
+{
+  "configKey": "object",
+  "key": "$custom_bill",
+  "json": {
+    "key": "$custom_bill",
+    "fields": [
+      {
+        "key": "internalNotes",
+        "before": "revision",
+        "configKey": "field"
+      },
+      {
+        "key": "revision",
+        "before": "revisedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "revisedAt",
+        "before": "status",
+        "configKey": "field"
+      },
+      {
+        "key": "status",
+        "before": "billType",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "created",
+              "labelId": "Created"
+            },
+            {
+              "color": "status-cyan",
+              "value": "approved",
+              "labelId": "Approved"
+            },
+            {
+              "color": "status-cyan",
+              "value": "inReview",
+              "labelId": "In Review"
+            },
+            {
+              "color": "status-green",
+              "value": "partiallyPaid",
+              "labelId": "Partially paid"
+            },
+            {
+              "color": "status-green",
+              "value": "paid",
+              "labelId": "Paid"
+            },
+            {
+              "color": "status-red",
+              "value": "holdClaim",
+              "labelId": "Hold - Claim"
+            }
+          ],
+          "statusMap": {
+            "paid": {
+              "color": "status-green",
+              "labelId": "Paid"
+            },
+            "created": {
+              "color": "status-grey",
+              "labelId": "Created"
+            },
+            "approved": {
+              "color": "status-cyan",
+              "labelId": "Approved"
+            },
+            "inReview": {
+              "color": "status-cyan",
+              "labelId": "In Review"
+            },
+            "holdClaim": {
+              "color": "status-red",
+              "labelId": "Hold - Claim"
+            },
+            "partiallyPaid": {
+              "color": "status-green",
+              "labelId": "Partially paid"
+            }
+          }
+        }
+      },
+      {
+        "key": "billType",
+        "before": "carrier",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "driver",
+              "labelId": "Driver",
+              "isCustom": false
+            },
+            {
+              "value": "carrier",
+              "labelId": "Carrier",
+              "isCustom": false
+            },
+            {
+              "value": "commission",
+              "labelId": "Commission",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "partner",
+        "before": "vendorUser",
+        "configKey": "field"
+      },
+      {
+        "key": "vendorUser",
+        "before": "billToAddress",
+        "configKey": "field"
+      },
+      {
+        "key": "payDate",
+        "before": "termsAndConditions",
+        "configKey": "field"
+      },
+      {
+        "key": "termsAndConditions",
+        "before": "partnerInvoiceId",
+        "configKey": "field"
+      },
+      {
+        "key": "partnerInvoiceId",
+        "before": "sentAt",
+        "configKey": "field"
+      },
+      {
+        "key": "sentAt",
+        "before": "lineItems",
+        "configKey": "field"
+      },
+      {
+        "key": "lineItems",
+        "before": "manifest",
+        "configKey": "field"
+      },
+      {
+        "key": "manifest",
+        "before": "invoiceDueDate",
+        "configKey": "field"
+      },
+      {
+        "key": "billRateConDifferenceAmount",
+        "before": "$id",
+        "configKey": "field"
+      },
+      {
+        "key": "$id",
+        "before": "$externalId",
+        "configKey": "field"
+      },
+      {
+        "key": "$externalId",
+        "before": "$createdBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdBy",
+        "before": "$createdByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdByFullName",
+        "before": "$updatedBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedBy",
+        "before": "$updatedByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$version",
+        "before": "rowColorMap",
+        "configKey": "field"
+      },
+      {
+        "key": "rowColorMap",
+        "before": "sourceId",
+        "configKey": "field"
+      },
+      {
+        "key": "canvas",
+        "before": "codatPushOperationKey",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "codatPushOperationKey",
+        "before": "systemFingerprint",
+        "configKey": "field"
+      },
+      {
+        "key": "systemFingerprint",
+        "before": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "promptTokens",
+        "before": "billRateConPctOfDifference",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "billRateConPctOfDifference",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "billRateConPctOfRateConTotal",
+        "configKey": "field"
+      },
+      {
+        "key": "billRateConPctOfRateConTotal",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "externalBillId",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "externalBillId",
+        "before": "errorMessages",
+        "configKey": "field"
+      },
+      {
+        "key": "errorMessages",
+        "before": "lastExportedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "lastExportedAt",
+        "before": "totalExchangeRate",
+        "configKey": "field"
+      },
+      {
+        "key": "totalExchangeRate",
+        "before": "totalInOrgCurrency",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsExternalId",
+        "before": "msDynamicsExportError",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsExportError",
+        "before": "msDynamicsLastExportedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsLastExportedAt",
+        "before": "secondaryDocuments",
+        "configKey": "field"
+      },
+      {
+        "key": "secondaryDocuments",
+        "before": "msDynamicsExportStatus",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsExportStatus",
+        "before": "billExportStatus",
+        "configKey": "field"
+      },
+      {
+        "key": "billExportStatus",
+        "before": "paymentAllocations",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-light-grey",
+              "value": "pending",
+              "labelId": "Pending"
+            },
+            {
+              "color": "status-green",
+              "value": "successful",
+              "labelId": "Successful"
+            },
+            {
+              "color": "status-red",
+              "value": "notSuccessful",
+              "labelId": "Not successful"
+            }
+          ],
+          "statusMap": {
+            "pending": {
+              "color": "status-light-grey",
+              "labelId": "Pending"
+            },
+            "successful": {
+              "color": "status-green",
+              "labelId": "Successful"
+            },
+            "notSuccessful": {
+              "color": "status-red",
+              "labelId": "Not successful"
+            }
+          }
+        }
+      },
+      {
+        "key": "paymentAllocations",
+        "before": "carrierInvoiceOnFile__c",
+        "configKey": "field"
+      },
+      {
+        "key": "carrierInvoiceOnFile__c",
+        "type": {
+          "key": "select",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Carrier Invoice on File",
+        "before": "invoiceS__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "🟢",
+              "labelId": "🟢",
+              "isCustom": false
+            },
+            {
+              "value": "🔴",
+              "labelId": "🔴",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "invoiceS__c",
+        "type": {
+          "key": "fullId",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Invoice(s)",
+        "paths": [
+          "manifest.orders.invoices.fullId"
+        ],
+        "before": "freightAuditAndPay__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.orders.invoices.fullId})",
+        "typeConfig": {
+          "format": "INVOICE-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "freightAuditAndPay__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Freight Audit And Pay",
+        "before": "freightAuditAndPay2__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": true
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "freightAuditAndPay2__c",
+        "type": {
+          "key": "number",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Freight Audit and Pay 2",
+        "before": "manifestStatus__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isInteger": false,
+          "unitLabel": ""
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "manifestStatus__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Manifest Status",
+        "paths": [
+          "manifest.status"
+        ],
+        "before": "orderStatus__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New"
+            },
+            {
+              "color": "status-cyan",
+              "value": "planned",
+              "labelId": "Planned"
+            },
+            {
+              "color": "status-cyan",
+              "value": "dispatched",
+              "labelId": "Dispatched"
+            },
+            {
+              "color": "status-purple",
+              "value": "inTransit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-green",
+              "value": "completed",
+              "labelId": "Completed"
+            },
+            {
+              "color": "status-grey",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "drop",
+              "labelId": "Drop"
+            },
+            {
+              "color": "status-pink",
+              "value": "hook",
+              "labelId": "Hook"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ],
+          "statusMap": {
+            "new": {
+              "color": "status-grey",
+              "labelId": "New"
+            },
+            "drop": {
+              "color": "status-red",
+              "labelId": "Drop"
+            },
+            "hook": {
+              "color": "status-pink",
+              "labelId": "Hook"
+            },
+            "planned": {
+              "color": "status-cyan",
+              "labelId": "Planned"
+            },
+            "problem": {
+              "color": "status-grey",
+              "labelId": "Problem"
+            },
+            "completed": {
+              "color": "status-green",
+              "labelId": "Completed"
+            },
+            "inTransit": {
+              "color": "status-purple",
+              "labelId": "In transit"
+            },
+            "dispatched": {
+              "color": "status-cyan",
+              "labelId": "Dispatched"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "orderStatus__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Order Status",
+        "paths": [
+          "manifest.orders.status"
+        ],
+        "before": "manifestStatus2__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.orders.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New "
+            },
+            {
+              "color": "status-green",
+              "value": "accepted",
+              "labelId": "Accepted"
+            },
+            {
+              "color": "status-cyan",
+              "value": "booked",
+              "labelId": "Booked"
+            },
+            {
+              "color": "status-purple",
+              "value": "in transit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-grey",
+              "value": "invoiced",
+              "labelId": "Invoiced"
+            },
+            {
+              "color": "status-cyan",
+              "value": "tendered",
+              "labelId": "Tendered"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "rejected",
+              "labelId": "Rejected"
+            },
+            {
+              "color": "status-grey",
+              "value": "archived",
+              "labelId": "Archived"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "expired",
+              "labelId": "Expired"
+            },
+            {
+              "color": "status-red",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "cancelled",
+              "labelId": "Cancelled"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "manifestStatus2__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Manifest Status 2",
+        "paths": [
+          "manifest.status"
+        ],
+        "before": "now__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New"
+            },
+            {
+              "color": "status-cyan",
+              "value": "planned",
+              "labelId": "Planned"
+            },
+            {
+              "color": "status-cyan",
+              "value": "dispatched",
+              "labelId": "Dispatched"
+            },
+            {
+              "color": "status-purple",
+              "value": "inTransit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-green",
+              "value": "completed",
+              "labelId": "Completed"
+            },
+            {
+              "color": "status-grey",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "drop",
+              "labelId": "Drop"
+            },
+            {
+              "color": "status-pink",
+              "value": "hook",
+              "labelId": "Hook"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ],
+          "statusMap": {
+            "new": {
+              "color": "status-grey",
+              "labelId": "New"
+            },
+            "drop": {
+              "color": "status-red",
+              "labelId": "Drop"
+            },
+            "hook": {
+              "color": "status-pink",
+              "labelId": "Hook"
+            },
+            "planned": {
+              "color": "status-cyan",
+              "labelId": "Planned"
+            },
+            "problem": {
+              "color": "status-grey",
+              "labelId": "Problem"
+            },
+            "completed": {
+              "color": "status-green",
+              "labelId": "Completed"
+            },
+            "inTransit": {
+              "color": "status-purple",
+              "labelId": "In transit"
+            },
+            "dispatched": {
+              "color": "status-cyan",
+              "labelId": "Dispatched"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "now__c",
+        "type": {
+          "key": "dateTime",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Now",
+        "paths": [],
+        "before": "paidOn__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "now()",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "paidOn__c",
+        "type": {
+          "key": "dateTime",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Paid on",
+        "before": "$widgets",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "$widgets",
+        "before": "$widgetToOpen",
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "onUpdateBillTotalDefaultExchangeRate",
+        "before": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "aaa__Carrier_Invoice_on_File",
+        "configKey": "method"
+      },
+      {
+        "key": "aaa__Carrier_Invoice_on_File",
+        "event": "update",
+        "label": "aaa - Carrier Invoice on File",
+        "action": {
+          "$stub": true
+        },
+        "before": "$getWidgetSequence",
+        "summary": "",
+        "priority": 1,
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "carrierInvoiceOnFile__c",
+            "actionKey": "setValue",
+            "literalValue": "🟢"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$some": {
+                    "documents": {
+                      "documentType": {
+                        "$equals": "invoice"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": "aaaa__No_Carrier_Invoice",
+        "configKey": "method"
+      },
+      {
+        "key": "aaaa__No_Carrier_Invoice",
+        "event": "create",
+        "label": "aaaa - No Carrier Invoice",
+        "action": {
+          "$stub": true
+        },
+        "before": "$evaluateWidgets",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "carrierInvoiceOnFile__c",
+            "actionKey": "setValue",
+            "literalValue": "🔴"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "$evaluateWidgets",
+        "before": "bill_paid",
+        "configKey": "method"
+      },
+      {
+        "key": "bill_paid",
+        "event": "update",
+        "label": "bill paid",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_bill",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "paidOn__c",
+            "fromPath": "now__c",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "status": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$all": {
+                    "status": {
+                      "$equals": "paid"
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-06-21T11:40:46.316Z",
+    "createdBy": "3830fa40-460d-40e0-b9ea-4b736650dfee",
+    "targetKey": "bill",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "key": "weighscale__c",
+    "label": "WeighScale",
+    "configKey": "documentType",
+    "createdAt": "2026-03-09T15:12:27.607Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "commodity",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "Weight Scale Ticket",
+    "isAutoCreated": true,
+    "isCustomizable": true
+  },
+  {
+    "key": "milos_test__c",
+    "label": "Milos Test",
+    "configKey": "documentType",
+    "createdAt": "2026-03-23T19:58:38.994Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "objectKey": null,
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "To test new doc types",
+    "isAutoCreated": false,
+    "isCustomizable": false
+  }
+]

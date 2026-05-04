@@ -1,0 +1,23 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "7a211c04-ef20-4cfb-9c68-b62fe7945d33",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 21,
+      "formattedValue": "DOCT-21"
+    },
+    "$source": "manual",
+    "version": 2,
+    "$version": 1,
+    "$widgets": [],
+    "$createdAt": "2024-09-19T20:41:50.055Z",
+    "$createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$updatedAt": "2024-09-19T20:41:50.055Z",
+    "$updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$externalId": null,
+    "documentType": "legBillOfLading",
+    "rootObjectKey": "task",
+    "dataFormatVersion": "1"
+  }
+}

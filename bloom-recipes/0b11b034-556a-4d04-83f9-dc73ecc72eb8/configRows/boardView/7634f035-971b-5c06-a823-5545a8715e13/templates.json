@@ -1,0 +1,36 @@
+{
+  "id": "e712971a-ddb5-448c-97f3-b7bd49a74868",
+  "type": "boardView",
+  "name": "Templates",
+  "json": {
+    "id": "e712971a-ddb5-448c-97f3-b7bd49a74868",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "7634f035-971b-5c06-a823-5545a8715e13",
+    "filters": [],
+    "labelId": "Templates",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "templateFullId",
+      "templateName",
+      "templateDescription",
+      "createdAt"
+    ],
+    "createdAt": "2025-05-13T16:57:27.852Z",
+    "createdBy": "8028adf0-d6c1-44fb-8b1d-7bce0dd9d843",
+    "isDefault": false,
+    "updatedAt": "2025-05-13T16:57:27.852Z",
+    "updatedBy": "8028adf0-d6c1-44fb-8b1d-7bce0dd9d843",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "templateFullId": 86
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "templateFullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

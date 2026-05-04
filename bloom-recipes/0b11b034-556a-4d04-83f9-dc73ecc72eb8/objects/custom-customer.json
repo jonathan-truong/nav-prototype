@@ -1,0 +1,781 @@
+{
+  "configKey": "object",
+  "key": "$custom_customer",
+  "json": {
+    "key": "$custom_customer",
+    "fields": [
+      {
+        "key": "name",
+        "before": "availableCredit",
+        "configKey": "field"
+      },
+      {
+        "key": "availableCredit",
+        "type": "any",
+        "before": "invoicedAmount",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "invoicedAmount",
+        "before": "defaultCurrency",
+        "configKey": "field"
+      },
+      {
+        "key": "defaultCurrency",
+        "before": "unInvoicedAmount",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "USD",
+              "labelId": "US Dollar (USD)",
+              "isCustom": false
+            },
+            {
+              "value": "CAD",
+              "labelId": "Canadian Dollar (CAD)",
+              "isCustom": false
+            },
+            {
+              "value": "MXN",
+              "labelId": "Mexican Peso (MXN)",
+              "isCustom": false
+            },
+            {
+              "value": "AUD",
+              "labelId": "Australian Dollar (AUD)",
+              "isCustom": false
+            },
+            {
+              "value": "NZD",
+              "labelId": "New Zealand Dollar (NZD)",
+              "isCustom": false
+            },
+            {
+              "value": "EUR",
+              "labelId": "Euro (EUR)",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "unInvoicedAmount",
+        "before": "status",
+        "configKey": "field"
+      },
+      {
+        "key": "status",
+        "before": "creditLimit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "active",
+              "labelId": "Active"
+            },
+            {
+              "color": "status-cyan",
+              "value": "inactive",
+              "labelId": "Inactive"
+            }
+          ]
+        }
+      },
+      {
+        "key": "creditLimit",
+        "before": "customerType",
+        "configKey": "field"
+      },
+      {
+        "key": "customerType",
+        "before": "companyEmail",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "shipper",
+              "labelId": "Shipper",
+              "isCustom": false
+            },
+            {
+              "value": "receiver",
+              "labelId": "Receiver",
+              "isCustom": false
+            },
+            {
+              "value": "broker",
+              "labelId": "Broker",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "companyEmail",
+        "before": "companyPhone",
+        "configKey": "field"
+      },
+      {
+        "key": "headOfficeAddress",
+        "before": "isTaxExempt",
+        "configKey": "field"
+      },
+      {
+        "key": "isTaxExempt",
+        "before": "$createdBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdBy",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "msDynamicsExternalId",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsExternalId",
+        "before": "msDynamicsExternalNumber",
+        "configKey": "field"
+      },
+      {
+        "key": "msDynamicsExportStatus",
+        "before": "defaultInvoiceDocuments",
+        "configKey": "field"
+      },
+      {
+        "key": "defaultInvoiceDocuments",
+        "before": "combineDocumentsByDefault",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "ace",
+              "labelId": "ACE",
+              "isCustom": false
+            },
+            {
+              "value": "aci",
+              "labelId": "ACI",
+              "isCustom": false
+            },
+            {
+              "value": "bill",
+              "labelId": "Bill",
+              "isCustom": false
+            },
+            {
+              "value": "legBillOfLading",
+              "labelId": "Leg bill of lading",
+              "isCustom": false
+            },
+            {
+              "value": "billOfLading",
+              "labelId": "Bill of lading",
+              "isCustom": false
+            },
+            {
+              "value": "shipmentBillOfLading",
+              "labelId": "Shipment bill of lading",
+              "isCustom": false
+            },
+            {
+              "value": "commercialInvoice",
+              "labelId": "Commercial invoice",
+              "isCustom": false
+            },
+            {
+              "value": "complianceWSIB",
+              "labelId": "WSIB (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceDriver",
+              "labelId": "Driver (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceAuto",
+              "labelId": "Auto (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceCargo",
+              "labelId": "Cargo (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "labels",
+              "labelId": "Labels",
+              "isCustom": false
+            },
+            {
+              "value": "invoice",
+              "labelId": "Invoice",
+              "isCustom": false
+            },
+            {
+              "value": "offloadManifest",
+              "labelId": "Offload manifest",
+              "isCustom": false
+            },
+            {
+              "value": "preloadManifest",
+              "labelId": "Preload manifest",
+              "isCustom": false
+            },
+            {
+              "value": "paps",
+              "labelId": "PAPS",
+              "isCustom": false
+            },
+            {
+              "value": "payStub",
+              "labelId": "Pay stub",
+              "isCustom": false
+            },
+            {
+              "value": "proofOfPickup",
+              "labelId": "Proof of pickup",
+              "isCustom": false
+            },
+            {
+              "value": "proofOfDelivery",
+              "labelId": "Proof of delivery",
+              "isCustom": false
+            },
+            {
+              "value": "quote",
+              "labelId": "Quote",
+              "isCustom": false
+            },
+            {
+              "value": "rateConfirmation",
+              "labelId": "Rate confirmation",
+              "isCustom": false
+            },
+            {
+              "value": "ucc128",
+              "labelId": "UCC-128",
+              "isCustom": false
+            },
+            {
+              "value": "partnerCompliance",
+              "labelId": "Partner compliance",
+              "isCustom": false
+            },
+            {
+              "value": "autoLiability",
+              "labelId": "Auto liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "generalLiability",
+              "labelId": "General liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "cargoInsurance",
+              "labelId": "Cargo insurance",
+              "isCustom": false
+            },
+            {
+              "value": "workersCompensation",
+              "labelId": "Workers' compensation insurance",
+              "isCustom": false
+            },
+            {
+              "value": "hazardousMaterials",
+              "labelId": "Hazardous materials certification",
+              "isCustom": false
+            },
+            {
+              "value": "reeferBreakdown",
+              "labelId": "Reefer breakdown insurance",
+              "isCustom": false
+            },
+            {
+              "value": "ctpat",
+              "labelId": "C-TPAT certification",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            },
+            {
+              "value": "bond",
+              "labelId": "Bond",
+              "isCustom": false
+            },
+            {
+              "value": "customerSOP",
+              "labelId": "Customer SOP",
+              "isCustom": false
+            },
+            {
+              "value": "customerPO",
+              "labelId": "Customer PO",
+              "isCustom": false
+            }
+          ],
+          "derivedOptions": {
+            "rootConfigKey": "documentType"
+          }
+        }
+      },
+      {
+        "key": "combineDocumentsByDefault",
+        "before": "headOfficeFormattedAddress",
+        "configKey": "field"
+      },
+      {
+        "key": "headOfficeFormattedAddress",
+        "before": "lastExportedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "lastExportedAt",
+        "before": "customerExportStatus",
+        "configKey": "field"
+      },
+      {
+        "key": "customerExportStatus",
+        "before": "mapMarkers",
+        "configKey": "field"
+      },
+      {
+        "key": "mapMarkers",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "externalCustomerId",
+        "configKey": "field"
+      },
+      {
+        "key": "externalCustomerId",
+        "before": "formattedBusinessHours",
+        "configKey": "field"
+      },
+      {
+        "key": "formattedBusinessHours",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "rateDateCalculationSource",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "rateDateCalculationSource",
+        "before": "tariffs",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "pickupDate",
+              "labelId": "Pickup date",
+              "isCustom": false
+            },
+            {
+              "value": "deliveryDate",
+              "labelId": "Delivery date",
+              "isCustom": false
+            },
+            {
+              "value": "orderCreationDate",
+              "labelId": "Order creation date",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "tariffs",
+        "before": "etaDelayNotifyEnabled",
+        "configKey": "field"
+      },
+      {
+        "key": "etaDelayNotifyEnabled",
+        "before": "etaDelayNotifyLabel",
+        "configKey": "field"
+      },
+      {
+        "key": "etaDelayNotifyLimit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "oneMinute",
+              "labelId": "1 min",
+              "isCustom": false
+            },
+            {
+              "value": "fiveMinutes",
+              "labelId": "5 mins",
+              "isCustom": false
+            },
+            {
+              "value": "tenMinutes",
+              "labelId": "10 mins",
+              "isCustom": false
+            },
+            {
+              "value": "fifteenMinutes",
+              "labelId": "15 mins",
+              "isCustom": false
+            },
+            {
+              "value": "thirtyMinutes",
+              "labelId": "30 mins",
+              "isCustom": false
+            },
+            {
+              "value": "fortyfiveMinutes",
+              "labelId": "45 mins",
+              "isCustom": false
+            },
+            {
+              "value": "oneHour",
+              "labelId": "1 hour",
+              "isCustom": false
+            },
+            {
+              "value": "twoHours",
+              "labelId": "2 hours",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "distanceProviderUsed",
+        "before": "portalBoardId",
+        "configKey": "field"
+      },
+      {
+        "key": "portalBoardId",
+        "before": "portalNetworkInvitationIds",
+        "configKey": "field"
+      },
+      {
+        "key": "portalNetworkInvitationIds",
+        "before": "distanceProviderVersion",
+        "configKey": "field"
+      },
+      {
+        "key": "distanceProviderVersion",
+        "before": "customerRateCards",
+        "configKey": "field"
+      },
+      {
+        "key": "customerRateCards",
+        "before": "dedicatedCarrier__c",
+        "configKey": "field"
+      },
+      {
+        "key": "dedicatedCarrier__c",
+        "type": {
+          "key": "partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Dedicated Carrier",
+        "before": "customsBroker__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "customsBroker__c",
+        "type": "text",
+        "label": "Customs Broker",
+        "before": "moneyField__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "description": "Customs broker",
+        "isImportable": true
+      },
+      {
+        "key": "moneyField__c",
+        "type": "money",
+        "label": "Money field",
+        "before": "emailNotifs__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "emailNotifs__c",
+        "type": "toggle",
+        "label": "Email notifs",
+        "before": "customerOrders__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "customerOrders__c",
+        "type": {
+          "key": "order",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Customer Orders",
+        "before": "creditLimit__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "creditLimit__c",
+        "type": "money",
+        "label": "Credit Limit",
+        "before": "countableQuotes__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "countableQuotes__c",
+        "type": {
+          "key": "quote",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "countableQuotes",
+        "before": "assignedTo__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "description": "Quotes whose values should count towards pendingAmount",
+        "isImportable": true
+      },
+      {
+        "key": "assignedTo__c",
+        "type": "any",
+        "label": "Assigned to",
+        "paths": [
+          "commissionedUsers.name"
+        ],
+        "before": "currency__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({commissionedUsers.name})",
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "currency__c",
+        "type": "multiSelect",
+        "label": "Currency",
+        "before": "usId__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "usd",
+              "labelId": "USD",
+              "isCustom": false
+            },
+            {
+              "value": "cad",
+              "labelId": "CAD",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "usId__c",
+        "type": "fullId",
+        "label": "US ID",
+        "before": "caId__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "format": "CU-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "caId__c",
+        "type": "fullId",
+        "label": "CA ID",
+        "before": "usCustomerId__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "format": "CC-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "usCustomerId__c",
+        "type": "text",
+        "label": "US Customer ID",
+        "before": "caCustomerId__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "caCustomerId__c",
+        "type": "text",
+        "label": "CA Customer ID",
+        "before": "requiredDocs__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "requiredDocs__c",
+        "type": "multiSelect",
+        "label": "Required Docs",
+        "before": "website__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "pop",
+              "labelId": "POP",
+              "isCustom": false
+            },
+            {
+              "value": "pod",
+              "labelId": "POD",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "website__c",
+        "type": "url",
+        "label": "Website",
+        "before": "zone__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_customer",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "zone__c",
+        "type": "text",
+        "label": "Zone",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {}
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-03-20T15:05:15.735Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "customer",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

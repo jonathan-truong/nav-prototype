@@ -1,0 +1,87 @@
+{
+  "id": "fe84db5c-3b4d-4bfe-ab56-d28baad46e15",
+  "type": "childBoard",
+  "name": "Adam's Board",
+  "json": {
+    "id": "fe84db5c-3b4d-4bfe-ab56-d28baad46e15",
+    "icon": "👨‍💻",
+    "source": "manual",
+    "labelId": "Adam's Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "services",
+      "lastUpdated"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "manifests",
+        "totalEarnings",
+        "totalCost",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "orderETAStatus",
+        "deliveryEta",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "services",
+        "lastUpdated"
+      ],
+      "description": "This is a board of Adam's Orders",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "0114ff95-f466-491f-ada0-cd530fe0d82c"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

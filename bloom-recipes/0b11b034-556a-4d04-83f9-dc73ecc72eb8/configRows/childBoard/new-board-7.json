@@ -1,0 +1,74 @@
+{
+  "id": "a3f13239-1602-4681-9153-9b54409d6e42",
+  "type": "childBoard",
+  "name": "New Board",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "New Board",
+    "parents": [
+      {
+        "id": "5015070c-0404-51da-b2b8-618b7146f580",
+        "key": "manifest",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "objectKey": "manifest",
+    "parentKey": "manifest",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "name",
+      "status",
+      "totalMiles",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt",
+      "specialInstructions",
+      "lastSeenTime",
+      "hughsep10__c",
+      "hughsep10B__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "name",
+        "status",
+        "totalMiles",
+        "ordersFullId",
+        "tasksFullId",
+        "dispatchedAt",
+        "specialInstructions",
+        "lastSeenTime",
+        "hughsep10__c",
+        "hughsep10B__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "partner",
+            "value": [
+              "ee7844aa-93fc-49c4-8af2-588c6f766080"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "partner"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

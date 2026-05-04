@@ -1,0 +1,53 @@
+{
+  "id": "a4b6ea3d-b9f4-4aaf-8e30-ab2b736d2621",
+  "type": "boardView",
+  "name": "Core Opertations",
+  "json": {
+    "id": "f3adcb58-a4bc-441d-b535-85d58062b02a",
+    "orgId": "c25888e4-b717-4ef8-8369-f0fd6977db71",
+    "boardId": "5e303445-0370-580b-88b5-ddfec2b1d0f4",
+    "filters": [
+      {
+        "path": "category__c",
+        "value": [
+          "coreOperations"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "category__c"
+      }
+    ],
+    "labelId": "Core Opertations",
+    "ordinal": 3,
+    "isPinned": false,
+    "columnIds": [
+      "sortOrder__c",
+      "status__c",
+      "title__c",
+      "description__c",
+      "videoLink__c",
+      "helpCentreLink__c",
+      "module__c",
+      "category__c",
+      "difficulty__c",
+      "estimatedTimeToCompletion__c",
+      "businessType__c",
+      "notes__c"
+    ],
+    "createdAt": "2025-06-19T14:17:56.385Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-06-19T14:46:55.257Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "title__c": 268
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "sortOrder__c",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "title__c"
+  }
+}

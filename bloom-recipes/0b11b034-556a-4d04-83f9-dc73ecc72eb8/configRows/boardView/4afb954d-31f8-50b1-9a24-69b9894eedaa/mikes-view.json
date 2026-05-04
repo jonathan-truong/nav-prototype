@@ -1,0 +1,27 @@
+{
+  "id": "3e49c4d0-a4b6-461e-b5f1-4d71360fa7ce",
+  "type": "boardView",
+  "name": "Mikes View",
+  "json": {
+    "id": "defaultView",
+    "boardId": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+    "filters": [],
+    "labelId": "Mikes View",
+    "isPinned": false,
+    "columnIds": [
+      "relatedOrderFullId",
+      "relatedManifestFullId",
+      "status",
+      "taskType",
+      "description",
+      "assignees"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "setting up tasks to be more digestible",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc"
+  }
+}

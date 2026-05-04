@@ -1,0 +1,47 @@
+{
+  "id": "d0d0b5ca-ece1-4fb2-bfaa-0867fc940c05",
+  "type": "boardView",
+  "name": "Map view",
+  "json": {
+    "id": "d0d0b5ca-ece1-4fb2-bfaa-0867fc940c05",
+    "name": "Map view",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "filters": [],
+    "labelId": "Map view",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "name",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt"
+    ],
+    "createdAt": "2024-08-19T20:21:52.232Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-08-26T15:26:03.067Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {},
+    "layoutOptions": {
+      "endDatePath": "lastDeliveryTaskTime",
+      "cardColumnIds": [
+        "fullId"
+      ],
+      "startDatePath": "firstPickupTaskTime"
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

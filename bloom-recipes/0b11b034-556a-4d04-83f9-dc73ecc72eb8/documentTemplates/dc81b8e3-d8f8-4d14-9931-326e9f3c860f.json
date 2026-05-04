@@ -1,0 +1,17 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "dc81b8e3-d8f8-4d14-9931-326e9f3c860f",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 43,
+      "formattedValue": "DOCT-43"
+    },
+    "$source": "manual",
+    "version": 1,
+    "$widgets": [],
+    "documentType": "billOfLading",
+    "rootObjectKey": "order",
+    "dataFormatVersion": "1"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "71ebb8a9-36f6-416a-b475-816142a5f596",
+  "type": "childBoard",
+  "name": "Customer Visibility",
+  "json": {
+    "icon": "👀",
+    "source": "manual",
+    "labelId": "Customer Visibility",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "assetWithLastKnownLocation",
+      "loadTenderNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "deliveryEta",
+      "customer",
+      "csrs",
+      "accountManagers"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "assetWithLastKnownLocation",
+        "loadTenderNum",
+        "shipper_formattedAddress",
+        "requestedPickupWindow",
+        "consignee_formattedAddress",
+        "requestedDeliveryWindow",
+        "deliveryEta",
+        "customer",
+        "csrs",
+        "accountManagers"
+      ],
+      "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByColumnKey": "fullId",
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "templateKey": "customerVisibility"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_manifest_external",
+  "json": {
+    "key": "$custom_manifest_external",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "assets",
+            "path": "assets",
+            "before": "totalRevenue",
+            "isHidden": true,
+            "configKey": "detailField",
+            "widgetKey": "manifest-SelectAssets",
+            "isEditable": false
+          },
+          {
+            "key": "totalRevenue",
+            "path": "totalRevenue",
+            "before": "status",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "name",
+            "configKey": "detailField",
+            "isEditable": true
+          },
+          {
+            "key": "name",
+            "configKey": "detailField",
+            "isEditable": true
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "fields": [],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "fields": [
+          {
+            "key": "specialInstructions",
+            "configKey": "detailField",
+            "isEditable": true
+          }
+        ],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "dispatch",
+        "fields": [
+          {
+            "key": "dispatcherEmail",
+            "before": "dispatchedOn",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatchedOn",
+            "path": "",
+            "before": null,
+            "configKey": "detailField",
+            "isEditable": false
+          }
+        ],
+        "labelId": "Dispatch",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "planning",
+        "label": "planning",
+        "fields": [
+          {
+            "key": "totalCost",
+            "configKey": "detailField",
+            "widgetKey": "manifest-AddPartnerAndManualCosts"
+          }
+        ],
+        "labelId": "planning",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "signeeDetails",
+        "fields": [
+          {
+            "key": "actionedAt",
+            "before": "signeeName",
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-07-03T19:54:41.618Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "manifest_external",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "e67a29d7-0892-407d-88b6-6d92f12c558f",
+  "type": "boardView",
+  "name": "sdfdsf",
+  "json": {
+    "id": "e67a29d7-0892-407d-88b6-6d92f12c558f",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "37c0520e-841a-4a29-bd37-a8615ed1d407",
+    "filters": [],
+    "labelId": "sdfdsf",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "partner",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "specialInstructions",
+      "sellQuoteFullId",
+      "totalEarnings",
+      "totalCost",
+      "totalMiles",
+      "platformTags",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "accessorials",
+      "margin"
+    ],
+    "createdAt": "2023-10-20T15:06:41.971Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2023-10-20T17:38:23.781Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

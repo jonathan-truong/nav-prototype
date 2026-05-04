@@ -1,0 +1,47 @@
+{
+  "id": "37f1c508-4684-428d-b59e-8ccd55aa123d",
+  "type": "boardView",
+  "name": "Auto Liability Insurance",
+  "json": {
+    "id": "ce985d67-e591-43fd-91cd-95d90d4c1240",
+    "orgId": "9fd81271-0a24-43aa-b5fb-d5ff275265b0",
+    "boardId": "38957069-c3f2-5eef-a60a-f8e1e47dd177",
+    "filters": [
+      {
+        "path": "services",
+        "value": [
+          "autoLiability"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "services"
+      }
+    ],
+    "labelId": "Auto Liability Insurance",
+    "isPinned": false,
+    "columnIds": [
+      "services",
+      "partner",
+      "providerName",
+      "insuranceAmount",
+      "status",
+      "policyNumber",
+      "expiryDate",
+      "effectiveDate",
+      "documentCountLabel"
+    ],
+    "createdAt": "2025-01-06T15:23:08.072Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-01-06T15:23:08.072Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": "This View shows all Partner Carriers & their Auto Liability Insurance Details.",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "services"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "039be706-9cd0-4441-873f-353b1139beb2",
+  "type": "boardView",
+  "name": "Demo",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "938b98a3-4949-41e8-a897-8dcb09841986",
+    "filters": [],
+    "labelId": "Demo",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "cargoValue__c",
+      "partnerStatus__c",
+      "partner",
+      "customer",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "manifests"
+    ],
+    "createdAt": "2024-07-09T14:09:26.006Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2024-10-30T14:43:10.630Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "cargoValue__c"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

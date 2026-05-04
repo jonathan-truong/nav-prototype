@@ -1,0 +1,32 @@
+{
+  "id": "27e1d6e2-428c-4bb0-820e-306a141f2ce8",
+  "type": "boardView",
+  "name": "QtyType",
+  "json": {
+    "id": "27e1d6e2-428c-4bb0-820e-306a141f2ce8",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "b0db0312-f7c5-5533-8086-e3e54441df57",
+    "filters": [],
+    "labelId": "QtyType",
+    "isPinned": false,
+    "columnIds": [
+      "description",
+      "quantity",
+      "commodityType"
+    ],
+    "createdAt": "2025-05-06T15:41:34.198Z",
+    "createdBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "isDefault": false,
+    "updatedAt": "2025-05-06T15:53:54.206Z",
+    "updatedBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "description"
+    ],
+    "orderByColumnKey": null,
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "7eded8d1-185a-4dd5-8a78-c8da0aa49aa9",
+  "type": "boardView",
+  "name": "test",
+  "json": {
+    "id": "defaultView",
+    "boardId": "aec04cf4-931e-53c2-b58a-0cd0e27658ee",
+    "filters": [],
+    "labelId": "test",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "name",
+      "fuelIndexRegion",
+      "fuelIndexSource",
+      "recentValidFuelIndexRate",
+      "fuelIndexEffectiveDate",
+      "calculationMethod",
+      "formattedBreakpoints",
+      "$updatedAt",
+      "$createdAt"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

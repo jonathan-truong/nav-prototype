@@ -1,0 +1,148 @@
+{
+  "configKey": "object",
+  "key": "$custom_asset",
+  "json": {
+    "key": "$custom_asset",
+    "fields": [
+      {
+        "key": "assignedUsers",
+        "before": "length",
+        "configKey": "field"
+      },
+      {
+        "key": "length",
+        "before": "width",
+        "configKey": "field"
+      },
+      {
+        "key": "commodityType",
+        "before": "lineItems",
+        "configKey": "field"
+      },
+      {
+        "key": "lineItems",
+        "before": "quantity",
+        "configKey": "field"
+      },
+      {
+        "key": "quantity",
+        "before": "tags",
+        "configKey": "field"
+      },
+      {
+        "key": "tags",
+        "before": "managers",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "managers",
+        "before": "llmPromptSuggestions",
+        "configKey": "field"
+      },
+      {
+        "key": "llmPromptSuggestions",
+        "before": "mapMarkers",
+        "configKey": "field"
+      },
+      {
+        "key": "mapMarkers",
+        "before": "terminalId",
+        "configKey": "field"
+      },
+      {
+        "key": "terminalId",
+        "before": "terminalProvider",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "terminalProvider",
+        "before": "isActive",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isActive",
+        "before": "newTest1__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "newTest1__c",
+        "type": "text",
+        "label": "New Test 1",
+        "before": "newTest2__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_asset",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "newTest2__c",
+        "type": "text",
+        "label": "new test 2",
+        "before": "lastSeenTest__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_asset",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "lastSeenTest__c",
+        "type": "text",
+        "label": "Last seen test",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_asset",
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueEvent",
+        "before": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "$evaluateWidgets",
+        "before": null,
+        "configKey": "method"
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-01-18T17:19:08.352Z",
+    "createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "targetKey": "asset",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

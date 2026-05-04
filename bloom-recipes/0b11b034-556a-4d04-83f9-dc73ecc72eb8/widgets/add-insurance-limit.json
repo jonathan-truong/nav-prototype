@@ -1,0 +1,62 @@
+{
+  "configKey": "widget",
+  "key": "addInsuranceLimit__c",
+  "json": {
+    "key": "addInsuranceLimit__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "liabilityInsurance__c",
+        "path": "liabilityInsurance__c",
+        "field": {
+          "key": "liabilityInsurance__c",
+          "type": {
+            "key": "money",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Liability insurance",
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "canBeNegative": false
+          },
+          "$declarator": {
+            "key": "$custom_partner",
+            "ref": true,
+            "configKey": "object"
+          },
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "addInsuranceLimit__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Add insurance details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-03-06T15:27:21.986Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

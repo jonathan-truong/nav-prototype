@@ -1,0 +1,213 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_platformCustomer",
+  "json": {
+    "key": "$custom_platformCustomer",
+    "label": "Internal",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "logoUrl",
+            "before": "name",
+            "configKey": "detailField"
+          },
+          {
+            "key": "businessHours",
+            "before": "requiredDocs__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "requiredDocs__c",
+            "path": "requiredDocs__c",
+            "before": "dedicatedCarrier__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "dedicatedCarrier__c",
+            "path": "dedicatedCarrier__c",
+            "before": "status",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "creditLimit",
+        "fields": [
+          {
+            "key": "creditLimitCurrency",
+            "before": "creditCustomerLimit",
+            "configKey": "detailField"
+          },
+          {
+            "key": "creditLimitAvailable",
+            "before": "availableCredit",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "availableCredit",
+            "path": "availableCredit",
+            "before": "creditLimitInvoiced",
+            "configKey": "detailField"
+          },
+          {
+            "key": "creditLimitInvoiced",
+            "before": "creditLimitUnInvoiced",
+            "configKey": "detailField"
+          },
+          {
+            "key": "creditLimitUnInvoiced",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Credit limit",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "defaultPaymentTerm",
+            "before": "defaultAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "defaultAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "defaultPlatformTags",
+            "before": "defaultAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "delayAlerts",
+            "path": "",
+            "before": "defaultOrderNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "defaultOrderNotes",
+            "before": "isActive",
+            "configKey": "detailField"
+          },
+          {
+            "key": "isActive",
+            "path": "isActive",
+            "before": "customsBroker__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customsBroker__c",
+            "path": "customsBroker__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "people",
+        "before": "distanceProvider",
+        "fields": [
+          {
+            "key": "commissionees",
+            "before": "assignedTo__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assignedTo__c",
+            "path": "assignedTo__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "People",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "distanceProvider",
+        "before": "rating",
+        "fields": [
+          {
+            "key": "distanceProviderUsed",
+            "before": "distanceProviderVersion",
+            "configKey": "detailField"
+          },
+          {
+            "key": "distanceProviderVersion",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Distance provider",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "rating",
+        "before": "leadInformation",
+        "fields": [
+          {
+            "key": "rateDateCalculationSource",
+            "before": "tariffs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "tariffs",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Rating",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "leadInformation",
+        "label": "Lead Information",
+        "before": "orders",
+        "fields": [],
+        "labelId": "Lead Information",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "orders",
+        "label": "Orders",
+        "fields": [
+          {
+            "key": "customerOrders__c",
+            "path": "customerOrders__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Orders",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-04-23T23:55:08.148Z",
+    "createdBy": "__migration",
+    "objectKey": "customer",
+    "targetKey": "platformCustomer",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

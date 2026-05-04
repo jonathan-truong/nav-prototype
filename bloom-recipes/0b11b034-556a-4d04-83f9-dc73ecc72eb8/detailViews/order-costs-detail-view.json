@@ -1,0 +1,35 @@
+{
+  "configKey": "detailView",
+  "key": "orderCostsDetailView__c",
+  "json": {
+    "key": "orderCostsDetailView__c",
+    "sections": [
+      {
+        "key": "general",
+        "label": "Order Costs Details",
+        "fields": [
+          {
+            "key": "name",
+            "path": "name",
+            "configKey": "detailField",
+            "isEditable": true
+          },
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "configKey": "detailField",
+            "isEditable": false
+          }
+        ],
+        "labelId": "general",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-06-05T21:48:30.768Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "orderCosts__c",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

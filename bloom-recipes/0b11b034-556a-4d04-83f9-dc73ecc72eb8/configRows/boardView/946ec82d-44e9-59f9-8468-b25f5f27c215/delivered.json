@@ -1,0 +1,42 @@
+{
+  "id": "54d3e28e-3cd2-4769-8e7c-f9fb19d222a7",
+  "type": "boardView",
+  "name": "Delivered",
+  "json": {
+    "key": "delivered",
+    "boardId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "delivered"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Delivered",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "requestedPickupWindow",
+      "shipper_formattedAddress",
+      "requestedDeliveryWindow",
+      "consignee_formattedAddress",
+      "commodities",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "specialInstructions",
+      "totalMiles",
+      "loadTenderNum",
+      "poNum",
+      "refNum"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "mainLinkColumnKey": ""
+  }
+}

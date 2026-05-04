@@ -1,0 +1,87 @@
+{
+  "configKey": "object",
+  "key": "$custom_payStub",
+  "json": {
+    "key": "$custom_payStub",
+    "fields": [
+      {
+        "key": "approvedAt",
+        "before": "notes",
+        "configKey": "field"
+      },
+      {
+        "key": "notes",
+        "before": "sentAt",
+        "configKey": "field"
+      },
+      {
+        "key": "manifests",
+        "before": "llmPromptSuggestions",
+        "configKey": "field"
+      },
+      {
+        "key": "llmPromptSuggestions",
+        "before": "documentCountLabel",
+        "configKey": "field"
+      },
+      {
+        "key": "documentCountLabel",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "orders__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "orders__c",
+        "type": "any",
+        "label": "Orders",
+        "paths": [
+          "manifests.orders.fullId"
+        ],
+        "before": "customers__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifests.orders.fullId})",
+        "typeConfig": {
+          "format": "O-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_payStub",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "customers__c",
+        "type": "any",
+        "label": "Customers",
+        "paths": [
+          "manifests.customerNames"
+        ],
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifests.customerNames})",
+        "$declarator": {
+          "key": "$custom_payStub",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-05-28T16:44:08.453Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "payStub",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

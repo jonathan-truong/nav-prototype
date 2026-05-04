@@ -1,0 +1,81 @@
+{
+  "id": "a4badcf6-0c55-487e-ac10-3c7bc0ec2525",
+  "type": "boardView",
+  "name": "All Tasks",
+  "json": {
+    "id": "a4badcf6-0c55-487e-ac10-3c7bc0ec2525",
+    "name": "All Tasks",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+    "filters": [
+      {
+        "path": "relatedManifest",
+        "value": [],
+        "operator": "empty",
+        "fieldType": "ConnectionField",
+        "filterKey": "manifestFullId"
+      }
+    ],
+    "labelId": "All Tasks",
+    "isPinned": true,
+    "columnIds": [
+      "fullId",
+      "taskType",
+      "description",
+      "status",
+      "orderFullId",
+      "manifestName",
+      "manifestFullId",
+      "legPickupTime__c",
+      "legDeliveryTime__c",
+      "containerNo__c",
+      "customer",
+      "customerSurfaceTest__c",
+      "legs",
+      "legOriginName",
+      "origin",
+      "originPostCode",
+      "originRequestedTime",
+      "originCompletedTime",
+      "originArrivalTime",
+      "fromLocation",
+      "legDestinationName",
+      "destination",
+      "destinationPostCode",
+      "legDestinationTaskType",
+      "destinationRequestedTime",
+      "destinationCompletedTime",
+      "destinationArrivalTime",
+      "toLocation",
+      "commodities",
+      "totalCommoditiesWeightFormatted",
+      "platformTags",
+      "shipper",
+      "previousLegStatus",
+      "previousLeg",
+      "stopLocation__c",
+      "legPositionInOrder",
+      "partner",
+      "stops",
+      "stop"
+    ],
+    "createdAt": "2024-04-01T17:25:27.632Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2026-03-12T19:25:27.871Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "shipper": 244,
+      "stopLocation__c": 245.8695652173913,
+      "previousLegStatus": 242
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

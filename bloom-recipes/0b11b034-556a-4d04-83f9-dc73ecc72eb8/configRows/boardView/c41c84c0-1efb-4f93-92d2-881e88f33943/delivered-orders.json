@@ -1,0 +1,47 @@
+{
+  "id": "5842ebf5-d081-4eca-820b-c6fbf8d8bbe2",
+  "type": "boardView",
+  "name": "Delivered Orders",
+  "json": {
+    "layout": "table",
+    "boardId": "c41c84c0-1efb-4f93-92d2-881e88f33943",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "delivered"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Delivered Orders",
+    "ordinal": 3,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "assetWithLastKnownLocation",
+      "loadTenderNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "deliveryEta",
+      "customer",
+      "csrs",
+      "accountManagers"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

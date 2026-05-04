@@ -1,0 +1,101 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_financialLineItem",
+  "json": {
+    "key": "$custom_financialLineItem",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "financialLineItemDetails",
+        "before": "breakdown",
+        "fields": [
+          {
+            "key": "order",
+            "path": "order",
+            "before": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "before": "type",
+            "configKey": "detailField"
+          },
+          {
+            "key": "type",
+            "before": "category",
+            "configKey": "detailField"
+          },
+          {
+            "key": "category",
+            "before": "quote",
+            "configKey": "detailField"
+          },
+          {
+            "key": "quote",
+            "path": "quote",
+            "before": "description",
+            "configKey": "detailField"
+          },
+          {
+            "key": "description",
+            "before": "financialLineItemDestination",
+            "configKey": "detailField"
+          },
+          {
+            "key": "financialLineItemDestination",
+            "before": "externalFinancialLineItemId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "externalFinancialLineItemId",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financial Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "breakdown",
+        "before": "connections",
+        "fields": [
+          {
+            "key": "quantity",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Breakdown",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "connections",
+        "before": "details",
+        "fields": [
+          {
+            "key": "connections",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Connections",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "label": "GL Code Details",
+        "before": null,
+        "fields": [],
+        "labelId": "GL Code Details",
+        "isHidden": true,
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "financialLineItem",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

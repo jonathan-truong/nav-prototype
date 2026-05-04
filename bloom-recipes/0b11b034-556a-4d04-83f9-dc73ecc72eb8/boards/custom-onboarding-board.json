@@ -1,0 +1,198 @@
+{
+  "configKey": "board",
+  "key": "$custom_OnboardingBoard__c",
+  "json": {
+    "key": "$custom_OnboardingBoard__c",
+    "columns": [
+      {
+        "key": "description__c",
+        "path": "description__c",
+        "labelId": "Description",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "videoLink__c",
+        "path": "videoLink__c",
+        "labelId": "Video Link",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "helpCentreLink__c",
+        "path": "helpCentreLink__c",
+        "labelId": "Help Centre Link",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "category__c",
+        "path": "category__c",
+        "labelId": "Category",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "sortOrder__c",
+        "path": "sortOrder__c",
+        "labelId": "Sort Order",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "difficulty__c",
+        "path": "difficulty__c",
+        "labelId": "Difficulty",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "estimatedTimeToCompletion__c",
+        "path": "estimatedTimeToCompletion__c",
+        "labelId": "Estimated Time to Completion",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "module__c",
+        "path": "module__c",
+        "labelId": "Module",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "status__c",
+        "path": "status__c",
+        "labelId": "Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "notes__c",
+        "path": "notes__c",
+        "labelId": "Notes",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "title__c",
+        "path": "title__c",
+        "labelId": "Title",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "businessType__c",
+        "path": "businessType__c",
+        "labelId": "Business Type",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "description__c",
+        "path": "description__c",
+        "labelId": "Description",
+        "columnKey": "description__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "videoLink__c",
+        "path": "videoLink__c",
+        "labelId": "Video Link",
+        "columnKey": "videoLink__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "helpCentreLink__c",
+        "path": "helpCentreLink__c",
+        "labelId": "Help Centre Link",
+        "columnKey": "helpCentreLink__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "category__c",
+        "path": "category__c",
+        "labelId": "Category",
+        "columnKey": "category__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "sortOrder__c",
+        "path": "sortOrder__c",
+        "labelId": "Sort Order",
+        "columnKey": "sortOrder__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "difficulty__c",
+        "path": "difficulty__c",
+        "labelId": "Difficulty",
+        "columnKey": "difficulty__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "estimatedTimeToCompletion__c",
+        "path": "estimatedTimeToCompletion__c",
+        "labelId": "Estimated Time to Completion",
+        "columnKey": "estimatedTimeToCompletion__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "module__c",
+        "path": "module__c",
+        "labelId": "Module",
+        "columnKey": "module__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "status__c",
+        "path": "status__c",
+        "labelId": "Status",
+        "columnKey": "status__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "notes__c",
+        "path": "notes__c",
+        "labelId": "Notes",
+        "columnKey": "notes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "title__c",
+        "path": "title__c",
+        "labelId": "Title",
+        "columnKey": "title__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "businessType__c",
+        "path": "businessType__c",
+        "labelId": "Business Type",
+        "columnKey": "businessType__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-06-23T20:01:52.475Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "OnboardingBoard__c",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

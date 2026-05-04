@@ -1,0 +1,122 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_brokerC2G-partner",
+  "json": {
+    "key": "$custom_brokerC2G-partner",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "onboardingPartner__c",
+        "before": "wsib__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "onboardingPartner__c"
+      },
+      {
+        "key": "wsib__c",
+        "before": "rating__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "wsib__c"
+      },
+      {
+        "key": "rating__c",
+        "before": "partner-UpdatePartnerDetails",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "rating__c"
+      },
+      {
+        "key": "partner-UpdatePartnerDetails",
+        "before": "partner-SendOnboardingRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-SendOnboardingRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-SubmitGeneralDetails",
+        "before": "partner-PartnerOnboardingDispatcherInfo",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-PartnerOnboardingDispatcherInfo",
+        "before": "partner-PartnerOnboardingSetServices",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-PartnerOnboardingSetServices",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-PartnerOnboardingSetEquipment",
+        "before": "partner-UploadRequiredDocuments",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-UploadRequiredDocuments",
+        "before": "partner-PartnerOnboardingTradeReference",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-PartnerOnboardingTradeReference",
+        "before": "partner-SendDocumentUpdateRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-SendDocumentUpdateRequest",
+        "before": "partner-AddSMC3Credentials",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-AddSMC3Credentials",
+        "before": "partner-SubmitOnboarding",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "partner-SubmitOnboarding",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "addContractDetails__c",
+        "before": null,
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "addContractDetails__c"
+      },
+      {
+        "key": "addInsuranceLimit__c",
+        "before": null,
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "addInsuranceLimit__c"
+      },
+      {
+        "key": "carrierServices__c",
+        "before": null,
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "carrierServices__c"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2024-03-06T15:27:06.685Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "brokerC2G-partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

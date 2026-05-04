@@ -1,0 +1,129 @@
+{
+  "configKey": "object",
+  "key": "$custom_partnerCompliance",
+  "json": {
+    "key": "$custom_partnerCompliance",
+    "fields": [
+      {
+        "key": "services",
+        "type": "multiSelect",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "autoLiability",
+              "labelId": "Auto liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "generalLiability",
+              "labelId": "General liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "cargoInsurance",
+              "labelId": "Cargo insurance",
+              "isCustom": false
+            },
+            {
+              "value": "workersCompensation",
+              "labelId": "Workers' compensation insurance",
+              "isCustom": false
+            },
+            {
+              "value": "hazardousMaterials",
+              "labelId": "Hazardous materials certification",
+              "isCustom": false
+            },
+            {
+              "value": "reeferBreakdown",
+              "labelId": "Reefer breakdown insurance",
+              "isCustom": false
+            },
+            {
+              "value": "ctpat",
+              "labelId": "C-TPAT certification",
+              "isCustom": false
+            },
+            {
+              "value": "wsib",
+              "labelId": "WSIB",
+              "isCustom": false
+            },
+            {
+              "value": "csst",
+              "labelId": "CSST",
+              "isCustom": false
+            },
+            {
+              "value": "trailerInterchange",
+              "labelId": "Trailer Interchange",
+              "isCustom": false
+            },
+            {
+              "value": "test",
+              "labelId": "TEST",
+              "isCustom": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "documentCountLabel",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$createdBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "$updatedByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedByFullName",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "partner",
+        "configKey": "field"
+      },
+      {
+        "key": "partner",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "test__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "test__c",
+        "type": "text",
+        "label": "Test",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_partnerCompliance",
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-10-30T15:40:28.350Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "partnerCompliance",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

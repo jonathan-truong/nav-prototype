@@ -1,0 +1,33 @@
+{
+  "configKey": "board",
+  "key": "$custom_partnerInvoice",
+  "json": {
+    "key": "$custom_partnerInvoice",
+    "columns": [
+      {
+        "key": "expenseType__c",
+        "path": "expenseType__c",
+        "labelId": "Expense Type",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "expenseType__c",
+        "path": "expenseType__c",
+        "labelId": "Expense Type",
+        "columnKey": "expenseType__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-03-17T16:38:39.155Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "partnerInvoice",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

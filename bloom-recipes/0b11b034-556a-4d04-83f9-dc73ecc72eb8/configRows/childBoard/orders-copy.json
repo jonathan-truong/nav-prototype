@@ -1,0 +1,72 @@
+{
+  "id": "37c0520e-841a-4a29-bd37-a8615ed1d407",
+  "type": "childBoard",
+  "name": "Orders copy",
+  "json": {
+    "id": "37c0520e-841a-4a29-bd37-a8615ed1d407",
+    "icon": "⭐",
+    "source": "manual",
+    "labelId": "Really Exciting Orders",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "customer",
+      "partner",
+      "platformTags",
+      "totalMiles",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "margin"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "customer",
+        "partner",
+        "platformTags",
+        "totalMiles",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "margin"
+      ],
+      "description": "This is a description",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "status",
+            "value": [
+              "invoiced"
+            ],
+            "operator": "in",
+            "fieldType": "StatusField",
+            "filterKey": "status"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

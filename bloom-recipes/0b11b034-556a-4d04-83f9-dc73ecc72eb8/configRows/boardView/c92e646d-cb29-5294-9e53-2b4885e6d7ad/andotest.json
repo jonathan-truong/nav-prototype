@@ -1,0 +1,85 @@
+{
+  "id": "0ea623ae-46d6-4369-a1f8-6ac028c5554b",
+  "type": "boardView",
+  "name": "Andotest",
+  "json": {
+    "id": "0ea623ae-46d6-4369-a1f8-6ac028c5554b",
+    "name": "Andotest",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "in transit",
+          "booked",
+          "delivered",
+          "new"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Andotest",
+    "ordinal": 11,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "partner",
+      "zRequestedDuration__c",
+      "pod__c",
+      "shipper_formattedAddress",
+      "originCity__c",
+      "originState__c",
+      "consignee_formattedAddress",
+      "destinationState__c",
+      "destinationCity__c",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "ratePerMile__c",
+      "platformTags",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "csrs",
+      "accountManagers",
+      "assetType",
+      "serviceType",
+      "zAndoNumber__c"
+    ],
+    "createdAt": "2025-05-13T20:41:03.376Z",
+    "createdBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "isDefault": false,
+    "updatedAt": "2025-09-11T20:03:51.391Z",
+    "updatedBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "fullId": 93,
+      "pod__c": 64,
+      "status": 149,
+      "partner": 113
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "status",
+      "partner",
+      "zRequestedDuration__c"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

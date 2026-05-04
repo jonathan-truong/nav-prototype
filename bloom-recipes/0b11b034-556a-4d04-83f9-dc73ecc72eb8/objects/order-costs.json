@@ -1,0 +1,52 @@
+{
+  "configKey": "object",
+  "key": "orderCosts__c",
+  "json": {
+    "key": "orderCosts__c",
+    "label": "Order Costs",
+    "level": "secondary",
+    "events": [],
+    "fields": [
+      {
+        "key": "fullId",
+        "type": {
+          "key": "fullId",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Full ID",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "format": "OR-{1}"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "name",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Name",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "description": "Name of order costs",
+        "isImportable": true
+      }
+    ],
+    "isMixin": false,
+    "methods": [],
+    "summary": "Order Costs",
+    "configKey": "object",
+    "createdAt": "2025-06-05T21:48:30.687Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "stability": "stable",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "description": "Order Costs"
+  }
+}

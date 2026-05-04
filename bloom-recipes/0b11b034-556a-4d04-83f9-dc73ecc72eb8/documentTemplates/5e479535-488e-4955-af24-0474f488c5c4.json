@@ -1,0 +1,24 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "5e479535-488e-4955-af24-0474f488c5c4",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 16,
+      "formattedValue": "DOCT-16"
+    },
+    "$source": "manual",
+    "version": 3,
+    "$version": 2,
+    "$widgets": [],
+    "$createdAt": "2024-08-26T16:08:56.538Z",
+    "$createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$updatedAt": "2024-08-26T16:09:01.387Z",
+    "$updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$externalId": null,
+    "description": "",
+    "documentType": "ace",
+    "rootObjectKey": "manifest",
+    "dataFormatVersion": "1"
+  }
+}

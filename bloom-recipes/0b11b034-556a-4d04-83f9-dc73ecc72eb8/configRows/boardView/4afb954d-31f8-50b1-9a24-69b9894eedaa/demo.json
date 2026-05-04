@@ -1,0 +1,63 @@
+{
+  "id": "43c7fa88-9a9d-4186-b653-8a15756ecc81",
+  "type": "boardView",
+  "name": "Demo",
+  "json": {
+    "id": "43c7fa88-9a9d-4186-b653-8a15756ecc81",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+    "filters": [
+      {
+        "path": "actualArrivalTime",
+        "value": {
+          "rangeType": "any"
+        },
+        "operator": "notEmpty",
+        "fieldType": "DateTimeField",
+        "filterKey": "actualArrivalTime"
+      },
+      {
+        "path": "actualCompletionTime",
+        "value": {
+          "rangeType": "any"
+        },
+        "operator": "notEmpty",
+        "fieldType": "DateTimeField",
+        "filterKey": "actualCompletionTime"
+      },
+      {
+        "path": "taskType",
+        "value": [
+          "pickup"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "taskType"
+      }
+    ],
+    "labelId": "Demo",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "taskType",
+      "status",
+      "orderFullId",
+      "originArrivalTime",
+      "originCompletedTime",
+      "detentionTime__c"
+    ],
+    "createdAt": "2025-03-05T15:35:02.776Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-03-05T15:35:02.776Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,720 @@
+{
+  "configKey": "object",
+  "key": "Onboarding__c",
+  "json": {
+    "key": "Onboarding__c",
+    "label": "Onboarding",
+    "level": "secondary",
+    "events": [
+      {
+        "key": "withAiEvents.ai.activityLog.prompt",
+        "label": "AI Activity Log User Prompt",
+        "typeId": "ai.activityLog.prompt",
+        "payload": {
+          "$stub": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withAiEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": true
+        },
+        "description": "Event with the user prompt for AI on a record"
+      },
+      {
+        "key": "withAiEvents.ai.activityLog.completion",
+        "label": "AI Activity Log Completion",
+        "typeId": "ai.activityLog.completion",
+        "payload": {
+          "$stub": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withAiEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": true
+        },
+        "description": "Event with the AI completion on a record"
+      },
+      {
+        "key": "withGenericWebhookEvents.record.created",
+        "label": "Record Created",
+        "typeId": "record.created",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record is created"
+      },
+      {
+        "key": "withGenericWebhookEvents.record.updated",
+        "label": "Record Updated",
+        "typeId": "record.updated",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record changes"
+      },
+      {
+        "key": "withGenericWebhookEvents.record.deleted",
+        "label": "Record Deleted",
+        "typeId": "record.deleted",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record is deleted"
+      }
+    ],
+    "fields": [
+      {
+        "key": "fullId",
+        "type": "fullId",
+        "label": "Full ID",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "format": "ON-{1}"
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "name",
+        "type": "text",
+        "label": "Name",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "description": "Name of onboarding",
+        "isImportable": true
+      },
+      {
+        "key": "$createdAt",
+        "type": "utcDate",
+        "label": "Created at",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "description": "The date and time this object was created",
+        "isImportable": true
+      },
+      {
+        "key": "$updatedAt",
+        "type": "utcDate",
+        "label": "Updated at",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "description": "The date and time this object was last updated",
+        "isImportable": true
+      },
+      {
+        "key": "$source",
+        "type": "text",
+        "label": "Source",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "description": "Where this object came from",
+        "isImportable": true
+      },
+      {
+        "key": "isActive",
+        "type": "toggle",
+        "label": "Active",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "description": "Whether this object is active or not.",
+        "isImportable": true
+      },
+      {
+        "key": "description__c",
+        "type": "text",
+        "label": "Description",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "videoLink__c",
+        "type": "url",
+        "label": "Video Link",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "helpCentreLink__c",
+        "type": "url",
+        "label": "Help Centre Link",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "category__c",
+        "type": "select",
+        "label": "Category",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "gettingStarted",
+              "labelId": "Getting Started",
+              "isCustom": true
+            },
+            {
+              "value": "coreOperations",
+              "labelId": "Core Operations",
+              "isCustom": true
+            },
+            {
+              "value": "ar",
+              "labelId": "AR",
+              "isCustom": true
+            },
+            {
+              "value": "ap",
+              "labelId": "AP",
+              "isCustom": true
+            },
+            {
+              "value": "ratingEngine",
+              "labelId": "Rating Engine",
+              "isCustom": true
+            },
+            {
+              "value": "analytics",
+              "labelId": "Analytics",
+              "isCustom": true
+            },
+            {
+              "value": "integrations",
+              "labelId": "Integrations",
+              "isCustom": true
+            },
+            {
+              "value": "advancedFeatures",
+              "labelId": "Advanced Features",
+              "isCustom": true
+            },
+            {
+              "value": "workflows",
+              "labelId": "Workflows",
+              "isCustom": true
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "sortOrder__c",
+        "type": "number",
+        "label": "Sort Order",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitLabel": ""
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "difficulty__c",
+        "type": "select",
+        "label": "Difficulty",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "beginner",
+              "labelId": "Beginner ",
+              "isCustom": true
+            },
+            {
+              "value": "intermediate",
+              "labelId": "Intermediate",
+              "isCustom": true
+            },
+            {
+              "value": "advanced",
+              "labelId": "Advanced",
+              "isCustom": true
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "estimatedTimeToCompletion__c",
+        "type": "number",
+        "label": "Estimated Time to Completion",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitLabel": "Minutes"
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "module__c",
+        "type": "select",
+        "label": "Module",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "quotes",
+              "labelId": "Quotes",
+              "isCustom": true
+            },
+            {
+              "value": "orders",
+              "labelId": "Orders",
+              "isCustom": true
+            },
+            {
+              "value": "manifests",
+              "labelId": "Manifests",
+              "isCustom": true
+            },
+            {
+              "value": "tasks",
+              "labelId": "Tasks",
+              "isCustom": true
+            },
+            {
+              "value": "financialLineItems",
+              "labelId": "Financial Line Items",
+              "isCustom": true
+            },
+            {
+              "value": "receivables",
+              "labelId": "Receivables",
+              "isCustom": true
+            },
+            {
+              "value": "payables",
+              "labelId": "Payables",
+              "isCustom": true
+            },
+            {
+              "value": "customers",
+              "labelId": "Customers",
+              "isCustom": true
+            },
+            {
+              "value": "rating",
+              "labelId": "Rating",
+              "isCustom": true
+            },
+            {
+              "value": "partners",
+              "labelId": "Partners",
+              "isCustom": true
+            },
+            {
+              "value": "drivers",
+              "labelId": "Drivers",
+              "isCustom": true
+            },
+            {
+              "value": "assets",
+              "labelId": "Assets",
+              "isCustom": true
+            },
+            {
+              "value": "analytics",
+              "labelId": "Analytics",
+              "isCustom": true
+            },
+            {
+              "value": "builders",
+              "labelId": "Builders",
+              "isCustom": true
+            },
+            {
+              "value": "settings",
+              "labelId": "Settings",
+              "isCustom": true
+            },
+            {
+              "value": "all",
+              "labelId": "All",
+              "isCustom": true
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "status__c",
+        "type": "status",
+        "label": "Status",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "notStarted",
+              "labelId": "Not Started",
+              "isCustom": true
+            },
+            {
+              "color": "status-purple",
+              "value": "inProgress",
+              "labelId": "In Progress",
+              "isCustom": true
+            },
+            {
+              "color": "status-green",
+              "value": "completed",
+              "labelId": "Completed",
+              "isCustom": true
+            },
+            {
+              "color": "status-red",
+              "value": "blockedHelpNeeded",
+              "labelId": "Blocked - Help Needed",
+              "isCustom": true
+            },
+            {
+              "color": "status-pink",
+              "value": "skippedNotApplicable",
+              "labelId": "Skipped / Not Applicable",
+              "isCustom": true
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "notes__c",
+        "type": "text",
+        "label": "Notes",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "title__c",
+        "type": "text",
+        "label": "Title",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "businessType__c",
+        "type": "multiSelect",
+        "label": "Business Type",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "broker",
+              "labelId": "Broker",
+              "isCustom": true
+            },
+            {
+              "value": "carrier",
+              "labelId": "Carrier",
+              "isCustom": true
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": false,
+    "methods": [
+      {
+        "key": "defaultSourceToManual",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "defaultSourceToManual",
+        "isSystem": true,
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "onCreateCountChange",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "onCreateCountChange",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "onDeleteCountChange",
+        "event": "delete",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "onDeleteCountChange",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "createAssociatedDocuments",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "createAssociatedDocuments",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueCreatedEvent",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueCreatedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueUpdatedEvent",
+        "event": "commit",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueUpdatedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueDeletedEvent",
+        "event": "delete",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueDeletedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueEvent",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "1_Status_when_creating_new_button",
+        "event": "create",
+        "label": "1) Status when creating new button",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "Onboarding__c",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "status__c",
+            "actionKey": "setValue",
+            "literalValue": "notStarted"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      }
+    ],
+    "summary": "A tool to help your team onboard into Rose Rocket",
+    "configKey": "object",
+    "createdAt": "2025-06-23T20:01:52.475Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "stability": "stable",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "valueType": "object",
+    "description": "A tool to help your team onboard into Rose Rocket",
+    "isPrimitive": false,
+    "isHiddenBoard": false,
+    "objectConstructor": {
+      "$stub": true
+    },
+    "persistenceMapping": {
+      "$stub": true
+    }
+  }
+}

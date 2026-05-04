@@ -1,0 +1,52 @@
+{
+  "id": "499c3d40-d8fa-4ead-84ec-2010f297f9f4",
+  "type": "boardView",
+  "name": "timeline contract date",
+  "json": {
+    "id": "defaultView",
+    "layout": "timeline",
+    "boardId": "a63b882f-5b78-5836-9989-68782e3517f7",
+    "filters": [],
+    "labelId": "timeline contract date",
+    "ordinal": 2,
+    "isPinned": false,
+    "columnIds": [
+      "name",
+      "status",
+      "officeLocation",
+      "dotId",
+      "mcId",
+      "companyEmail",
+      "companyPhone",
+      "assets",
+      "services",
+      "defaultCurrency"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "layoutOptions": {
+      "zoom": "week",
+      "endDatePath": "contractEndDate__c",
+      "cardColumnIds": [
+        "status",
+        "officeLocation",
+        "dotId",
+        "mcId",
+        "companyEmail",
+        "companyPhone",
+        "assets",
+        "services",
+        "defaultCurrency"
+      ],
+      "startDatePath": "contractStartDate__c"
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "name"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "name"
+  }
+}

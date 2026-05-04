@@ -1,0 +1,108 @@
+{
+  "id": "3f929a1f-b65f-4907-8df0-f63ff4f209dd",
+  "type": "boardView",
+  "name": "Timeline2",
+  "json": {
+    "id": "3f929a1f-b65f-4907-8df0-f63ff4f209dd",
+    "name": "Timeline2",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "timeline",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [],
+    "labelId": "Timeline2",
+    "ordinal": 2,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "partner",
+      "customer",
+      "$createdAt",
+      "assetWithLastKnownLocation",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "multiCurrencyTotalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "drivers",
+      "assets",
+      "manifests",
+      "platformTags",
+      "commodities",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "invoices",
+      "csrs",
+      "accountManagers",
+      "buyQuotes",
+      "assetType",
+      "serviceType",
+      "services",
+      "currentLocation_formattedAddress",
+      "lastUpdated",
+      "driverName",
+      "dataSourceLabel",
+      "commissionees",
+      "$updatedAt"
+    ],
+    "createdAt": "2025-08-18T15:14:56.416Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-10-06T13:16:29.170Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "fullId": 93,
+      "pod__c": 64,
+      "status": 149,
+      "partner": 113,
+      "consignee_formattedAddress": 296
+    },
+    "groupByOption": {
+      "fieldType": "ConnectionField",
+      "groupByPaths": [
+        "customer"
+      ],
+      "groupByFields": [
+        "customer"
+      ],
+      "sortDirection": "asc",
+      "hideEmptyGroups": true
+    },
+    "layoutOptions": {
+      "zoom": "week",
+      "endDatePath": "requestedDeliveryWindow",
+      "cardColumnIds": [
+        "fullId",
+        "status",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow"
+      ],
+      "startDatePath": "requestedPickupWindow"
+    },
+    "searchTermList": [],
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "status",
+      "partner"
+    ],
+    "orderByColumnKey": "requestedPickupWindow",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

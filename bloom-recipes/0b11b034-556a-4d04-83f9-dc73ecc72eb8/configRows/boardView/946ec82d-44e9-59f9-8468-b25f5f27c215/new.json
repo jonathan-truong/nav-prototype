@@ -1,0 +1,42 @@
+{
+  "id": "839f55c6-affc-46e0-96b2-92fa49af0caa",
+  "type": "boardView",
+  "name": "New",
+  "json": {
+    "key": "new",
+    "boardId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "New",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "requestedPickupWindow",
+      "shipper_formattedAddress",
+      "requestedDeliveryWindow",
+      "consignee_formattedAddress",
+      "commodities",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "specialInstructions",
+      "totalMiles",
+      "loadTenderNum",
+      "poNum",
+      "refNum"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "mainLinkColumnKey": ""
+  }
+}

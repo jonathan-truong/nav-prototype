@@ -1,0 +1,62 @@
+{
+  "id": "4b1abcf2-4139-48ea-b639-16d242ae8bd6",
+  "type": "boardView",
+  "name": "Delivered Orders",
+  "json": {
+    "id": "533bd854-298d-41d7-a3ba-6996b9061f11",
+    "orgId": "8704100e-3939-4caa-86c6-673b04baaf5e",
+    "boardId": "1dbd2d6d-82ec-5ea8-85a0-a35b567b6bfd",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "delivered"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Delivered Orders",
+    "isPinned": true,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "shipper",
+      "consignee",
+      "pod__c",
+      "amount",
+      "margin",
+      "grossMargin__c",
+      "ratePerMile__c",
+      "totalCommoditiesQuantity",
+      "commodities",
+      "totalCommoditiesWeight",
+      "manifestStatus__c",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "onTimePickUp__c",
+      "pickUpArrivalDateTime__c",
+      "pickUpCompletionDateTime__c",
+      "onTimeDelivery__c",
+      "deliveryArrivalDateTime__c",
+      "deliveryCompletionDateTime__c",
+      "documents"
+    ],
+    "createdAt": "2025-05-02T13:53:00.272Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-05-02T13:56:40.585Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

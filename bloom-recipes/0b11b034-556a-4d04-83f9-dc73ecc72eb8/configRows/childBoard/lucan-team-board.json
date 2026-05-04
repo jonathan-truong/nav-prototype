@@ -1,0 +1,78 @@
+{
+  "id": "519c1933-68f8-4b2b-91c6-78bd46984a38",
+  "type": "childBoard",
+  "name": "Lucan Team Board",
+  "json": {
+    "id": "519c1933-68f8-4b2b-91c6-78bd46984a38",
+    "icon": "🏕️",
+    "source": "manual",
+    "labelId": "Lucan Team Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "customerName__c",
+      "customer",
+      "status",
+      "externalUrl__c",
+      "link__c",
+      "attachedLink__c",
+      "derekTest__c",
+      "originCity__c",
+      "trailerId__c",
+      "sdf__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "customerName__c",
+        "customer",
+        "status",
+        "externalUrl__c",
+        "link__c",
+        "attachedLink__c",
+        "derekTest__c",
+        "originCity__c",
+        "trailerId__c",
+        "sdf__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "d359d039-9704-4e07-a293-e23665abb98c",
+              "0e748dfc-46c4-420e-a492-050af7bbbb72",
+              "2d7a311e-9250-41cc-965f-ca8ffb1ec087"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

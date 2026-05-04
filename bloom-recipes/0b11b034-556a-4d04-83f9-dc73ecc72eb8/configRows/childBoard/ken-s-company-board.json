@@ -1,0 +1,60 @@
+{
+  "id": "d6fe828f-16fb-48b5-8bde-c7d36907b6b9",
+  "type": "childBoard",
+  "name": "Ken's Company Board",
+  "json": {
+    "id": "d6fe828f-16fb-48b5-8bde-c7d36907b6b9",
+    "icon": "📋",
+    "source": "manual",
+    "labelId": "Ken's Company Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "manifests",
+      "totalEarnings"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "manifests",
+        "totalEarnings"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "83c4090d-89e8-4b98-9c93-54727ca294a7"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

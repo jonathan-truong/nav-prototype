@@ -1,0 +1,82 @@
+{
+  "id": "a4b0bb4a-e520-437a-b4ff-974a663b9367",
+  "type": "childBoard",
+  "name": "Customer test",
+  "json": {
+    "id": "a4b0bb4a-e520-437a-b4ff-974a663b9367",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Customer test",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "lastUpdated",
+      "driverName",
+      "testField__c",
+      "newField__c",
+      "testSelect__c",
+      "testMaxNumber__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "manifests",
+        "totalEarnings",
+        "totalCost",
+        "margin",
+        "multiCurrencyMargin",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "orderETAStatus",
+        "deliveryEta",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "lastUpdated",
+        "driverName",
+        "testField__c",
+        "newField__c",
+        "testSelect__c",
+        "testMaxNumber__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

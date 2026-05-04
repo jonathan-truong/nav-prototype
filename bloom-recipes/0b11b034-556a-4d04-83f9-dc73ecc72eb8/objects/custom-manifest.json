@@ -1,0 +1,1378 @@
+{
+  "configKey": "object",
+  "key": "$custom_manifest",
+  "json": {
+    "key": "$custom_manifest",
+    "events": [
+      {
+        "key": "macropointManifest.macropointManifest.statusUpdate",
+        "before": "1324d780-dae9-4097-85bf-ba128960f4e4",
+        "configKey": "event",
+        "activityLog": {
+          "enabled": false
+        }
+      },
+      {
+        "key": "1324d780-dae9-4097-85bf-ba128960f4e4",
+        "label": "A1-Ando-EnteredGeoFence",
+        "typeId": "a1AndoEnteredGeoFence_sendNotification_1324d780-dae9-4097-85bf-ba128960f4e4",
+        "configKey": "event",
+        "methodKey": "A1AndoEnteredGeoFence",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "",
+        "notifications": {
+          "enabled": true,
+          "defaults": {
+            "user": {
+              "enabled": false,
+              "channels": [
+                "email",
+                "inbox"
+              ]
+            }
+          },
+          "renderContent": {
+            "$stub": true
+          }
+        }
+      }
+    ],
+    "fields": [
+      {
+        "key": "fullId",
+        "configKey": "field",
+        "typeConfig": {
+          "format": "TRIP-{1}"
+        }
+      },
+      {
+        "key": "name",
+        "before": "allocations",
+        "configKey": "field"
+      },
+      {
+        "key": "allocations",
+        "before": "allDocuments",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "allDocuments",
+        "before": "status",
+        "configKey": "field"
+      },
+      {
+        "key": "status",
+        "before": "shipments",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New"
+            },
+            {
+              "color": "status-cyan",
+              "value": "planned",
+              "labelId": "Planned"
+            },
+            {
+              "color": "status-cyan",
+              "value": "dispatched",
+              "labelId": "Dispatched"
+            },
+            {
+              "color": "status-purple",
+              "value": "inTransit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-green",
+              "value": "completed",
+              "labelId": "Completed"
+            },
+            {
+              "color": "status-grey",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "drop",
+              "labelId": "Drop"
+            },
+            {
+              "color": "status-pink",
+              "value": "hook",
+              "labelId": "Hook"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ],
+          "statusMap": {
+            "new": {
+              "color": "status-grey",
+              "labelId": "New"
+            },
+            "drop": {
+              "color": "status-red",
+              "labelId": "Drop"
+            },
+            "hook": {
+              "color": "status-pink",
+              "labelId": "Hook"
+            },
+            "planned": {
+              "color": "status-cyan",
+              "labelId": "Planned"
+            },
+            "problem": {
+              "color": "status-grey",
+              "labelId": "Problem"
+            },
+            "completed": {
+              "color": "status-green",
+              "labelId": "Completed"
+            },
+            "inTransit": {
+              "color": "status-purple",
+              "labelId": "In transit"
+            },
+            "dispatched": {
+              "color": "status-cyan",
+              "labelId": "Dispatched"
+            }
+          }
+        }
+      },
+      {
+        "key": "shipments",
+        "before": "legs",
+        "configKey": "field"
+      },
+      {
+        "key": "legs",
+        "before": "tasks",
+        "configKey": "field"
+      },
+      {
+        "key": "tasks",
+        "before": "documents",
+        "configKey": "field"
+      },
+      {
+        "key": "documents",
+        "before": "secondaryDocuments",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "secondaryDocuments",
+        "before": "bill",
+        "configKey": "field"
+      },
+      {
+        "key": "bill",
+        "before": "buyQuote",
+        "configKey": "field"
+      },
+      {
+        "key": "dispatchedAt",
+        "before": "carrier",
+        "configKey": "field"
+      },
+      {
+        "key": "carrier",
+        "before": "equipment",
+        "configKey": "field"
+      },
+      {
+        "key": "equipment",
+        "before": "ratingMiles",
+        "configKey": "field"
+      },
+      {
+        "key": "ratingMiles",
+        "before": "totalMiles_temp",
+        "configKey": "field"
+      },
+      {
+        "key": "totalMiles_temp",
+        "before": "completedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "completedAt",
+        "before": "partner",
+        "configKey": "field"
+      },
+      {
+        "key": "partner",
+        "before": "drivers",
+        "configKey": "field"
+      },
+      {
+        "key": "drivers",
+        "before": "stopsV2",
+        "configKey": "field"
+      },
+      {
+        "key": "stopsV2",
+        "before": "dispatcher",
+        "configKey": "field"
+      },
+      {
+        "key": "dispatcher",
+        "before": "totalMiles",
+        "configKey": "field"
+      },
+      {
+        "key": "totalMiles",
+        "before": "estimatedDuration",
+        "configKey": "field",
+        "typeConfig": {
+          "isInteger": true,
+          "unitLabel": "",
+          "unitCategory": "length",
+          "canBeNegative": false,
+          "currentUnitType": "mile",
+          "defaultUnitType": "mile"
+        }
+      },
+      {
+        "key": "estimatedDuration",
+        "before": "estimatedDurationFormatted",
+        "configKey": "field"
+      },
+      {
+        "key": "deadHeadMiles",
+        "configKey": "field",
+        "typeConfig": {
+          "isInteger": true,
+          "unitLabel": ""
+        }
+      },
+      {
+        "key": "driverPayLineItems",
+        "before": "accessorialsLabel",
+        "configKey": "field"
+      },
+      {
+        "key": "accessorialsLabel",
+        "before": "revenueAllocations",
+        "configKey": "field"
+      },
+      {
+        "key": "revenueAllocations",
+        "before": "costAllocations",
+        "configKey": "field"
+      },
+      {
+        "key": "costAllocations",
+        "before": "totalStops",
+        "configKey": "field"
+      },
+      {
+        "key": "totalStops",
+        "before": "allocatableLegTasks",
+        "configKey": "field"
+      },
+      {
+        "key": "allocatableLegTasks",
+        "before": "totalAllocatedRevenue",
+        "configKey": "field"
+      },
+      {
+        "key": "totalAllocatedRevenue",
+        "before": "totalAllocatedCost",
+        "configKey": "field"
+      },
+      {
+        "key": "loadTenderNumbersLabel",
+        "before": "orderedStops",
+        "configKey": "field"
+      },
+      {
+        "key": "orderedStops",
+        "before": "orderedGroupedStops",
+        "configKey": "field"
+      },
+      {
+        "key": "$externalId",
+        "before": "$createdByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdByFullName",
+        "before": "$updatedBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedBy",
+        "before": "$updatedByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$version",
+        "before": "rowColorMap",
+        "configKey": "field"
+      },
+      {
+        "key": "rowColorMap",
+        "before": "sourceId",
+        "configKey": "field"
+      },
+      {
+        "key": "canvas",
+        "before": "weightLbs",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "weightLbs",
+        "before": "$createdBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdBy",
+        "before": "powerUnitNumber",
+        "configKey": "field"
+      },
+      {
+        "key": "powerUnitNumber",
+        "before": "trackingPhoneNumber",
+        "configKey": "field"
+      },
+      {
+        "key": "macropointTrackingStartTime",
+        "before": "isDriverLineItemApproved",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isDriverLineItemApproved",
+        "before": "systemFingerprint",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "systemFingerprint",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "promptTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "customerAccessorials",
+        "before": "macropointTrackingEndTime",
+        "configKey": "field"
+      },
+      {
+        "key": "macropointTrackingEndTime",
+        "before": "assetTypesLabel",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "assetTypesLabel",
+        "before": "partnerTariff",
+        "configKey": "field"
+      },
+      {
+        "key": "partnerTariff",
+        "before": "taskSpecialInstructionsLabels",
+        "configKey": "field"
+      },
+      {
+        "key": "taskSpecialInstructionsLabels",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "totalCostExchangeRate",
+        "configKey": "field"
+      },
+      {
+        "key": "totalCostExchangeRate",
+        "before": "totalCostInOrgCurrency",
+        "configKey": "field"
+      },
+      {
+        "key": "totalCostInOrgCurrency",
+        "before": "legOriginAndDestinationAddress",
+        "configKey": "field"
+      },
+      {
+        "key": "legOriginAndDestinationAddress",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "consigneeNotes",
+        "configKey": "field"
+      },
+      {
+        "key": "consigneeNotes",
+        "before": "shipperNotes",
+        "configKey": "field"
+      },
+      {
+        "key": "shipperNotes",
+        "before": "accessorials",
+        "configKey": "field"
+      },
+      {
+        "key": "accessorials",
+        "before": "partnerInvoice",
+        "configKey": "field"
+      },
+      {
+        "key": "partnerInvoice",
+        "before": "specialInstructions",
+        "configKey": "field"
+      },
+      {
+        "key": "specialInstructions",
+        "before": "estimatedCustomerQuote",
+        "configKey": "field"
+      },
+      {
+        "key": "estimatedCustomerQuote",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "shipperCity__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "shipperCity__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Shipper City",
+        "paths": [
+          "orders.shipper.city"
+        ],
+        "before": "shippingState__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.shipper.city})",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "shippingState__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Shipping State",
+        "paths": [
+          "orders.shipper.state"
+        ],
+        "before": "carrierInvStatus__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.shipper.state})",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "carrierInvStatus__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Carrier INV Status",
+        "before": "testBreak__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-green",
+              "value": "invoicePaid",
+              "labelId": "Invoice Paid"
+            },
+            {
+              "color": "status-cyan",
+              "value": "invoiceReceived",
+              "labelId": "Invoice Received"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "testBreak__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "test break",
+        "paths": [
+          "orders.orderETAStatus"
+        ],
+        "before": "hughsep10__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.orderETAStatus})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "enroute",
+              "labelId": "Enroute"
+            },
+            {
+              "color": "status-cyan",
+              "value": "early",
+              "labelId": "Early"
+            },
+            {
+              "color": "status-green",
+              "value": "onTime",
+              "labelId": "On time"
+            },
+            {
+              "color": "status-red",
+              "value": "atRisk",
+              "labelId": "At risk"
+            },
+            {
+              "color": "status-red",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "hughsep10__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "hughsep10",
+        "before": "hughsep10B__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "hughsep10B__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "hughsep10b",
+        "before": "manifestTotalCostCustom__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "manifestTotalCostCustom__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Manifest Total Cost Custom",
+        "paths": [
+          "totalCost"
+        ],
+        "before": "totalBuyQuoteCustom__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({totalCost})",
+        "typeConfig": {
+          "format": "",
+          "canBeNegative": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "totalBuyQuoteCustom__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Total Buy Quote Custom",
+        "paths": [
+          "buyQuote.totalCost"
+        ],
+        "before": "totalRev__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({buyQuote.totalCost})",
+        "typeConfig": {
+          "format": "",
+          "canBeNegative": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "totalRev__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "totalRev",
+        "paths": [
+          "orders.totalEarnings"
+        ],
+        "before": "totalRevSum__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.totalEarnings})",
+        "typeConfig": {
+          "format": "",
+          "canBeNegative": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "totalRevSum__c",
+        "type": {
+          "key": "multiCurrencyMoney",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "totalRevSum",
+        "paths": [
+          "totalRev__c"
+        ],
+        "before": "totalRevSumMargin__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "sum({totalRev__c})",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "totalRevSumMargin__c",
+        "type": {
+          "key": "multiCurrencyMoney",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "totalRevSumMargin",
+        "paths": [
+          "totalRev__c",
+          "totalCost"
+        ],
+        "before": "orderStatus__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "sum({totalRev__c}) - {totalCost}",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "orderStatus__c",
+        "type": {
+          "key": "status",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Order status",
+        "paths": [
+          "orders.status"
+        ],
+        "before": "legDeclaredValues__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New "
+            },
+            {
+              "color": "status-green",
+              "value": "accepted",
+              "labelId": "Accepted"
+            },
+            {
+              "color": "status-cyan",
+              "value": "booked",
+              "labelId": "Booked"
+            },
+            {
+              "color": "status-purple",
+              "value": "in transit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-grey",
+              "value": "invoiced",
+              "labelId": "Invoiced"
+            },
+            {
+              "color": "status-cyan",
+              "value": "tendered",
+              "labelId": "Tendered"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "rejected",
+              "labelId": "Rejected"
+            },
+            {
+              "color": "status-grey",
+              "value": "archived",
+              "labelId": "Archived"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "expired",
+              "labelId": "Expired"
+            },
+            {
+              "color": "status-red",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "cancelled",
+              "labelId": "Cancelled"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "legDeclaredValues__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Leg declared values",
+        "paths": [
+          "allocatableLegTasks.declaredValue__c"
+        ],
+        "before": "totalDeclaredValue__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({allocatableLegTasks.declaredValue__c})",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "totalDeclaredValue__c",
+        "type": {
+          "key": "multiCurrencyMoney",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Total declared value",
+        "paths": [
+          "legDeclaredValues__c"
+        ],
+        "before": "pickupContainers__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "sum({legDeclaredValues__c})",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "pickupContainers__c",
+        "type": {
+          "key": "fullId",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Pickup containers",
+        "paths": [
+          "pickups.taskSpecificAssets__c.fullId"
+        ],
+        "before": "stopsLookup__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({pickups.taskSpecificAssets__c.fullId})",
+        "typeConfig": {
+          "format": "ASSET-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "stopsLookup__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Stops Lookup",
+        "paths": [
+          "stops.location.address1"
+        ],
+        "before": "formulaTest__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({stops.location.address1})",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "formulaTest__c",
+        "type": {
+          "key": "money",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "formula test",
+        "paths": [
+          "totalMiles"
+        ],
+        "before": "multiselect__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toMoney({totalMiles}*0.01287*0.3,'USD')",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "multiselect__c",
+        "type": {
+          "key": "multiSelect",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Multiselect",
+        "before": "kpTest__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "a",
+              "labelId": "A",
+              "isCustom": false
+            },
+            {
+              "value": "b",
+              "labelId": "B",
+              "isCustom": false
+            },
+            {
+              "value": "c",
+              "labelId": "C",
+              "isCustom": false
+            },
+            {
+              "value": "d",
+              "labelId": "D",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "kpTest__c",
+        "type": {
+          "key": "measurement",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "KP test",
+        "paths": [
+          "lastDeliveryTaskActualTime",
+          "firstPickupTaskActualTime"
+        ],
+        "before": "firstStopLocationSelfLookup__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "dateDiff({lastDeliveryTaskActualTime},{firstPickupTaskActualTime},'hour')",
+        "typeConfig": {
+          "unitCategory": "duration",
+          "currentUnitType": "hours",
+          "defaultUnitType": "hours"
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "firstStopLocationSelfLookup__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "First stop location (self lookup)",
+        "paths": [
+          "firstStopLocation"
+        ],
+        "before": "zAndoTest1__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({firstStopLocation})",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "zAndoTest1__c",
+        "type": {
+          "key": "number",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "z-andoTest1",
+        "paths": [],
+        "before": "zAndoTest2__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "topercent(99.00002/100)",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "zAndoTest2__c",
+        "type": {
+          "key": "number",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "z-andoTest2",
+        "paths": [],
+        "before": "zAndoTest3__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "topercent(99.00002/100)",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "zAndoTest3__c",
+        "type": {
+          "key": "number",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "z-andoTest3",
+        "paths": [],
+        "before": "zAndoTest4__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "99",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "zAndoTest4__c",
+        "type": {
+          "key": "number",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "z-andoTest4",
+        "paths": [],
+        "before": "testIndex__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "99",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "testIndex__c",
+        "type": {
+          "key": "url",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "testIndex",
+        "before": "$widgets",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "$widgets",
+        "before": "$widgetToOpen",
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "updateAccessorialsFromChangedCosts",
+        "before": "onApplyDriverPayTemplates",
+        "configKey": "method"
+      },
+      {
+        "key": "onApplyDriverPayTemplates",
+        "before": "onApplyDriverPayTemplatesViaJob",
+        "configKey": "method"
+      },
+      {
+        "key": "onApplyDriverPayTemplatesViaJob",
+        "before": "applyDriverPayTemplatesViaJob",
+        "configKey": "method"
+      },
+      {
+        "key": "applyDriverPayTemplatesViaJob",
+        "before": "updateLineItemsAssociatedOnAccessorialsChange",
+        "configKey": "method"
+      },
+      {
+        "key": "updateLineItemsAssociatedOnAccessorialsChange",
+        "before": "onDocumentsChangedEvent",
+        "configKey": "method"
+      },
+      {
+        "key": "onDocumentsChangedEvent",
+        "before": "updateOrdersMissingDocuments",
+        "configKey": "method"
+      },
+      {
+        "key": "updateOrdersMissingDocuments",
+        "before": "updateLineItemsFromChangedAccessorials",
+        "configKey": "method"
+      },
+      {
+        "key": "updateLineItemsFromChangedAccessorials",
+        "before": "onUpdateManifestTotalCostDefaultExchangeRate",
+        "configKey": "method"
+      },
+      {
+        "key": "onUpdateManifestTotalCostDefaultExchangeRate",
+        "before": "onManifestCreateSetExchangeRate",
+        "configKey": "method"
+      },
+      {
+        "key": "updateManifestDefaultExchangeRates",
+        "before": "applyDriverPayTemplates",
+        "configKey": "method"
+      },
+      {
+        "key": "applyDriverPayTemplates",
+        "before": "addLegAccessorials",
+        "configKey": "method"
+      },
+      {
+        "key": "addLegAccessorials",
+        "before": "getParentSequenceKeys",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "$evaluateWidgets",
+        "before": "A1AndoEnteredGeoFence",
+        "configKey": "method"
+      },
+      {
+        "key": "A1AndoEnteredGeoFence",
+        "event": "update",
+        "label": "A1-Ando-EnteredGeoFence",
+        "action": {
+          "$stub": true
+        },
+        "before": "Rename_Manifest_Nickname",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "actionKey": "sendNotification",
+            "notificationKey": "a1AndoEnteredGeoFence_sendNotification_1324d780-dae9-4097-85bf-ba128960f4e4",
+            "notificationBody": "test",
+            "notificationTitle": "Comparison test notification",
+            "notificationToRun": {
+              "key": "1324d780-dae9-4097-85bf-ba128960f4e4",
+              "label": "A1-Ando-EnteredGeoFence",
+              "typeId": "a1AndoEnteredGeoFence_sendNotification_1324d780-dae9-4097-85bf-ba128960f4e4",
+              "activityLog": {
+                "enabled": false
+              },
+              "description": "",
+              "notifications": {
+                "enabled": true,
+                "defaults": {
+                  "user": {
+                    "enabled": false,
+                    "channels": [
+                      "email",
+                      "inbox"
+                    ]
+                  }
+                },
+                "renderContent": ""
+              }
+            }
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "zAndoTest1__c": {
+                      "$lt": {
+                        "path": "zAndoTest2__c"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Rename_Manifest_Nickname",
+        "event": "create",
+        "label": "Rename Manifest Nickname",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_manifest",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "name",
+            "fromPath": "orders.fullId",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-03-26T15:57:22.027Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "manifest",
+    "updatedAt": "2026-03-31T20:25:34.377Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

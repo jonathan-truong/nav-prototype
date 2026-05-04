@@ -1,0 +1,43 @@
+{
+  "id": "3283db5f-fbdb-4094-99ba-329da774a69d",
+  "type": "boardView",
+  "name": "Expired",
+  "json": {
+    "id": "defaultView",
+    "boardId": "38957069-c3f2-5eef-a60a-f8e1e47dd177",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "expired"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Expired",
+    "isPinned": false,
+    "columnIds": [
+      "services",
+      "partner",
+      "providerName",
+      "insuranceAmount",
+      "status",
+      "policyNumber",
+      "expiryDate",
+      "effectiveDate",
+      "documentCountLabel"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "services"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

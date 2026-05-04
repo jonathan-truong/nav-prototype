@@ -1,0 +1,47 @@
+{
+  "id": "bbdded77-f46a-47fe-88fa-6e08caeb2646",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "7e2d0018-c307-4c23-afa9-cdb8db328a48",
+    "filters": [],
+    "labelId": "New View",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "totalMiles",
+      "platformTags",
+      "drivers"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "31d7b568-d5cb-44aa-9a91-5cbb9dd99b68",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 48,
+      "formattedValue": "DOCT-48"
+    },
+    "$source": "manual",
+    "version": 4,
+    "$widgets": [],
+    "documentType": "offloadManifest",
+    "templateData": "<div class=\"editor__layout\" style=\"padding: 1.2rem 0.8rem; width: 100%;\" dir=\"ltr\">{{#each record.tasks}}<p class=\"editor__paragraph\" dir=\"ltr\"><span class=\"editor__text editor__field\" style=\"white-space: pre-wrap;\">{{this.taskType}}</span><br><span class=\"editor__text editor__field\" style=\"white-space: pre-wrap;\">{{this.fullId}}</span></p>{{/each}}</div>",
+    "rootObjectKey": "manifest",
+    "dataFormatVersion": "1"
+  }
+}

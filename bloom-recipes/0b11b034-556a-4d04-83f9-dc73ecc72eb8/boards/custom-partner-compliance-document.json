@@ -1,0 +1,16 @@
+{
+  "configKey": "board",
+  "key": "$custom_partnerComplianceDocument",
+  "json": {
+    "key": "$custom_partnerComplianceDocument",
+    "columns": [],
+    "filters": [],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-05-05T15:02:49.801Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "partnerComplianceDocument",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

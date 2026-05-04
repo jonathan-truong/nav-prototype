@@ -1,0 +1,1219 @@
+[
+  {
+    "key": "carrierServices__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "assetTypes",
+        "path": "assetTypes",
+        "label": "Assets"
+      },
+      {
+        "key": "serviceTypes",
+        "path": "serviceTypes",
+        "label": "Services"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Carrier services"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-03-06T15:27:35.952Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "onboardingPartner__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "liabilityInsuranceCoverage__c",
+        "path": "liabilityInsuranceCoverage__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "liabilityInsuranceExpiryDate__c",
+        "path": "liabilityInsuranceExpiryDate__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "cargoInsuranceCoverage__c",
+        "path": "cargoInsuranceCoverage__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "cargoInsuranceExpiryDate__c",
+        "path": "cargoInsuranceExpiryDate__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "insuranceProvider__c",
+        "path": "insuranceProvider__c",
+        "field": {
+          "key": "insuranceProvider__c",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Insurance Provider",
+          "paths": [
+            "compliances.provider"
+          ],
+          "isArray": true,
+          "isCustom": true,
+          "configKey": "field",
+          "expression": "LOOKUP({compliances.provider})",
+          "$declarator": {
+            "key": "$custom_partner",
+            "configKey": "object"
+          },
+          "isImportable": true,
+          "derivationType": "lookup"
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete 1"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "lead__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "customer",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "addContractDetails__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "agreementDate__c",
+        "path": "agreementDate__c",
+        "field": {
+          "key": "agreementDate__c",
+          "type": {
+            "key": "date",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Agreement date",
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {},
+          "$declarator": {
+            "key": "$custom_partner",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Broker-carrier agreement date",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "addContractDetails__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "contractStartDate__c",
+        "path": "contractStartDate__c",
+        "label": "Contract start date"
+      },
+      {
+        "key": "contractEndDate__c",
+        "path": "contractEndDate__c",
+        "label": "Contract end date"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "Enter the details of the broker-carrier agreement contract."
+        },
+        "title": "Add contract details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-03-06T15:27:06.685Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "addInsuranceLimit__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "liabilityInsurance__c",
+        "path": "liabilityInsurance__c",
+        "field": {
+          "key": "liabilityInsurance__c",
+          "type": {
+            "key": "money",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Liability insurance",
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "canBeNegative": false
+          },
+          "$declarator": {
+            "key": "$custom_partner",
+            "ref": true,
+            "configKey": "object"
+          },
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "addInsuranceLimit__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Add insurance details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-03-06T15:27:21.986Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "testTasks__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "testField__c",
+        "path": "testField__c",
+        "label": "Test field 3"
+      },
+      {
+        "key": "poNum",
+        "path": "poNum",
+        "label": "Po No."
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "Test widget please ignore"
+        },
+        "title": "TEST Tasks"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-04-05T18:38:01.328Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "enterAccessorials__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "accessorials",
+        "path": "accessorials",
+        "label": "Accessorials"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Enter accessorials"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-07-02T17:41:56.916Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "testWidgetPleaseIgnore__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "status",
+        "path": "status",
+        "label": "Status"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Test widget please ignore"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-07-18T14:17:53.262Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "tankerVolume__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "tankerVolume__c",
+        "path": "tankerVolume__c",
+        "label": "Tanker Volume"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Tanker volume"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-01-07T22:31:40.613Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "enterTopSpeed__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "zAndoNumber__c",
+        "path": "zAndoNumber__c",
+        "label": "zAndoNumber"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Enter top speed"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-03-26T17:23:26.025Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "receipientName__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Receipient Name"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-04-10T20:26:53.335Z",
+    "createdBy": "1badb8ba-b2fe-4558-b16d-b7970672fed7",
+    "objectKey": "manifest",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "scheduledDepartureDateTime__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "scheduledDeparture__c",
+        "path": "scheduledDeparture__c",
+        "label": "Scheduled Departure"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Scheduled Departure Date & Time"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "manifest",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "wsib__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "wsib__c",
+        "path": "wsib__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "wsib__c",
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete 2"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "maxBuy__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "maxBuy__c",
+        "path": "maxBuy__c",
+        "label": "Max Buy "
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Max Buy"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "regionDetails__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "pURegion__c",
+        "path": "pURegion__c",
+        "label": "P/U Region"
+      },
+      {
+        "key": "delRegion__c",
+        "path": "delRegion__c",
+        "label": "DEL Region"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Region Details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "brokerInfo__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "poNum",
+        "path": "poNum",
+        "field": {
+          "key": "poNum",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "PO number",
+          "isArray": false,
+          "configKey": "field",
+          "isRequired": false,
+          "$declarator": {
+            "key": "order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Purchase order number for the order",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "refNum",
+        "path": "refNum",
+        "field": {
+          "key": "refNum",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Ref number",
+          "isArray": false,
+          "configKey": "field",
+          "isRequired": false,
+          "$declarator": {
+            "key": "order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Reference number for the order",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "equipment__c",
+        "path": "equipment__c",
+        "field": {
+          "key": "equipment__c",
+          "type": {
+            "key": "multiSelect",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Equipment",
+          "isArray": true,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "dryVan",
+                "labelId": "Dry Van"
+              },
+              {
+                "value": "flatbed",
+                "labelId": "Flatbed"
+              },
+              {
+                "value": "reefer",
+                "labelId": "Reefer"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "This represents the type of equipment the carrier must have ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Load Details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "fileClaim__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "claimStatus__c",
+        "path": "claimStatus__c",
+        "label": "Claim Status"
+      },
+      {
+        "key": "claimType__c",
+        "path": "claimType__c",
+        "label": "Claim Type"
+      },
+      {
+        "key": "claimAmount__c",
+        "path": "claimAmount__c",
+        "label": "Claim Amount"
+      },
+      {
+        "key": "claimSubmissionDate__c",
+        "path": "claimSubmissionDate__c",
+        "label": "Claim Submission Date"
+      },
+      {
+        "key": "responsibleParty__c",
+        "path": "responsibleParty__c",
+        "label": "Responsible Party-Claims"
+      },
+      {
+        "key": "reportedOnClaims__c",
+        "path": "reportedOnClaims__c",
+        "label": "Reported on-Claims"
+      },
+      {
+        "key": "reportedByClaims__c",
+        "path": "reportedByClaims__c",
+        "label": "Reported By-Claims"
+      },
+      {
+        "key": "totalFreightValueClaims__c",
+        "path": "totalFreightValueClaims__c",
+        "label": "Total Freight Value-Claims"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "File Claim"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "brokerDetails__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "brokerAgent__c",
+        "path": "brokerAgent__c",
+        "field": {
+          "key": "brokerAgent__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "kyleTheBroker",
+                "labelId": "Broker 1"
+              },
+              {
+                "value": "danTheBroker",
+                "labelId": "Broker 2"
+              },
+              {
+                "value": "deniseTheBroker",
+                "labelId": "Broker 3"
+              },
+              {
+                "value": "nicoleTheBroker",
+                "labelId": "Broker 4"
+              },
+              {
+                "value": "broker5",
+                "labelId": "Broker 5"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the Broker responsible for the Customer & Load coverage ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "brokerAgentEmail__c",
+        "path": "brokerAgentEmail__c",
+        "field": {
+          "key": "brokerAgentEmail__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent Email ",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "deniseBrokerCom",
+                "labelId": "Test@broker.com"
+              },
+              {
+                "value": "nicoleBrokerCom",
+                "labelId": "Test2@broker.com"
+              },
+              {
+                "value": "kyleBrokerCom",
+                "labelId": "Test3@broker.com"
+              },
+              {
+                "value": "danBrokerCom",
+                "labelId": "Test4@broker.com"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the brokers Contact Information ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "brokerAgentPhone__c",
+        "path": "brokerAgentPhone__c",
+        "field": {
+          "key": "brokerAgentPhone__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent Phone #",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "4255559874",
+                "labelId": "999 888 9999"
+              },
+              {
+                "value": "4165551234",
+                "labelId": "111 111 1111"
+              },
+              {
+                "value": "9055559999",
+                "labelId": "905-555-9999"
+              },
+              {
+                "value": "3065551111",
+                "labelId": "000 000 0000"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the contact phone # for the broker",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "maxBuy__c",
+        "path": "maxBuy__c",
+        "label": "Max Buy "
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Broker Details & Max Buy"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "appointmentDetails__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "pUAppointment__c",
+        "path": "pUAppointment__c",
+        "label": "P/U Appointment"
+      },
+      {
+        "key": "delAppointment__c",
+        "path": "delAppointment__c",
+        "label": "DEL Appointment"
+      },
+      {
+        "key": "appointmentNotes__c",
+        "path": "appointmentNotes__c",
+        "label": "Appointment Notes"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Appointment Details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "orderType__c",
+    "paths": [],
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "tags",
+        "path": "tags",
+        "label": "Tags"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "FTL or LTL?"
+        },
+        "title": "Order Type"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  },
+  {
+    "key": "rating__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "overallRating__c",
+        "path": "overallRating__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "rating__c",
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete 3"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "addAccManagers__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "accountManagers",
+        "path": "accountManagers",
+        "label": "Account Managers"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "add acc managers"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-06-26T13:18:10.630Z",
+    "createdBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  },
+  {
+    "key": "newTest__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "status",
+        "path": "status",
+        "label": "Status"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "new test"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-07-29T17:54:27.179Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+]

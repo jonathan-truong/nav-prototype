@@ -1,0 +1,45 @@
+{
+  "id": "579cc755-81c7-4bda-8746-10c35fa64393",
+  "type": "boardView",
+  "name": "Order Invoiced",
+  "json": {
+    "id": "defaultView",
+    "boardId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "filters": [
+      {
+        "path": "orderStatus__c",
+        "value": [
+          "invoiced"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "orderStatus__c"
+      }
+    ],
+    "labelId": "Order Invoiced",
+    "isPinned": false,
+    "columnIds": [
+      "driverPay",
+      "fullId",
+      "name",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt",
+      "orderStatus__c"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "driverPay"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

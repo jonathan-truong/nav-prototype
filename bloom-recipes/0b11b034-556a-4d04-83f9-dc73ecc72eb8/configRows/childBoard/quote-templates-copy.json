@@ -1,0 +1,29 @@
+{
+  "id": "373a4706-f28a-4555-b435-a83933591190",
+  "type": "childBoard",
+  "name": "Quote templates copy",
+  "json": {
+    "icon": "📐",
+    "source": "manual",
+    "labelId": "Quote templates copy",
+    "parents": [
+      {
+        "id": "7634f035-971b-5c06-a823-5545a8715e13",
+        "key": "quoteModuleTier2QuoteTemplatesBoard",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "7634f035-971b-5c06-a823-5545a8715e13",
+    "objectKey": "quote",
+    "parentKey": "quoteModuleTier2QuoteTemplatesBoard",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "templateFullId",
+      "templateName",
+      "templateDescription",
+      "createdAt"
+    ],
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

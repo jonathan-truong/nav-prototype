@@ -1,0 +1,43 @@
+{
+  "configKey": "widget",
+  "key": "rating__c",
+  "json": {
+    "key": "rating__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "overallRating__c",
+        "path": "overallRating__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "rating__c",
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete 3"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

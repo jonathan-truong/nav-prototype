@@ -1,0 +1,83 @@
+{
+  "id": "0fc8cefa-af99-4f44-83ea-ddc463dbdc57",
+  "type": "boardView",
+  "name": "Order Overview",
+  "json": {
+    "id": "0fc8cefa-af99-4f44-83ea-ddc463dbdc57",
+    "name": "Order Overview",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "in transit",
+          "booked",
+          "delivered",
+          "new"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Order Overview",
+    "ordinal": 15,
+    "isPinned": false,
+    "columnIds": [
+      "poNum",
+      "status",
+      "partner",
+      "pod__c",
+      "shipper_formattedAddress",
+      "originCity__c",
+      "originState__c",
+      "consignee_formattedAddress",
+      "destinationState__c",
+      "destinationCity__c",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "ratePerMile__c",
+      "platformTags",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "accessorials",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "csrs",
+      "accountManagers",
+      "assetType",
+      "serviceType"
+    ],
+    "createdAt": "2024-01-30T19:20:14.929Z",
+    "createdBy": "0f4634a8-ce2a-40ab-878c-bc95e82a2f91",
+    "isDefault": false,
+    "updatedAt": "2025-09-11T20:03:51.418Z",
+    "updatedBy": "0f4634a8-ce2a-40ab-878c-bc95e82a2f91",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "fullId": 93,
+      "pod__c": 64,
+      "status": 149,
+      "partner": 113
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "poNum",
+      "status",
+      "partner",
+      "pod__c"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "poNum"
+  }
+}

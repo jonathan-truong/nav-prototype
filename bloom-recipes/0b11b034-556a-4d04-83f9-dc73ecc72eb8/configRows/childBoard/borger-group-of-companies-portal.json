@@ -1,0 +1,39 @@
+{
+  "id": "0b0972da-2877-4b9d-9fa1-4ee920d08ee5",
+  "type": "childBoard",
+  "name": "Borger Group of Companies Portal",
+  "json": {
+    "icon": "🏢",
+    "source": "manual",
+    "labelId": "Borger Group of Companies Portal",
+    "parents": [
+      {
+        "id": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+        "key": "customerPortalTemplate",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": false,
+    "parentId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "objectKey": "order",
+    "parentKey": "customerPortalTemplate",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "5c40ad81-bad7-483a-994b-87d4afcb7787"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

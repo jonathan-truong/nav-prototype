@@ -1,0 +1,54 @@
+{
+  "id": "4669f8d9-a56b-4f7b-9e7c-4ead89c45615",
+  "type": "childBoard",
+  "name": "Public Test",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Public Test",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "orderETAStatus",
+      "deliveryEta",
+      "etaLastUpdated",
+      "poNum",
+      "refNum",
+      "loadTenderNum"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "orderETAStatus",
+        "deliveryEta",
+        "etaLastUpdated",
+        "poNum",
+        "refNum",
+        "loadTenderNum"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

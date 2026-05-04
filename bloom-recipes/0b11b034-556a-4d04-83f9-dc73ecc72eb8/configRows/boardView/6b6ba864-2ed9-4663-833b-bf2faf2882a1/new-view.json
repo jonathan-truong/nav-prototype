@@ -1,0 +1,43 @@
+{
+  "id": "9dc356a2-db45-4ce5-81dc-e3393fbf597e",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "defaultView",
+    "boardId": "6b6ba864-2ed9-4663-833b-bf2faf2882a1",
+    "filters": [],
+    "labelId": "New View",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "customer",
+      "status",
+      "dueDate",
+      "totalAmount",
+      "invoiceDate",
+      "orderId",
+      "deliveryTime",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sentAt",
+      "lastModifiedAt"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "customer",
+      "status",
+      "dueDate",
+      "totalAmount"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

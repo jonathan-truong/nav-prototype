@@ -1,0 +1,72 @@
+{
+  "id": "cc07e72e-686e-4244-8724-e73c7c2df5df",
+  "type": "childBoard",
+  "name": "Lane History",
+  "json": {
+    "icon": "🛣️",
+    "source": "manual",
+    "labelId": "Lane History",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "totalMiles",
+      "platformTags",
+      "drivers"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "shipper_formattedAddress",
+        "consignee_formattedAddress",
+        "totalEarnings",
+        "totalCost",
+        "margin",
+        "customer",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "totalCommoditiesQuantity",
+        "totalCommoditiesWeight",
+        "totalMiles",
+        "platformTags",
+        "drivers"
+      ],
+      "description": "This is a Board of previous shipments you have ran to reference for quoting",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId",
+        "shipper_formattedAddress",
+        "consignee_formattedAddress",
+        "totalEarnings",
+        "totalCost",
+        "margin",
+        "customer"
+      ],
+      "orderByColumnKey": "fullId",
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "templateKey": "laneHistory"
+  }
+}

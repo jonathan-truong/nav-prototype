@@ -1,0 +1,25 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "d3812316-6abb-400c-a1c4-2e9de18e7445",
+  "json": {
+    "name": "New template (copy)",
+    "fullId": {
+      "arg": 36,
+      "formattedValue": "DOCT-36"
+    },
+    "$source": "duplicate",
+    "version": 8,
+    "$version": 7,
+    "$widgets": [],
+    "$createdAt": "2025-03-05T21:06:05.234Z",
+    "$createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "$updatedAt": "2025-03-05T21:12:13.941Z",
+    "$updatedBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "isTemplate": false,
+    "$externalId": null,
+    "documentType": "invoice",
+    "templateData": "",
+    "rootObjectKey": "invoice",
+    "dataFormatVersion": "1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "61e89ce2-4648-4f72-a435-e0a60afa0ec4",
+  "type": "boardView",
+  "name": "FLIs With Rate",
+  "json": {
+    "id": "61e89ce2-4648-4f72-a435-e0a60afa0ec4",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "7accb275-8be5-59ea-a407-1aaa4af331af",
+    "filters": [],
+    "labelId": "FLIs With Rate",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "type",
+      "quantity",
+      "rate"
+    ],
+    "createdAt": "2024-10-10T17:37:43.138Z",
+    "createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "isDefault": false,
+    "updatedAt": "2024-10-10T17:37:43.138Z",
+    "updatedBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "visibility": "board",
+    "description": "With Rate",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "20aa1ea3-3129-464b-969f-63ba1f2c9774",
+  "type": "boardView",
+  "name": "Timeline",
+  "json": {
+    "id": "20aa1ea3-3129-464b-969f-63ba1f2c9774",
+    "name": "default2",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "timeline",
+    "boardId": "ee783736-00b3-422b-aa29-5c85af72657e",
+    "filters": [],
+    "labelId": "Timeline",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "onTimePickUp__c",
+      "onTimeDelivery__c"
+    ],
+    "createdAt": "2025-05-13T17:49:28.917Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-08-25T20:01:38.182Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": "",
+    "columnWidths": {},
+    "layoutOptions": {
+      "endDatePath": "requestedPickupWindow",
+      "cardColumnIds": [
+        "fullId",
+        "status",
+        "onTimePickUp__c"
+      ],
+      "startDatePath": "requestedDeliveryWindow"
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

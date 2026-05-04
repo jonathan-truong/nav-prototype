@@ -1,0 +1,71 @@
+{
+  "id": "52a92069-fc84-4e95-976e-d988003e711e",
+  "type": "childBoard",
+  "name": "Manifests Anchor Towing",
+  "json": {
+    "id": "52a92069-fc84-4e95-976e-d988003e711e",
+    "icon": "📦",
+    "source": "manual",
+    "labelId": "Manifests Anchor Towing",
+    "parents": [
+      {
+        "id": "5015070c-0404-51da-b2b8-618b7146f580",
+        "key": "manifest",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "objectKey": "manifest",
+    "parentKey": "manifest",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "name",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "name",
+        "drivers",
+        "tasksStopsFullId",
+        "totalMiles",
+        "estimatedDurationFormatted",
+        "ordersFullId",
+        "tasksFullId",
+        "dispatchedAt"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "partner",
+            "value": [
+              "89693bcf-ffdc-4cf1-9ea5-bc2bc48ecf6c"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "partner"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

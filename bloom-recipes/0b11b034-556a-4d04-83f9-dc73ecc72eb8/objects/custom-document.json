@@ -1,0 +1,229 @@
+{
+  "configKey": "object",
+  "key": "$custom_document",
+  "json": {
+    "key": "$custom_document",
+    "fields": [
+      {
+        "key": "documentType",
+        "before": "$source",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "ace",
+              "labelId": "ACE",
+              "isCustom": false
+            },
+            {
+              "value": "aci",
+              "labelId": "ACI",
+              "isCustom": false
+            },
+            {
+              "value": "bill",
+              "labelId": "Bill",
+              "isCustom": false
+            },
+            {
+              "value": "legBillOfLading",
+              "labelId": "Leg bill of lading",
+              "isCustom": false
+            },
+            {
+              "value": "billOfLading",
+              "labelId": "Bill of lading",
+              "isCustom": false
+            },
+            {
+              "value": "commercialInvoice",
+              "labelId": "Commercial invoice",
+              "isCustom": false
+            },
+            {
+              "value": "complianceWSIB",
+              "labelId": "WSIB (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceDriver",
+              "labelId": "Driver (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceAuto",
+              "labelId": "Auto (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "complianceCargo",
+              "labelId": "Cargo (compliance)",
+              "isCustom": false
+            },
+            {
+              "value": "labels",
+              "labelId": "Labels",
+              "isCustom": false
+            },
+            {
+              "value": "invoice",
+              "labelId": "Invoice",
+              "isCustom": false
+            },
+            {
+              "value": "offloadManifest",
+              "labelId": "Offload manifest",
+              "isCustom": false
+            },
+            {
+              "value": "preloadManifest",
+              "labelId": "Preload manifest",
+              "isCustom": false
+            },
+            {
+              "value": "paps",
+              "labelId": "PAPS",
+              "isCustom": false
+            },
+            {
+              "value": "payStub",
+              "labelId": "Pay stub",
+              "isCustom": false
+            },
+            {
+              "value": "proofOfPickup",
+              "labelId": "Proof of pickup",
+              "isCustom": false
+            },
+            {
+              "value": "proofOfDelivery",
+              "labelId": "Proof of delivery",
+              "isCustom": false
+            },
+            {
+              "value": "quote",
+              "labelId": "Quote",
+              "isCustom": false
+            },
+            {
+              "value": "rateConfirmation",
+              "labelId": "Rate confirmation",
+              "isCustom": false
+            },
+            {
+              "value": "ucc128",
+              "labelId": "UCC-128",
+              "isCustom": false
+            },
+            {
+              "value": "partnerCompliance",
+              "labelId": "Partner compliance",
+              "isCustom": false
+            },
+            {
+              "value": "autoLiability",
+              "labelId": "Auto liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "generalLiability",
+              "labelId": "General liability insurance",
+              "isCustom": false
+            },
+            {
+              "value": "cargoInsurance",
+              "labelId": "Cargo insurance",
+              "isCustom": false
+            },
+            {
+              "value": "workersCompensation",
+              "labelId": "Workers' compensation insurance",
+              "isCustom": false
+            },
+            {
+              "value": "hazardousMaterials",
+              "labelId": "Hazardous materials certification",
+              "isCustom": false
+            },
+            {
+              "value": "reeferBreakdown",
+              "labelId": "Reefer breakdown insurance",
+              "isCustom": false
+            },
+            {
+              "value": "ctpat",
+              "labelId": "C-TPAT certification",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            },
+            {
+              "value": "bond",
+              "labelId": "Bond",
+              "isCustom": false
+            },
+            {
+              "value": "customerSOP",
+              "labelId": "Customer SOP",
+              "isCustom": false
+            },
+            {
+              "value": "customerPO",
+              "labelId": "Customer PO",
+              "isCustom": false
+            },
+            {
+              "value": "ryansDocumentType",
+              "labelId": "Ryan's Document Type",
+              "isCustom": true
+            }
+          ],
+          "derivedOptions": {
+            "rootConfigKey": "documentType"
+          }
+        }
+      },
+      {
+        "key": "$source",
+        "before": "isShared",
+        "configKey": "field"
+      },
+      {
+        "key": "isShared",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "partnerCompliance",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "uploader",
+        "before": null,
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2025-05-05T15:02:49.726Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "document",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "configKey": "board",
+  "key": "$custom_bikeBoard__c",
+  "json": {
+    "key": "$custom_bikeBoard__c",
+    "icon": "👤",
+    "label": "Bikes Board",
+    "buttons": [
+      {
+        "key": "create",
+        "type": "primary",
+        "action": "async ({ context }): Promise<void> => {const resp: { id: string } = await context.createRecord({boardId: context.boardId,objectKey: 'bike__c',json: {},});context.navigateToRecord({recordId: resp.id,objectKey: 'bike__c',});}",
+        "labelId": "Create bikes"
+      }
+    ],
+    "columns": [
+      {
+        "id": "fullId",
+        "key": "fullId",
+        "path": "fullId",
+        "label": "Full ID"
+      },
+      {
+        "id": "name",
+        "key": "name",
+        "path": "name",
+        "label": "Name",
+        "isEditable": true
+      }
+    ],
+    "isMixin": false,
+    "labelId": "Bikes",
+    "summary": "Bikes Board",
+    "configKey": "board",
+    "createdAt": "2025-03-24T15:01:53.138Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "bike__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "Bikes Board",
+    "securityFilters": []
+  }
+}

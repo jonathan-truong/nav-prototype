@@ -1,0 +1,41 @@
+{
+  "id": "a6231bcc-ed54-42bb-a655-8a6812a92ffb",
+  "type": "childBoard",
+  "name": "New Board copy 2",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "New Board copy 2",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "partner",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "manifests",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "driverName"
+    ],
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

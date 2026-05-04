@@ -1,0 +1,124 @@
+{
+  "id": "d0b88be8-d962-4759-befe-f703a9f7439b",
+  "type": "childBoard",
+  "name": "moshanti",
+  "json": {
+    "id": "d0b88be8-d962-4759-befe-f703a9f7439b",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "moshanti",
+    "parents": [
+      {
+        "id": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+        "key": "task",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+    "objectKey": "task",
+    "parentKey": "task",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "taskETAStatus",
+      "partnerNotes",
+      "taskType",
+      "description",
+      "status",
+      "orderFullId",
+      "manifestFullId",
+      "manifestName",
+      "refNum",
+      "specialInstructions",
+      "legOriginTaskType",
+      "originRequestedTime",
+      "originCompletedTime",
+      "originArrivalTime",
+      "legDestinationTaskType",
+      "destinationRequestedTime",
+      "destinationCompletedTime",
+      "destinationArrivalTime",
+      "previousLeg",
+      "previousLegStatus",
+      "appointmentType",
+      "appointmentNotes",
+      "$updatedAt",
+      "$createdAt",
+      "$createdByFullName",
+      "$updatedByFullName",
+      "geofenceArrivalTime",
+      "geofenceDepartureTime",
+      "legPickupTime__c",
+      "legDeliveryTime__c",
+      "containerNo__c",
+      "hughsLookup__c",
+      "hughsLookup2__c",
+      "declaredValue__c",
+      "pod__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "taskETAStatus",
+        "partnerNotes",
+        "taskType",
+        "description",
+        "status",
+        "orderFullId",
+        "manifestFullId",
+        "manifestName",
+        "refNum",
+        "specialInstructions",
+        "legOriginTaskType",
+        "originRequestedTime",
+        "originCompletedTime",
+        "originArrivalTime",
+        "legDestinationTaskType",
+        "destinationRequestedTime",
+        "destinationCompletedTime",
+        "destinationArrivalTime",
+        "previousLeg",
+        "previousLegStatus",
+        "appointmentType",
+        "appointmentNotes",
+        "$updatedAt",
+        "$createdAt",
+        "$createdByFullName",
+        "$updatedByFullName",
+        "geofenceArrivalTime",
+        "geofenceDepartureTime",
+        "legPickupTime__c",
+        "legDeliveryTime__c",
+        "containerNo__c",
+        "hughsLookup__c",
+        "hughsLookup2__c",
+        "declaredValue__c",
+        "pod__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "relatedOrder",
+            "value": [],
+            "operator": "notEmpty",
+            "fieldType": "ConnectionField",
+            "filterKey": "orderFullId"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

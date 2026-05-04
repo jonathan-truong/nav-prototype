@@ -1,0 +1,52 @@
+{
+  "id": "ebeb2a40-3b7e-4399-8b2b-135b4caa1406",
+  "type": "boardView",
+  "name": "In Transit",
+  "json": {
+    "boardId": "d25f7334-5acc-4496-9390-89586953da70",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "in transit"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "In Transit",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board to track where your drivers are and what they are working on",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

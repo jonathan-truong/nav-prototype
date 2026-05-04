@@ -1,0 +1,42 @@
+{
+  "id": "63118cff-3beb-4eb4-be7e-b0858b9a2cc2",
+  "type": "boardView",
+  "name": "Split view",
+  "json": {
+    "id": "defaultView",
+    "boardId": "db3b32a2-d62a-5a4c-8932-d33c16821de2",
+    "filters": [],
+    "labelId": "Split view",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "name",
+      "assetType",
+      "capabilities",
+      "description",
+      "status",
+      "platformTags",
+      "managers",
+      "vin",
+      "plateNumber",
+      "manufacturer",
+      "model",
+      "year",
+      "$updatedAt",
+      "$createdAt",
+      "newTest1__c",
+      "newTest2__c",
+      "lastSeenTest__c"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

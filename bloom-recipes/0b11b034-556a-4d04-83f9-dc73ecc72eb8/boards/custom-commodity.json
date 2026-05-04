@@ -1,0 +1,93 @@
+{
+  "configKey": "board",
+  "key": "$custom_commodity",
+  "json": {
+    "key": "$custom_commodity",
+    "columns": [
+      {
+        "key": "vin__c",
+        "path": "vin__c",
+        "labelId": "VIN",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "l__c",
+        "path": "l__c",
+        "labelId": "L",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "w__c",
+        "path": "w__c",
+        "labelId": "W",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "h__c",
+        "path": "h__c",
+        "labelId": "H",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "volumeAir__c",
+        "path": "volumeAir__c",
+        "labelId": "Volume (Air)",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "vin__c",
+        "path": "vin__c",
+        "labelId": "VIN",
+        "columnKey": "vin__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "l__c",
+        "path": "l__c",
+        "labelId": "L",
+        "columnKey": "l__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "w__c",
+        "path": "w__c",
+        "labelId": "W",
+        "columnKey": "w__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "h__c",
+        "path": "h__c",
+        "labelId": "H",
+        "columnKey": "h__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "volumeAir__c",
+        "path": "volumeAir__c",
+        "labelId": "Volume (Air)",
+        "columnKey": "volumeAir__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-09-04T16:04:46.915Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "commodity",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

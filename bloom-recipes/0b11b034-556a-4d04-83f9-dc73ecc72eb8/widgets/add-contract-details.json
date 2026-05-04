@@ -1,0 +1,71 @@
+{
+  "configKey": "widget",
+  "key": "addContractDetails__c",
+  "json": {
+    "key": "addContractDetails__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "agreementDate__c",
+        "path": "agreementDate__c",
+        "field": {
+          "key": "agreementDate__c",
+          "type": {
+            "key": "date",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Agreement date",
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {},
+          "$declarator": {
+            "key": "$custom_partner",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Broker-carrier agreement date",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "addContractDetails__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "contractStartDate__c",
+        "path": "contractStartDate__c",
+        "label": "Contract start date"
+      },
+      {
+        "key": "contractEndDate__c",
+        "path": "contractEndDate__c",
+        "label": "Contract end date"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": "Enter the details of the broker-carrier agreement contract."
+        },
+        "title": "Add contract details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2024-03-06T15:27:06.685Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

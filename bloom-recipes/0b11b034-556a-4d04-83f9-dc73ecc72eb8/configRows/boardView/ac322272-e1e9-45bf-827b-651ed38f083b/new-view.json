@@ -1,0 +1,39 @@
+{
+  "id": "18c1f1fc-8697-4d6f-89d3-20e9f6424d7a",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "18c1f1fc-8697-4d6f-89d3-20e9f6424d7a",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "ac322272-e1e9-45bf-827b-651ed38f083b",
+    "filters": [],
+    "labelId": "New View",
+    "isPinned": true,
+    "columnIds": [
+      "fullId",
+      "customer",
+      "partner",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "driverName"
+    ],
+    "createdAt": "2024-10-29T14:36:11.684Z",
+    "createdBy": "3257a648-71ba-4393-9915-bbf9bcaccca5",
+    "isDefault": false,
+    "updatedAt": "2024-10-29T14:36:14.998Z",
+    "updatedBy": "3257a648-71ba-4393-9915-bbf9bcaccca5",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

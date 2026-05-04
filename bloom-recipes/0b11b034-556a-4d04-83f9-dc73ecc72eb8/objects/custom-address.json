@@ -1,0 +1,103 @@
+{
+  "configKey": "object",
+  "key": "$custom_address",
+  "json": {
+    "key": "$custom_address",
+    "events": [
+      {
+        "key": "withGenericWebhookEvents.record.deleted",
+        "before": "1c4de490-ca60-4765-979c-65ffff23f510",
+        "configKey": "event",
+        "activityLog": {
+          "enabled": false
+        }
+      },
+      {
+        "key": "1c4de490-ca60-4765-979c-65ffff23f510",
+        "label": "Notification Test",
+        "typeId": "",
+        "configKey": "event",
+        "methodKey": "Notification_Test",
+        "$declarator": {
+          "key": "$custom_address",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "",
+        "notifications": {
+          "enabled": true,
+          "defaults": {
+            "user": {
+              "enabled": false,
+              "channels": [
+                "email",
+                "inbox"
+              ]
+            }
+          },
+          "renderContent": {
+            "$stub": true
+          }
+        }
+      }
+    ],
+    "fields": [
+      {
+        "key": "canvas",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isActive",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "systemFingerprint",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "promptTokens",
+        "configKey": "field",
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueEvent",
+        "before": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": null,
+        "configKey": "method"
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2025-04-24T14:56:31.890Z",
+    "createdBy": "27206a3d-abe4-4be8-8205-4dc986b4e380",
+    "targetKey": "address",
+    "updatedAt": "2026-03-31T20:25:34.377Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

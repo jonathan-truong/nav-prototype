@@ -1,0 +1,40 @@
+{
+  "id": "130c29f5-d3e1-42bf-8368-79238c9081e5",
+  "type": "boardView",
+  "name": "Math View",
+  "json": {
+    "id": "130c29f5-d3e1-42bf-8368-79238c9081e5",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "5d751f79-b049-5402-a573-097f48902e96",
+    "filters": [],
+    "labelId": "Math View",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "partnerInvoiceId",
+      "manifestTotal",
+      "billTotal",
+      "billRateConDifferenceAmount",
+      "billRateConPctOfDifference",
+      "billRateConPctOfRateConTotal",
+      "billCreationDate",
+      "internalNotes",
+      "freightAuditAndPay2__c",
+      "freightAuditAndPay__c"
+    ],
+    "createdAt": "2024-09-23T19:17:21.505Z",
+    "createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "isDefault": false,
+    "updatedAt": "2024-09-23T19:17:44.683Z",
+    "updatedBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "507a6315-e419-40e7-9a11-5cd6dc616df0",
+  "type": "boardView",
+  "name": "New view",
+  "json": {
+    "id": "507a6315-e419-40e7-9a11-5cd6dc616df0",
+    "name": "New view",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "c4dd54ca-caf3-41f0-b033-94c219e11971",
+    "filters": [],
+    "labelId": "New view",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "tedSuggestionsStatus",
+      "totalEarnings",
+      "$createdByFullName"
+    ],
+    "createdAt": "2026-04-16T19:30:47.904Z",
+    "createdBy": "c9eedb2d-5999-467f-8e10-9436ebe8ab97",
+    "isDefault": false,
+    "updatedAt": "2026-04-16T19:32:50.299Z",
+    "updatedBy": "c9eedb2d-5999-467f-8e10-9436ebe8ab97",
+    "visibility": "board",
+    "description": "",
+    "columnWidths": {},
+    "layoutOptions": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "configKey": "board",
+  "key": "$custom_payStub",
+  "json": {
+    "key": "$custom_payStub",
+    "columns": [
+      {
+        "key": "orders__c",
+        "path": "orders__c",
+        "labelId": "Orders",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "customers__c",
+        "path": "customers__c",
+        "labelId": "Customers",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      }
+    ],
+    "filters": [
+      {
+        "key": "orders__c",
+        "path": "orders__c",
+        "labelId": "Orders",
+        "columnKey": "orders__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customers__c",
+        "path": "customers__c",
+        "labelId": "Customers",
+        "columnKey": "customers__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-05-28T16:44:08.545Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "payStub",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

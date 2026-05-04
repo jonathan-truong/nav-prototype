@@ -1,0 +1,33 @@
+{
+  "configKey": "board",
+  "key": "$custom_partnerCompliance",
+  "json": {
+    "key": "$custom_partnerCompliance",
+    "columns": [
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "Test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "Test",
+        "columnKey": "test__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-10-30T15:40:28.466Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "partnerCompliance",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

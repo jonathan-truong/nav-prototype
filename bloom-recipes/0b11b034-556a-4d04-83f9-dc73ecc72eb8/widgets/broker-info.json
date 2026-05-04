@@ -1,0 +1,136 @@
+{
+  "configKey": "widget",
+  "key": "brokerInfo__c",
+  "json": {
+    "key": "brokerInfo__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "poNum",
+        "path": "poNum",
+        "field": {
+          "key": "poNum",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "PO number",
+          "isArray": false,
+          "configKey": "field",
+          "isRequired": false,
+          "$declarator": {
+            "key": "order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Purchase order number for the order",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "refNum",
+        "path": "refNum",
+        "field": {
+          "key": "refNum",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Ref number",
+          "isArray": false,
+          "configKey": "field",
+          "isRequired": false,
+          "$declarator": {
+            "key": "order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "Reference number for the order",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "equipment__c",
+        "path": "equipment__c",
+        "field": {
+          "key": "equipment__c",
+          "type": {
+            "key": "multiSelect",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Equipment",
+          "isArray": true,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "dryVan",
+                "labelId": "Dry Van"
+              },
+              {
+                "value": "flatbed",
+                "labelId": "Flatbed"
+              },
+              {
+                "value": "reefer",
+                "labelId": "Reefer"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "ref": true,
+            "configKey": "object"
+          },
+          "description": "This represents the type of equipment the carrier must have ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerInfo__c",
+          "ref": true,
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Load Details"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

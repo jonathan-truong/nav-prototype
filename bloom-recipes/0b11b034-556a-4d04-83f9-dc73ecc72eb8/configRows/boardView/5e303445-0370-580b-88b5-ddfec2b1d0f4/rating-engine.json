@@ -1,0 +1,53 @@
+{
+  "id": "b4b9c6db-4ab8-43ad-a123-a3271c2d6ea1",
+  "type": "boardView",
+  "name": "Rating Engine",
+  "json": {
+    "id": "f27a702d-5cac-40bd-ae4c-d2881d712689",
+    "orgId": "c25888e4-b717-4ef8-8369-f0fd6977db71",
+    "boardId": "5e303445-0370-580b-88b5-ddfec2b1d0f4",
+    "filters": [
+      {
+        "path": "category__c",
+        "value": [
+          "ratingEngine"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "category__c"
+      }
+    ],
+    "labelId": "Rating Engine",
+    "ordinal": 5,
+    "isPinned": false,
+    "columnIds": [
+      "sortOrder__c",
+      "status__c",
+      "title__c",
+      "description__c",
+      "videoLink__c",
+      "helpCentreLink__c",
+      "module__c",
+      "category__c",
+      "difficulty__c",
+      "estimatedTimeToCompletion__c",
+      "businessType__c",
+      "notes__c"
+    ],
+    "createdAt": "2025-06-19T14:18:31.964Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-06-19T14:46:55.271Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "title__c": 268
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "sortOrder__c",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "title__c"
+  }
+}

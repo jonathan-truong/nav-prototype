@@ -1,0 +1,73 @@
+{
+  "configKey": "widget",
+  "key": "fileClaim__c",
+  "json": {
+    "key": "fileClaim__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "claimStatus__c",
+        "path": "claimStatus__c",
+        "label": "Claim Status"
+      },
+      {
+        "key": "claimType__c",
+        "path": "claimType__c",
+        "label": "Claim Type"
+      },
+      {
+        "key": "claimAmount__c",
+        "path": "claimAmount__c",
+        "label": "Claim Amount"
+      },
+      {
+        "key": "claimSubmissionDate__c",
+        "path": "claimSubmissionDate__c",
+        "label": "Claim Submission Date"
+      },
+      {
+        "key": "responsibleParty__c",
+        "path": "responsibleParty__c",
+        "label": "Responsible Party-Claims"
+      },
+      {
+        "key": "reportedOnClaims__c",
+        "path": "reportedOnClaims__c",
+        "label": "Reported on-Claims"
+      },
+      {
+        "key": "reportedByClaims__c",
+        "path": "reportedByClaims__c",
+        "label": "Reported By-Claims"
+      },
+      {
+        "key": "totalFreightValueClaims__c",
+        "path": "totalFreightValueClaims__c",
+        "label": "Total Freight Value-Claims"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "File Claim"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

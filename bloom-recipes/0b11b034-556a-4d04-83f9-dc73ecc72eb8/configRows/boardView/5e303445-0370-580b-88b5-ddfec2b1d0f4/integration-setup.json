@@ -1,0 +1,53 @@
+{
+  "id": "dab6bdd8-351a-4713-8a49-b8097d00053b",
+  "type": "boardView",
+  "name": "Integration Setup",
+  "json": {
+    "id": "f3379762-f649-4b60-b323-4e8374326865",
+    "orgId": "c25888e4-b717-4ef8-8369-f0fd6977db71",
+    "boardId": "5e303445-0370-580b-88b5-ddfec2b1d0f4",
+    "filters": [
+      {
+        "path": "category__c",
+        "value": [
+          "integrations"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "category__c"
+      }
+    ],
+    "labelId": "Integration Setup",
+    "ordinal": 2,
+    "isPinned": false,
+    "columnIds": [
+      "sortOrder__c",
+      "status__c",
+      "title__c",
+      "description__c",
+      "videoLink__c",
+      "helpCentreLink__c",
+      "module__c",
+      "category__c",
+      "difficulty__c",
+      "estimatedTimeToCompletion__c",
+      "businessType__c",
+      "notes__c"
+    ],
+    "createdAt": "2025-06-19T14:17:06.838Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-06-19T14:46:55.251Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "title__c": 268
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "sortOrder__c",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "title__c"
+  }
+}

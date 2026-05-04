@@ -1,0 +1,33 @@
+{
+  "id": "d8042924-b156-445f-a1fa-7d6146019dba",
+  "type": "boardView",
+  "name": "ETA",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "906d72d2-b21a-4b24-86d5-dd7a163df3bf",
+    "filters": [],
+    "labelId": "ETA",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "orderETAStatus",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "deliveryEta"
+    ],
+    "createdAt": "2024-05-29T15:19:30.256Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2024-05-29T15:19:30.256Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "orderETAStatus"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

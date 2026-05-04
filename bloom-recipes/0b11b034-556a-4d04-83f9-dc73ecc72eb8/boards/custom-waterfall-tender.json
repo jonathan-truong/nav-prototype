@@ -1,0 +1,108 @@
+{
+  "configKey": "board",
+  "key": "$custom_waterfallTender",
+  "json": {
+    "key": "$custom_waterfallTender",
+    "columns": [
+      {
+        "key": "stuff__c",
+        "path": "stuff__c",
+        "labelId": "Stuff",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "partnerCarrier__c",
+        "path": "partnerCarrier__c",
+        "labelId": "Partner Carrier",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "tenderStatus__c",
+        "path": "tenderStatus__c",
+        "labelId": "Tender Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "partnerRatingTier__c",
+        "path": "partnerRatingTier__c",
+        "labelId": "Partner Rating Tier",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "order__c",
+        "path": "order__c",
+        "labelId": "Order #",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "declineNotes__c",
+        "path": "declineNotes__c",
+        "labelId": "Decline Notes",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "stuff__c",
+        "path": "stuff__c",
+        "labelId": "Stuff",
+        "columnKey": "stuff__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "partnerCarrier__c",
+        "path": "partnerCarrier__c",
+        "labelId": "Partner Carrier",
+        "columnKey": "partnerCarrier__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "tenderStatus__c",
+        "path": "tenderStatus__c",
+        "labelId": "Tender Status",
+        "columnKey": "tenderStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "partnerRatingTier__c",
+        "path": "partnerRatingTier__c",
+        "labelId": "Partner Rating Tier",
+        "columnKey": "partnerRatingTier__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "order__c",
+        "path": "order__c",
+        "labelId": "Order #",
+        "columnKey": "order__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "declineNotes__c",
+        "path": "declineNotes__c",
+        "labelId": "Decline Notes",
+        "columnKey": "declineNotes__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "waterfallTender",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

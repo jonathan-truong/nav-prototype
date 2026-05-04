@@ -1,0 +1,16 @@
+{
+  "configKey": "board",
+  "key": "$custom_accessorial",
+  "json": {
+    "key": "$custom_accessorial",
+    "columns": [],
+    "filters": [],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-09-03T20:18:35.296Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "accessorial",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

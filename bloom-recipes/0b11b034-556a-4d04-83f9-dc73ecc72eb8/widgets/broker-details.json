@@ -1,0 +1,183 @@
+{
+  "configKey": "widget",
+  "key": "brokerDetails__c",
+  "json": {
+    "key": "brokerDetails__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "brokerAgent__c",
+        "path": "brokerAgent__c",
+        "field": {
+          "key": "brokerAgent__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "kyleTheBroker",
+                "labelId": "Broker 1"
+              },
+              {
+                "value": "danTheBroker",
+                "labelId": "Broker 2"
+              },
+              {
+                "value": "deniseTheBroker",
+                "labelId": "Broker 3"
+              },
+              {
+                "value": "nicoleTheBroker",
+                "labelId": "Broker 4"
+              },
+              {
+                "value": "broker5",
+                "labelId": "Broker 5"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the Broker responsible for the Customer & Load coverage ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "brokerAgentEmail__c",
+        "path": "brokerAgentEmail__c",
+        "field": {
+          "key": "brokerAgentEmail__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent Email ",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "deniseBrokerCom",
+                "labelId": "Test@broker.com"
+              },
+              {
+                "value": "nicoleBrokerCom",
+                "labelId": "Test2@broker.com"
+              },
+              {
+                "value": "kyleBrokerCom",
+                "labelId": "Test3@broker.com"
+              },
+              {
+                "value": "danBrokerCom",
+                "labelId": "Test4@broker.com"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the brokers Contact Information ",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "brokerAgentPhone__c",
+        "path": "brokerAgentPhone__c",
+        "field": {
+          "key": "brokerAgentPhone__c",
+          "type": {
+            "key": "select",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Broker Agent Phone #",
+          "isArray": false,
+          "isCustom": true,
+          "configKey": "field",
+          "typeConfig": {
+            "options": [
+              {
+                "value": "4255559874",
+                "labelId": "999 888 9999"
+              },
+              {
+                "value": "4165551234",
+                "labelId": "111 111 1111"
+              },
+              {
+                "value": "9055559999",
+                "labelId": "905-555-9999"
+              },
+              {
+                "value": "3065551111",
+                "labelId": "000 000 0000"
+              }
+            ]
+          },
+          "$declarator": {
+            "key": "$custom_order",
+            "configKey": "object"
+          },
+          "description": "This is the contact phone # for the broker",
+          "isImportable": true
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "brokerDetails__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "maxBuy__c",
+        "path": "maxBuy__c",
+        "label": "Max Buy "
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Broker Details & Max Buy"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

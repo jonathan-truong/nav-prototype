@@ -1,0 +1,57 @@
+{
+  "id": "6f0fb441-9905-43f9-bd2b-c5b70c267674",
+  "type": "boardView",
+  "name": "Outstanding Invoices",
+  "json": {
+    "id": "5cc7d2c1-2cb2-4c86-b616-85b623e36ba4",
+    "orgId": "95915457-cd50-4e60-8a38-fbe8a971550c",
+    "boardId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "filters": [
+      {
+        "path": "status",
+        "value": [],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Outstanding Invoices",
+    "isPinned": true,
+    "columnIds": [
+      "fullId",
+      "status",
+      "invoiceDate",
+      "dueDate",
+      "customer",
+      "totalAmount",
+      "orderId",
+      "documents",
+      "poNum",
+      "deliveryTime",
+      "platformTags",
+      "refNum",
+      "subTotal",
+      "loadTenderNum",
+      "sentAt",
+      "lastModifiedAt",
+      "lastExportedAt"
+    ],
+    "createdAt": "2024-04-11T02:41:21.449Z",
+    "createdBy": "7714f09e-9962-4808-ae9f-045aa8783489",
+    "isDefault": false,
+    "updatedAt": "2024-04-11T02:44:28.395Z",
+    "updatedBy": "7714f09e-9962-4808-ae9f-045aa8783489",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "status",
+      "invoiceDate",
+      "dueDate"
+    ],
+    "orderByColumnKey": "dueDate",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

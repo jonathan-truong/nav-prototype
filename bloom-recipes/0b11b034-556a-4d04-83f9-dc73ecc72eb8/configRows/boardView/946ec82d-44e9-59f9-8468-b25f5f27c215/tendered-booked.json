@@ -1,0 +1,43 @@
+{
+  "id": "c85e4e79-8841-4e0e-9e52-a31e292c6d85",
+  "type": "boardView",
+  "name": "Tendered/Booked",
+  "json": {
+    "key": "tenderedOrBooked",
+    "boardId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "tendered",
+          "booked"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Tendered/Booked",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "requestedPickupWindow",
+      "shipper_formattedAddress",
+      "requestedDeliveryWindow",
+      "consignee_formattedAddress",
+      "commodities",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "specialInstructions",
+      "totalMiles",
+      "loadTenderNum",
+      "poNum",
+      "refNum"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "mainLinkColumnKey": ""
+  }
+}

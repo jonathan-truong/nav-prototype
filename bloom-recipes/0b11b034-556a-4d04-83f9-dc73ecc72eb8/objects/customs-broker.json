@@ -1,0 +1,53 @@
+{
+  "configKey": "object",
+  "key": "customsBroker__c",
+  "json": {
+    "key": "customsBroker__c",
+    "label": "customsBroker",
+    "level": "secondary",
+    "events": [],
+    "fields": [
+      {
+        "key": "fullId",
+        "type": {
+          "key": "fullId",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Full ID",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "format": "CU-{1}"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "name",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Name",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "description": "Name of customsbroker",
+        "isImportable": true
+      }
+    ],
+    "isMixin": false,
+    "methods": [],
+    "summary": "customsBroker",
+    "configKey": "object",
+    "createdAt": "2025-05-06T20:40:20.862Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "stability": "stable",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "description": "customsBroker",
+    "isImportable": true
+  }
+}

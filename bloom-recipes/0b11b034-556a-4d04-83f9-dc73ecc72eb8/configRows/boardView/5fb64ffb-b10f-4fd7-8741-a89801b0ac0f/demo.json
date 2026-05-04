@@ -1,0 +1,57 @@
+{
+  "id": "7d2720ff-b269-4d7d-9b57-de6911821d05",
+  "type": "boardView",
+  "name": "Demo",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "5fb64ffb-b10f-4fd7-8741-a89801b0ac0f",
+    "filters": [
+      {
+        "path": "totalMiles",
+        "value": {
+          "max": 1000000,
+          "min": 0
+        },
+        "operator": "equals",
+        "fieldType": "NumberField",
+        "filterKey": "totalMiles"
+      },
+      {
+        "path": "margin",
+        "value": {
+          "max": 100000000,
+          "min": -1000000
+        },
+        "operator": "equals",
+        "fieldType": "MoneyField",
+        "filterKey": "margin"
+      }
+    ],
+    "labelId": "Demo",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "marginPerMile__c",
+      "5SalesCommission__c",
+      "margin",
+      "totalEarnings",
+      "totalCost",
+      "multiCurrencyMargin",
+      "totalMiles",
+      "erroredFormula__c"
+    ],
+    "createdAt": "2024-07-09T14:09:26.006Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-01-22T15:37:48.911Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

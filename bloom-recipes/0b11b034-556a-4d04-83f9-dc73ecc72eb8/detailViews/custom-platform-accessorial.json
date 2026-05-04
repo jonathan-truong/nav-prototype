@@ -1,0 +1,37 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_platformAccessorial",
+  "json": {
+    "key": "$custom_platformAccessorial",
+    "label": "Internal",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "label": "general",
+        "fields": [
+          {
+            "key": "name",
+            "before": "description",
+            "configKey": "detailField"
+          },
+          {
+            "key": "description",
+            "path": "description",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "general",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-09-03T20:18:35.199Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "accessorial",
+    "targetKey": "platformAccessorial",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

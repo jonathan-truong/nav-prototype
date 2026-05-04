@@ -1,0 +1,72 @@
+{
+  "configKey": "object",
+  "key": "$custom_partnerInvoice",
+  "json": {
+    "key": "$custom_partnerInvoice",
+    "events": [],
+    "fields": [
+      {
+        "key": "partner",
+        "type": {
+          "key": "any",
+          "ref": true,
+          "configKey": "type"
+        },
+        "isArray": true,
+        "configKey": "field",
+        "$declarator": {
+          "key": "$custom_partnerInvoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "expenseType__c",
+        "type": {
+          "key": "select",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Expense Type",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "partnerInvoice",
+              "labelId": "Partner Invoice"
+            },
+            {
+              "value": "lumper",
+              "labelId": "Lumper"
+            },
+            {
+              "value": "fuel",
+              "labelId": "Fuel"
+            },
+            {
+              "value": "toll",
+              "labelId": "Toll"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_partnerInvoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "methods": [],
+    "configKey": "object",
+    "createdAt": "2025-03-17T16:38:39.079Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "partnerInvoice",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "valueType": "object",
+    "isPrimitive": false
+  }
+}

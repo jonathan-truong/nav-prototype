@@ -1,0 +1,264 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_externalTechoBlocSdflkjsdflkjsdf-order_7055bf82-b1ae-478d-a450-90d6a2abdd1a",
+  "json": {
+    "key": "$custom_externalTechoBlocSdflkjsdflkjsdf-order_7055bf82-b1ae-478d-a450-90d6a2abdd1a",
+    "label": "External Techo Bloc sdflkjsdflkjsdf",
+    "widgets": [
+      {
+        "key": "orderType__c",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "orderType__c"
+      },
+      {
+        "key": "newTest__c",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "newTest__c"
+      },
+      {
+        "key": "order-WelcomeDriverDispatch",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "order-WelcomeDriverDispatch"
+      },
+      {
+        "key": "order-SendToDriverReadOnly",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SendToDriverReadOnly"
+      },
+      {
+        "key": "order-AddDriverPay",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "order-AddDriverPay"
+      },
+      {
+        "key": "order-EnableMacropoint",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-EnableMacropoint"
+      },
+      {
+        "key": "brokerInfo__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "brokerInfo__c"
+      },
+      {
+        "key": "maxBuy__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "maxBuy__c"
+      },
+      {
+        "key": "brokerDetails__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "brokerDetails__c"
+      },
+      {
+        "key": "order-CreateManifest",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "enterTopSpeed__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "enterTopSpeed__c"
+      },
+      {
+        "key": "testWidgetPleaseIgnore__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "testWidgetPleaseIgnore__c"
+      },
+      {
+        "key": "order-ExpandManifestForDriverPay",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-ExpandManifestForDriverPay"
+      },
+      {
+        "key": "tankerVolume__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "tankerVolume__c"
+      },
+      {
+        "key": "testTasks__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "testTasks__c"
+      },
+      {
+        "key": "enterAccessorials__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "enterAccessorials__c"
+      },
+      {
+        "key": "order-SendETAUpdate",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SendETAUpdate"
+      },
+      {
+        "key": "order-SelectDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SelectDriver"
+      },
+      {
+        "key": "order-OrderRequest",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "isVisible": {
+          "$stub": true
+        },
+        "widgetKey": "order-OrderRequest"
+      },
+      {
+        "key": "order-DataBotImport",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-DataBotImport"
+      },
+      {
+        "key": "order-SelectCustomer",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SelectCustomer"
+      },
+      {
+        "key": "order-AddQuote",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-AddQuote"
+      },
+      {
+        "key": "order-AddOrderNumbers",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-AddOrderNumbers"
+      },
+      {
+        "key": "addAccManagers__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "addAccManagers__c"
+      },
+      {
+        "key": "appointmentDetails__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "appointmentDetails__c"
+      },
+      {
+        "key": "order-ManageStopsAndTasks",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-ManageStopsAndTasks"
+      },
+      {
+        "key": "order-PostToLoadBoard2",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-PostToLoadBoard2"
+      },
+      {
+        "key": "order-AssignPartner",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-AssignPartner"
+      },
+      {
+        "key": "order-SendToCarrier",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SendToCarrier"
+      },
+      {
+        "key": "order-ScheduleStatusRequest",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-ScheduleStatusRequest"
+      },
+      {
+        "key": "order-CompleteTasks",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CompleteTasks"
+      },
+      {
+        "key": "order-Documents",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-Documents"
+      },
+      {
+        "key": "order-CreatePlatformInvoice",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CreatePlatformInvoice"
+      },
+      {
+        "key": "fileClaim__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "fileClaim__c"
+      },
+      {
+        "key": "order-ShareManifestWithDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-ShareManifestWithDriver"
+      },
+      {
+        "key": "order-TextToDriverTracking",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SendToDriver"
+      },
+      {
+        "key": "order-SelectAssets",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SelectAssets"
+      },
+      {
+        "key": "regionDetails__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "regionDetails__c"
+      },
+      {
+        "key": "order-CreateAndAssignDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CreateAndAssignDriver"
+      },
+      {
+        "key": "order-CreatePayStub",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CreatePayStub"
+      }
+    ],
+    "isCustom": true,
+    "configKey": "widgetSequence",
+    "createdAt": "2025-11-05T19:19:02.680Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "c1a2f0ae-c793-4acc-9b9d-d7dfca8e25b5",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "defaultView",
+    "boardId": "b7d9335f-b9e8-4131-af90-4779c4ee0587",
+    "filters": [],
+    "labelId": "New View",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "name",
+      "headOfficeFormattedAddress",
+      "companyEmail",
+      "companyPhone",
+      "commissionedUsers"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

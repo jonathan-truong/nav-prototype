@@ -1,0 +1,40 @@
+{
+  "id": "df9e38c8-b9ff-4de8-ae53-70bd2fa16413",
+  "type": "boardView",
+  "name": "Measurements",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "5fb64ffb-b10f-4fd7-8741-a89801b0ac0f",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new",
+          "booked"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Measurements",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "temperature__c"
+    ],
+    "createdAt": "2024-03-15T18:37:59.623Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "isDefault": false,
+    "updatedAt": "2024-12-10T18:26:22.377Z",
+    "updatedBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

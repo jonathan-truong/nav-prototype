@@ -1,0 +1,54 @@
+{
+  "id": "d53330d3-ace0-4375-b467-835c89dd882e",
+  "type": "boardView",
+  "name": "Back Office",
+  "json": {
+    "id": "6e54a51d-569d-404c-8940-5b32a5eac059",
+    "orgId": "c25888e4-b717-4ef8-8369-f0fd6977db71",
+    "boardId": "5e303445-0370-580b-88b5-ddfec2b1d0f4",
+    "filters": [
+      {
+        "path": "category__c",
+        "value": [
+          "ar",
+          "ap"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "category__c"
+      }
+    ],
+    "labelId": "Back Office",
+    "ordinal": 4,
+    "isPinned": false,
+    "columnIds": [
+      "sortOrder__c",
+      "status__c",
+      "title__c",
+      "description__c",
+      "videoLink__c",
+      "helpCentreLink__c",
+      "module__c",
+      "category__c",
+      "difficulty__c",
+      "estimatedTimeToCompletion__c",
+      "businessType__c",
+      "notes__c"
+    ],
+    "createdAt": "2025-06-19T14:18:13.945Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-06-19T14:46:55.264Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "title__c": 268
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "sortOrder__c",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "title__c"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "configKey": "board",
+  "key": "$custom_platformInvoice",
+  "json": {
+    "key": "$custom_platformInvoice",
+    "columns": [
+      {
+        "key": "organizationId__c",
+        "path": "organizationId__c",
+        "labelId": "Organization ID",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "billStatus__c",
+        "path": "billStatus__c",
+        "labelId": "Bill Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "invoiceNotes__c",
+        "path": "invoiceNotes__c",
+        "labelId": "Invoice Notes",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "podOnFile__c",
+        "path": "podOnFile__c",
+        "labelId": "POD on File",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      }
+    ],
+    "filters": [
+      {
+        "key": "organizationId__c",
+        "path": "organizationId__c",
+        "labelId": "Organization ID",
+        "columnKey": "organizationId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "billStatus__c",
+        "path": "billStatus__c",
+        "labelId": "Bill Status",
+        "columnKey": "billStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "invoiceNotes__c",
+        "path": "invoiceNotes__c",
+        "labelId": "Invoice Notes",
+        "columnKey": "invoiceNotes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "podOnFile__c",
+        "path": "podOnFile__c",
+        "labelId": "POD on File",
+        "columnKey": "podOnFile__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-05-01T12:31:40.979Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "platformInvoice",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

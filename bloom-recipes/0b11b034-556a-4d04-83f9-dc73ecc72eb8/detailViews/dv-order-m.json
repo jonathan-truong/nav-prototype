@@ -1,0 +1,51 @@
+{
+  "configKey": "detailView",
+  "key": "dv_order_--m__c",
+  "json": {
+    "key": "dv_order_--m__c",
+    "label": "Milos Test",
+    "views": [],
+    "sections": [
+      {
+        "key": "test",
+        "label": "TEST",
+        "fields": [
+          {
+            "key": "assetType",
+            "path": "assetType",
+            "configKey": "detailField",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "assetWithLastKnownLocation",
+            "path": "assetWithLastKnownLocation",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assignThisCarrier__c",
+            "path": "assignThisCarrier__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assets",
+            "path": "assets",
+            "configKey": "detailField",
+            "widgetKey": "order-SelectAssets",
+            "isEditable": false,
+            "showOnTemplate": true
+          }
+        ],
+        "labelId": "TEST",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2026-02-20T18:47:01.904Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetSequence": "$custom_walmartWorkflow-order_a9900c6e-6614-4e9d-ac23-4fd666ea3a64"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "a70f4653-2d64-46a3-82e6-452f55d07287",
+  "type": "boardView",
+  "name": "Test view",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "5f448adb-bce5-4f74-b398-23a31881c315",
+    "filters": [],
+    "labelId": "Test view",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "pod__c"
+    ],
+    "createdAt": "2024-08-14T14:35:30.886Z",
+    "createdBy": "f1763850-1579-4874-b345-9b36be3d7e6c",
+    "isDefault": false,
+    "updatedAt": "2024-09-10T15:16:54.879Z",
+    "updatedBy": "f1763850-1579-4874-b345-9b36be3d7e6c",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

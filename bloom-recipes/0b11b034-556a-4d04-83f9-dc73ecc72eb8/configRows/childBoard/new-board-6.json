@@ -1,0 +1,72 @@
+{
+  "id": "941749a9-7531-463b-9657-3ca3a1e431a5",
+  "type": "childBoard",
+  "name": "New Board",
+  "json": {
+    "id": "941749a9-7531-463b-9657-3ca3a1e431a5",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "New Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "partner",
+      "status",
+      "margin",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "driverName"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "partner",
+        "status",
+        "margin",
+        "manifests",
+        "totalEarnings",
+        "totalCost",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "driverName"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId",
+        "partner",
+        "status"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

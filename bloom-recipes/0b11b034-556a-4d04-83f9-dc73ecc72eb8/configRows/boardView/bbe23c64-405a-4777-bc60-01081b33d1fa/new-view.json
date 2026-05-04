@@ -1,0 +1,65 @@
+{
+  "id": "95aff998-6854-4743-9d99-ac8a363cb211",
+  "type": "boardView",
+  "name": "New view",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "bbe23c64-405a-4777-bc60-01081b33d1fa",
+    "filters": [],
+    "labelId": "New view",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "customer",
+      "status",
+      "dueDate",
+      "totalAmount",
+      "invoiceDate",
+      "orderId",
+      "deliveryTime",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sentAt",
+      "lastModifiedAt"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board that reflects invoices that have been sent and are outstanding",
+    "aggregations": [
+      {
+        "path": "total",
+        "operator": "sum",
+        "fieldType": "MoneyField",
+        "aggregationKey": "total-sum"
+      },
+      {
+        "path": "fullId",
+        "operator": "countUnique",
+        "fieldType": "FullIDField",
+        "aggregationKey": "fullId-countUnique"
+      },
+      {
+        "path": "status",
+        "operator": "countEmpty",
+        "fieldType": "StatusField",
+        "aggregationKey": "status-countEmpty"
+      }
+    ],
+    "layoutOptions": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "customer",
+      "status",
+      "dueDate",
+      "totalAmount"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

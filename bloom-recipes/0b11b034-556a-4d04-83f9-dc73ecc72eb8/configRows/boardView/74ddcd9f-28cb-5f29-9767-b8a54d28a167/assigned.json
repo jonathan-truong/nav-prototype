@@ -1,0 +1,48 @@
+{
+  "id": "576d43a8-45c6-44d9-a2d8-b4810ac3337b",
+  "type": "boardView",
+  "name": "Assigned",
+  "json": {
+    "key": "assigned",
+    "boardId": "74ddcd9f-28cb-5f29-9767-b8a54d28a167",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "dispatched"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "manifestStatus"
+      }
+    ],
+    "labelId": "Assigned",
+    "isPinned": false,
+    "columnIds": [
+      "name",
+      "manifestStartDate",
+      "firstPickupTaskOriginAddressUsingNameCityAndState",
+      "lastDeliveryTaskDestinationAddressUsingNameCityAndState",
+      "totalMiles",
+      "assets",
+      "status",
+      "testBreak__c",
+      "hughsep10__c",
+      "hughsep10B__c",
+      "manifestTotalCostCustom__c",
+      "totalBuyQuoteCustom__c",
+      "totalRev__c",
+      "totalRevSum__c",
+      "totalRevSumMargin__c",
+      "orderStatus__c",
+      "legDeclaredValues__c",
+      "totalDeclaredValue__c",
+      "pickupContainers__c",
+      "stopsLookup__c"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "mainLinkColumnKey": ""
+  }
+}
