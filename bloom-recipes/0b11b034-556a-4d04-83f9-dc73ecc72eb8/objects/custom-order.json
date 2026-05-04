@@ -1,0 +1,4249 @@
+{
+  "configKey": "object",
+  "key": "$custom_order",
+  "json": {
+    "key": "$custom_order",
+    "events": [
+      {
+        "key": "orderTier2.order.delayed",
+        "before": "47a72c38-cfc9-48ff-9258-774024e0b0b4",
+        "configKey": "event",
+        "activityLog": {
+          "enabled": false
+        }
+      },
+      {
+        "key": "47a72c38-cfc9-48ff-9258-774024e0b0b4",
+        "label": "POD uploaded notification",
+        "before": "7536804a-f796-4bd2-adca-bee1416ff6ba",
+        "typeId": "podUploadedNotification_sendNotification_19963623-8b9a-4dc5-a4da-2776dca1de32",
+        "configKey": "event",
+        "methodKey": "POD_uploaded_notification",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "",
+        "notifications": {
+          "enabled": true,
+          "defaults": {
+            "user": {
+              "enabled": false,
+              "channels": [
+                "email",
+                "inbox"
+              ]
+            }
+          },
+          "renderContent": {
+            "$stub": true
+          }
+        }
+      },
+      {
+        "key": "7536804a-f796-4bd2-adca-bee1416ff6ba",
+        "label": "Test notification",
+        "typeId": "testNotification_sendNotification_7536804a-f796-4bd2-adca-bee1416ff6ba",
+        "configKey": "event",
+        "methodKey": "Test_notification",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "",
+        "notifications": {
+          "enabled": true,
+          "defaults": {
+            "user": {
+              "enabled": false,
+              "channels": [
+                "email",
+                "inbox"
+              ]
+            }
+          },
+          "renderContent": {
+            "$stub": true
+          }
+        }
+      }
+    ],
+    "fields": [
+      {
+        "key": "fullId",
+        "before": "connectedLegs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "connectedLegs",
+        "before": "status",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "status",
+        "before": "shipper",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New "
+            },
+            {
+              "color": "status-green",
+              "value": "accepted",
+              "labelId": "Accepted"
+            },
+            {
+              "color": "status-cyan",
+              "value": "booked",
+              "labelId": "Booked"
+            },
+            {
+              "color": "status-purple",
+              "value": "in transit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-grey",
+              "value": "invoiced",
+              "labelId": "Invoiced"
+            },
+            {
+              "color": "status-cyan",
+              "value": "tendered",
+              "labelId": "Tendered"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "rejected",
+              "labelId": "Rejected"
+            },
+            {
+              "color": "status-grey",
+              "value": "archived",
+              "labelId": "Archived"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "expired",
+              "labelId": "Expired"
+            },
+            {
+              "color": "status-red",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "cancelled",
+              "labelId": "Cancelled"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ]
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "shipper",
+        "before": "consignee",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "consignee",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "requestedPickupWindow",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "requestedDeliveryWindow",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "actualPickupDate",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "actualDeliveryDate",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "specialInstructions",
+        "before": "customer",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customer",
+        "before": "csrs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "csrs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "accountManagers",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "commissionees",
+        "before": "partners",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "partners",
+        "before": "poNum",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "poNum",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "refNum",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "loadTenderNum",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalMiles",
+        "before": "estimatedDuration",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "estimatedDuration",
+        "before": "estimatedDurationFormatted",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "estimatedDurationFormatted",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customsBroker",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "portOfEntry",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "declaredValue",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "services",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "drayage",
+              "labelId": "Drayage",
+              "isCustom": false
+            },
+            {
+              "value": "hazmat",
+              "labelId": "Hazmat",
+              "isCustom": false
+            },
+            {
+              "value": "intermodal",
+              "labelId": "Intermodal",
+              "isCustom": false
+            },
+            {
+              "value": "ltl",
+              "labelId": "LTL",
+              "isCustom": false
+            },
+            {
+              "value": "ftl",
+              "labelId": "FTL",
+              "isCustom": false
+            },
+            {
+              "value": "truckload",
+              "labelId": "Truckload",
+              "isCustom": false
+            },
+            {
+              "value": "package",
+              "labelId": "Package",
+              "isCustom": false
+            },
+            {
+              "value": "specialized",
+              "labelId": "Specialized",
+              "isCustom": false
+            },
+            {
+              "value": "dryVan",
+              "labelId": "Dry Van",
+              "isCustom": false
+            },
+            {
+              "value": "reefer",
+              "labelId": "Reefer",
+              "isCustom": false
+            },
+            {
+              "value": "doubleDrop",
+              "labelId": "Double Drop",
+              "isCustom": false
+            },
+            {
+              "value": "straightTruck",
+              "labelId": "Straight truck",
+              "isCustom": false
+            },
+            {
+              "value": "flatBed",
+              "labelId": "Flat bed",
+              "isCustom": false
+            },
+            {
+              "value": "tailGate",
+              "labelId": "Tail gate",
+              "isCustom": false
+            },
+            {
+              "value": "expedite",
+              "labelId": "Expedite",
+              "isCustom": false
+            },
+            {
+              "value": "unknown",
+              "labelId": "Unknown",
+              "isCustom": false
+            }
+          ]
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "currentLocation",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastSeenTime",
+        "before": "tags",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "tags",
+        "before": "tasks",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "tasks",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "shipments",
+        "before": "totalStops",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalStops",
+        "before": "totalEarningsExchangeRate",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalEarningsExchangeRate",
+        "before": "totalCostExchangeRate",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCostExchangeRate",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "multiCurrencyCostExchangeRates",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalEarningsInOrgCurrency",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCostInOrgCurrency",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "multiCurrencyCostInOrgCurrency",
+        "before": "miscExpenses",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "miscExpenses",
+        "before": "allLegAllocatedCosts",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "allLegAllocatedCosts",
+        "before": "allLegAllocatedBookings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "allLegAllocatedBookings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "legAllocatedMargin",
+        "type": "any",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "legAllocatedMarginPercentage",
+        "type": "any",
+        "before": "stopsV2",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "stopsV2",
+        "before": "allShipmentAllocatedCosts",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "allShipmentAllocatedCosts",
+        "before": "allShipmentAllocatedBookings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "allShipmentAllocatedBookings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "shipmentAllocatedMargin",
+        "type": "any",
+        "before": "sellQuote",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "sellQuote",
+        "before": "costAllocations",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "costAllocations",
+        "before": "totalAllocatedCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalAllocatedCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "revenueAllocations",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalAllocatedRevenue",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalAllocatedMargin",
+        "before": "buyQuotes",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "buyQuotes",
+        "before": "allocatableLegs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "allocatableLegs",
+        "before": "documents",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "documents",
+        "before": "billingParty",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "billingParty",
+        "before": "billingTerms",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "billingTerms",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "consigneeCollect",
+              "labelId": "Consignee collect",
+              "isCustom": false
+            },
+            {
+              "value": "shipperPrepaid",
+              "labelId": "Shipper prepaid",
+              "isCustom": false
+            },
+            {
+              "value": "thirdParty",
+              "labelId": "Third party",
+              "isCustom": false
+            }
+          ]
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lineItems",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "assetType",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "serviceType",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "assets",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "invoices",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "invoice",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "documentCountLabel",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "attachedDocumentTypesLabel",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastKnownLocation",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "assetWithLastKnownLocation",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "origins",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "destinations",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstLeg",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstLegV2",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pickups",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pickedUpAt",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveries",
+        "before": "deliveredAt",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveredAt",
+        "before": "pickupWindows",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pickupWindows",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveryWindows",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstOriginStop",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstPickupTask",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstPickupTaskOriginAddress",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "originAndDestinationAddress",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "firstPickupTaskTime",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastDestinationStop",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastDeliveryTask",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastDeliveryCompletedAt",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastDeliveryTaskDestinationAddress",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "shipperNotes",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "consigneeNotes",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "commodities",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCommoditiesWeight",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCommoditiesWeightFormatted",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCommoditiesQuantity",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalDeclaredValue",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalAmount",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalEarnings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "partnerCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "multiCurrencyPartnerCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "multiCurrencyTotalCost",
+        "before": "createdByUser",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "createdByUser",
+        "before": "formattedMultiCurrencyTotalCost",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "formattedMultiCurrencyTotalCost",
+        "before": "$createdByFullName",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdByFullName",
+        "before": "$updatedByFullName",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$updatedByFullName",
+        "before": "margin",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "margin",
+        "before": "untenderedTasks",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "untenderedTasks",
+        "before": "multiCurrencyMargin",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "multiCurrencyMargin",
+        "before": "miscExpensesTotal",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "miscExpensesTotal",
+        "before": "miscExpensesTotalLabel",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "miscExpensesTotalLabel",
+        "before": "formattedMultiCurrencyMargin",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "formattedMultiCurrencyMargin",
+        "before": "derivedStops",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "derivedStops",
+        "before": "earnings",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "earnings",
+        "before": "costs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "costs",
+        "before": "stops",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "stops",
+        "before": "manifests",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "manifests",
+        "before": "drivers",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "drivers",
+        "before": "mapMarkers",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "mapMarkers",
+        "before": "isDeletable",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isDeletable",
+        "before": "$createdBy",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdBy",
+        "before": "isMultiStop",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isMultiStop",
+        "before": "powerUnitNumber",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "powerUnitNumber",
+        "before": "trackingPhoneNumber",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "trackingPhoneNumber",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "driverName",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isTrackingEnabled",
+        "before": "macropointTrackingStartTime",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "macropointTrackingStartTime",
+        "before": "macropointTrackingEndTime",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "macropointTrackingEndTime",
+        "before": "dataSourceLabel",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "dataSourceLabel",
+        "before": "orderETAStatus",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "orderETAStatus",
+        "before": "deliveryEta",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveryEta",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaLastUpdated",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaLastUpdatedFormatted",
+        "before": "totalAllocatedMarginPercentage",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalAllocatedMarginPercentage",
+        "before": "$source",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$source",
+        "before": "unallocatedRevenue",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "unallocatedRevenue",
+        "before": "$createdAt",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$updatedAt",
+        "before": "isActive",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isActive",
+        "before": "totalDriverCosts",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalDriverCosts",
+        "before": "totalMargin",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalMargin",
+        "before": "lastUpdated",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lastUpdated",
+        "before": "customerAccessorials",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customerAccessorials",
+        "before": "isLegRated",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isLegRated",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isShipmentRated",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "derivedAccessorials",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "carrierBidBuyQuotes",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "carrierBidQuote",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "carrierBidQuoteSummary",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "payStubs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "missingDocuments",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "referencedRecords",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "threads",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "tedSuggestionsStatus",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "partnerTariffs",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customerTariff",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "autoETAUpdatesEnabled",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "automaticUpdates",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaDelayNotifyEnabled",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaDelayNotifyLabel",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaDelayNotifyLimit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "oneMinute",
+              "labelId": "1 min",
+              "isCustom": false
+            },
+            {
+              "value": "fiveMinutes",
+              "labelId": "5 mins",
+              "isCustom": false
+            },
+            {
+              "value": "tenMinutes",
+              "labelId": "10 mins",
+              "isCustom": false
+            },
+            {
+              "value": "fifteenMinutes",
+              "labelId": "15 mins",
+              "isCustom": false
+            },
+            {
+              "value": "thirtyMinutes",
+              "labelId": "30 mins",
+              "isCustom": false
+            },
+            {
+              "value": "fortyfiveMinutes",
+              "labelId": "45 mins",
+              "isCustom": false
+            },
+            {
+              "value": "oneHour",
+              "labelId": "1 hour",
+              "isCustom": false
+            },
+            {
+              "value": "twoHours",
+              "labelId": "2 hours",
+              "isCustom": false
+            }
+          ]
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaDelayLimitTime",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "awaitingActionFrom",
+        "before": "marginInOrgCurrency",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "internal",
+              "labelId": "Internal",
+              "isCustom": false
+            },
+            {
+              "value": "external",
+              "labelId": "External",
+              "isCustom": false
+            }
+          ]
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "marginInOrgCurrency",
+        "before": "customerOrderStatus",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customerOrderStatus",
+        "before": "shipmentAllocatedMarginPercentage",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "shipmentAllocatedMarginPercentage",
+        "type": "any",
+        "before": "customerDistance",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customerDistance",
+        "before": "originState__c",
+        "configKey": "field",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "originState__c",
+        "type": "any",
+        "label": "Origin State",
+        "paths": [
+          "shipper.state"
+        ],
+        "before": "destinationCity__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({shipper.state})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "destinationCity__c",
+        "type": "any",
+        "label": "Destination City",
+        "paths": [
+          "consignee.city"
+        ],
+        "before": "destinationState__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({consignee.city})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "destinationState__c",
+        "type": "any",
+        "label": "Destination State",
+        "paths": [
+          "consignee.state"
+        ],
+        "before": "pUAppointment__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({consignee.state})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pUAppointment__c",
+        "type": "select",
+        "label": "P/U Appointment",
+        "before": "delAppointment__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "toBeBooked",
+              "labelId": "To Be Booked",
+              "isCustom": false
+            },
+            {
+              "value": "booked",
+              "labelId": "Booked",
+              "isCustom": false
+            },
+            {
+              "value": "fcfs",
+              "labelId": "FCFS",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "delAppointment__c",
+        "type": "select",
+        "label": "DEL Appointment",
+        "before": "appointmentNotes__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "toBeBooked",
+              "labelId": "To Be Booked",
+              "isCustom": false
+            },
+            {
+              "value": "booked",
+              "labelId": "Booked",
+              "isCustom": false
+            },
+            {
+              "value": "fcfs",
+              "labelId": "FCFS",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "appointmentNotes__c",
+        "type": "text",
+        "label": "Appointment Notes",
+        "before": "etaStatus__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "etaStatus__c",
+        "type": "status",
+        "label": "ETA Status",
+        "before": "maxBuy__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "early",
+              "labelId": "Early"
+            },
+            {
+              "color": "status-green",
+              "value": "onTime",
+              "labelId": "On-time"
+            },
+            {
+              "color": "status-red",
+              "value": "delayed",
+              "labelId": "Delayed"
+            },
+            {
+              "color": "status-pink",
+              "value": "problem",
+              "labelId": "Problem"
+            }
+          ],
+          "statusMap": {
+            "early": {
+              "color": "status-cyan",
+              "labelId": "Early"
+            },
+            "onTime": {
+              "color": "status-green",
+              "labelId": "On-time"
+            },
+            "delayed": {
+              "color": "status-red",
+              "labelId": "Delayed"
+            },
+            "problem": {
+              "color": "status-pink",
+              "labelId": "Problem"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "maxBuy__c",
+        "type": "money",
+        "label": "Carrier Offerings",
+        "before": "equipment__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "This is the maximum the Broker Agent can Cover the load for",
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "equipment__c",
+        "type": "multiSelect",
+        "label": "Equipment",
+        "before": "claimStatus__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "dryVan",
+              "labelId": "Dry Van",
+              "isCustom": false
+            },
+            {
+              "value": "flatbed",
+              "labelId": "Flatbed",
+              "isCustom": false
+            },
+            {
+              "value": "reefer",
+              "labelId": "Reefer",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "This represents the type of equipment the carrier must have ",
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          0,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "claimStatus__c",
+        "type": "status",
+        "label": "Claim Status",
+        "before": "claimAmount__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "claimSubmitted",
+              "labelId": "Claim Submitted"
+            },
+            {
+              "color": "status-purple",
+              "value": "inReview",
+              "labelId": "Pending Claim"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "approved",
+              "labelId": "Resolved Claim"
+            },
+            {
+              "color": "status-red",
+              "value": "denied",
+              "labelId": "Denied"
+            },
+            {
+              "color": "status-grey",
+              "value": "cancelledClaim",
+              "labelId": "Cancelled Claim"
+            }
+          ],
+          "statusMap": {
+            "denied": {
+              "color": "status-green",
+              "labelId": "Denied"
+            },
+            "approved": {
+              "color": "status-green",
+              "labelId": "Approved"
+            },
+            "inReview": {
+              "color": "status-purple",
+              "labelId": "In Review"
+            },
+            "claimSubmitted": {
+              "color": "status-red",
+              "labelId": "Claim Submitted"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "claimAmount__c",
+        "type": "money",
+        "label": "Claim Amount",
+        "before": "claimType__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "claimType__c",
+        "type": "multiSelect",
+        "label": "Claim Type",
+        "before": "claimSubmissionDate__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "freightDamage",
+              "labelId": "Freight Damage",
+              "isCustom": false
+            },
+            {
+              "value": "lostFreight",
+              "labelId": "Lost Freight",
+              "isCustom": false
+            },
+            {
+              "value": "slaBreach",
+              "labelId": "Service Failure",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "claimSubmissionDate__c",
+        "type": "date",
+        "label": "Claim Submission Date",
+        "before": "reportedByClaims__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "reportedByClaims__c",
+        "type": "text",
+        "label": "Reported By-Claims",
+        "before": "responsibleParty__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "responsibleParty__c",
+        "type": "select",
+        "label": "Responsible Party-Claims",
+        "before": "notesClaims__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "carrier",
+              "labelId": "Carrier",
+              "isCustom": false
+            },
+            {
+              "value": "shipper",
+              "labelId": "Shipper",
+              "isCustom": false
+            },
+            {
+              "value": "warehouse",
+              "labelId": "Warehouse",
+              "isCustom": false
+            },
+            {
+              "value": "consignee",
+              "labelId": "Consignee",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "notesClaims__c",
+        "type": "text",
+        "label": "Notes-Claims",
+        "before": "reportedOnClaims__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "reportedOnClaims__c",
+        "type": "date",
+        "label": "Reported on-Claims",
+        "before": "totalFreightValueClaims__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "totalFreightValueClaims__c",
+        "type": "money",
+        "label": "Total Freight Value-Claims",
+        "before": "pod__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pod__c",
+        "type": "select",
+        "label": "POD",
+        "before": "manifestStatus__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "✔️",
+              "labelId": "🟢",
+              "isCustom": false
+            },
+            {
+              "value": "x",
+              "labelId": "🔴",
+              "isCustom": false
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "permissions": [
+          11,
+          11,
+          11,
+          -1,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11,
+          11
+        ],
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "manifestStatus__c",
+        "type": "any",
+        "label": "Manifest Status",
+        "paths": [
+          "manifests.status"
+        ],
+        "before": "carrierInformation__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifests.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New"
+            },
+            {
+              "color": "status-cyan",
+              "value": "planned",
+              "labelId": "Planned"
+            },
+            {
+              "color": "status-cyan",
+              "value": "dispatched",
+              "labelId": "Dispatched"
+            },
+            {
+              "color": "status-purple",
+              "value": "inTransit",
+              "labelId": "In transit"
+            },
+            {
+              "color": "status-green",
+              "value": "completed",
+              "labelId": "Completed"
+            },
+            {
+              "color": "status-grey",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-red",
+              "value": "drop",
+              "labelId": "Drop"
+            },
+            {
+              "color": "status-pink",
+              "value": "hook",
+              "labelId": "Hook"
+            },
+            {
+              "color": "status-cyan",
+              "value": "delayed",
+              "labelId": "Delayed"
+            }
+          ],
+          "statusMap": {
+            "new": {
+              "color": "status-grey",
+              "labelId": "New"
+            },
+            "drop": {
+              "color": "status-red",
+              "labelId": "Drop"
+            },
+            "hook": {
+              "color": "status-pink",
+              "labelId": "Hook"
+            },
+            "planned": {
+              "color": "status-cyan",
+              "labelId": "Planned"
+            },
+            "problem": {
+              "color": "status-grey",
+              "labelId": "Problem"
+            },
+            "completed": {
+              "color": "status-green",
+              "labelId": "Completed"
+            },
+            "inTransit": {
+              "color": "status-purple",
+              "labelId": "In transit"
+            },
+            "dispatched": {
+              "color": "status-cyan",
+              "labelId": "Dispatched"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "carrierInformation__c",
+        "type": "text",
+        "label": "Carrier Information",
+        "before": "stopsLookup__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "stopsLookup__c",
+        "type": "any",
+        "label": "Stops Lookup",
+        "paths": [
+          "stops.location.address1"
+        ],
+        "before": "ratePerMile__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({stops.location.address1})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "ratePerMile__c",
+        "type": "any",
+        "label": "Rate Per Mile",
+        "paths": [
+          "totalEarnings",
+          "totalMiles"
+        ],
+        "before": "grossMargin__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toMoney(toNumber({totalEarnings})/{totalMiles},'USD')",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "grossMargin__c",
+        "type": "any",
+        "label": "Gross Margin (%)",
+        "paths": [
+          "margin",
+          "totalEarnings"
+        ],
+        "before": "onTimePickUp__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "floor(toPercent(sum({margin}) / sum({totalEarnings})))",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "onTimePickUp__c",
+        "type": "status",
+        "label": "On Time Pick Up?",
+        "before": "onTimeDelivery__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-green",
+              "value": "yes",
+              "labelId": "Yes"
+            },
+            {
+              "color": "status-red",
+              "value": "no",
+              "labelId": "No"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "onTimeDelivery__c",
+        "type": "status",
+        "label": "On Time Delivery",
+        "before": "pickUpArrivalDateTime__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-green",
+              "value": "yes",
+              "labelId": "Yes"
+            },
+            {
+              "color": "status-red",
+              "value": "no",
+              "labelId": "No"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pickUpArrivalDateTime__c",
+        "type": "any",
+        "label": "Pick Up Arrival Date & Time",
+        "paths": [
+          "firstPickupTask.actualArrivalTime"
+        ],
+        "before": "pickUpCompletionDateTime__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({firstPickupTask.actualArrivalTime})",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "pickUpCompletionDateTime__c",
+        "type": "any",
+        "label": "Pick Up Completion Date & Time",
+        "paths": [
+          "firstPickupTask.actualCompletionTime"
+        ],
+        "before": "deliveryArrivalDateTime__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({firstPickupTask.actualCompletionTime})",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveryArrivalDateTime__c",
+        "type": "any",
+        "label": "Delivery Arrival Date & Time",
+        "paths": [
+          "lastDeliveryTask.actualArrivalTime"
+        ],
+        "before": "deliveryCompletionDateTime__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({lastDeliveryTask.actualArrivalTime})",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "deliveryCompletionDateTime__c",
+        "type": "any",
+        "label": "Delivery Completion Date & Time",
+        "paths": [
+          "lastDeliveryTask.actualCompletionTime"
+        ],
+        "before": "costPerMile__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({lastDeliveryTask.actualCompletionTime})",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "costPerMile__c",
+        "type": "any",
+        "label": "Cost Per Mile",
+        "paths": [
+          "totalCost",
+          "totalMiles"
+        ],
+        "before": "profitPercentage__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "{totalCost} / {totalMiles}",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "profitPercentage__c",
+        "type": "any",
+        "label": "Profit Percentage",
+        "paths": [
+          "totalEarnings",
+          "totalCost"
+        ],
+        "before": "commodityWeights__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "floor(toNumber({totalEarnings}/{totalCost}, '%'))",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "commodityWeights__c",
+        "type": "any",
+        "label": "Commodity Weights",
+        "paths": [
+          "commodities.weight"
+        ],
+        "before": "formulaTest2__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({commodities.weight})",
+        "typeConfig": {
+          "isInteger": false,
+          "unitLabel": ""
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "formulaTest2__c",
+        "type": "any",
+        "label": "Formula test 2",
+        "paths": [
+          "requestedPickupWindow",
+          "actualPickupDate"
+        ],
+        "before": "timeToDelivery__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toDuration(maximum(toNumber(dateDiff({requestedPickupWindow},{actualPickupDate},'day')),1),'day')",
+        "typeConfig": {
+          "unitCategory": "duration",
+          "currentUnitType": "days",
+          "defaultUnitType": "days"
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "timeToDelivery__c",
+        "type": "any",
+        "label": "Time to delivery",
+        "paths": [
+          "actualPickupDate",
+          "actualDeliveryDate"
+        ],
+        "before": "formulaTest3__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "datediff({actualPickupDate},{actualDeliveryDate},'hour')",
+        "typeConfig": {
+          "unitCategory": "duration",
+          "currentUnitType": "hours",
+          "defaultUnitType": "hours"
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "formulaTest3__c",
+        "type": "any",
+        "label": "Formula test 3",
+        "paths": [
+          "estimatedDuration"
+        ],
+        "before": "zAndoMeasurement__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toPercent({estimatedDuration}/(8*3600))",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "zAndoMeasurement__c",
+        "type": "measurement",
+        "label": "zAndoMeasurement 2",
+        "before": "now__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitCategory": "length",
+          "canBeNegative": false,
+          "currentUnitType": "mile",
+          "defaultUnitType": "mile"
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "now__c",
+        "type": "any",
+        "label": "now",
+        "paths": [],
+        "before": "testFormula5__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "now()",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "testFormula5__c",
+        "type": "any",
+        "label": "test formula 5",
+        "paths": [],
+        "before": "test__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "ceiling(5.1111,2)",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "test__c",
+        "type": "dateTime",
+        "label": "test",
+        "before": "formulaTest4__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "formulaTest4__c",
+        "type": "any",
+        "label": "formula test 4",
+        "paths": [
+          "totalMiles"
+        ],
+        "before": "costCad__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toMoney({totalMiles}*1.82,'USD')",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "costCad__c",
+        "type": "any",
+        "label": "Cost (CAD)",
+        "paths": [
+          "totalCost"
+        ],
+        "before": "testNumber__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toMoney(toNumber({totalCost})*1.4,'CAD')",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "testNumber__c",
+        "type": "text",
+        "label": "Test number",
+        "before": "lookupTest6__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "Test Number",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "lookupTest6__c",
+        "type": "any",
+        "label": "Lookup Test 6",
+        "paths": [
+          "costCad__c"
+        ],
+        "before": "customMoney__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({costCad__c})",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "Lookup test 6",
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customMoney__c",
+        "type": "money",
+        "label": "Custom money",
+        "before": "assignThisCarrier__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "test",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "assignThisCarrier__c",
+        "type": {
+          "key": "partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Assign this Carrier",
+        "before": "customerName__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "customerName__c",
+        "type": "any",
+        "label": "Customer name",
+        "paths": [
+          "customer.name"
+        ],
+        "before": "driverName__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({customer.name})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "driverName__c",
+        "type": "any",
+        "label": "Driver name",
+        "paths": [
+          "drivers.name"
+        ],
+        "before": "statusLookup__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({drivers.name})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "statusLookup__c",
+        "type": "any",
+        "label": "Status lookup",
+        "paths": [
+          "tasks.status"
+        ],
+        "before": "zRequestedDuration__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({tasks.status})",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-grey",
+              "value": "new",
+              "labelId": "New"
+            },
+            {
+              "color": "status-green",
+              "value": "arrived",
+              "labelId": "Arrived"
+            },
+            {
+              "color": "status-grey",
+              "value": "incomplete",
+              "labelId": "Incomplete"
+            },
+            {
+              "color": "status-cyan",
+              "value": "assigned",
+              "labelId": "Assigned"
+            },
+            {
+              "color": "status-purple",
+              "value": "inprogress",
+              "labelId": "In Progress"
+            },
+            {
+              "color": "status-green",
+              "value": "complete",
+              "labelId": "Complete"
+            },
+            {
+              "color": "status-light-grey",
+              "value": "cancelled",
+              "labelId": "Cancelled"
+            },
+            {
+              "color": "status-red",
+              "value": "problem",
+              "labelId": "Problem"
+            },
+            {
+              "color": "status-cyan",
+              "value": "allocated",
+              "labelId": "Allocated"
+            }
+          ],
+          "statusMap": {
+            "new": {
+              "color": "status-grey",
+              "labelId": "New"
+            },
+            "arrived": {
+              "color": "status-green",
+              "labelId": "Arrived"
+            },
+            "problem": {
+              "color": "status-red",
+              "labelId": "Problem"
+            },
+            "assigned": {
+              "color": "status-cyan",
+              "labelId": "Assigned"
+            },
+            "complete": {
+              "color": "status-green",
+              "labelId": "Complete"
+            },
+            "allocated": {
+              "color": "status-cyan",
+              "labelId": "Allocated"
+            },
+            "cancelled": {
+              "color": "status-light-grey",
+              "labelId": "Cancelled"
+            },
+            "incomplete": {
+              "color": "status-grey",
+              "labelId": "Incomplete"
+            },
+            "inprogress": {
+              "color": "status-purple",
+              "labelId": "In Progress"
+            }
+          }
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "zRequestedDuration__c",
+        "type": "any",
+        "label": "zRequestedDuration",
+        "paths": [
+          "requestedPickupWindow",
+          "requestedDeliveryWindow"
+        ],
+        "before": "toggle__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "dateDiff({requestedPickupWindow}, {requestedDeliveryWindow}, 'days')",
+        "typeConfig": {
+          "unitCategory": "duration",
+          "currentUnitType": "days",
+          "defaultUnitType": "days"
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "toggle__c",
+        "type": "toggle",
+        "label": "Toggle",
+        "before": "externalUrl__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "externalUrl__c",
+        "type": "url",
+        "label": "External URL",
+        "before": "link__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "link__c",
+        "type": "url",
+        "label": "Link",
+        "before": "attachedLink__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "attachedLink__c",
+        "type": "url",
+        "label": "Attached Link",
+        "before": "zAndoTest3__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "zAndoTest3__c",
+        "type": "text",
+        "label": "z_andoTest3",
+        "before": "derekTest__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "derekTest__c",
+        "type": "text",
+        "label": "DerekTest",
+        "before": "manualLocation__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "manualLocation__c",
+        "type": {
+          "key": "address",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "manual location",
+        "before": "originCity__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "originCity__c",
+        "type": "number",
+        "label": "origin City",
+        "before": "quoteLineItemTypes__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": false,
+          "unitLabel": "C"
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "cool stuff",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "quoteLineItemTypes__c",
+        "type": "any",
+        "label": "Quote Line Item Types",
+        "paths": [
+          "sellQuote.lineItems.type"
+        ],
+        "before": "trailerId__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({sellQuote.lineItems.type})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "trailerId__c",
+        "type": "text",
+        "label": "trailer id",
+        "before": "numberOfStops__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "numberOfStops__c",
+        "type": "any",
+        "label": "Number of stops",
+        "paths": [
+          "derivedStops"
+        ],
+        "before": "sdf__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "count({derivedStops})",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "sdf__c",
+        "type": "time",
+        "label": "sdf",
+        "before": "manifestNickname__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "description": "sdfsdf",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "manifestNickname__c",
+        "type": "any",
+        "label": "Manifest Nickname",
+        "paths": [
+          "manifests.name"
+        ],
+        "before": "bikeType__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifests.name})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "bikeType__c",
+        "type": {
+          "key": "bike__c",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Bike Type",
+        "before": "concatTEst__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "concatTEst__c",
+        "type": "any",
+        "label": "Concat TEst",
+        "paths": [
+          "deliveryCompletionDateTime__c",
+          "deliveredAt"
+        ],
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "concat('Last delivery at: ', {deliveryCompletionDateTime__c}, ', First delivery at:', {deliveredAt})",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "derivationType": "formula",
+        "shouldDuplicate": true,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "bloom__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Bloom",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "isImportable": true,
+        "isRequired": false,
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "onChangeTaskETAStatus",
+        "priority": 0,
+        "configKey": "method"
+      },
+      {
+        "key": "queueLegDistanceRecalc",
+        "before": "onMajorUpdate",
+        "configKey": "method"
+      },
+      {
+        "key": "onMajorUpdate",
+        "before": "getParentSequenceKeys",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "$evaluateWidgets",
+        "before": "AAA__No_POD",
+        "configKey": "method"
+      },
+      {
+        "key": "AAA__No_POD",
+        "event": "create",
+        "label": "AAA - No POD",
+        "action": {
+          "$stub": true
+        },
+        "before": "AAA__POD_on_file",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": true,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "pod__c",
+            "actionKey": "setValue",
+            "literalValue": "x"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "AAA__POD_on_file",
+        "event": "update",
+        "label": "AAA - POD on file",
+        "action": {
+          "$stub": true
+        },
+        "before": "aaa__on_time_pick_up",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": true,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "pod__c",
+            "actionKey": "setValue",
+            "literalValue": "✔️"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$some": {
+                    "documents": {
+                      "documentType": {
+                        "$equals": "proofOfDelivery"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "aaa__on_time_pick_up",
+        "event": "update",
+        "label": "aaa - on time pick up",
+        "action": {
+          "$stub": true
+        },
+        "before": "aaa__late_pick_up",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "onTimePickUp__c",
+            "actionKey": "setValue",
+            "literalValue": "yes"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "firstPickupTask": {
+                      "actualArrivalTime": {
+                        "$lte": {
+                          "path": "requestedPickupWindow"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "aaa__late_pick_up",
+        "event": "update",
+        "label": "aaa - late pick up",
+        "action": {
+          "$stub": true
+        },
+        "before": "aaa__Late_Delivery",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "onTimePickUp__c",
+            "actionKey": "setValue",
+            "literalValue": "no"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "firstPickupTask": {
+                      "actualArrivalTime": {
+                        "$gt": {
+                          "path": "requestedPickupWindow"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "aaa__Late_Delivery",
+        "event": "update",
+        "label": "aaa - Late Delivery",
+        "action": {
+          "$stub": true
+        },
+        "before": "aaa__On_Time_Delivery",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "onTimeDelivery__c",
+            "actionKey": "setValue",
+            "literalValue": "no"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "lastDeliveryTask": {
+                      "actualArrivalTime": {
+                        "$gt": {
+                          "path": "requestedDeliveryWindow"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "aaa__On_Time_Delivery",
+        "event": "update",
+        "label": "aaa - On Time Delivery",
+        "action": {
+          "$stub": true
+        },
+        "before": "savePayTemplateLineItems",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "onTimeDelivery__c",
+            "actionKey": "setValue",
+            "literalValue": "yes"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "lastDeliveryTask": {
+                      "actualArrivalTime": {
+                        "$lte": {
+                          "path": "requestedDeliveryWindow"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "savePayTemplateLineItems",
+        "before": "assignCustomers",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "assignCustomers",
+        "before": "removeFLIOnCommissioneeReassignment",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "removeFLIOnCommissioneeReassignment",
+        "before": "salesCommissionTotal",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "salesCommissionTotal",
+        "before": "assignCommissionees",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "assignCommissionees",
+        "before": "getSalesCommissionLineItems",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "getSalesCommissionLineItems",
+        "before": "updateTenderStatus",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "updateTenderStatus",
+        "before": "onSetOrderIsBooked",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "onSetOrderIsBooked",
+        "before": "test",
+        "configKey": "method"
+      },
+      {
+        "key": "test",
+        "event": "create",
+        "label": "test",
+        "action": {
+          "$stub": true
+        },
+        "before": "test_manifest_create",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "test__c",
+            "fromPath": "$createdAt",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "test_manifest_create",
+        "event": "update",
+        "label": "test manifest create",
+        "action": {
+          "$stub": true
+        },
+        "before": "test_invoice_create",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "actions": [
+              {
+                "actionKey": "callAction",
+                "methodKey": "createManifestFromOrder",
+                "objectKey": "order",
+                "parameters": {
+                  "recordId": {
+                    "path": "$id"
+                  }
+                }
+              },
+              {
+                "toPath": "manifests.partner",
+                "fromPath": "assignThisCarrier__c",
+                "actionKey": "copyValue"
+              }
+            ],
+            "actionKey": "compositeAction"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "assignThisCarrier__c": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$all": {
+                    "manifests": {
+                      "$isEmpty": true
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "test_invoice_create",
+        "event": "update",
+        "label": "test invoice create",
+        "action": {
+          "$stub": true
+        },
+        "before": "Location_accessorial",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "actionKey": "callAction",
+            "methodKey": "createInvoice",
+            "objectKey": "order",
+            "parameters": {
+              "recordIds": {
+                "path": "$id"
+              }
+            }
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "poNum": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$all": {
+                    "poNum": {
+                      "$equals": "123456"
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Location_accessorial",
+        "event": "update",
+        "label": "Location accessorial",
+        "action": {
+          "$stub": true
+        },
+        "before": "POD_uploaded_notification",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "customerAccessorials",
+            "actionKey": "setValue",
+            "literalValue": {
+              "id": "965e0188-c972-43c5-9630-433d7c0f294e",
+              "objectKey": "accessorial"
+            }
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "consignee": {
+                      "address1": {
+                        "$equals": "30 Front Street East"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "POD_uploaded_notification",
+        "event": "update",
+        "label": "POD uploaded notification",
+        "action": {
+          "$stub": true
+        },
+        "before": "Test_notification",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": true,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "actionKey": "sendNotification",
+            "notificationKey": "podUploadedNotification_sendNotification_19963623-8b9a-4dc5-a4da-2776dca1de32",
+            "notificationBody": "{driverName__c} has uploaded a POD for {customerName__c}.",
+            "notificationTitle": "{fullId} - POD uploaded",
+            "notificationToRun": {
+              "key": "47a72c38-cfc9-48ff-9258-774024e0b0b4",
+              "label": "POD uploaded notification",
+              "typeId": "podUploadedNotification_sendNotification_19963623-8b9a-4dc5-a4da-2776dca1de32",
+              "activityLog": {
+                "enabled": false
+              },
+              "description": "",
+              "notifications": {
+                "enabled": true,
+                "defaults": {
+                  "user": {
+                    "enabled": false,
+                    "channels": [
+                      "email",
+                      "inbox"
+                    ]
+                  }
+                },
+                "renderContent": ""
+              }
+            }
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "documents": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$some": {
+                    "documents": {
+                      "documentType": {
+                        "$equals": "proofOfDelivery"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Test_notification",
+        "event": "update",
+        "label": "Test notification",
+        "action": {
+          "$stub": true
+        },
+        "before": "Credit_limit_exceeded",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "actionKey": "sendNotification",
+            "notificationKey": "testNotification_sendNotification_7536804a-f796-4bd2-adca-bee1416ff6ba",
+            "notificationBody": "Testing the automation",
+            "notificationTitle": "Test",
+            "notificationToRun": {
+              "key": "7536804a-f796-4bd2-adca-bee1416ff6ba",
+              "label": "Test notification",
+              "typeId": "testNotification_sendNotification_7536804a-f796-4bd2-adca-bee1416ff6ba",
+              "activityLog": {
+                "enabled": false
+              },
+              "description": "",
+              "notifications": {
+                "enabled": true,
+                "defaults": {
+                  "user": {
+                    "enabled": false,
+                    "channels": [
+                      "email",
+                      "inbox"
+                    ]
+                  }
+                },
+                "renderContent": ""
+              }
+            }
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Credit_limit_exceeded",
+        "event": "update",
+        "label": "Credit limit exceeded",
+        "action": {
+          "$stub": true
+        },
+        "before": "Tuesday_Orders",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "poNum",
+            "actionKey": "setValue",
+            "literalValue": "automation worked"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "totalEarnings": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Tuesday_Orders",
+        "label": "Tuesday Orders",
+        "action": {
+          "$stub": true
+        },
+        "before": "Multistop_PODs",
+        "summary": "Make order on Tuesdays",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Multistop_PODs",
+        "event": "update",
+        "label": "Multistop PODs",
+        "action": {
+          "$stub": true
+        },
+        "before": "picked_up_at_change",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "pod__c",
+            "actionKey": "setValue",
+            "literalValue": "✔️"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "documents": {
+                        "$hasChanged": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "$all": {
+                    "deliveries": {
+                      "pod__c": {
+                        "$equals": "yes"
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "picked_up_at_change",
+        "event": "update",
+        "label": "picked up at change",
+        "action": {
+          "$stub": true
+        },
+        "before": "order_created",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "poNum",
+            "actionKey": "setValue",
+            "literalValue": "SUCCESS 2"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$or": [
+                    {
+                      "firstPickupTask": {
+                        "actualCompletionTime": {
+                          "$hasChanged": true
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "order_created",
+        "event": "create",
+        "label": "order created",
+        "action": {
+          "$stub": true
+        },
+        "before": "po_number_to_in_progress",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "test__c",
+            "fromPath": "now__c",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "po_number_to_in_progress",
+        "event": "update",
+        "label": "po number to in progress",
+        "action": {
+          "$stub": true
+        },
+        "before": "fill_trailer_number",
+        "summary": "sdfsdf",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "status",
+            "actionKey": "setValue",
+            "literalValue": "booked"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$all": {
+                    "poNum": {
+                      "$isNotEmpty": true
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "fill_trailer_number",
+        "event": "update",
+        "label": "fill trailer number",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_order",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "trailerId__c",
+            "fromPath": "assets.name",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {
+              "$and": [
+                {
+                  "$some": {
+                    "assets": {
+                      "assetType": {
+                        "name": {
+                          "$equals": "Trailer"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            "description": ""
+          }
+        }
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-03-28T20:25:46.029Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "order",
+    "updatedAt": "2026-03-31T20:25:34.377Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "permissions": [
+      -1,
+      -1,
+      -1,
+      0,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ]
+  }
+}
