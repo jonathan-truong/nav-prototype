@@ -1,0 +1,36 @@
+{
+  "configKey": "detailView",
+  "key": "dv_manifest_ca__c",
+  "json": {
+    "key": "dv_manifest_ca__c",
+    "label": "Carrier Onboarding",
+    "sections": [
+      {
+        "key": "loadDetails",
+        "label": "Load Details",
+        "fields": [
+          {
+            "key": "firstPickupAddress",
+            "path": "firstPickupAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstPickup",
+            "path": "firstPickup",
+            "configKey": "detailField",
+            "isEditable": false
+          }
+        ],
+        "labelId": "Load Details",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2026-01-07T22:24:56.795Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "manifest",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetSequence": "$custom_carrierOnboarding-manifest_f5ed0e0e-9996-4145-bfe9-11d9edb9870e"
+  }
+}

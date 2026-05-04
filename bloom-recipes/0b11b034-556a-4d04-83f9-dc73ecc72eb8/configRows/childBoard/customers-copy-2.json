@@ -1,0 +1,32 @@
+{
+  "id": "b7d9335f-b9e8-4131-af90-4779c4ee0587",
+  "type": "childBoard",
+  "name": "Customers copy",
+  "json": {
+    "icon": "🏢",
+    "source": "manual",
+    "labelId": "Customers copy",
+    "parents": [
+      {
+        "id": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+        "key": "platformCustomer",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+    "objectKey": "customer",
+    "parentKey": "platformCustomer",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "name",
+      "headOfficeFormattedAddress",
+      "companyEmail",
+      "commissionedUsers",
+      "companyPhone",
+      "dedicatedCarrier__c",
+      "customsBroker__c"
+    ],
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+  }
+}

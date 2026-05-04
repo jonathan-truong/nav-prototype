@@ -1,0 +1,39 @@
+{
+  "id": "4a65943c-97d7-4f3e-bc90-da2b616701fe",
+  "type": "boardView",
+  "name": "LWH",
+  "json": {
+    "id": "4a65943c-97d7-4f3e-bc90-da2b616701fe",
+    "name": "QtyWeightPcs",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "b0db0312-f7c5-5533-8086-e3e54441df57",
+    "filters": [],
+    "labelId": "LWH",
+    "isPinned": false,
+    "columnIds": [
+      "description",
+      "quantity",
+      "commodityType",
+      "weight",
+      "l__c",
+      "w__c",
+      "h__c",
+      "volumeAir__c"
+    ],
+    "createdAt": "2025-05-06T15:41:18.545Z",
+    "createdBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "isDefault": false,
+    "updatedAt": "2025-05-06T15:53:37.748Z",
+    "updatedBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {},
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "description"
+    ],
+    "orderByColumnKey": null,
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

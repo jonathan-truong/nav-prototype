@@ -1,0 +1,143 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_brokerC2G-manifest",
+  "json": {
+    "key": "$custom_brokerC2G-manifest",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "manifest-SendToDriver",
+        "before": "manifest-AddPartnerAndManualCosts",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-AddPartnerAndManualCosts",
+        "before": "manifest-ShareManifestWithDriver",
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-ShareManifestWithDriver",
+        "before": "manifest-SelectAssets",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SelectAssets",
+        "before": "receipientName__c",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "receipientName__c",
+        "before": "manifest-ArriveAtStop",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "receipientName__c"
+      },
+      {
+        "key": "manifest-ArriveAtStop",
+        "before": "manifest-CompleteTasksMobile",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-CompleteTasksMobile",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-UploadAdditionalAttachments",
+        "before": "manifest-SelectPartner",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SelectPartner",
+        "before": "manifest-AddPartnerCosts",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-AddPartnerCosts",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SendToCarrier",
+        "before": "manifest-EnableMacropoint",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-EnableMacropoint",
+        "before": "manifest-SignRateCon",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SignRateCon",
+        "before": "manifest-CompleteTasks",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-CompleteTasks",
+        "before": "manifest-SubmitInvoice",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SubmitInvoice",
+        "before": "manifest-CreateBill",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-CreateBill",
+        "before": "manifest-AddDriverPay",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-AddDriverPay",
+        "before": "manifest-SelectDriver",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-SelectDriver",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2024-11-21T16:51:01.091Z",
+    "createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "targetKey": "brokerC2G-manifest",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetsHidden": [
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

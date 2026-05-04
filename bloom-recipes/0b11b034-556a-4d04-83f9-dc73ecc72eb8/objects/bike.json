@@ -1,0 +1,443 @@
+{
+  "configKey": "object",
+  "key": "bike__c",
+  "json": {
+    "key": "bike__c",
+    "label": "Bikes",
+    "level": "secondary",
+    "events": [
+      {
+        "key": "withGenericWebhookEvents.record.created",
+        "label": "Record Created",
+        "typeId": "record.created",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record is created"
+      },
+      {
+        "key": "withGenericWebhookEvents.record.updated",
+        "label": "Record Updated",
+        "typeId": "record.updated",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record changes"
+      },
+      {
+        "key": "withGenericWebhookEvents.record.deleted",
+        "label": "Record Deleted",
+        "typeId": "record.deleted",
+        "payload": {
+          "$stub": true
+        },
+        "webhooks": {
+          "enabled": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withGenericWebhookEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": false
+        },
+        "description": "Event that is triggered when a record is deleted"
+      },
+      {
+        "key": "withAiEvents.ai.activityLog.prompt",
+        "label": "AI Activity Log User Prompt",
+        "typeId": "ai.activityLog.prompt",
+        "payload": {
+          "$stub": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withAiEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": true
+        },
+        "description": "Event with the user prompt for AI on a record"
+      },
+      {
+        "key": "withAiEvents.ai.activityLog.completion",
+        "label": "AI Activity Log Completion",
+        "typeId": "ai.activityLog.completion",
+        "payload": {
+          "$stub": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "withAiEvents",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": true
+        },
+        "description": "Event with the AI completion on a record"
+      },
+      {
+        "key": "aiEmailRecordEventMixin.proposedChange.proposedSuggestedRecordChanges",
+        "label": "TED Updates Event",
+        "typeId": "proposedChange.proposedSuggestedRecordChanges",
+        "payload": {
+          "$stub": true
+        },
+        "configKey": "event",
+        "$declarator": {
+          "key": "aiEmailRecordEventMixin",
+          "configKey": "object"
+        },
+        "activityLog": {
+          "enabled": true,
+          "widgetKey": "ted-ProposedSuggestedRecordChangesEvent"
+        },
+        "description": "Event triggered when TED proposes updates from a thread"
+      }
+    ],
+    "fields": [
+      {
+        "key": "fullId",
+        "type": "fullId",
+        "label": "Full ID",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "format": "BI-{1}"
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "name",
+        "type": "text",
+        "label": "Name",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "Name of bikes",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdAt",
+        "type": "utcDate",
+        "label": "Created at",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "The date and time this object was created",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdBy",
+        "type": "text",
+        "label": "Created by user id",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "The user id that created this object",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$createdByFullName",
+        "type": "text",
+        "label": "Created by",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "The user's full name that created this object",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$updatedAt",
+        "type": "utcDate",
+        "label": "Updated at",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "The date and time this object was last updated",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$updatedByFullName",
+        "type": "text",
+        "label": "Updated by",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "The user's full name that last updated this object",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "$source",
+        "type": "text",
+        "label": "Source",
+        "isArray": false,
+        "isSystem": true,
+        "configKey": "field",
+        "isRequired": false,
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "Where this object came from",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "isActive",
+        "type": "toggle",
+        "label": "Active",
+        "isArray": false,
+        "configKey": "field",
+        "isRequired": false,
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "description": "Whether this object is active or not.",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "connection__c",
+        "type": {
+          "key": "order",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Connection",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "orderAppointmentNotes__c",
+        "type": "any",
+        "label": "order appointment notes",
+        "paths": [
+          "connection__c.appointmentNotes__c"
+        ],
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "isDerived": true,
+        "expression": "LOOKUP({connection__c.appointmentNotes__c})",
+        "typeConfig": {
+          "isMultiLine": false
+        },
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        },
+        "derivationType": "lookup",
+        "shouldDuplicate": null,
+        "copyMethodForDuplication": null
+      },
+      {
+        "key": "carrierInformationOnOrder__c",
+        "type": "any",
+        "label": "Carrier Information on order",
+        "paths": [
+          "connection__c.carrierInformation__c"
+        ],
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({connection__c.carrierInformation__c})",
+        "derivationType": "lookup",
+        "copyMethodForDuplication": null
+      }
+    ],
+    "isMixin": false,
+    "methods": [
+      {
+        "key": "defaultSourceToManual",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "defaultSourceToManual",
+        "isSystem": true,
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "createAssociatedDocuments",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "createAssociatedDocuments",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueCreatedEvent",
+        "event": "create",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueCreatedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueUpdatedEvent",
+        "event": "commit",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueUpdatedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueDeletedEvent",
+        "event": "delete",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueDeletedEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      },
+      {
+        "key": "queueEvent",
+        "action": {
+          "$stub": true
+        },
+        "labelId": "queueEvent",
+        "configKey": "method",
+        "permission": "insecure",
+        "$declarator": {
+          "key": "bike__c",
+          "configKey": "object"
+        }
+      }
+    ],
+    "summary": "Bikes",
+    "configKey": "object",
+    "createdAt": "2025-03-24T15:01:52.198Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "stability": "stable",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "valueType": "object",
+    "description": "Bikes",
+    "isPrimitive": false,
+    "isHiddenBoard": false,
+    "objectConstructor": {
+      "$stub": true
+    },
+    "persistenceMapping": {
+      "$stub": true
+    }
+  }
+}

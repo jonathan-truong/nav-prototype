@@ -1,0 +1,69 @@
+{
+  "id": "edf7162c-fc81-405e-8469-dc42a1924c06",
+  "type": "childBoard",
+  "name": "Cohort 12 ",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Cohort 12 ",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "consignee_formattedAddress",
+      "serviceType",
+      "accountManagers",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "fullId",
+      "status",
+      "requestedPickupWindow",
+      "shipper_formattedAddress"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "consignee_formattedAddress",
+        "serviceType",
+        "accountManagers",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "fullId",
+        "status",
+        "requestedPickupWindow",
+        "shipper_formattedAddress"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc"
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "fbbf993d-f8d6-40b9-ae8e-94e11cdd7390"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

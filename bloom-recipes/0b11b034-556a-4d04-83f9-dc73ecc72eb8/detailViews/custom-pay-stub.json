@@ -1,0 +1,64 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_payStub",
+  "json": {
+    "key": "$custom_payStub",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "fields": [
+          {
+            "key": "total",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "fields": [
+          {
+            "key": "orders__c",
+            "path": "orders__c",
+            "before": "customers__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customers__c",
+            "path": "customers__c",
+            "before": "payNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "payNotes",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-05-28T16:44:19.770Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "payStub",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

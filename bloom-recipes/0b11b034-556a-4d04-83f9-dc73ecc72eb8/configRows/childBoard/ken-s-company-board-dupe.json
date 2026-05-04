@@ -1,0 +1,90 @@
+{
+  "id": "65f90539-528b-4fa9-bec6-425680d5f47e",
+  "type": "childBoard",
+  "name": "Ken's Company Board dupe",
+  "json": {
+    "id": "65f90539-528b-4fa9-bec6-425680d5f47e",
+    "icon": "🔍",
+    "source": "manual",
+    "labelId": "Ken's Company Board dupe",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "manifests",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "lastUpdated",
+      "driverName"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "totalEarnings",
+        "totalCost",
+        "margin",
+        "multiCurrencyMargin",
+        "manifests",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "orderETAStatus",
+        "deliveryEta",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "lastUpdated",
+        "driverName"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "83c4090d-89e8-4b98-9c93-54727ca294a7",
+              "c54b8c5c-aa67-4a72-ab9b-5adea28518aa"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

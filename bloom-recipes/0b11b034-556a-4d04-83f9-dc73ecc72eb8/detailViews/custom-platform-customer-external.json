@@ -1,0 +1,38 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_platformCustomer_external",
+  "json": {
+    "key": "$custom_platformCustomer_external",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "name",
+            "before": "customsBroker__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customsBroker__c",
+            "path": "customsBroker__c",
+            "before": "headOfficeAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "headOfficeAddress",
+            "before": "companyEmail",
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-05-08T20:08:59.883Z",
+    "createdBy": "b741e713-f922-4723-99bd-211373328397",
+    "targetKey": "platformCustomer_external",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

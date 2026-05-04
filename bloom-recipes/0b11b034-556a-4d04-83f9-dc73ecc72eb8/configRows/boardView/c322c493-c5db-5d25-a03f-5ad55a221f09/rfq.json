@@ -1,0 +1,47 @@
+{
+  "id": "08c0a248-ae23-4af1-baee-5ec528b5d763",
+  "type": "boardView",
+  "name": "RFQ",
+  "json": {
+    "id": "08c0a248-ae23-4af1-baee-5ec528b5d763",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c322c493-c5db-5d25-a03f-5ad55a221f09",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "rfq"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "RFQ",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "quoteRequestNotes__c",
+      "quoteType",
+      "platformTags",
+      "customer",
+      "totalAmount",
+      "totalCost",
+      "margin"
+    ],
+    "createdAt": "2024-07-03T15:03:48.828Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "isDefault": false,
+    "updatedAt": "2024-07-03T15:13:57.397Z",
+    "updatedBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "visibility": "board",
+    "description": "Request for Quotes",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

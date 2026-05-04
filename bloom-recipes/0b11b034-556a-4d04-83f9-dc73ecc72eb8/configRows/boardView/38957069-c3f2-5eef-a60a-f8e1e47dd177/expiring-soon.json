@@ -1,0 +1,33 @@
+{
+  "id": "9feb88b0-0115-4e74-b7f3-91e69a6376b6",
+  "type": "boardView",
+  "name": "Expiring Soon",
+  "json": {
+    "id": "defaultView",
+    "boardId": "38957069-c3f2-5eef-a60a-f8e1e47dd177",
+    "filters": [],
+    "labelId": "Expiring Soon",
+    "isPinned": false,
+    "columnIds": [
+      "services",
+      "partner",
+      "providerName",
+      "insuranceAmount",
+      "status",
+      "policyNumber",
+      "expiryDate",
+      "effectiveDate",
+      "documentCountLabel"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "services"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

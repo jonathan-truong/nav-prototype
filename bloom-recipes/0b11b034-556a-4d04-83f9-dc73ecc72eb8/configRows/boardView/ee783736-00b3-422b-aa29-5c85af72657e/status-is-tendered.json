@@ -1,0 +1,57 @@
+{
+  "id": "af924fec-4601-4550-a267-22123e17855e",
+  "type": "boardView",
+  "name": "status is tendered",
+  "json": {
+    "id": "af924fec-4601-4550-a267-22123e17855e",
+    "name": "status is tendered",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "ee783736-00b3-422b-aa29-5c85af72657e",
+    "filters": [
+      {
+        "path": "commodities",
+        "value": [
+          "d093c920-76ea-4947-bcd5-c6d5cd1e7e24",
+          "756cae2b-b9fc-4e69-a7e7-1ee68d086ac4",
+          "c4bc7c3e-f71a-4e80-b741-3e83849abee2"
+        ],
+        "operator": "in",
+        "fieldType": "ConnectionField",
+        "filterKey": "commodities"
+      },
+      {
+        "path": "status",
+        "value": [
+          "tendered"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "status is tendered",
+    "ordinal": 3,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "onTimePickUp__c",
+      "onTimeDelivery__c"
+    ],
+    "createdAt": "2025-07-30T19:49:33.917Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-07-30T19:49:33.917Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {},
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "configKey": "object",
+  "key": "$custom_accessorial",
+  "json": {
+    "key": "$custom_accessorial",
+    "fields": [
+      {
+        "key": "allocation",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "pickup",
+              "labelId": "Pickup",
+              "isCustom": false
+            },
+            {
+              "value": "delivery",
+              "labelId": "Delivery",
+              "isCustom": false
+            },
+            {
+              "value": "all",
+              "labelId": "All",
+              "isCustom": false
+            },
+            {
+              "value": "linehaul",
+              "labelId": "Linehaul",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "description",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "financialLineItem",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "financialLineItem",
+        "before": "minCharge",
+        "configKey": "field"
+      },
+      {
+        "key": "dimension",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "qty",
+              "labelId": "Quantity",
+              "isCustom": false
+            },
+            {
+              "value": "stops",
+              "labelId": "Stops",
+              "isCustom": false
+            },
+            {
+              "value": "linear_ft",
+              "labelId": "Linear feet (LF)",
+              "isCustom": false
+            },
+            {
+              "value": "lbs",
+              "labelId": "Pound (lb)",
+              "isCustom": false
+            },
+            {
+              "value": "kgs",
+              "labelId": "Kilogram (kg)",
+              "isCustom": false
+            },
+            {
+              "value": "tons",
+              "labelId": "Imperial ton (T)",
+              "isCustom": false
+            },
+            {
+              "value": "metric tonnes",
+              "labelId": "Metric ton (ton)",
+              "isCustom": false
+            },
+            {
+              "value": "cube",
+              "labelId": "Cubic feet (ft³)",
+              "isCustom": false
+            },
+            {
+              "value": "gallons",
+              "labelId": "Gallons (gal)",
+              "isCustom": false
+            },
+            {
+              "value": "litres",
+              "labelId": "Litre (L)",
+              "isCustom": false
+            },
+            {
+              "value": "cm",
+              "labelId": "Centimeter (cm)",
+              "isCustom": false
+            },
+            {
+              "value": "in",
+              "labelId": "Inch (in)",
+              "isCustom": false
+            },
+            {
+              "value": "m",
+              "labelId": "Meter (m)",
+              "isCustom": false
+            },
+            {
+              "value": "ft",
+              "labelId": "Feet (ft)",
+              "isCustom": false
+            },
+            {
+              "value": "miles",
+              "labelId": "Mile (mi)",
+              "isCustom": false
+            },
+            {
+              "value": "kms",
+              "labelId": "Kilometer (km)",
+              "isCustom": false
+            },
+            {
+              "value": "bundle",
+              "labelId": "Bundle",
+              "isCustom": false
+            },
+            {
+              "value": "carton",
+              "labelId": "Carton",
+              "isCustom": false
+            },
+            {
+              "value": "container",
+              "labelId": "Container",
+              "isCustom": false
+            },
+            {
+              "value": "crate",
+              "labelId": "Crate",
+              "isCustom": false
+            },
+            {
+              "value": "package",
+              "labelId": "Package",
+              "isCustom": false
+            },
+            {
+              "value": "pallet",
+              "labelId": "Pallet",
+              "isCustom": false
+            },
+            {
+              "value": "skid",
+              "labelId": "Skid",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "calculationMethod",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "percentage",
+              "labelId": "% of freight",
+              "isCustom": false
+            },
+            {
+              "value": "cwt",
+              "labelId": "CWT",
+              "isCustom": false
+            },
+            {
+              "value": "flatRate",
+              "labelId": "Flat rate",
+              "isCustom": false
+            },
+            {
+              "value": "perDimension",
+              "labelId": "Per dimension",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "pcfValue",
+        "before": null,
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2025-09-03T20:18:35.199Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "accessorial",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

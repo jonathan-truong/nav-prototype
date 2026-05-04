@@ -1,0 +1,23 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "4c9451fc-577b-4416-ae2b-b4f1d582a5b4",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 19,
+      "formattedValue": "DOCT-19"
+    },
+    "$source": "manual",
+    "version": 2,
+    "$version": 1,
+    "$widgets": [],
+    "$createdAt": "2024-09-05T15:15:08.168Z",
+    "$createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$updatedAt": "2024-09-05T15:15:08.168Z",
+    "$updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "$externalId": null,
+    "documentType": "rateConfirmation",
+    "rootObjectKey": "manifest",
+    "dataFormatVersion": "1"
+  }
+}

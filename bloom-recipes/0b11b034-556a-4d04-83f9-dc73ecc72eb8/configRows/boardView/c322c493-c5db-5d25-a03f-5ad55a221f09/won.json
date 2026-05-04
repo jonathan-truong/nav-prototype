@@ -1,0 +1,71 @@
+{
+  "id": "42855c14-6f47-4893-81f4-035e4db628f4",
+  "type": "boardView",
+  "name": "Won",
+  "json": {
+    "id": "f41ef454-13a8-4d10-9c7a-3fa58552c6ae",
+    "orgId": "9fd81271-0a24-43aa-b5fb-d5ff275265b0",
+    "boardId": "c322c493-c5db-5d25-a03f-5ad55a221f09",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "won"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      },
+      {
+        "path": "quoteType",
+        "value": [
+          "sell"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "quoteType"
+      }
+    ],
+    "labelId": "Won",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "quoteType",
+      "customer",
+      "totalAmount",
+      "totalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "platformTags",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "commodities",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "specialInstructions",
+      "accessorials",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "order"
+    ],
+    "createdAt": "2024-08-19T20:16:29.112Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2024-08-19T20:16:37.286Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": "These are Customer Quotes that have been won and converted into Orders.",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

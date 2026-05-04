@@ -1,0 +1,133 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_carrier-dispatch-order",
+  "json": {
+    "key": "$custom_carrier-dispatch-order",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "newTest__c",
+        "before": "order-EnableMacropoint",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "newTest__c"
+      },
+      {
+        "key": "order-EnableMacropoint",
+        "before": "order-SendETAUpdate",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendETAUpdate",
+        "before": "order-WelcomeDriverDispatch",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-WelcomeDriverDispatch",
+        "before": "order-SelectCustomerWithTip",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectCustomerWithTip",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddQuoteWithTip",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ManageStopsAndTasks",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreateAndAssignDriver",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToDriverReadOnly",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CompleteTasks",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddDriverPay",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreatePlatformInvoiceWithTip",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreatePayStub",
+        "before": "order-ScheduleStatusRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ScheduleStatusRequest",
+        "before": "order-PostToLoadBoard2",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-PostToLoadBoard2",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-DataBotImport",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AssignPartner",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddTemplateDetails",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2025-07-29T17:54:27.179Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "carrier-dispatch-order",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetsHidden": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true
+    ]
+  }
+}

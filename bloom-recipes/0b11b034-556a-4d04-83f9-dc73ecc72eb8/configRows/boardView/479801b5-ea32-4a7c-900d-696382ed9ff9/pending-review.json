@@ -1,0 +1,44 @@
+{
+  "id": "a0ad8771-bcde-4721-a41b-f15604136f31",
+  "type": "boardView",
+  "name": "Pending review",
+  "json": {
+    "id": "ted-pending-review",
+    "key": "ted-pending-review",
+    "boardId": "479801b5-ea32-4a7c-900d-696382ed9ff9",
+    "filters": [
+      {
+        "path": "tedSuggestionsStatus",
+        "value": [
+          "hasSuggestions"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "tedSuggestionsStatus"
+      }
+    ],
+    "labelId": "Pending review",
+    "isPinned": true,
+    "columnIds": [
+      "tedSuggestionsStatus",
+      "subject",
+      "syncStatus",
+      "lastReceived",
+      "referencedRecords",
+      "tags",
+      "labels",
+      "recipients",
+      "attachmentCountLabel",
+      "fullId",
+      "$createdByFullName",
+      "$updatedByFullName"
+    ],
+    "visibility": "board",
+    "description": "Threads with TED suggestions pending review",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "lastReceived",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": ""
+  }
+}

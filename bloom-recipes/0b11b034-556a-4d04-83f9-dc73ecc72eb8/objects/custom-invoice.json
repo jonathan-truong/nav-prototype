@@ -1,0 +1,366 @@
+{
+  "configKey": "object",
+  "key": "$custom_invoice",
+  "json": {
+    "key": "$custom_invoice",
+    "fields": [
+      {
+        "key": "status",
+        "before": "notes",
+        "configKey": "field"
+      },
+      {
+        "key": "notes",
+        "before": "customer",
+        "configKey": "field"
+      },
+      {
+        "key": "invoiceFromAddress",
+        "before": "invoiceToAddress",
+        "configKey": "field"
+      },
+      {
+        "key": "invoiceToAddress",
+        "before": "remitToAddress",
+        "configKey": "field"
+      },
+      {
+        "key": "remitToAddress",
+        "before": "terms",
+        "configKey": "field"
+      },
+      {
+        "key": "terms",
+        "before": "billingTerms",
+        "configKey": "field"
+      },
+      {
+        "key": "sentAt",
+        "before": "paymentTerm",
+        "configKey": "field"
+      },
+      {
+        "key": "paymentTerm",
+        "before": "lineItems",
+        "configKey": "field"
+      },
+      {
+        "key": "lineItems",
+        "before": "documents",
+        "configKey": "field"
+      },
+      {
+        "key": "documents",
+        "before": "reviewedAt",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "reviewedAt",
+        "before": "paymentAllocations",
+        "configKey": "field"
+      },
+      {
+        "key": "paymentAllocations",
+        "before": "paymentDateLabel",
+        "configKey": "field"
+      },
+      {
+        "key": "paymentDateLabel",
+        "before": "orders",
+        "configKey": "field"
+      },
+      {
+        "key": "orders",
+        "before": "secondaryDocuments",
+        "configKey": "field"
+      },
+      {
+        "key": "secondaryDocuments",
+        "before": "amountDue",
+        "configKey": "field"
+      },
+      {
+        "key": "orderLineItems",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "orderLineItemsTotal",
+        "configKey": "field"
+      },
+      {
+        "key": "orderLineItemsTotal",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "codatExternalInvoiceId",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "lastExportedAt",
+        "before": "errorMessages",
+        "configKey": "field"
+      },
+      {
+        "key": "errorMessages",
+        "before": "invoiceExportStatus",
+        "configKey": "field"
+      },
+      {
+        "key": "invoiceExportStatus",
+        "before": "organizationId__c",
+        "configKey": "field"
+      },
+      {
+        "key": "organizationId__c",
+        "type": "text",
+        "label": "Organization ID",
+        "before": "billStatus__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "billStatus__c",
+        "type": {
+          "key": "bill",
+          "ref": true,
+          "configKey": "object"
+        },
+        "label": "Bill Status",
+        "before": "invoiceNotes__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "invoiceNotes__c",
+        "type": "text",
+        "label": "Invoice Notes",
+        "before": "podOnFile__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "podOnFile__c",
+        "type": "any",
+        "label": "POD on File",
+        "paths": [
+          "orders.pod__c"
+        ],
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.pod__c})",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "✔️",
+              "labelId": "🟢"
+            },
+            {
+              "value": "x",
+              "labelId": "🔴"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "orderDeliveryTime__c",
+        "type": "any",
+        "label": "Order delivery time",
+        "paths": [
+          "orders.lastDeliveryTask.completedAt"
+        ],
+        "before": "contractedTotal__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({orders.lastDeliveryTask.completedAt})",
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "contractedTotal__c",
+        "type": "money",
+        "label": "Contracted Total",
+        "before": "dueDatePassed__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "canBeNegative": false
+        },
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "dueDatePassed__c",
+        "type": "toggle",
+        "label": "Due Date Passed",
+        "before": "formulaTest__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "formulaTest__c",
+        "type": "any",
+        "label": "Invoice due date",
+        "paths": [
+          "invoiceDate",
+          "paymentDays__c"
+        ],
+        "before": "invoiceDateCustom__c",
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "dateOffset({invoiceDate},{paymentDays__c},'day')",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      },
+      {
+        "key": "invoiceDateCustom__c",
+        "type": "date",
+        "label": "Invoice date (custom)",
+        "before": "paymentDays__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "paymentDays__c",
+        "type": "number",
+        "label": "Payment days",
+        "before": "daysToDue__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitLabel": ""
+        },
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "daysToDue__c",
+        "type": "any",
+        "label": "Days to due",
+        "paths": [
+          "formulaTest__c"
+        ],
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "dateDiff(today(),{formulaTest__c},'day')",
+        "typeConfig": {
+          "unitCategory": "duration",
+          "currentUnitType": "days",
+          "defaultUnitType": "days"
+        },
+        "$declarator": {
+          "key": "$custom_invoice",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueDeletedEvent",
+        "configKey": "method"
+      },
+      {
+        "key": "updateCustomerCreditLimit",
+        "configKey": "method"
+      },
+      {
+        "key": "queueEvent",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "$getWidgetSequence",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "configKey": "method"
+      },
+      {
+        "key": "$evaluateWidgets",
+        "configKey": "method"
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-05-01T12:28:21.494Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "invoice",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

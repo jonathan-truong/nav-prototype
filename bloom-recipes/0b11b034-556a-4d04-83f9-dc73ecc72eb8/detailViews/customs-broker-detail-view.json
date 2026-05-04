@@ -1,0 +1,35 @@
+{
+  "configKey": "detailView",
+  "key": "customsBrokerDetailView__c",
+  "json": {
+    "key": "customsBrokerDetailView__c",
+    "sections": [
+      {
+        "key": "general",
+        "label": "customsBroker Details",
+        "fields": [
+          {
+            "key": "name",
+            "path": "name",
+            "configKey": "detailField",
+            "isEditable": true
+          },
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "configKey": "detailField",
+            "isEditable": false
+          }
+        ],
+        "labelId": "general",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-05-06T20:40:20.962Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "customsBroker__c",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

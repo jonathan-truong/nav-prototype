@@ -1,0 +1,52 @@
+{
+  "id": "3905c55a-5a44-4e1d-8cc1-90e970c00c1f",
+  "type": "boardView",
+  "name": "New",
+  "json": {
+    "boardId": "d25f7334-5acc-4496-9390-89586953da70",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "New",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board to track where your drivers are and what they are working on",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

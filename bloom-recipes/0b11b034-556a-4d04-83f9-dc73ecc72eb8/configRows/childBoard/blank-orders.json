@@ -1,0 +1,22 @@
+{
+  "id": "4da26393-4875-4f23-9ecb-872f7121021c",
+  "type": "childBoard",
+  "name": "Blank Orders",
+  "json": {
+    "icon": "📋",
+    "source": "manual",
+    "labelId": "Blank Orders",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+  }
+}

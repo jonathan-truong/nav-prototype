@@ -1,0 +1,127 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_carrierOnboarding-manifest_f5ed0e0e-9996-4145-bfe9-11d9edb9870e",
+  "json": {
+    "key": "$custom_carrierOnboarding-manifest_f5ed0e0e-9996-4145-bfe9-11d9edb9870e",
+    "label": "Carrier Onboarding",
+    "widgets": [
+      {
+        "key": "manifest-SignRateCon",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SignRateCon"
+      },
+      {
+        "key": "manifest-ArriveAtStop",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-ArriveAtStop"
+      },
+      {
+        "key": "manifest-SubmitInvoice",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SubmitInvoice"
+      },
+      {
+        "key": "manifest-UploadAdditionalAttachments",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-UploadAdditionalAttachments"
+      },
+      {
+        "key": "manifest-AddPartnerCosts",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-AddPartnerCosts"
+      },
+      {
+        "key": "manifest-SendToDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SendToDriver"
+      },
+      {
+        "key": "manifest-AddPartnerAndManualCosts",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "manifest-ShareManifestWithDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-ShareManifestWithDriver"
+      },
+      {
+        "key": "manifest-SelectAssets",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SelectAssets"
+      },
+      {
+        "key": "receipientName__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "receipientName__c"
+      },
+      {
+        "key": "manifest-CompleteTasksMobile",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-CompleteTasksMobile"
+      },
+      {
+        "key": "manifest-SendToCarrier",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SendToCarrier"
+      },
+      {
+        "key": "manifest-EnableMacropoint",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "isVisible": {
+          "$stub": true
+        },
+        "widgetKey": "manifest-EnableMacropoint"
+      },
+      {
+        "key": "manifest-CompleteTasks",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-CompleteTasks"
+      },
+      {
+        "key": "manifest-CreateBill",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-CreateBill"
+      },
+      {
+        "key": "manifest-AddDriverPay",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-AddDriverPay"
+      },
+      {
+        "key": "manifest-SelectDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "manifest-SelectDriver"
+      },
+      {
+        "key": "scheduledDepartureDateTime__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "scheduledDepartureDateTime__c"
+      }
+    ],
+    "isCustom": true,
+    "configKey": "widgetSequence",
+    "createdAt": "2026-01-07T22:23:38.481Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "manifest",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

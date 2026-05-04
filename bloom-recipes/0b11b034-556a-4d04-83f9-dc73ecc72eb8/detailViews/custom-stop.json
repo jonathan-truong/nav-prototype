@@ -1,0 +1,171 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_stop",
+  "json": {
+    "key": "$custom_stop",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "uniqueCommoditiesTotalWeight",
+            "path": "uniqueCommoditiesTotalWeight",
+            "before": "uniqueCommodities",
+            "configKey": "detailField"
+          },
+          {
+            "key": "uniqueCommodities",
+            "path": "uniqueCommodities",
+            "before": "tasks",
+            "configKey": "detailField"
+          },
+          {
+            "key": "tasks",
+            "path": "tasks",
+            "before": "stopType",
+            "configKey": "detailField"
+          },
+          {
+            "key": "stopType",
+            "path": "stopType",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "path": "status",
+            "before": "specialInstructions",
+            "configKey": "detailField"
+          },
+          {
+            "key": "specialInstructions",
+            "path": "specialInstructions",
+            "before": "pickupWindows",
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickupWindows",
+            "path": "pickupWindows",
+            "before": "pickups",
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickups",
+            "path": "pickups",
+            "before": "ordinal",
+            "configKey": "detailField"
+          },
+          {
+            "key": "ordinal",
+            "path": "ordinal",
+            "before": "nextDurationFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "nextDurationFormatted",
+            "path": "nextDurationFormatted",
+            "before": "nextDuration",
+            "configKey": "detailField"
+          },
+          {
+            "key": "nextDuration",
+            "path": "nextDuration",
+            "before": "nextDistance",
+            "configKey": "detailField"
+          },
+          {
+            "key": "nextDistance",
+            "path": "nextDistance",
+            "before": "manifestOrdinal",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestOrdinal",
+            "path": "manifestOrdinal",
+            "before": "location",
+            "configKey": "detailField"
+          },
+          {
+            "key": "location",
+            "path": "location",
+            "before": "lastPickupWindow",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastPickupWindow",
+            "path": "lastPickupWindow",
+            "before": "gate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "gate",
+            "path": "gate",
+            "before": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "before": "firstPickupWindow",
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstPickupWindow",
+            "path": "firstPickupWindow",
+            "before": "documents",
+            "configKey": "detailField"
+          },
+          {
+            "key": "documents",
+            "path": "documents",
+            "before": "description",
+            "configKey": "detailField"
+          },
+          {
+            "key": "description",
+            "path": "description",
+            "before": "deliveryWindows",
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveryWindows",
+            "path": "deliveryWindows",
+            "before": "deliveries",
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveries",
+            "path": "deliveries",
+            "before": "isActive",
+            "configKey": "detailField"
+          },
+          {
+            "key": "isActive",
+            "path": "isActive",
+            "before": "nonLegTasks",
+            "configKey": "detailField"
+          },
+          {
+            "key": "nonLegTasks",
+            "path": "nonLegTasks",
+            "before": "company",
+            "configKey": "detailField"
+          },
+          {
+            "key": "company",
+            "before": "address",
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-06-11T14:13:56.277Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "stop",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

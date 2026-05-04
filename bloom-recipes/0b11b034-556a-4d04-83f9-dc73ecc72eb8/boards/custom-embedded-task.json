@@ -1,0 +1,243 @@
+{
+  "configKey": "board",
+  "key": "$custom_embeddedTask",
+  "json": {
+    "key": "$custom_embeddedTask",
+    "columns": [
+      {
+        "key": "legPickupTime__c",
+        "path": "legPickupTime__c",
+        "labelId": "Leg Pickup Time",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "legDeliveryTime__c",
+        "path": "legDeliveryTime__c",
+        "labelId": "Leg Delivery Time",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "originRequestedTimeV2__c",
+        "path": "originRequestedTimeV2__c",
+        "labelId": "Origin requested time v2",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "containerNo__c",
+        "path": "containerNo__c",
+        "labelId": "Container No.",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "hughsLookup__c",
+        "path": "hughsLookup__c",
+        "labelId": "zz-Hughs Lookup",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "hughsLookup2__c",
+        "path": "hughsLookup2__c",
+        "labelId": "zz-Hughs Lookup 2",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "customerSurfaceTest__c",
+        "path": "customerSurfaceTest__c",
+        "labelId": "Customer Surface Test",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "stopLocation__c",
+        "path": "stopLocation__c",
+        "labelId": "Stop Location",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "declaredValue__c",
+        "path": "declaredValue__c",
+        "labelId": "Declared value",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "taskSpecificAssets__c",
+        "path": "taskSpecificAssets__c",
+        "labelId": "Task-specific Assets",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "timeInTransit__c",
+        "path": "timeInTransit__c",
+        "labelId": "time in transit",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "hourBeforeDelivery__c",
+        "path": "hourBeforeDelivery__c",
+        "labelId": "hour before delivery",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "detentionTime__c",
+        "path": "detentionTime__c",
+        "labelId": "Detention time",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "orderStatus__c",
+        "path": "orderStatus__c",
+        "labelId": "Order status",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "pod__c",
+        "path": "pod__c",
+        "labelId": "POD",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "legPickupTime__c",
+        "path": "legPickupTime__c",
+        "labelId": "Leg Pickup Time",
+        "columnKey": "legPickupTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "legDeliveryTime__c",
+        "path": "legDeliveryTime__c",
+        "labelId": "Leg Delivery Time",
+        "columnKey": "legDeliveryTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "originRequestedTimeV2__c",
+        "path": "originRequestedTimeV2__c",
+        "labelId": "Origin requested time v2",
+        "columnKey": "originRequestedTimeV2__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "containerNo__c",
+        "path": "containerNo__c",
+        "labelId": "Container No.",
+        "columnKey": "containerNo__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "hughsLookup__c",
+        "path": "hughsLookup__c",
+        "labelId": "zz-Hughs Lookup",
+        "columnKey": "hughsLookup__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "hughsLookup2__c",
+        "path": "hughsLookup2__c",
+        "labelId": "zz-Hughs Lookup 2",
+        "columnKey": "hughsLookup2__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customerSurfaceTest__c",
+        "path": "customerSurfaceTest__c",
+        "labelId": "Customer Surface Test",
+        "columnKey": "customerSurfaceTest__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "stopLocation__c",
+        "path": "stopLocation__c",
+        "labelId": "Stop Location",
+        "columnKey": "stopLocation__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "declaredValue__c",
+        "path": "declaredValue__c",
+        "labelId": "Declared value",
+        "columnKey": "declaredValue__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "taskSpecificAssets__c",
+        "path": "taskSpecificAssets__c",
+        "labelId": "Task-specific Assets",
+        "columnKey": "taskSpecificAssets__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "timeInTransit__c",
+        "path": "timeInTransit__c",
+        "labelId": "time in transit",
+        "columnKey": "timeInTransit__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "hourBeforeDelivery__c",
+        "path": "hourBeforeDelivery__c",
+        "labelId": "hour before delivery",
+        "columnKey": "hourBeforeDelivery__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "detentionTime__c",
+        "path": "detentionTime__c",
+        "labelId": "Detention time",
+        "columnKey": "detentionTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "orderStatus__c",
+        "path": "orderStatus__c",
+        "labelId": "Order status",
+        "columnKey": "orderStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pod__c",
+        "path": "pod__c",
+        "labelId": "POD",
+        "columnKey": "pod__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2026-02-18T02:05:03.823Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "embeddedTask",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

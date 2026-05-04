@@ -1,0 +1,4560 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_order",
+  "json": {
+    "key": "$custom_order",
+    "label": "Internal",
+    "views": [
+      {
+        "key": "view1__c",
+        "label": "Tasks & Manifests",
+        "configKey": "view",
+        "panelGroups": [
+          {
+            "key": "group-1__c",
+            "panels": [
+              {
+                "key": "panel-1__c",
+                "layout": "tabs",
+                "widgets": [
+                  {
+                    "key": "widget-1__c",
+                    "label": "Tasks",
+                    "configKey": "widgetDisplay",
+                    "widgetKey": "config-ConfigurableEmbeddedBoard",
+                    "runtimeConfig": {
+                      "boardKey": "task",
+                      "connectedBoardFieldPath": "relatedOrder"
+                    }
+                  },
+                  {
+                    "key": "widget-2__c",
+                    "label": "Manifests",
+                    "configKey": "widgetDisplay",
+                    "widgetKey": "config-ConfigurableEmbeddedBoard",
+                    "runtimeConfig": {
+                      "boardKey": "manifest",
+                      "connectedBoardFieldPath": "orders"
+                    }
+                  }
+                ],
+                "configKey": "panel"
+              }
+            ],
+            "configKey": "panelGroup",
+            "panelsDirection": "horizontal"
+          }
+        ],
+        "panelGroupsDirection": "horizontal"
+      }
+    ],
+    "panels": [
+      {
+        "key": "emailPanel",
+        "icon": "emailOpen",
+        "labelId": "Email",
+        "sections": [
+          {
+            "key": "emailSection",
+            "fields": [
+              {
+                "key": "emails",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-EmailPanel",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          }
+        ],
+        "configKey": "detailPanel"
+      },
+      {
+        "key": "canvasPanel",
+        "icon": "clipboard",
+        "labelId": "Canvas",
+        "sections": [
+          {
+            "key": "canvasSection",
+            "fields": [
+              {
+                "key": "canvasWidget",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "config-RecordCanvas"
+              }
+            ],
+            "configKey": "detailSection"
+          }
+        ],
+        "configKey": "detailPanel"
+      },
+      {
+        "key": "documents",
+        "labelId": "Documents",
+        "sections": [
+          {
+            "key": "section-1",
+            "fields": [
+              {
+                "key": "orderDocumentsBoard",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-EmbeddedDocumentsBoard",
+                "isEditable": true
+              }
+            ],
+            "configKey": "detailSection"
+          }
+        ],
+        "configKey": "detailPanel"
+      },
+      {
+        "key": "shipmentsPanel",
+        "icon": "connections",
+        "labelId": "Shipments",
+        "sections": [
+          {
+            "key": "shipmentsSection",
+            "fields": [
+              {
+                "key": "orderShipmentsBoard",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-ShipmentEntry",
+                "isEditable": true
+              }
+            ],
+            "configKey": "detailSection"
+          }
+        ],
+        "configKey": "detailPanel"
+      },
+      {
+        "key": "financials",
+        "icon": "money",
+        "labelId": "Financials",
+        "useTabs": true,
+        "sections": [
+          {
+            "key": "financial-overview-section",
+            "label": "Overview",
+            "fields": [
+              {
+                "key": "orderFinancialOverview",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-FinancialOverview",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          },
+          {
+            "key": "allocations-tiles-section",
+            "label": "Allocations",
+            "fields": [
+              {
+                "key": "orderFinancialSummaryTiles",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-FinancialSummaryTiles",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          },
+          {
+            "key": "shipment-summary-section",
+            "label": "Allocations",
+            "fields": [
+              {
+                "key": "orderShipmentAllocationSummary",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-ShipmentAllocationSummary",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          },
+          {
+            "key": "shipments-section",
+            "label": "Allocations",
+            "fields": [
+              {
+                "key": "embeddedAllocationShipmentsBoard",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-EmbeddedAllocationShipmentsBoard",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          },
+          {
+            "key": "leg-summary-section",
+            "label": "Allocations",
+            "fields": [
+              {
+                "key": "orderLegAllocationSummary",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-LegAllocationSummary",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          },
+          {
+            "key": "legs-section",
+            "label": "Allocations",
+            "fields": [
+              {
+                "key": "embeddedAllocationLegsBoard",
+                "path": "",
+                "configKey": "detailField",
+                "widgetKey": "order-EmbeddedAllocationLegsBoard",
+                "isEditable": false
+              }
+            ],
+            "configKey": "detailSection"
+          }
+        ],
+        "configKey": "detailPanel"
+      }
+    ],
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "before": "assetDetails",
+        "fields": [
+          {
+            "key": "numberOfStops__c",
+            "path": "numberOfStops__c",
+            "field": {
+              "key": "numberOfStops__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Number of stops",
+              "paths": [
+                "derivedStops"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "count({derivedStops})",
+              "derivationType": "formula"
+            },
+            "before": "quoteLineItemTypes__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "quoteLineItemTypes__c",
+            "path": "quoteLineItemTypes__c",
+            "field": {
+              "key": "quoteLineItemTypes__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Quote Line Item Types",
+              "paths": [
+                "sellQuote.lineItems.type"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({sellQuote.lineItems.type})",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "bikeType__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "bikeType__c",
+            "path": "bikeType__c",
+            "field": {
+              "key": "bikeType__c",
+              "type": {
+                "key": "bike__c",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Bike Type",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {}
+            },
+            "before": "$createdAt",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "$createdAt",
+            "path": "$createdAt",
+            "field": {
+              "key": "$createdAt",
+              "type": {
+                "key": "utcDate",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Created at",
+              "isArray": false,
+              "isSystem": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The date and time this object was created"
+            },
+            "before": "test__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "test__c",
+            "path": "test__c",
+            "field": {
+              "key": "test__c",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "test",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isRange": false
+              }
+            },
+            "before": "customer",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "customer",
+            "field": {
+              "key": "customer",
+              "type": {
+                "key": "customer",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Customer",
+              "import": {
+                "hint": "The customer is the company or person who is paying for the shipment. Look for labels like \"Bill To\", \"Bill Freight To\", \"Customer\", \"Billed To\", or \"Third Party\". Extract only the company/person name — address details belong in other fields.",
+                "action": "createIfNotFound",
+                "examples": [
+                  {
+                    "expected": {
+                      "name": "ACME Logistics Inc"
+                    },
+                    "inputText": "BILL FREIGHT TO:\nACME Logistics Inc\n123 Main Street\nToronto, ON M5V 2T6"
+                  }
+                ],
+                "matchingCriteria": {
+                  "matchPaths": [
+                    "name",
+                    "headOfficeAddress"
+                  ],
+                  "searchQueries": [
+                    {
+                      "count": 500,
+                      "orderBy": {
+                        "$updatedAt": "desc"
+                      },
+                      "minRelevanceScore": 0.85
+                    },
+                    {
+                      "count": 500,
+                      "offset": 500,
+                      "orderBy": {
+                        "$updatedAt": "desc"
+                      },
+                      "minRelevanceScore": 0.85
+                    }
+                  ],
+                  "additionalInstructions": "Consider email address and website domains if they are present"
+                }
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "name"
+                ],
+                "widgetKey": "events-CustomerTile"
+              },
+              "description": "The customer for the order",
+              "isAutoImported": true
+            },
+            "before": "originCity__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "originCity__c",
+            "path": "originCity__c",
+            "field": {
+              "key": "originCity__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "origin City",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": "C"
+              },
+              "description": "cool stuff"
+            },
+            "before": "$source",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "$source",
+            "path": "$source",
+            "field": {
+              "key": "$source",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Source",
+              "isArray": false,
+              "isSystem": true,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Where this object came from"
+            },
+            "before": "declaredValue",
+            "configKey": "detailField"
+          },
+          {
+            "key": "declaredValue",
+            "path": "declaredValue",
+            "field": {
+              "key": "declaredValue",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Declared value",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              }
+            },
+            "before": "customMoney__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customMoney__c",
+            "path": "customMoney__c",
+            "field": {
+              "key": "customMoney__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Custom money",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "canBeNegative": false
+              },
+              "description": "test"
+            },
+            "before": "requestedPickupWindow",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedPickupWindow",
+            "field": {
+              "key": "requestedPickupWindow",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Requested pickup",
+              "import": {
+                "hint": "Always derive from the first stop whose type is \"Pick\"\nIf that stop shows an \"appointment\" indicator (APPT, APPOINTMENT, DROP APPT, DELIVERY APPT, PICKUP APPT, SCHD/SCHED, or Scheduled Time), treat it as a strict point-in-time:\n- dateTimeInLocation === dateTimeInLocationEnd (same value). Both dateTimeInLocation and dateTimeInLocationEnd must be identical to that fixed‑appointment timestamp.\n\nOtherwise build the window from that stop's own earliest and latest timestamps (e.g. PLAN → ETA)."
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": true
+              },
+              "description": "A date range that the customer is requesting the load be picked up within",
+              "isAutoImported": true
+            },
+            "before": "requestedDeliveryWindow",
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedDeliveryWindow",
+            "field": {
+              "key": "requestedDeliveryWindow",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Requested delivery",
+              "import": {
+                "hint": "Always derive from the last stop whose type is “Drop”\nIf that stop shows an “appointment” indicator (APPT, APPOINTMENT, DROP APPT, DELIVERY APPT, PICKUP APPT, SCHD/SCHED, or Scheduled Time), treat it as a strict point-in-time:\n- dateTimeInLocation === dateTimeInLocationEnd (same value). Both dateTimeInLocation and dateTimeInLocationEnd must be identical to that fixed‑appointment timestamp.\n\nOtherwise build the window from that stop's own earliest and latest timestamps (e.g. PLAN → ETA)."
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": true
+              },
+              "description": "A date range that the customer is requesting the load be delivered within",
+              "isAutoImported": true
+            },
+            "before": "actualPickupDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "actualPickupDate",
+            "path": "actualPickupDate",
+            "field": {
+              "key": "actualPickupDate",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Actual pickup date",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "The specific date and time when the load is picked up"
+            },
+            "before": "manifests__2",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifests__2",
+            "path": "manifests",
+            "field": {
+              "key": "manifests",
+              "type": {
+                "key": "manifest",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Manifests",
+              "paths": [
+                "tasks.subTasks.parentTasks.manifest",
+                "tasks.parentTasks.manifest",
+                "tasks.subTasks.manifest",
+                "tasks.manifest"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "manifests__1",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifests__1",
+            "path": "manifests",
+            "field": {
+              "key": "manifests",
+              "type": {
+                "key": "manifest",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Manifests",
+              "paths": [
+                "tasks.subTasks.parentTasks.manifest",
+                "tasks.parentTasks.manifest",
+                "tasks.subTasks.manifest",
+                "tasks.manifest"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "pickedUpAt",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickedUpAt",
+            "field": {
+              "key": "pickedUpAt",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Picked up at",
+              "paths": [
+                "pickups"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              }
+            },
+            "before": "derekTest__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "derekTest__c",
+            "path": "derekTest__c",
+            "field": {
+              "key": "derekTest__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "DerekTest",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "shipper",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "shipper",
+            "field": {
+              "key": "shipper",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Shipper",
+              "import": {
+                "action": "create",
+                "examples": [
+                  {
+                    "expected": {
+                      "city": "CARSON",
+                      "state": "CA",
+                      "country": "US",
+                      "address1": "1320 KING ST",
+                      "postalCode": "90210",
+                      "companyName": "WIDGETS INTERNATIONAL, INC."
+                    },
+                    "inputText": "SHIPPER INFORMATION\nWIDGETS INTERNATIONAL, INC.\n1320 KING ST.\nCARSON, CA 90210 UNITED STATES"
+                  },
+                  {
+                    "expected": {
+                      "city": "Dekalb",
+                      "state": "IL",
+                      "country": "US",
+                      "address1": "1300 FAIRVIEW DR",
+                      "postalCode": "60115",
+                      "companyName": "NESTLE USA INC"
+                    },
+                    "inputText": "Pickup #1\nNESTLE USA INC\n1300 FAIRVIEW DR\nDekalb, IL 60115"
+                  }
+                ]
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "address1",
+                  "address2",
+                  "companyName",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "country",
+                  "latitude",
+                  "longitude"
+                ],
+                "widgetKey": "events-AddressTile"
+              },
+              "description": "Shipper is the origin of the load",
+              "isAutoImported": true
+            },
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "field": {
+              "key": "status",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Status",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": true,
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-grey",
+                    "value": "new",
+                    "labelId": "New "
+                  },
+                  {
+                    "color": "status-green",
+                    "value": "accepted",
+                    "labelId": "Accepted"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "booked",
+                    "labelId": "Booked"
+                  },
+                  {
+                    "color": "status-purple",
+                    "value": "in transit",
+                    "labelId": "In transit"
+                  },
+                  {
+                    "color": "status-grey",
+                    "value": "invoiced",
+                    "labelId": "Invoiced"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "tendered",
+                    "labelId": "Tendered"
+                  },
+                  {
+                    "color": "status-light-grey",
+                    "value": "rejected",
+                    "labelId": "Rejected"
+                  },
+                  {
+                    "color": "status-grey",
+                    "value": "archived",
+                    "labelId": "Archived"
+                  },
+                  {
+                    "color": "status-light-grey",
+                    "value": "expired",
+                    "labelId": "Expired"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "problem",
+                    "labelId": "Problem"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "cancelled",
+                    "labelId": "Cancelled"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "delayed",
+                    "labelId": "Delayed"
+                  }
+                ]
+              },
+              "description": "The status of the order",
+              "initializer": "new"
+            },
+            "before": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "field": {
+              "key": "fullId",
+              "type": {
+                "key": "fullId",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Full ID",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "O-{1}"
+              }
+            },
+            "before": "referencedRecords",
+            "configKey": "detailField"
+          },
+          {
+            "key": "referencedRecords",
+            "field": {
+              "key": "referencedRecords",
+              "type": {
+                "key": "*",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Connections",
+              "paths": [
+                "relatedRecords"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Records that are related to the order, for example emails, quotes, etc. that have been created or updated by the order."
+            },
+            "before": "manifests",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifests",
+            "field": {
+              "key": "fullId",
+              "type": {
+                "key": "fullId",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Full ID",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "TRIP-{1}"
+              },
+              "description": "Human-readable identifier for manifest"
+            },
+            "before": "manifestNickname__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestNickname__c",
+            "path": "manifestNickname__c",
+            "field": {
+              "key": "manifestNickname__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Manifest Nickname",
+              "paths": [
+                "manifests.name"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({manifests.name})",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "originState__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "originState__c",
+            "path": "originState__c",
+            "field": {
+              "key": "originState__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Origin State",
+              "paths": [
+                "shipper.state"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({shipper.state})",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ],
+              "derivationType": "lookup"
+            },
+            "before": "destinationCity__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "destinationCity__c",
+            "path": "destinationCity__c",
+            "field": {
+              "key": "destinationCity__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Destination City",
+              "paths": [
+                "consignee.city"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({consignee.city})",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ],
+              "derivationType": "lookup"
+            },
+            "before": "destinationState__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "destinationState__c",
+            "path": "destinationState__c",
+            "field": {
+              "key": "destinationState__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Destination State",
+              "paths": [
+                "consignee.state"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({consignee.state})",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ],
+              "derivationType": "lookup"
+            },
+            "before": "platformInvoice",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "platformInvoice",
+            "path": "platformInvoices",
+            "before": "pod__c",
+            "isHidden": true,
+            "configKey": "detailField",
+            "isEditable": false
+          },
+          {
+            "key": "pod__c",
+            "path": "pod__c",
+            "field": {
+              "key": "pod__c",
+              "type": {
+                "key": "select",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "POD",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "✔️",
+                    "labelId": "🟢",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "x",
+                    "labelId": "🔴",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "equipment__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "equipment__c",
+            "path": "equipment__c",
+            "field": {
+              "key": "equipment__c",
+              "type": {
+                "key": "multiSelect",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Equipment",
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "dryVan",
+                    "labelId": "Dry Van",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "flatbed",
+                    "labelId": "Flatbed",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "reefer",
+                    "labelId": "Reefer",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "description": "This represents the type of equipment the carrier must have ",
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "externalUrl__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "externalUrl__c",
+            "path": "externalUrl__c",
+            "field": {
+              "key": "externalUrl__c",
+              "type": {
+                "key": "url",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "External URL",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {}
+            },
+            "before": "link__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "link__c",
+            "path": "link__c",
+            "field": {
+              "key": "link__c",
+              "type": {
+                "key": "url",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Link",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {}
+            },
+            "before": "invoice",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "invoice",
+            "field": {
+              "key": "invoices",
+              "type": {
+                "key": "invoice",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Invoices",
+              "paths": [
+                "sellQuote.lineItems.copiedTo.invoice"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Invoices connected to the order"
+            },
+            "before": "poNum",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "poNum",
+            "field": {
+              "key": "poNum",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "PO number",
+              "import": {
+                "hint": "!!! IMPORTANT - CRITICAL FIELD - Look for labels: PO#, PO Number, Purchase Order, P.O., Customer PO, Shipper PO, PO Num. Often appears near receiver/consignee information. Extract the alphanumeric reference exactly as shown."
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "A purchase order number is typically provided by the receiver, and captures an order to for example restock inventory at a warehouse",
+              "isAutoImported": true
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "refNum",
+            "field": {
+              "key": "refNum",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Ref number",
+              "import": {
+                "hint": "!!! IMPORTANT -CRITICAL FIELD - Look for labels: Ref#, Reference, Reference Number, Order Ref, Customer Ref, Booking Number, Ref Num. This is the primary general-purpose reference identifier. Prefer this field if only one reference number is visible and the label is ambiguous."
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The ref num is a general purpose field to store reference ids from other system. Prefer this over loadTenderNum if available",
+              "isAutoImported": true
+            },
+            "before": "currentLocation",
+            "configKey": "detailField"
+          },
+          {
+            "key": "currentLocation",
+            "field": {
+              "key": "currentLocation",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Current location",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "address1",
+                  "address2",
+                  "companyName",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "country",
+                  "latitude",
+                  "longitude"
+                ],
+                "widgetKey": "events-AddressTile"
+              },
+              "description": "The current location of the order"
+            },
+            "before": "loadTenderNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "loadTenderNum",
+            "field": {
+              "key": "loadTenderNum",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Load tender number",
+              "import": {
+                "hint": "!!! IMPORTANT -CRITICAL FIELD - Look for labels: Load Tender#, Tender Number, BOL#, Bill of Lading, Shipper Ref, Carrier Ref, Load Number, Load Tender Num. Common on rate confirmations and BOL documents from shipper to carrier."
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "A reference number for a load provided by the shipper that a carrier will often use to reference a BOL or order",
+              "isAutoImported": true
+            },
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "assetDetails",
+        "label": "Asset Details",
+        "before": "commodities",
+        "fields": [
+          {
+            "key": "trailerId__c",
+            "path": "trailerId__c",
+            "field": {
+              "key": "trailerId__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "trailer id",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "assetWithLastKnownLocation",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "assetWithLastKnownLocation",
+            "path": "assetWithLastKnownLocation",
+            "field": {
+              "key": "assetWithLastKnownLocation",
+              "type": {
+                "key": "asset",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Asset with last known location",
+              "paths": [
+                "tasks.assets.currentLocation",
+                "tasks.subTasks.assets.currentLocation"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Returns the asset with the last known location on an order"
+            },
+            "before": "assets",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assets",
+            "field": {
+              "key": "assets",
+              "type": {
+                "key": "asset",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Assets",
+              "paths": [
+                "tasks.assets",
+                "tasks.manifest",
+                "tasks.subTasks.manifest",
+                "tasks.subTasks.assets"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Assets that are on all of the tasks & subtasks on the order"
+            },
+            "before": "assetType",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assetType",
+            "field": {
+              "key": "assetType",
+              "type": {
+                "key": "assetType",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Asset type",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The type of asset required for the order"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Asset Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "before": "financials",
+        "fields": [
+          {
+            "key": "totalCommoditiesQuantity",
+            "field": {
+              "key": "totalCommoditiesQuantity",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total commodities quantity",
+              "paths": [
+                "tasks.commodities",
+                "tasks.commodities.quantity",
+                "tasks.commodities.commodityType",
+                "tasks.subTasks.commodities",
+                "tasks.subTasks.commodities.quantity",
+                "tasks.subTasks.commodities.commodityType",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "totalCommoditiesWeight",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCommoditiesWeight",
+            "field": {
+              "key": "totalCommoditiesWeight",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total commodities weight",
+              "paths": [
+                "tasks.commodities",
+                "tasks.subTasks.commodities",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": "lbs"
+              }
+            },
+            "before": "commodities",
+            "configKey": "detailField"
+          },
+          {
+            "key": "commodities",
+            "field": {
+              "key": "commodities",
+              "type": {
+                "key": "commodity",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Commodities",
+              "paths": [
+                "tasks.subTasks.commodities",
+                "tasks.commodities",
+                "tasks.subTasks.subTasks",
+                "shipments.commodities"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Commodities connected to tasks on the order"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "label": "Financials",
+        "before": "partnerCarrier",
+        "fields": [
+          {
+            "key": "driverPayTotalCost",
+            "path": "",
+            "before": "costs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "costs",
+            "path": "costs",
+            "field": {
+              "key": "costs",
+              "type": {
+                "key": "financialLineItem",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Costs",
+              "paths": [
+                "buyQuotes.lineItems.total"
+              ],
+              "isArray": true,
+              "reverse": {
+                "key": "miscExpenseOrder",
+                "ref": true,
+                "configKey": "field",
+                "$container": {
+                  "key": "financialLineItem",
+                  "configKey": "object"
+                }
+              },
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "grossMargin__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "grossMargin__c",
+            "path": "grossMargin__c",
+            "field": {
+              "key": "grossMargin__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Gross Margin (%)",
+              "paths": [
+                "margin",
+                "totalEarnings"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "floor(toPercent(sum({margin}) / sum({totalEarnings})))",
+              "derivationType": "formula"
+            },
+            "before": "ratePerMile__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "ratePerMile__c",
+            "path": "ratePerMile__c",
+            "field": {
+              "key": "ratePerMile__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Rate Per Mile",
+              "paths": [
+                "totalEarnings",
+                "totalMiles"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "toMoney(toNumber({totalEarnings})/{totalMiles},'USD')",
+              "derivationType": "formula"
+            },
+            "before": "costPerMile__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "costPerMile__c",
+            "path": "costPerMile__c",
+            "field": {
+              "key": "costPerMile__c",
+              "type": {
+                "key": "multiCurrencyMoney",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Cost Per Mile",
+              "paths": [
+                "totalCost",
+                "totalMiles"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "{totalCost} / {totalMiles}",
+              "derivationType": "formula"
+            },
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "partnerCarrier",
+        "label": "Partner Carrier",
+        "before": "invoices",
+        "fields": [
+          {
+            "key": "partner",
+            "path": "partner",
+            "field": {
+              "key": "partner",
+              "type": {
+                "key": "partner",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner",
+              "isArray": false,
+              "isHidden": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The partner assigned to the order. Populated if a single partner is assigned to the entire order."
+            },
+            "before": "manifestStatus__c",
+            "configKey": "detailField",
+            "isEditable": true
+          },
+          {
+            "key": "manifestStatus__c",
+            "path": "manifestStatus__c",
+            "field": {
+              "key": "manifestStatus__c",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Manifest Status",
+              "paths": [
+                "manifests.status"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({manifests.status})",
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-grey",
+                    "value": "new",
+                    "labelId": "New"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "planned",
+                    "labelId": "Planned"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "dispatched",
+                    "labelId": "Dispatched"
+                  },
+                  {
+                    "color": "status-purple",
+                    "value": "inTransit",
+                    "labelId": "In transit"
+                  },
+                  {
+                    "color": "status-green",
+                    "value": "completed",
+                    "labelId": "Completed"
+                  },
+                  {
+                    "color": "status-grey",
+                    "value": "problem",
+                    "labelId": "Problem"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "drop",
+                    "labelId": "Drop"
+                  },
+                  {
+                    "color": "status-pink",
+                    "value": "hook",
+                    "labelId": "Hook"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "delayed",
+                    "labelId": "Delayed"
+                  }
+                ],
+                "statusMap": {
+                  "new": {
+                    "color": "status-grey",
+                    "labelId": "New"
+                  },
+                  "drop": {
+                    "color": "status-red",
+                    "labelId": "Drop"
+                  },
+                  "hook": {
+                    "color": "status-pink",
+                    "labelId": "Hook"
+                  },
+                  "planned": {
+                    "color": "status-cyan",
+                    "labelId": "Planned"
+                  },
+                  "problem": {
+                    "color": "status-grey",
+                    "labelId": "Problem"
+                  },
+                  "completed": {
+                    "color": "status-green",
+                    "labelId": "Completed"
+                  },
+                  "inTransit": {
+                    "color": "status-purple",
+                    "labelId": "In transit"
+                  },
+                  "dispatched": {
+                    "color": "status-cyan",
+                    "labelId": "Dispatched"
+                  }
+                }
+              },
+              "derivationType": "lookup"
+            },
+            "before": "carrierInformation__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "carrierInformation__c",
+            "path": "carrierInformation__c",
+            "field": {
+              "key": "carrierInformation__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Carrier Information",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Partner Carrier",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "invoices",
+        "label": "Invoices",
+        "before": "test",
+        "fields": [
+          {
+            "key": "jasonTMeasurement__c",
+            "path": "jasonTMeasurement__c",
+            "before": "newMeasurement__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "newMeasurement__c",
+            "path": "newMeasurement__c",
+            "before": "$createdBy",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "$createdBy",
+            "path": "$createdBy",
+            "field": {
+              "key": "$createdBy",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Created by user id",
+              "isArray": false,
+              "isSystem": true,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The user id that created this object"
+            },
+            "before": "customsBroker",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "customsBroker",
+            "path": "customsBroker",
+            "field": {
+              "key": "customsBroker",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Customs broker",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The customs broker for the order"
+            },
+            "before": "invoice__1",
+            "configKey": "detailField"
+          },
+          {
+            "key": "invoice__1",
+            "path": "invoice",
+            "field": {
+              "key": "invoice",
+              "type": {
+                "key": "invoice",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Invoice",
+              "paths": [
+                "sellQuote.lineItems.copiedTo.invoice"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "The first invoice associated with the order. This field is deprecated in favor of invoices."
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Invoices",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "test",
+        "label": "test",
+        "before": "tracking",
+        "fields": [],
+        "labelId": "test",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "tracking",
+        "before": "newSection",
+        "fields": [
+          {
+            "key": "isTrackingEnabled",
+            "field": {
+              "key": "isTrackingEnabled",
+              "type": {
+                "key": "toggle",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Tracking enabled",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Indicates if tracking is enabled for the order"
+            },
+            "before": "tracking",
+            "configKey": "detailField"
+          },
+          {
+            "key": "tracking",
+            "path": "",
+            "before": "lastKnownLocation",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastKnownLocation",
+            "field": {
+              "key": "lastKnownLocation",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Last known location",
+              "paths": [
+                "currentLocation",
+                "tasks.subTasks.stops.location",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "deliveryEta",
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveryEta",
+            "field": {
+              "key": "deliveryEta",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery ETA",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Estimated time of arrival for a delivery"
+            },
+            "before": "driverName",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "driverName",
+            "field": {
+              "key": "driverName",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Driver name",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Driver name for order tracking"
+            },
+            "before": "pUAppointment__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "pUAppointment__c",
+            "path": "pUAppointment__c",
+            "field": {
+              "key": "pUAppointment__c",
+              "type": {
+                "key": "select",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "P/U Appointment",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "toBeBooked",
+                    "labelId": "To Be Booked",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "booked",
+                    "labelId": "Booked",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "fcfs",
+                    "labelId": "FCFS",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "onTimePickUp__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "onTimePickUp__c",
+            "path": "onTimePickUp__c",
+            "field": {
+              "key": "onTimePickUp__c",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "On Time Pick Up?",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-green",
+                    "value": "yes",
+                    "labelId": "Yes"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "no",
+                    "labelId": "No"
+                  }
+                ]
+              }
+            },
+            "before": "pickUpArrivalDateTime__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickUpArrivalDateTime__c",
+            "path": "pickUpArrivalDateTime__c",
+            "field": {
+              "key": "pickUpArrivalDateTime__c",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Pick Up Arrival Date & Time",
+              "paths": [
+                "firstPickupTask.actualArrivalTime"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({firstPickupTask.actualArrivalTime})",
+              "typeConfig": {
+                "isRange": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "pickUpCompletionDateTime__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickUpCompletionDateTime__c",
+            "path": "pickUpCompletionDateTime__c",
+            "field": {
+              "key": "pickUpCompletionDateTime__c",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Pick Up Completion Date & Time",
+              "paths": [
+                "firstPickupTask.actualCompletionTime"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({firstPickupTask.actualCompletionTime})",
+              "typeConfig": {
+                "isRange": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "delAppointment__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "delAppointment__c",
+            "path": "delAppointment__c",
+            "field": {
+              "key": "delAppointment__c",
+              "type": {
+                "key": "select",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "DEL Appointment",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "toBeBooked",
+                    "labelId": "To Be Booked",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "booked",
+                    "labelId": "Booked",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "fcfs",
+                    "labelId": "FCFS",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "appointmentNotes__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "appointmentNotes__c",
+            "path": "appointmentNotes__c",
+            "field": {
+              "key": "appointmentNotes__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Appointment Notes",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                0,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "onTimeDelivery__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "onTimeDelivery__c",
+            "path": "onTimeDelivery__c",
+            "field": {
+              "key": "onTimeDelivery__c",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "On Time Delivery",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-green",
+                    "value": "yes",
+                    "labelId": "Yes"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "no",
+                    "labelId": "No"
+                  }
+                ]
+              }
+            },
+            "before": "deliveryArrivalDateTime__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveryArrivalDateTime__c",
+            "path": "deliveryArrivalDateTime__c",
+            "field": {
+              "key": "deliveryArrivalDateTime__c",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery Arrival Date & Time",
+              "paths": [
+                "lastDeliveryTask.actualArrivalTime"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({lastDeliveryTask.actualArrivalTime})",
+              "typeConfig": {
+                "isRange": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "deliveryCompletionDateTime__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveryCompletionDateTime__c",
+            "path": "deliveryCompletionDateTime__c",
+            "field": {
+              "key": "deliveryCompletionDateTime__c",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery Completion Date & Time",
+              "paths": [
+                "lastDeliveryTask.actualCompletionTime"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({lastDeliveryTask.actualCompletionTime})",
+              "typeConfig": {
+                "isRange": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "etaStatus__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "etaStatus__c",
+            "path": "etaStatus__c",
+            "field": {
+              "key": "etaStatus__c",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "ETA Status",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-cyan",
+                    "value": "early",
+                    "labelId": "Early"
+                  },
+                  {
+                    "color": "status-green",
+                    "value": "onTime",
+                    "labelId": "On-time"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "delayed",
+                    "labelId": "Delayed"
+                  },
+                  {
+                    "color": "status-pink",
+                    "value": "problem",
+                    "labelId": "Problem"
+                  }
+                ],
+                "statusMap": {
+                  "early": {
+                    "color": "status-cyan",
+                    "labelId": "Early"
+                  },
+                  "onTime": {
+                    "color": "status-green",
+                    "labelId": "On-time"
+                  },
+                  "delayed": {
+                    "color": "status-red",
+                    "labelId": "Delayed"
+                  },
+                  "problem": {
+                    "color": "status-pink",
+                    "labelId": "Problem"
+                  }
+                }
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "delayAlerts",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "delayAlerts",
+            "path": "",
+            "before": "concatTEst__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "concatTEst__c",
+            "path": "concatTEst__c",
+            "field": {
+              "key": "concatTEst__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Concat TEst",
+              "paths": [
+                "deliveryCompletionDateTime__c",
+                "deliveredAt"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "concat('Last delivery at: ', {deliveryCompletionDateTime__c}, ', First delivery at:', {deliveredAt})",
+              "typeConfig": {},
+              "derivationType": "formula",
+              "shouldDuplicate": true
+            },
+            "before": "lastUpdated",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastUpdated",
+            "field": {
+              "key": "lastUpdated",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last updated",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Last updated based on timestamp of last MP location ping"
+            },
+            "before": "dataSource",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "dataSource",
+            "field": {
+              "key": "dataSourceLabel",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Data source label",
+              "paths": [
+                "trackingPhoneNumber",
+                "powerUnitNumber"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Returns the source of the Macropoint tracking information"
+            },
+            "before": "partnerCarrier__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerCarrier__c",
+            "path": "partnerCarrier__c",
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Tracking",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "newSection",
+        "label": "newSection",
+        "before": "templ",
+        "fields": [
+          {
+            "key": "assignThisCarrier__c",
+            "path": "assignThisCarrier__c",
+            "field": {
+              "key": "assignThisCarrier__c",
+              "type": {
+                "key": "partner",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Assign this Carrier",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {}
+            },
+            "before": "formulaTest3__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "formulaTest3__c",
+            "path": "formulaTest3__c",
+            "field": {
+              "key": "formulaTest3__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Formula test 3",
+              "paths": [
+                "estimatedDuration"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "toPercent({estimatedDuration}/(8*3600))",
+              "derivationType": "formula"
+            },
+            "before": "formulaTest2__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "formulaTest2__c",
+            "path": "formulaTest2__c",
+            "field": {
+              "key": "formulaTest2__c",
+              "type": {
+                "key": "measurement",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Formula test 2",
+              "paths": [
+                "requestedPickupWindow",
+                "actualPickupDate"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "toDuration(maximum(toNumber(dateDiff({requestedPickupWindow},{actualPickupDate},'day')),1),'day')",
+              "typeConfig": {
+                "unitCategory": "duration",
+                "currentUnitType": "days",
+                "defaultUnitType": "days"
+              },
+              "derivationType": "formula"
+            },
+            "before": "formulaTest__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "formulaTest__c",
+            "path": "formulaTest__c",
+            "before": "testFormula5__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "testFormula5__c",
+            "path": "testFormula5__c",
+            "field": {
+              "key": "testFormula5__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "test formula 5",
+              "paths": [],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "ceiling(5.1111,2)",
+              "derivationType": "formula"
+            },
+            "before": "firstOriginStop",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstOriginStop",
+            "path": "firstOriginStop",
+            "field": {
+              "key": "firstOriginStop",
+              "type": {
+                "key": "stop",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "First origin stop",
+              "paths": [
+                "stopsV2",
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "lastDeliveryTaskDestinationAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastDeliveryTaskDestinationAddress",
+            "path": "lastDeliveryTaskDestinationAddress",
+            "field": {
+              "key": "lastDeliveryTaskDestinationAddress",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last delivery address",
+              "paths": [
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks",
+                "tasks.stops.location",
+                "lastDeliveryTask"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "lastDestinationStop",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastDestinationStop",
+            "path": "lastDestinationStop",
+            "field": {
+              "key": "lastDestinationStop",
+              "type": {
+                "key": "stop",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Last destination stop",
+              "paths": [
+                "stopsV2",
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "firstPickupTaskOriginAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstPickupTaskOriginAddress",
+            "path": "firstPickupTaskOriginAddress",
+            "field": {
+              "key": "firstPickupTaskOriginAddress",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First pickup address",
+              "paths": [
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks",
+                "tasks.stops.location",
+                "firstPickupTask"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "newSection",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "templ",
+        "label": "Templ",
+        "before": "abc",
+        "fields": [],
+        "labelId": "Templ",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "abc",
+        "label": "abc",
+        "before": "details",
+        "fields": [
+          {
+            "key": "costsRollup",
+            "path": "costsRollup",
+            "field": {
+              "key": "costsRollup",
+              "type": {
+                "key": "financialLineItem",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Costs rollup",
+              "paths": [
+                "tasks.subTasks.costs",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": true,
+              "reverse": {
+                "key": "miscExpenseOrder",
+                "ref": true,
+                "configKey": "field",
+                "$container": {
+                  "key": "financialLineItem",
+                  "configKey": "object"
+                }
+              },
+              "isHidden": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "$id",
+            "configKey": "detailField"
+          },
+          {
+            "key": "$id",
+            "path": "$id",
+            "field": {
+              "key": "$id",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "isArray": false,
+              "isSystem": true,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "abc",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "before": "template",
+        "fields": [
+          {
+            "key": "consignee_formattedAddress",
+            "field": {
+              "key": "formattedAddressWithCompanyNameLabel",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Formatted Address with Company Name Label",
+              "paths": [
+                "companyName",
+                "address1",
+                "address2",
+                "city",
+                "state",
+                "country",
+                "postalCode"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Formatted Address "
+            },
+            "before": "shipper_formattedAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "shipper_formattedAddress",
+            "field": {
+              "key": "formattedAddressWithCompanyNameLabel",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Formatted Address with Company Name Label",
+              "paths": [
+                "companyName",
+                "address1",
+                "address2",
+                "city",
+                "state",
+                "country",
+                "postalCode"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Formatted Address "
+            },
+            "before": "partnerTariffs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerTariffs",
+            "field": {
+              "key": "partnerTariffs",
+              "type": {
+                "key": "tariff",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner tariffs",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Partner tariffs assigned to the order"
+            },
+            "before": "customerTariff",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerTariff",
+            "field": {
+              "key": "customerTariff",
+              "type": {
+                "key": "tariff",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Customer tariff",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Customer tariff assigned to the order"
+            },
+            "before": "totalEarnings",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalEarnings",
+            "field": {
+              "key": "totalEarnings",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total earnings",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "description": "Sum of line items on associated sell quote"
+            },
+            "before": "margin",
+            "configKey": "detailField"
+          },
+          {
+            "key": "margin",
+            "field": {
+              "key": "margin",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Margin",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "description": "The order's margin"
+            },
+            "before": "sellQuotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "sellQuotes",
+            "field": {
+              "key": "sellQuote",
+              "type": {
+                "key": "quote",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Customer quote",
+              "isArray": false,
+              "reverse": {
+                "key": "order",
+                "ref": true,
+                "configKey": "field",
+                "$container": {
+                  "key": "quote",
+                  "configKey": "object"
+                }
+              },
+              "configKey": "field",
+              "isForward": true,
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "objectKey"
+                ],
+                "widgetKey": "events-QuoteTile"
+              },
+              "description": "The quote that the customer sees"
+            },
+            "before": "totalCost",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCost",
+            "field": {
+              "key": "totalCost",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total cost",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              }
+            },
+            "before": "multiCurrencyMargin",
+            "configKey": "detailField"
+          },
+          {
+            "key": "multiCurrencyMargin",
+            "field": {
+              "key": "formattedMultiCurrencyMargin",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Multicurrency margin",
+              "paths": [
+                "multiCurrencyMargin",
+                "totalEarnings"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "multiCurrencyTotalCost",
+            "configKey": "detailField"
+          },
+          {
+            "key": "multiCurrencyTotalCost",
+            "field": {
+              "key": "formattedMultiCurrencyTotalCost",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Multicurrency total cost",
+              "paths": [
+                "multiCurrencyTotalCost",
+                "totalEarnings"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "partners",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partners",
+            "field": {
+              "key": "partners",
+              "type": {
+                "key": "partner",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partners",
+              "paths": [
+                "partner",
+                "tasks.subTasks.parentTasks.manifest",
+                "tasks.parentTasks.manifest",
+                "tasks.subTasks.manifest",
+                "tasks.manifest",
+                "tasks.subTasks.parentTasks.manifest.partner",
+                "tasks.parentTasks.manifest.partner",
+                "tasks.subTasks.manifest.partner",
+                "tasks.manifest.partner"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Partners assigned to the order"
+            },
+            "before": "customerCreditLimit",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerCreditLimit",
+            "field": {
+              "key": "creditLimit",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Customer credit limit",
+              "isArray": false,
+              "isHidden": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": false
+              },
+              "description": "The maximum allowable credit limit for the customer"
+            },
+            "before": "availableLimit",
+            "configKey": "detailField"
+          },
+          {
+            "key": "availableLimit",
+            "field": {
+              "key": "availableCredit",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Available limit",
+              "paths": [
+                "creditLimit",
+                "invoicedAmount",
+                "unInvoicedAmount"
+              ],
+              "isArray": false,
+              "isHidden": false,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "toMoney({creditLimit} - coalesce({invoicedAmount}, 0) - coalesce({unInvoicedAmount}, 0))",
+              "isRequired": false,
+              "description": "The current available credit limit for the customer",
+              "derivationType": "formula"
+            },
+            "before": "etaLastUpdated",
+            "configKey": "detailField"
+          },
+          {
+            "key": "etaLastUpdated",
+            "field": {
+              "key": "etaLastUpdated",
+              "type": {
+                "key": "utcDate",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery ETA Last Updated",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The last date and time the ETA was updated"
+            },
+            "before": "buyQuoteFullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "buyQuoteFullId",
+            "path": "buyQuote.fullId",
+            "before": "buyQuotes",
+            "isHidden": true,
+            "configKey": "detailField",
+            "widgetKey": "order-AddCost",
+            "isEditable": false
+          },
+          {
+            "key": "buyQuotes",
+            "field": {
+              "key": "buyQuotes",
+              "type": {
+                "key": "quote",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner quotes",
+              "isArray": true,
+              "reverse": {
+                "key": "orderFromBuyQuotes",
+                "ref": true,
+                "configKey": "field",
+                "$container": {
+                  "key": "quote",
+                  "configKey": "object"
+                }
+              },
+              "configKey": "field",
+              "isForward": true,
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "objectKey",
+                  "partner"
+                ],
+                "widgetKey": "events-QuoteTile"
+              },
+              "description": "An array of buy quotes for multi partner order. These quotes captures the cost of this order."
+            },
+            "before": "drivers",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "drivers",
+            "field": {
+              "key": "drivers",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Drivers",
+              "paths": [
+                "tasks.subTasks.parentTasks.manifest.drivers",
+                "tasks.subTasks.manifest.drivers",
+                "manifests.drivers",
+                "tasks.subTasks.subTasks",
+                "tasks.parentTasks.manifest.drivers",
+                "tasks.manifest.drivers"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "timeToDelivery__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "timeToDelivery__c",
+            "path": "timeToDelivery__c",
+            "field": {
+              "key": "timeToDelivery__c",
+              "type": {
+                "key": "measurement",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Time to delivery",
+              "paths": [
+                "actualPickupDate",
+                "actualDeliveryDate"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "datediff({actualPickupDate},{actualDeliveryDate},'hour')",
+              "typeConfig": {
+                "unitCategory": "duration",
+                "currentUnitType": "hours",
+                "defaultUnitType": "hours"
+              },
+              "derivationType": "formula"
+            },
+            "before": "isActive",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "isActive",
+            "path": "isActive",
+            "field": {
+              "key": "isActive",
+              "type": {
+                "key": "toggle",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Active",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Whether this object is active or not."
+            },
+            "before": "documentCountLabel",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "documentCountLabel",
+            "path": "documentCountLabel",
+            "field": {
+              "key": "documentCountLabel",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Document count",
+              "paths": [
+                "allDocuments"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The number of documents attached to an order and its related tasks, manifests and sub-tasks"
+            },
+            "before": "commodityWeights__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "commodityWeights__c",
+            "path": "commodityWeights__c",
+            "field": {
+              "key": "commodityWeights__c",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Commodity Weights",
+              "paths": [
+                "commodities.weight"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({commodities.weight})",
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": ""
+              },
+              "derivationType": "lookup"
+            },
+            "before": "documents",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "documents",
+            "path": "documents",
+            "field": {
+              "key": "documents",
+              "type": {
+                "key": "document",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Documents",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "isSystemGenerated",
+                  "description",
+                  "fileName"
+                ],
+                "widgetKey": "events-DocumentTile"
+              },
+              "description": "Documents associated with the order"
+            },
+            "before": "actualDeliveryDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "actualDeliveryDate",
+            "path": "actualDeliveryDate",
+            "field": {
+              "key": "actualDeliveryDate",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Actual delivery date",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "The specific date and time when the load is delivered"
+            },
+            "before": "etaLastUpdatedFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "etaLastUpdatedFormatted",
+            "path": "etaLastUpdatedFormatted",
+            "field": {
+              "key": "etaLastUpdatedFormatted",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery ETA Last Updated (Elapsed Time)",
+              "paths": [
+                "etaLastUpdated"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Human-readable duration of time since the last update on the delivery ETA."
+            },
+            "before": "marginInOrgCurrency",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "marginInOrgCurrency",
+            "field": {
+              "key": "marginInOrgCurrency",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total Margin (Home)",
+              "paths": [
+                "totalEarnings",
+                "totalCost",
+                "totalEarningsInOrgCurrency",
+                "totalCostInOrgCurrency"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "description": "Total margin converted to home currency - defaulted to creation date."
+            },
+            "before": "consignee",
+            "configKey": "detailField"
+          },
+          {
+            "key": "consignee",
+            "field": {
+              "key": "consignee",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Consignee",
+              "import": {
+                "action": "create",
+                "examples": [
+                  {
+                    "expected": {
+                      "city": "MOHAVE VALLEY",
+                      "state": "AZ",
+                      "country": "US",
+                      "address1": "322 FAIRBANKS DR",
+                      "postalCode": "86440",
+                      "companyName": "JOHN DOE"
+                    },
+                    "inputText": "CONSIGNEE INFORMATION\n5250656: JOHN DOE\n322 FAIRBANKS DR\nMOHAVE VALLEY, AZ 86440 UNITED STATES"
+                  },
+                  {
+                    "expected": {
+                      "city": "Bolingbrook",
+                      "state": "IL",
+                      "country": "US",
+                      "address1": "365 Crossing Rd",
+                      "postalCode": "60440",
+                      "companyName": "Rock Tenn Merchandising"
+                    },
+                    "inputText": "Delivery #1\nRock Tenn Merchandising\n365 Crossing Rd\nBolingbrook, IL 60440"
+                  }
+                ]
+              },
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "address1",
+                  "address2",
+                  "companyName",
+                  "city",
+                  "state",
+                  "postalCode",
+                  "country",
+                  "latitude",
+                  "longitude"
+                ],
+                "widgetKey": "events-AddressTile"
+              },
+              "description": "Consignee is the destination of the load",
+              "isAutoImported": true
+            },
+            "before": "deliveredAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "deliveredAt",
+            "field": {
+              "key": "deliveredAt",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivered at",
+              "paths": [
+                "deliveries"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Delivery time of first delivery task"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "isHidden": false,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "template",
+        "label": "template",
+        "before": "additionalInformation",
+        "fields": [
+          {
+            "key": "templateName",
+            "path": "",
+            "before": "templateDescription",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "templateDescription",
+            "path": "",
+            "before": "origins",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "origins",
+            "path": "origins",
+            "field": {
+              "key": "origins",
+              "type": {
+                "key": "stop",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Origins",
+              "paths": [
+                "stopsV2",
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "orderETAStatus",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "orderETAStatus",
+            "field": {
+              "key": "orderETAStatus",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "ETA status",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-grey",
+                    "value": "enroute",
+                    "labelId": "Enroute"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "early",
+                    "labelId": "Early"
+                  },
+                  {
+                    "color": "status-green",
+                    "value": "onTime",
+                    "labelId": "On time"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "atRisk",
+                    "labelId": "At risk"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "delayed",
+                    "labelId": "Delayed"
+                  }
+                ]
+              },
+              "description": "Status field to reflect the ETA status of the order.",
+              "initializer": "enroute"
+            },
+            "before": "destinations",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "destinations",
+            "path": "destinations",
+            "field": {
+              "key": "destinations",
+              "type": {
+                "key": "stop",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Destinations",
+              "paths": [
+                "stopsV2",
+                "tasks.stops",
+                "tasks.subTasks.stops",
+                "tasks.subTasks.subTasks",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "templateFullId",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "templateFullId",
+            "path": "",
+            "before": "commoditiesWeightFormula__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "commoditiesWeightFormula__c",
+            "path": "commoditiesWeightFormula__c",
+            "before": "powerUnitNumber",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "powerUnitNumber",
+            "path": "powerUnitNumber",
+            "field": {
+              "key": "powerUnitNumber",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Power unit number",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The id of the power unit executing the order"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "template",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "before": "people",
+        "fields": [
+          {
+            "key": "classicAccessorials",
+            "field": {
+              "key": "classicAccessorials",
+              "type": {
+                "key": "classicAccessorial",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Deprecated - Classic accessorials",
+              "isArray": true,
+              "isHidden": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "name"
+                ],
+                "widgetKey": "events-TagTile"
+              },
+              "description": "Deprecated - Classic accessorials assigned to the order"
+            },
+            "before": "specialInstructions",
+            "configKey": "detailField"
+          },
+          {
+            "key": "specialInstructions",
+            "field": {
+              "key": "specialInstructions",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Special instructions",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Special instructions for the order",
+              "isAutoImported": true
+            },
+            "before": "totalMiles",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalMiles",
+            "field": {
+              "key": "totalMiles",
+              "type": {
+                "key": "measurement",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total miles",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitCategory": "length",
+                "canBeNegative": false,
+                "currentUnitType": "mile",
+                "defaultUnitType": "mile"
+              },
+              "description": "Total number of miles between two stops. This is a field that is calculated from the stops addresses using a polyline distance calculation provided by our map api provider."
+            },
+            "before": "billingParty",
+            "configKey": "detailField"
+          },
+          {
+            "key": "billingParty",
+            "field": {
+              "key": "billingParty",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Billing party",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Party that will be billed for the load"
+            },
+            "before": "billingTerms",
+            "configKey": "detailField"
+          },
+          {
+            "key": "billingTerms",
+            "field": {
+              "key": "billingTerms",
+              "type": {
+                "key": "select",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Billing terms",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "consigneeCollect",
+                    "labelId": "Consignee collect",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "shipperPrepaid",
+                    "labelId": "Shipper prepaid",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "thirdParty",
+                    "labelId": "Third party",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "description": "Billing terms for the order"
+            },
+            "before": "derivedAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "derivedAccessorials",
+            "field": {
+              "key": "derivedAccessorials",
+              "type": {
+                "key": "accessorial",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner accessorials",
+              "paths": [
+                "accessorials",
+                "tasks.accessorials",
+                "tasks.subTasks.accessorials"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Based on whether the order is rated by legs or not, displays the order or leg accessorials"
+            },
+            "before": "customerAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerAccessorials",
+            "field": {
+              "key": "customerAccessorials",
+              "type": {
+                "key": "accessorial",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Customer accessorials",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "name"
+                ],
+                "widgetKey": "events-TagTile"
+              },
+              "description": "List of customer accessorials that are associated with the order"
+            },
+            "before": "accessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "accessorials",
+            "path": "",
+            "before": "shipperNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "shipperNotes",
+            "field": {
+              "key": "shipperNotes",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Special instructions from all pickup tasks",
+              "paths": [
+                "pickups.specialInstructions"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "consigneeNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "consigneeNotes",
+            "field": {
+              "key": "consigneeNotes",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Special instructions from all delivery tasks",
+              "paths": [
+                "deliveries.specialInstructions"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "serviceType",
+            "configKey": "detailField"
+          },
+          {
+            "key": "serviceType",
+            "field": {
+              "key": "serviceType",
+              "type": {
+                "key": "partnerService",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Service type",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The type of service required for the order"
+            },
+            "before": "estimatedDuration",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedDuration",
+            "field": {
+              "key": "estimatedDuration",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Estimated duration",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": ""
+              },
+              "description": "The total estimated time for from origin to destination in seconds"
+            },
+            "before": "estimatedDurationFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedDurationFormatted",
+            "field": {
+              "key": "estimatedDurationFormatted",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Estimated duration formatted",
+              "paths": [
+                "estimatedDuration"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Human-readable total estimated time for from origin to destination"
+            },
+            "before": "platformTags",
+            "configKey": "detailField"
+          },
+          {
+            "key": "platformTags",
+            "field": {
+              "key": "tags",
+              "type": {
+                "key": "tag",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Tags",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "name",
+                  "icon"
+                ],
+                "widgetKey": "events-TagTile"
+              },
+              "description": "Tags associated with this order"
+            },
+            "before": "customerDistance",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerDistance",
+            "field": {
+              "key": "customerDistance",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Customer distance",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Formatted distance with provider and version"
+            },
+            "before": "services",
+            "configKey": "detailField"
+          },
+          {
+            "key": "services",
+            "field": {
+              "key": "services",
+              "type": {
+                "key": "multiSelect",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Service type",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "drayage",
+                    "labelId": "Drayage",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "hazmat",
+                    "labelId": "Hazmat",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "intermodal",
+                    "labelId": "Intermodal",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "ltl",
+                    "labelId": "LTL",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "ftl",
+                    "labelId": "FTL",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "truckload",
+                    "labelId": "Truckload",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "package",
+                    "labelId": "Package",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "specialized",
+                    "labelId": "Specialized",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "dryVan",
+                    "labelId": "Dry Van",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "reefer",
+                    "labelId": "Reefer",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "doubleDrop",
+                    "labelId": "Double Drop",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "straightTruck",
+                    "labelId": "Straight truck",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "flatBed",
+                    "labelId": "Flat bed",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "tailGate",
+                    "labelId": "Tail gate",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "expedite",
+                    "labelId": "Expedite",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "unknown",
+                    "labelId": "Unknown",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "description": "Service types required for the order"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "people",
+        "before": "claimDetails",
+        "fields": [
+          {
+            "key": "csrs",
+            "field": {
+              "key": "csrs",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Customer service reps",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "firstName",
+                  "lastName"
+                ],
+                "widgetKey": "events-UserTile"
+              },
+              "description": "The customer service representative for the order"
+            },
+            "before": "commissionees",
+            "configKey": "detailField"
+          },
+          {
+            "key": "commissionees",
+            "field": {
+              "key": "commissionees",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Commissionees",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "firstName",
+                  "lastName"
+                ],
+                "widgetKey": "events-UserTile"
+              },
+              "description": "The commissionees for the order"
+            },
+            "before": "accountManagers",
+            "configKey": "detailField"
+          },
+          {
+            "key": "accountManagers",
+            "field": {
+              "key": "accountManagers",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Account managers",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "firstName",
+                  "lastName"
+                ],
+                "widgetKey": "events-UserTile"
+              },
+              "description": "The account managers for the order"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "People",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "claimDetails",
+        "label": "Claim Details",
+        "before": "driverDetails",
+        "fields": [
+          {
+            "key": "claimStatus__c",
+            "path": "claimStatus__c",
+            "field": {
+              "key": "claimStatus__c",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Claim Status",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-cyan",
+                    "value": "claimSubmitted",
+                    "labelId": "Claim Submitted"
+                  },
+                  {
+                    "color": "status-purple",
+                    "value": "inReview",
+                    "labelId": "Pending Claim"
+                  },
+                  {
+                    "color": "status-light-grey",
+                    "value": "approved",
+                    "labelId": "Resolved Claim"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "denied",
+                    "labelId": "Denied"
+                  },
+                  {
+                    "color": "status-grey",
+                    "value": "cancelledClaim",
+                    "labelId": "Cancelled Claim"
+                  }
+                ],
+                "statusMap": {
+                  "denied": {
+                    "color": "status-green",
+                    "labelId": "Denied"
+                  },
+                  "approved": {
+                    "color": "status-green",
+                    "labelId": "Approved"
+                  },
+                  "inReview": {
+                    "color": "status-purple",
+                    "labelId": "In Review"
+                  },
+                  "claimSubmitted": {
+                    "color": "status-red",
+                    "labelId": "Claim Submitted"
+                  }
+                }
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "claimType__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "claimType__c",
+            "path": "claimType__c",
+            "field": {
+              "key": "claimType__c",
+              "type": {
+                "key": "multiSelect",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Claim Type",
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "freightDamage",
+                    "labelId": "Freight Damage",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "lostFreight",
+                    "labelId": "Lost Freight",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "slaBreach",
+                    "labelId": "Service Failure",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "other",
+                    "labelId": "Other",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "responsibleParty__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "responsibleParty__c",
+            "path": "responsibleParty__c",
+            "field": {
+              "key": "responsibleParty__c",
+              "type": {
+                "key": "select",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Responsible Party-Claims",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "options": [
+                  {
+                    "value": "carrier",
+                    "labelId": "Carrier",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "shipper",
+                    "labelId": "Shipper",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "warehouse",
+                    "labelId": "Warehouse",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "consignee",
+                    "labelId": "Consignee",
+                    "isCustom": false
+                  },
+                  {
+                    "value": "other",
+                    "labelId": "Other",
+                    "isCustom": false
+                  }
+                ]
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "claimSubmissionDate__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "claimSubmissionDate__c",
+            "path": "claimSubmissionDate__c",
+            "field": {
+              "key": "claimSubmissionDate__c",
+              "type": {
+                "key": "date",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Claim Submission Date",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {},
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "claimAmount__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "claimAmount__c",
+            "path": "claimAmount__c",
+            "field": {
+              "key": "claimAmount__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Claim Amount",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "canBeNegative": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "reportedOnClaims__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "reportedOnClaims__c",
+            "path": "reportedOnClaims__c",
+            "field": {
+              "key": "reportedOnClaims__c",
+              "type": {
+                "key": "date",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Reported on-Claims",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {},
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": "reportedByClaims__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "reportedByClaims__c",
+            "path": "reportedByClaims__c",
+            "field": {
+              "key": "reportedByClaims__c",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Reported By-Claims",
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "permissions": [
+                11,
+                11,
+                11,
+                -1,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11,
+                11
+              ]
+            },
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Claim Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "driverDetails",
+        "label": "Driver details",
+        "before": "assignation",
+        "fields": [
+          {
+            "key": "driver",
+            "path": "",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Driver details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "assignation",
+        "label": "Assignation",
+        "before": "orderDetails",
+        "fields": [],
+        "labelId": "Assignation",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "orderDetails",
+        "label": "Order details",
+        "fields": [
+          {
+            "key": "manualLocation__c",
+            "path": "manualLocation__c",
+            "field": {
+              "key": "manualLocation__c",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "manual location",
+              "isArray": false,
+              "isCustom": true,
+              "configKey": "field",
+              "typeConfig": {}
+            },
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Order details",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-04-23T23:55:08.161Z",
+    "createdBy": "__migration",
+    "objectKey": "order",
+    "targetKey": "order",
+    "taskPanel": {
+      "key": "detailTaskPanel",
+      "buttons": [
+        {
+          "key": "addTaskButton",
+          "kind": "primary",
+          "labelId": "Add Task",
+          "configKey": "button"
+        },
+        {
+          "key": "addStopButton",
+          "kind": "tertiary",
+          "labelId": "Add Stop",
+          "configKey": "button",
+          "widgetKey": "order-AddStop"
+        }
+      ],
+      "viewOptions": [
+        "stops",
+        "legs"
+      ]
+    },
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

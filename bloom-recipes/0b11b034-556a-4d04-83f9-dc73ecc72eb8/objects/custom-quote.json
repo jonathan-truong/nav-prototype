@@ -1,0 +1,416 @@
+{
+  "configKey": "object",
+  "key": "$custom_quote",
+  "json": {
+    "key": "$custom_quote",
+    "fields": [
+      {
+        "key": "reasonLost",
+        "before": "classicCustomer",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "classicCustomer",
+        "before": "quoteType",
+        "configKey": "field"
+      },
+      {
+        "key": "quoteType",
+        "before": "customer",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "buy",
+              "labelId": "Partner",
+              "isCustom": false
+            },
+            {
+              "value": "sell",
+              "labelId": "Customer",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "customer",
+        "before": "csrs",
+        "configKey": "field"
+      },
+      {
+        "key": "csrs",
+        "before": "carrier",
+        "configKey": "field"
+      },
+      {
+        "key": "carrier",
+        "before": "classicAccessorials",
+        "configKey": "field"
+      },
+      {
+        "key": "classicAccessorials",
+        "before": "classicTags",
+        "configKey": "field"
+      },
+      {
+        "key": "classicTags",
+        "before": "driver",
+        "configKey": "field"
+      },
+      {
+        "key": "driver",
+        "before": "partner",
+        "configKey": "field"
+      },
+      {
+        "key": "partner",
+        "before": "accessorials",
+        "configKey": "field"
+      },
+      {
+        "key": "accessorials",
+        "before": "tags",
+        "configKey": "field"
+      },
+      {
+        "key": "tags",
+        "before": "poNum",
+        "configKey": "field"
+      },
+      {
+        "key": "notes",
+        "before": "totalMiles_temp",
+        "configKey": "field"
+      },
+      {
+        "key": "totalMiles_temp",
+        "before": "ratingMiles",
+        "configKey": "field"
+      },
+      {
+        "key": "ratingMiles",
+        "before": "totalMiles",
+        "configKey": "field"
+      },
+      {
+        "key": "totalMiles",
+        "before": "estimatedDuration",
+        "configKey": "field"
+      },
+      {
+        "key": "estimatedDuration",
+        "before": "estimatedDurationFormatted",
+        "configKey": "field"
+      },
+      {
+        "key": "services",
+        "before": "orderFromBuyQuotes",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "drayage",
+              "labelId": "Drayage",
+              "isCustom": false
+            },
+            {
+              "value": "hazmat",
+              "labelId": "Hazmat",
+              "isCustom": false
+            },
+            {
+              "value": "intermodal",
+              "labelId": "Intermodal",
+              "isCustom": false
+            },
+            {
+              "value": "ltl",
+              "labelId": "LTL",
+              "isCustom": false
+            },
+            {
+              "value": "ftl",
+              "labelId": "FTL",
+              "isCustom": false
+            },
+            {
+              "value": "truckload",
+              "labelId": "Truckload",
+              "isCustom": false
+            },
+            {
+              "value": "package",
+              "labelId": "Package",
+              "isCustom": false
+            },
+            {
+              "value": "specialized",
+              "labelId": "Specialized",
+              "isCustom": false
+            },
+            {
+              "value": "dryVan",
+              "labelId": "Dry Van",
+              "isCustom": false
+            },
+            {
+              "value": "reefer",
+              "labelId": "Reefer",
+              "isCustom": false
+            },
+            {
+              "value": "doubleDrop",
+              "labelId": "Double Drop",
+              "isCustom": false
+            },
+            {
+              "value": "straightTruck",
+              "labelId": "Straight truck",
+              "isCustom": false
+            },
+            {
+              "value": "flatBed",
+              "labelId": "Flat bed",
+              "isCustom": false
+            },
+            {
+              "value": "tailGate",
+              "labelId": "Tail gate",
+              "isCustom": false
+            },
+            {
+              "value": "expedite",
+              "labelId": "Expedite",
+              "isCustom": false
+            },
+            {
+              "value": "unknown",
+              "labelId": "Unknown",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "orderFromBuyQuotes",
+        "before": "order",
+        "configKey": "field"
+      },
+      {
+        "key": "order",
+        "before": "documents",
+        "configKey": "field"
+      },
+      {
+        "key": "documents",
+        "before": "documentCountLabel",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "isMultiStop",
+        "before": "$id",
+        "configKey": "field"
+      },
+      {
+        "key": "$id",
+        "before": "$externalId",
+        "configKey": "field"
+      },
+      {
+        "key": "$externalId",
+        "before": "$createdBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdBy",
+        "before": "$createdByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdByFullName",
+        "before": "$updatedBy",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedBy",
+        "before": "$updatedByFullName",
+        "configKey": "field"
+      },
+      {
+        "key": "$version",
+        "before": "rowColorMap",
+        "configKey": "field"
+      },
+      {
+        "key": "rowColorMap",
+        "before": "sourceId",
+        "configKey": "field"
+      },
+      {
+        "key": "canvas",
+        "before": "systemFingerprint",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "systemFingerprint",
+        "before": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "completionTokens",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "promptTokens",
+        "before": "referencedRecords",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "referencedRecords",
+        "before": "threads",
+        "configKey": "field"
+      },
+      {
+        "key": "customerTariff",
+        "before": "isTestData",
+        "configKey": "field"
+      },
+      {
+        "key": "isTestData",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "customerAccessorials",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "customerAccessorials",
+        "before": "test__c",
+        "configKey": "field"
+      },
+      {
+        "key": "test__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Test",
+        "before": "quoteRequestNotes__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_quote",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "quoteRequestNotes__c",
+        "type": {
+          "key": "text",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Quote Request Notes",
+        "before": "$widgets",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_quote",
+          "configKey": "object"
+        },
+        "description": "Notes from the form submission",
+        "isImportable": true
+      },
+      {
+        "key": "$widgets",
+        "before": "$widgetToOpen",
+        "configKey": "field"
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueLegDistanceRecalc",
+        "before": "getParentSequenceKeys",
+        "configKey": "method"
+      },
+      {
+        "key": "getParentSequenceKeys",
+        "before": "testQuoteCreate",
+        "configKey": "method"
+      },
+      {
+        "key": "testQuoteCreate",
+        "event": "create",
+        "label": "testQuoteCreate",
+        "action": {
+          "$stub": true
+        },
+        "before": "$getWidgetSequence",
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_quote",
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "status",
+            "actionKey": "setValue",
+            "literalValue": "sent"
+          },
+          "condition": {
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "$getWidgetSequence",
+        "before": "$evaluateWidgets",
+        "configKey": "method"
+      },
+      {
+        "key": "openWidget",
+        "before": null,
+        "configKey": "method"
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2024-06-20T16:45:13.798Z",
+    "createdBy": "e74218ba-8cbb-4acf-bc7a-5cca7deb8fa4",
+    "targetKey": "quote",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

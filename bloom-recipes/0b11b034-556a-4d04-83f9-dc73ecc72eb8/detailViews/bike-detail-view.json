@@ -1,0 +1,39 @@
+{
+  "configKey": "detailView",
+  "key": "bikeDetailView__c",
+  "json": {
+    "key": "bikeDetailView__c",
+    "label": "",
+    "sections": [
+      {
+        "key": "general",
+        "label": "General",
+        "fields": [
+          {
+            "key": "name",
+            "path": "name",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "connection__c",
+            "path": "connection__c",
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-03-24T15:01:52.268Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "bike__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

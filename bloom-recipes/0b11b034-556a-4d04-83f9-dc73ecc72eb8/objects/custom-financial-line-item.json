@@ -1,0 +1,153 @@
+{
+  "configKey": "object",
+  "key": "$custom_financialLineItem",
+  "json": {
+    "key": "$custom_financialLineItem",
+    "fields": [
+      {
+        "key": "name",
+        "before": "type",
+        "configKey": "field"
+      },
+      {
+        "key": "type",
+        "before": "description",
+        "configKey": "field"
+      },
+      {
+        "key": "manifest",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "invoice",
+        "before": "allocations",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "allocations",
+        "before": "bill",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bill",
+        "before": "asset",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "asset",
+        "before": "costTask",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "costTask",
+        "before": "earningTask",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "earningTask",
+        "before": "quote",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "quote",
+        "before": "subTotal",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "subTotal",
+        "before": "taxTotal",
+        "configKey": "field"
+      },
+      {
+        "key": "allocatedAmount",
+        "before": "allocate",
+        "configKey": "field"
+      },
+      {
+        "key": "allocate",
+        "before": "connection",
+        "configKey": "field"
+      },
+      {
+        "key": "connection",
+        "before": "connections",
+        "configKey": "field"
+      },
+      {
+        "key": "connections",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "accessorial",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "externalFinancialLineItemStatus",
+        "before": null,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "codatActive",
+              "labelId": "Active"
+            },
+            {
+              "color": "status-cyan",
+              "value": "codatArchived",
+              "labelId": "Archived"
+            },
+            {
+              "color": "status-cyan",
+              "value": "codatUnknown",
+              "labelId": "Unknown"
+            }
+          ]
+        }
+      },
+      {
+        "key": "manifestStartTime__c",
+        "type": {
+          "key": "dateTime",
+          "ref": true,
+          "configKey": "type"
+        },
+        "label": "Manifest start time",
+        "paths": [
+          "manifest.startAt"
+        ],
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.startAt})",
+        "typeConfig": {
+          "isRange": false
+        },
+        "$declarator": {
+          "key": "$custom_financialLineItem",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2025-01-15T21:09:17.900Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "financialLineItem",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

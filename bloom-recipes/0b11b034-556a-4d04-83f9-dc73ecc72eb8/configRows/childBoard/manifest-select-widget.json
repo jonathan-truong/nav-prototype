@@ -1,0 +1,44 @@
+{
+  "id": "8aec607e-9290-47d2-9c68-ed6b06031fd4",
+  "type": "childBoard",
+  "name": "Manifest Select Widget",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Manifest Select Widget",
+    "parents": [
+      {
+        "id": "5015070c-0404-51da-b2b8-618b7146f580",
+        "key": "manifest",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "objectKey": "manifest",
+    "parentKey": "manifest",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "lastUpdated"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "lastUpdated"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

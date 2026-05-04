@@ -1,0 +1,73 @@
+{
+  "id": "c4ee5447-855d-4fe2-ae23-5478e2ab2a80",
+  "type": "childBoard",
+  "name": "Milos's Customers",
+  "json": {
+    "id": "c4ee5447-855d-4fe2-ae23-5478e2ab2a80",
+    "icon": "👍",
+    "source": "manual",
+    "labelId": "Milos's Customers",
+    "parents": [
+      {
+        "id": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+        "key": "platformCustomer",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+    "objectKey": "customer",
+    "parentKey": "platformCustomer",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "name",
+      "companyEmail",
+      "companyPhone",
+      "rateDateCalculationSource",
+      "customsBroker__c",
+      "moneyField__c",
+      "emailNotifs__c",
+      "creditLimit__c",
+      "assignedTo__c",
+      "commissionedUsers"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "name",
+        "companyEmail",
+        "companyPhone",
+        "rateDateCalculationSource",
+        "customsBroker__c",
+        "moneyField__c",
+        "emailNotifs__c",
+        "creditLimit__c",
+        "assignedTo__c",
+        "commissionedUsers"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "assignedTo__c",
+            "value": "Milos CRS 14",
+            "operator": "contains",
+            "fieldType": "TextField",
+            "filterKey": "assignedTo__c"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

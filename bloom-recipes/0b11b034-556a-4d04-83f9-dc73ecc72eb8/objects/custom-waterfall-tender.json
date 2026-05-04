@@ -1,0 +1,232 @@
+{
+  "configKey": "object",
+  "key": "$custom_waterfallTender",
+  "json": {
+    "key": "$custom_waterfallTender",
+    "fields": [
+      {
+        "key": "destination",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "stuff__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "stuff__c",
+        "type": "text",
+        "label": "Stuff",
+        "before": "partnerCarrier__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "partnerCarrier__c",
+        "type": "text",
+        "label": "Partner Carrier",
+        "before": "tenderStatus__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "tenderStatus__c",
+        "type": "status",
+        "label": "Tender Status",
+        "before": "partnerRatingTier__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-cyan",
+              "value": "waiting",
+              "labelId": "Waiting"
+            },
+            {
+              "color": "status-red",
+              "value": "declined",
+              "labelId": "Declined"
+            },
+            {
+              "color": "status-green",
+              "value": "submitted",
+              "labelId": "Submitted"
+            },
+            {
+              "color": "status-grey",
+              "value": "notTendered",
+              "labelId": "Not Tendered"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "partnerRatingTier__c",
+        "type": "select",
+        "label": "Partner Rating Tier",
+        "before": "order__c",
+        "isArray": false,
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "⭐️⭐️⭐️⭐️⭐️",
+              "labelId": "⭐️ ⭐️ ⭐️ ⭐️ ⭐️"
+            },
+            {
+              "value": "⭐️⭐️⭐️⭐️",
+              "labelId": "⭐️ ⭐️ ⭐️ ⭐️"
+            },
+            {
+              "value": "⭐️⭐️⭐️",
+              "labelId": "⭐️ ⭐️ ⭐️"
+            },
+            {
+              "value": "⭐️⭐️",
+              "labelId": "⭐️ ⭐️"
+            },
+            {
+              "value": "⭐️",
+              "labelId": "⭐️"
+            }
+          ]
+        },
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "order__c",
+        "type": "any",
+        "label": "Order #",
+        "paths": [
+          "manifest.orders.fullId"
+        ],
+        "before": "declineNotes__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({manifest.orders.fullId})",
+        "typeConfig": {
+          "format": "O-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "declineNotes__c",
+        "type": "text",
+        "label": "Decline Notes",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      }
+    ],
+    "isMixin": true,
+    "methods": [
+      {
+        "key": "queueEvent",
+        "configKey": "method"
+      },
+      {
+        "key": "Waterfall_Carrier",
+        "event": "update",
+        "label": "Waterfall Carrier",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "partnerCarrier__c",
+            "fromPath": "partner.name",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "description": ""
+          }
+        }
+      },
+      {
+        "key": "Tender_Status",
+        "event": "update",
+        "label": "Tender Status'",
+        "action": {
+          "$stub": true
+        },
+        "summary": "",
+        "configKey": "method",
+        "isDisabled": false,
+        "permission": "insecure",
+        "$declarator": {
+          "key": "$custom_waterfallTender",
+          "ref": true,
+          "configKey": "object"
+        },
+        "jsActionable": {
+          "action": {
+            "toPath": "tenderStatus__c",
+            "fromPath": "status",
+            "actionKey": "copyValue"
+          },
+          "condition": {
+            "condition": {},
+            "description": ""
+          }
+        }
+      }
+    ],
+    "configKey": "object",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "waterfallTender",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

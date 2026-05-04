@@ -1,0 +1,36 @@
+{
+  "id": "627cbded-6332-4e3c-b49c-ad05de4ff41f",
+  "type": "boardView",
+  "name": "All emails",
+  "json": {
+    "key": "ted-all-emails",
+    "layout": "table",
+    "boardId": "e5263b71-3a85-4d6c-a50e-50795838b7dd",
+    "filters": [],
+    "labelId": "All emails",
+    "ordinal": 2,
+    "isPinned": false,
+    "columnIds": [
+      "tedSuggestionsStatus",
+      "subject",
+      "syncStatus",
+      "lastReceived",
+      "referencedRecords",
+      "tags",
+      "suggestedRecords",
+      "labels",
+      "recipients",
+      "attachmentCountLabel",
+      "fullId",
+      "$createdByFullName",
+      "$updatedByFullName"
+    ],
+    "visibility": "board",
+    "description": "All emails",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "lastReceived",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": ""
+  }
+}

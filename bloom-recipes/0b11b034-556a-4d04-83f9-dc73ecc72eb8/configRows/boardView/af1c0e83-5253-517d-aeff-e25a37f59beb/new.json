@@ -1,0 +1,38 @@
+{
+  "id": "45a6cb20-cc1f-42e2-8fd2-9377b38bdc66",
+  "type": "boardView",
+  "name": "New",
+  "json": {
+    "id": "45a6cb20-cc1f-42e2-8fd2-9377b38bdc66",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+    "filters": [],
+    "labelId": "New",
+    "isPinned": true,
+    "columnIds": [
+      "name",
+      "headOfficeFormattedAddress",
+      "companyEmail",
+      "commissionedUsers",
+      "companyPhone",
+      "website__c"
+    ],
+    "createdAt": "2024-06-11T18:23:52.157Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-05-15T20:53:38.860Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {
+      "name": 80.66666666666666,
+      "fullId": 87,
+      "companyEmail": 109.6666666666666,
+      "headOfficeFormattedAddress": 110.6666666666666
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "name"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "59d98dbe-fb05-4362-9ac5-be1aaff035b9",
+  "type": "boardView",
+  "name": "test",
+  "json": {
+    "id": "59d98dbe-fb05-4362-9ac5-be1aaff035b9",
+    "name": "test",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "a63b882f-5b78-5836-9989-68782e3517f7",
+    "filters": [],
+    "labelId": "test",
+    "ordinal": 3,
+    "isPinned": false,
+    "columnIds": [
+      "name",
+      "status",
+      "officeLocation",
+      "dotId",
+      "mcId",
+      "companyEmail",
+      "companyPhone",
+      "assets",
+      "services",
+      "defaultCurrency"
+    ],
+    "createdAt": "2025-10-07T20:37:58.432Z",
+    "createdBy": "03cb4d32-4bfa-4d40-bedd-c8ee9d36b6c7",
+    "isDefault": false,
+    "updatedAt": "2025-10-07T20:37:58.432Z",
+    "updatedBy": "03cb4d32-4bfa-4d40-bedd-c8ee9d36b6c7",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {},
+    "layoutOptions": {
+      "zoom": "week",
+      "endDatePath": "contractEndDate__c",
+      "cardColumnIds": [
+        "status",
+        "officeLocation",
+        "dotId",
+        "mcId",
+        "companyEmail",
+        "companyPhone",
+        "assets",
+        "services",
+        "defaultCurrency"
+      ],
+      "startDatePath": "contractStartDate__c"
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "name"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "name"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "cc465ccc-8ee0-4d5a-a3ee-2f207d7dae08",
+  "type": "boardView",
+  "name": "Invoiced",
+  "json": {
+    "key": "invoiced",
+    "boardId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "invoiced"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Invoiced",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "requestedPickupWindow",
+      "shipper_formattedAddress",
+      "requestedDeliveryWindow",
+      "consignee_formattedAddress",
+      "commodities",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "specialInstructions",
+      "totalMiles",
+      "loadTenderNum",
+      "poNum",
+      "refNum"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "mainLinkColumnKey": ""
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "e64a6399-257a-4313-aa05-e9246da8ecbf",
+  "type": "boardView",
+  "name": "Default",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "2d619741-4915-5a23-8808-286ee8b2caad",
+    "filters": [],
+    "labelId": "Default",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "description",
+      "quantity",
+      "commodityType",
+      "weight",
+      "pieces",
+      "length",
+      "width",
+      "height",
+      "linearFeet",
+      "freightClass",
+      "nmfc",
+      "weightUnit"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "description"
+    ],
+    "orderByColumnKey": null,
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

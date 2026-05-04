@@ -1,0 +1,39 @@
+{
+  "id": "de20c251-cf16-48b4-94b7-2ecc22ae4075",
+  "type": "childBoard",
+  "name": "Pacific Electronics Inc Portal",
+  "json": {
+    "icon": "🏢",
+    "source": "manual",
+    "labelId": "Pacific Electronics Inc Portal",
+    "parents": [
+      {
+        "id": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+        "key": "customerPortalTemplate",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": false,
+    "parentId": "946ec82d-44e9-59f9-8468-b25f5f27c215",
+    "objectKey": "order",
+    "parentKey": "customerPortalTemplate",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "8594cdfd-cb18-4491-871a-e84f63755b93"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

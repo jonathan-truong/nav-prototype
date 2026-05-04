@@ -1,0 +1,33 @@
+{
+  "configKey": "board",
+  "key": "$custom_quoteModuleTier2QuoteTemplatesBoard",
+  "json": {
+    "key": "$custom_quoteModuleTier2QuoteTemplatesBoard",
+    "columns": [
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "Test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "Test",
+        "columnKey": "test__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-03-04T14:56:54.551Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "quoteModuleTier2QuoteTemplatesBoard",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

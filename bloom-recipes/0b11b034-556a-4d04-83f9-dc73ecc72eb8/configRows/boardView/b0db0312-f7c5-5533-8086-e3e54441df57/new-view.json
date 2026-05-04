@@ -1,0 +1,44 @@
+{
+  "id": "abd61340-e5ed-4b26-81c7-cc5fbc95f4eb",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "22119078-5f94-423d-962b-1d8819269580",
+    "name": "QtyWeight",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "b0db0312-f7c5-5533-8086-e3e54441df57",
+    "filters": [],
+    "labelId": "New View",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "description",
+      "pieces",
+      "quantity",
+      "commodityType",
+      "weight",
+      "weightUnit",
+      "volume"
+    ],
+    "createdAt": "2025-02-25T20:00:26.852Z",
+    "createdBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "isDefault": false,
+    "updatedAt": "2025-12-19T16:13:40.398Z",
+    "updatedBy": "6ea847bb-d581-4e6b-a627-516d3ba70ce3",
+    "visibility": "board",
+    "description": "",
+    "columnWidths": {
+      "quantity": 69,
+      "description": 78,
+      "commodityType": 82
+    },
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "description"
+    ],
+    "orderByColumnKey": null,
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

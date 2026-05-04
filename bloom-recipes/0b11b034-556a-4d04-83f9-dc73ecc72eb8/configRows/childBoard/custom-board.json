@@ -1,0 +1,88 @@
+{
+  "id": "a27916b5-5ac6-4fc0-b805-e76b188370f2",
+  "type": "childBoard",
+  "name": "Custom Board",
+  "json": {
+    "icon": "😀",
+    "source": "manual",
+    "labelId": "Custom Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "manifests",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "etaLastUpdated",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "$updatedAt",
+      "$createdAt",
+      "services",
+      "lastUpdated",
+      "driverName",
+      "zAndoMeasurement__c",
+      "zAndoNumber__c",
+      "test__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "totalEarnings",
+        "totalCost",
+        "margin",
+        "manifests",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "orderETAStatus",
+        "deliveryEta",
+        "etaLastUpdated",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "$updatedAt",
+        "$createdAt",
+        "services",
+        "lastUpdated",
+        "driverName",
+        "zAndoMeasurement__c",
+        "zAndoNumber__c",
+        "test__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

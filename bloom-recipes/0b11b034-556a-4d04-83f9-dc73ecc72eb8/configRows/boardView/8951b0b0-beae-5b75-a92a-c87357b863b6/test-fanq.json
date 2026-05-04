@@ -1,0 +1,31 @@
+{
+  "id": "fb036fa8-022c-489d-8f69-85caa5ee8dbe",
+  "type": "boardView",
+  "name": "Test FANQ",
+  "json": {
+    "id": "fb036fa8-022c-489d-8f69-85caa5ee8dbe",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "filters": [],
+    "labelId": "Test FANQ",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "contractedTotal__c",
+      "totalAmount"
+    ],
+    "createdAt": "2024-09-10T19:08:44.041Z",
+    "createdBy": "393e9077-3331-470c-89d2-34112e09fa6f",
+    "isDefault": false,
+    "updatedAt": "2024-09-10T19:08:44.041Z",
+    "updatedBy": "393e9077-3331-470c-89d2-34112e09fa6f",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

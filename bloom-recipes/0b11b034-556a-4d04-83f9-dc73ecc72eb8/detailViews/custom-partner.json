@@ -1,0 +1,304 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_partner",
+  "json": {
+    "key": "$custom_partner",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "before": "generalFMCSA",
+        "fields": [
+          {
+            "key": "name",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "isActive",
+            "configKey": "detailField"
+          },
+          {
+            "key": "isActive",
+            "path": "isActive",
+            "before": "address",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "address",
+            "before": "dotId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "mcId",
+            "before": "remitToAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "remitToAddress",
+            "before": "companyEmail",
+            "configKey": "detailField"
+          },
+          {
+            "key": "companyPhone",
+            "before": "insuranceExpiry__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "insuranceExpiry__c",
+            "path": "insuranceExpiry__c",
+            "before": "partnerIdLookup__c",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerIdLookup__c",
+            "path": "partnerIdLookup__c",
+            "before": "fullId",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "before": "isActive",
+            "configKey": "detailField"
+          },
+          {
+            "key": "$createdAt",
+            "path": "$createdAt",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "generalFMCSA",
+        "before": "insurance",
+        "fields": [
+          {
+            "key": "legalName",
+            "before": "usdotNumber",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fmcsaCompanySnapshotURL",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General (FMCSA)",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "insurance",
+        "label": "insurance",
+        "before": "safety",
+        "fields": [
+          {
+            "key": "bipdInsuranceRequired",
+            "before": "bipdInsuranceOnFile",
+            "configKey": "detailField"
+          },
+          {
+            "key": "bondInsuranceOnFile",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "insurance",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "safety",
+        "before": "companyOverview",
+        "fields": [
+          {
+            "key": "safetyRating",
+            "before": "safetyRatingDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "outOfServiceHazmatInspectionsPercentage",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Safety",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "companyOverview",
+        "before": "sources",
+        "fields": [
+          {
+            "key": "operatingAuthorityStatus",
+            "before": "carrierOperation",
+            "configKey": "detailField"
+          },
+          {
+            "key": "carrierOperation",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Company overview",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "sources",
+        "before": "fleetOverview",
+        "fields": [
+          {
+            "key": "fmcsaSMSOverviewURL",
+            "before": "fmcsaCensusTimestamp",
+            "configKey": "detailField"
+          },
+          {
+            "key": "qcMobileTimestamp",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Sources",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "fleetOverview",
+        "before": "rating",
+        "fields": [
+          {
+            "key": "powerUnits",
+            "before": "totalDrivers",
+            "configKey": "detailField"
+          },
+          {
+            "key": "mcs150Mileage",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Fleet overview",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "rating",
+        "before": "details",
+        "fields": [
+          {
+            "key": "rateDateCalculationSource",
+            "before": "tariffs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "scac",
+            "before": "tariffs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "tariffs",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Rating",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "before": null,
+        "fields": [
+          {
+            "key": "accessorials",
+            "before": "assetTypes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assetTypes",
+            "before": "services",
+            "configKey": "detailField"
+          },
+          {
+            "key": "services",
+            "before": "serviceTypes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "serviceTypes",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "contract",
+        "label": "Contract",
+        "before": "verified",
+        "fields": [
+          {
+            "key": "agreementDate__c",
+            "path": "agreementDate__c",
+            "before": "contractStartDate__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "contractStartDate__c",
+            "path": "contractStartDate__c",
+            "before": "contractEndDate__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "contractEndDate__c",
+            "path": "contractEndDate__c",
+            "before": "primaryContactEmail",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "primaryContactEmail",
+            "path": "primaryContactEmail",
+            "before": "primaryContactPhone",
+            "configKey": "detailField"
+          },
+          {
+            "key": "primaryContactPhone",
+            "path": "primaryContactPhone",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Contract",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "verified",
+        "label": "Verified",
+        "fields": [
+          {
+            "key": "geoTabVerified__c",
+            "path": "geoTabVerified__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Verified",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-04-23T23:55:08.173Z",
+    "createdBy": "__migration",
+    "targetKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

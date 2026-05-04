@@ -1,0 +1,139 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_bill",
+  "json": {
+    "key": "$custom_bill",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "platformTags",
+            "before": "documents",
+            "configKey": "detailField"
+          },
+          {
+            "key": "documents",
+            "path": "documents",
+            "before": "freightAuditAndPay2__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "freightAuditAndPay2__c",
+            "path": "freightAuditAndPay2__c",
+            "before": "freightAuditAndPay__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "freightAuditAndPay__c",
+            "path": "freightAuditAndPay__c",
+            "before": "agingInDaysLabel",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "agingInDaysLabel",
+            "path": "agingInDaysLabel",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "fields": [
+          {
+            "key": "billCreationDate",
+            "before": "billToDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "billDueDate",
+            "before": "manifestTotal",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestTotal",
+            "before": "billTotal",
+            "configKey": "detailField"
+          },
+          {
+            "key": "billTotal",
+            "before": "carrierInvoiceOnFile__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "carrierInvoiceOnFile__c",
+            "path": "carrierInvoiceOnFile__c",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "partnerInvoiceId",
+            "before": "formattedPartnerAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "remitToAddress",
+            "before": "partner",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partner",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "fields": [
+          {
+            "key": "commodities",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "fields": [],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "quickBooksOnline",
+        "label": "quickBooksOnline",
+        "fields": [],
+        "labelId": "quickBooksOnline",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-06-21T11:40:46.316Z",
+    "createdBy": "3830fa40-460d-40e0-b9ea-4b736650dfee",
+    "targetKey": "bill",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

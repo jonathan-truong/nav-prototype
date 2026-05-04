@@ -1,0 +1,38 @@
+{
+  "configKey": "widget",
+  "key": "receipientName__c",
+  "json": {
+    "key": "receipientName__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Receipient Name"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-04-10T20:26:53.335Z",
+    "createdBy": "1badb8ba-b2fe-4558-b16d-b7970672fed7",
+    "objectKey": "manifest",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

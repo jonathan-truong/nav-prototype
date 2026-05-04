@@ -1,0 +1,36 @@
+{
+  "id": "f567c16f-3c7b-4b73-ae66-567c25ca1554",
+  "type": "boardView",
+  "name": "Map view",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c6bf383b-020e-4d4a-9bec-4921e3716f01",
+    "filters": [],
+    "labelId": "Map view",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "name",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt"
+    ],
+    "createdAt": "2024-08-19T20:21:52.232Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2024-08-19T20:21:52.232Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "3b05a3fe-1888-4041-9ad2-f6b79d8df436",
+  "json": {
+    "name": "teo test",
+    "fullId": {
+      "arg": 37,
+      "formattedValue": "DOCT-37"
+    },
+    "$source": "manual",
+    "version": 4,
+    "$version": 3,
+    "$widgets": [],
+    "$createdAt": "2025-03-06T21:29:09.417Z",
+    "$createdBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "$updatedAt": "2025-03-20T19:18:09.971Z",
+    "$updatedBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "$externalId": null,
+    "documentType": "billOfLading",
+    "rootObjectKey": "order",
+    "dataFormatVersion": "1"
+  }
+}

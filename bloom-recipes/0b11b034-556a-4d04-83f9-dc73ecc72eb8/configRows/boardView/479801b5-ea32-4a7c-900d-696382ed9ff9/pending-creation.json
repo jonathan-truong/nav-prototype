@@ -1,0 +1,43 @@
+{
+  "id": "920d5d37-d8a0-467a-b286-4603429b0b02",
+  "type": "boardView",
+  "name": "Pending creation",
+  "json": {
+    "key": "ted-pending-creation",
+    "layout": "table",
+    "boardId": "479801b5-ea32-4a7c-900d-696382ed9ff9",
+    "filters": [
+      {
+        "path": "tags",
+        "value": [
+          "00643f61-3ca4-457d-b2fe-48980245f1ba"
+        ],
+        "operator": "in",
+        "fieldType": "ConnectionField",
+        "filterKey": "tags"
+      }
+    ],
+    "labelId": "Pending creation",
+    "ordinal": 2,
+    "columnIds": [
+      "tedSuggestionsStatus",
+      "subject",
+      "syncStatus",
+      "lastReceived",
+      "referencedRecords",
+      "tags",
+      "labels",
+      "recipients",
+      "attachmentCountLabel",
+      "fullId",
+      "$createdByFullName",
+      "$updatedByFullName"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "lastReceived",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": ""
+  }
+}

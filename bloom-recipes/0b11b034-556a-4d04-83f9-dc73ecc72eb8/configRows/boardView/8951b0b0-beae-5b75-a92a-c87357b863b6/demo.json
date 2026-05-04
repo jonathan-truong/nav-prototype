@@ -1,0 +1,34 @@
+{
+  "id": "af652b0f-59fa-43d1-873c-d277f60a11ec",
+  "type": "boardView",
+  "name": "Demo",
+  "json": {
+    "id": "af652b0f-59fa-43d1-873c-d277f60a11ec",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "filters": [],
+    "labelId": "Demo",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "invoiceDate",
+      "paymentDays__c",
+      "formulaTest__c",
+      "daysToDue__c"
+    ],
+    "createdAt": "2025-03-05T15:26:57.915Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-03-05T15:26:57.915Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

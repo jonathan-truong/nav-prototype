@@ -1,0 +1,106 @@
+{
+  "configKey": "detailView",
+  "key": "OnboardingDetailView__c",
+  "json": {
+    "key": "OnboardingDetailView__c",
+    "label": "",
+    "sections": [
+      {
+        "key": "general",
+        "label": "Onboarding Details",
+        "fields": [
+          {
+            "key": "fullId",
+            "path": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "sortOrder__c",
+            "path": "sortOrder__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "category__c",
+            "path": "category__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "module__c",
+            "path": "module__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "name",
+            "path": "name",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "title__c",
+            "path": "title__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "description__c",
+            "path": "description__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "status__c",
+            "path": "status__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "videoLink__c",
+            "path": "videoLink__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "helpCentreLink__c",
+            "path": "helpCentreLink__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "notes__c",
+            "path": "notes__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedTimeToCompletion__c",
+            "path": "estimatedTimeToCompletion__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "difficulty__c",
+            "path": "difficulty__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "businessType__c",
+            "path": "businessType__c",
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Onboarding Details",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2025-06-23T20:01:52.475Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "Onboarding__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

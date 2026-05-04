@@ -1,0 +1,109 @@
+{
+  "id": "5841f13b-d006-4874-bd95-a93eecb3ce12",
+  "type": "boardView",
+  "name": "All Orders",
+  "json": {
+    "id": "5841f13b-d006-4874-bd95-a93eecb3ce12",
+    "name": "All Orders",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "filters": [],
+    "labelId": "All Orders",
+    "ordinal": 4,
+    "isPinned": true,
+    "columnIds": [
+      "fullId",
+      "originCity__c",
+      "poNum",
+      "trailerId__c",
+      "$createdByFullName",
+      "$createdAt",
+      "$updatedByFullName",
+      "$updatedAt",
+      "status",
+      "customer",
+      "assetWithLastKnownLocation",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "partner",
+      "totalEarnings",
+      "totalCost",
+      "multiCurrencyTotalCost",
+      "margin",
+      "multiCurrencyMargin",
+      "drivers",
+      "assets",
+      "manifests",
+      "platformTags",
+      "commodities",
+      "totalCommoditiesWeight",
+      "totalCommoditiesQuantity",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "specialInstructions",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "invoices",
+      "csrs",
+      "accountManagers",
+      "buyQuotes",
+      "assetType",
+      "serviceType",
+      "services",
+      "currentLocation_formattedAddress",
+      "lastUpdated",
+      "driverName",
+      "dataSourceLabel",
+      "commissionees"
+    ],
+    "createdAt": "2025-06-18T19:32:11.625Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2026-03-02T17:22:38.734Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "aggregations": [
+      {
+        "path": "fullId",
+        "operator": "countUnique",
+        "fieldType": "FullIDField",
+        "aggregationKey": "fullId-countUnique"
+      }
+    ],
+    "columnWidths": {
+      "fullId": 190,
+      "pod__c": 64,
+      "status": 149,
+      "partner": 113,
+      "originCity__c": 133,
+      "$createdByFullName": 129,
+      "consignee_formattedAddress": 296
+    },
+    "groupByOption": {
+      "fieldType": "StatusField",
+      "groupByPaths": [
+        "status"
+      ],
+      "groupByFields": [
+        "status"
+      ],
+      "sortDirection": "asc",
+      "hideEmptyGroups": true
+    },
+    "searchTermList": [],
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "originCity__c"
+    ],
+    "orderByColumnKey": "$createdAt",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

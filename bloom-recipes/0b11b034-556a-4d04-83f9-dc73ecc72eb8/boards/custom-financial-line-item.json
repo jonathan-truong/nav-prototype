@@ -1,0 +1,16 @@
+{
+  "configKey": "board",
+  "key": "$custom_financialLineItem",
+  "json": {
+    "key": "$custom_financialLineItem",
+    "columns": [],
+    "filters": [],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2025-01-15T21:09:18.049Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "financialLineItem",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

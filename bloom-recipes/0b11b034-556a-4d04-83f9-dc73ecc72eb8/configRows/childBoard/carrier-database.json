@@ -1,0 +1,62 @@
+{
+  "id": "9481e847-df3d-470c-a73f-20bf4c7bbf8f",
+  "type": "childBoard",
+  "name": "Carrier database",
+  "json": {
+    "id": "9481e847-df3d-470c-a73f-20bf4c7bbf8f",
+    "icon": "🔍",
+    "source": "manual",
+    "labelId": "Carrier database",
+    "parents": [
+      {
+        "id": "a63b882f-5b78-5836-9989-68782e3517f7",
+        "key": "partner",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "a63b882f-5b78-5836-9989-68782e3517f7",
+    "objectKey": "partner",
+    "parentKey": "partner",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "serviceTypes",
+      "assets",
+      "geoTabVerified__c",
+      "name",
+      "status",
+      "companyEmail",
+      "companyPhone",
+      "dotId",
+      "mcId",
+      "agreementDate__c",
+      "liabilityInsurance__c",
+      "contractStartDate__c",
+      "contractEndDate__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "serviceTypes",
+        "assets",
+        "geoTabVerified__c",
+        "name",
+        "status",
+        "companyEmail",
+        "companyPhone",
+        "dotId",
+        "mcId",
+        "agreementDate__c",
+        "liabilityInsurance__c",
+        "contractStartDate__c",
+        "contractEndDate__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

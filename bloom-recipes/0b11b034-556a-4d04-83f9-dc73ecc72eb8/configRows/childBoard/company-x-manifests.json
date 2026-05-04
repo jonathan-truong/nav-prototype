@@ -1,0 +1,127 @@
+{
+  "id": "c6bf383b-020e-4d4a-9bec-4921e3716f01",
+  "type": "childBoard",
+  "name": "Company x | Manifests ",
+  "json": {
+    "id": "c6bf383b-020e-4d4a-9bec-4921e3716f01",
+    "icon": "🚚",
+    "source": "manual",
+    "labelId": "Company x | Manifests ",
+    "parents": [
+      {
+        "id": "5015070c-0404-51da-b2b8-618b7146f580",
+        "key": "manifest",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "objectKey": "manifest",
+    "parentKey": "manifest",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "name",
+      "status",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "buyQuotes",
+      "totalCost",
+      "partner",
+      "dispatchedAt",
+      "driverPay",
+      "totalStops",
+      "totalWeight",
+      "assets",
+      "totalCommoditiesQuantity",
+      "tags",
+      "weightLbs",
+      "specialInstructions",
+      "manifestStartDate",
+      "manifestEndDate",
+      "lastDelivery",
+      "lastStopLocation",
+      "lastKnownLocation",
+      "firstPickup",
+      "firstStopLocation",
+      "lastSeenTime",
+      "firstPickupTaskTime",
+      "firstPickupTaskActualTime",
+      "lastDeliveryTaskTime",
+      "lastDeliveryTaskActualTime",
+      "testBreak__c",
+      "hughsep10__c",
+      "hughsep10B__c",
+      "manifestTotalCostCustom__c",
+      "totalBuyQuoteCustom__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "name",
+        "status",
+        "drivers",
+        "tasksStopsFullId",
+        "totalMiles",
+        "estimatedDurationFormatted",
+        "ordersFullId",
+        "tasksFullId",
+        "buyQuotes",
+        "totalCost",
+        "partner",
+        "dispatchedAt",
+        "driverPay",
+        "totalStops",
+        "totalWeight",
+        "assets",
+        "totalCommoditiesQuantity",
+        "tags",
+        "weightLbs",
+        "specialInstructions",
+        "manifestStartDate",
+        "manifestEndDate",
+        "lastDelivery",
+        "lastStopLocation",
+        "lastKnownLocation",
+        "firstPickup",
+        "firstStopLocation",
+        "lastSeenTime",
+        "firstPickupTaskTime",
+        "firstPickupTaskActualTime",
+        "lastDeliveryTaskTime",
+        "lastDeliveryTaskActualTime",
+        "testBreak__c",
+        "hughsep10__c",
+        "hughsep10B__c",
+        "manifestTotalCostCustom__c",
+        "totalBuyQuoteCustom__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "partner",
+            "value": [
+              "ee7844aa-93fc-49c4-8af2-588c6f766080"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "partner"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

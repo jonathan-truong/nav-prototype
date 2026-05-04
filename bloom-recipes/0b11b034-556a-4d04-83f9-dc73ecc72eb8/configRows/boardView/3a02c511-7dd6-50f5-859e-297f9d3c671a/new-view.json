@@ -1,0 +1,30 @@
+{
+  "id": "af4bbe1c-0f10-4b94-ab20-d2817912555b",
+  "type": "boardView",
+  "name": "New view",
+  "json": {
+    "id": "defaultView",
+    "boardId": "3a02c511-7dd6-50f5-859e-297f9d3c671a",
+    "filters": [],
+    "labelId": "New view",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "name",
+      "description",
+      "formattedPayType",
+      "formattedBaseRate",
+      "createdByUser"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "name"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

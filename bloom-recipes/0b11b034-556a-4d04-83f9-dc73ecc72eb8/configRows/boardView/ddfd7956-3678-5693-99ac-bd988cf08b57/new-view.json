@@ -1,0 +1,39 @@
+{
+  "id": "e1e890c5-8606-47cf-ae8c-7978a236bf45",
+  "type": "boardView",
+  "name": "New view",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "ddfd7956-3678-5693-99ac-bd988cf08b57",
+    "filters": [],
+    "labelId": "New view",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "name",
+      "taxRuleLabel",
+      "internalStatus",
+      "originCountryCode",
+      "originStateCode",
+      "destinationCountryCode",
+      "destinationStateCode",
+      "taxRate",
+      "effectiveDate",
+      "$updatedAt",
+      "$createdAt",
+      "$createdByFullName",
+      "$updatedByFullName"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "name"
+    ],
+    "orderByColumnKey": null,
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

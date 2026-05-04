@@ -1,0 +1,402 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_brokerC2G-order",
+  "json": {
+    "key": "$custom_brokerC2G-order",
+    "label": "Broker C2G - Order",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "brokerInfo__c",
+        "before": "maxBuy__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "brokerInfo__c"
+      },
+      {
+        "key": "maxBuy__c",
+        "before": "brokerDetails__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "maxBuy__c"
+      },
+      {
+        "key": "brokerDetails__c",
+        "before": "order-CreateManifest",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "brokerDetails__c"
+      },
+      {
+        "key": "order-CreateManifest",
+        "before": "enterTopSpeed__c",
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "enterTopSpeed__c",
+        "before": "testWidgetPleaseIgnore__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "enterTopSpeed__c"
+      },
+      {
+        "key": "testWidgetPleaseIgnore__c",
+        "before": "order-ExpandManifestForDriverPay",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "testWidgetPleaseIgnore__c"
+      },
+      {
+        "key": "order-ExpandManifestForDriverPay",
+        "before": "tankerVolume__c",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "tankerVolume__c",
+        "before": "testTasks__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "tankerVolume__c"
+      },
+      {
+        "key": "testTasks__c",
+        "before": "enterAccessorials__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "testTasks__c"
+      },
+      {
+        "key": "enterAccessorials__c",
+        "before": "order-SendETAUpdate",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "enterAccessorials__c"
+      },
+      {
+        "key": "order-SendETAUpdate",
+        "before": "order-SelectDriver",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectDriver",
+        "before": "orderType__c",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "orderType__c",
+        "before": "regionDetails__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "orderType__c"
+      },
+      {
+        "key": "regionDetails__c",
+        "before": "order-SelectAssets",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "regionDetails__c"
+      },
+      {
+        "key": "order-SelectAssets",
+        "before": "newTest__c",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SelectAssets"
+      },
+      {
+        "key": "newTest__c",
+        "before": "order-WelcomeDriverDispatch",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "newTest__c"
+      },
+      {
+        "key": "order-WelcomeDriverDispatch",
+        "before": "order-CreateAndAssignDriver",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-WelcomeDriverDispatch"
+      },
+      {
+        "key": "order-CreateAndAssignDriver",
+        "before": "order-SendToDriverReadOnly",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CreateAndAssignDriver"
+      },
+      {
+        "key": "order-SendToDriverReadOnly",
+        "before": "order-AddDriverPay",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-SendToDriverReadOnly"
+      },
+      {
+        "key": "order-AddDriverPay",
+        "before": "order-CreatePayStub",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-AddDriverPay"
+      },
+      {
+        "key": "order-CreatePayStub",
+        "before": "order-SubmitCarrierBidQuote",
+        "isHidden": true,
+        "configKey": "widgetRef",
+        "widgetKey": "order-CreatePayStub"
+      },
+      {
+        "key": "order-SubmitCarrierBidQuote",
+        "before": "order-ViewCarrierBidQuotes",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ViewCarrierBidQuotes",
+        "before": "order-LegPlanning",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-LegPlanning",
+        "before": "order-AddCost",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddCost",
+        "before": "order-AddPartnerCostsByShipment",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddPartnerCostsByShipment",
+        "before": "order-AddPartnerCostsByLeg",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddPartnerCostsByLeg",
+        "before": "order-AssignPartner",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AssignPartner",
+        "before": "order-ScheduleLegStatusRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ScheduleLegStatusRequest",
+        "before": "order-MiscExpenses",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-MiscExpenses",
+        "before": "order-ShipmentEntry",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ShipmentEntry",
+        "before": "order-AddTemplateDetails",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddTemplateDetails",
+        "before": "order-OrderRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-OrderRequest",
+        "before": "order-SelectPartner",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectPartner",
+        "before": "order-DataBotImport",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-DataBotImport",
+        "before": "order-SelectCustomer",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectCustomer",
+        "before": "order-AddQuote",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddQuote",
+        "before": "order-AddOrderNumbers",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddOrderNumbers",
+        "before": "addAccManagers__c",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "addAccManagers__c",
+        "before": "appointmentDetails__c",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "addAccManagers__c"
+      },
+      {
+        "key": "appointmentDetails__c",
+        "before": "order-ManageStopsAndTasks",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "appointmentDetails__c"
+      },
+      {
+        "key": "order-ManageStopsAndTasks",
+        "before": "order-PostToLoadBoard2",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-PostToLoadBoard2",
+        "before": "order-SendToCarrier",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToCarrier",
+        "before": "order-ScheduleStatusRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ScheduleStatusRequest",
+        "before": "order-CompleteTasks",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CompleteTasks",
+        "before": "order-Documents",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-Documents",
+        "before": "order-CreatePlatformInvoice",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreatePlatformInvoice",
+        "before": "fileClaim__c",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "fileClaim__c",
+        "before": "order-ShareManifestWithDriver",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "fileClaim__c"
+      },
+      {
+        "key": "order-ShareManifestWithDriver",
+        "before": "order-TextToDriverTracking",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-TextToDriverTracking",
+        "before": "order-SendToDriver",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToDriver",
+        "before": "order-EnableMacropoint",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-EnableMacropoint",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2024-03-04T16:14:48.814Z",
+    "createdBy": "da24e27f-98ba-4b7c-87c0-ccff2968f6d7",
+    "targetKey": "brokerC2G-order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetsHidden": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+    ]
+  }
+}

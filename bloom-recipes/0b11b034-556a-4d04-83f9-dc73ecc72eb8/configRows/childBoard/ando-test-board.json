@@ -1,0 +1,70 @@
+{
+  "id": "2f1961ef-cbaf-447b-92b0-0be19b147ec6",
+  "type": "childBoard",
+  "name": "Ando Test Board",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "Ando Test Board",
+    "parents": [
+      {
+        "id": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+        "key": "platformInvoice",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "objectKey": "invoice",
+    "parentKey": "platformInvoice",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "orderId",
+      "customer",
+      "dueDate",
+      "invoiceDate",
+      "deliveryTime",
+      "sentAt",
+      "lastModifiedAt",
+      "lastExportedAt",
+      "invoiceExportStatus",
+      "msDynamicsExternalId",
+      "msDynamicsLastExportedAt",
+      "msDynamicsExportStatus",
+      "organizationId__c",
+      "invoiceNotes__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "orderId",
+        "customer",
+        "dueDate",
+        "invoiceDate",
+        "deliveryTime",
+        "sentAt",
+        "lastModifiedAt",
+        "lastExportedAt",
+        "invoiceExportStatus",
+        "msDynamicsExternalId",
+        "msDynamicsLastExportedAt",
+        "msDynamicsExportStatus",
+        "organizationId__c",
+        "invoiceNotes__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

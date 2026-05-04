@@ -1,0 +1,134 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_order_external",
+  "json": {
+    "key": "$custom_order_external",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "customStatusTest__c",
+            "path": "customStatusTest__c",
+            "before": "status",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "deliveryEta",
+            "configKey": "detailField",
+            "isEditable": true
+          },
+          {
+            "key": "deliveryEta",
+            "configKey": "detailField",
+            "widgetKey": "order-UpdateETAStatus",
+            "isEditable": true,
+            "showOnTemplate": true
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "shipper",
+            "path": "shipper",
+            "configKey": "detailField",
+            "widgetKey": "order-SelectShipper",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "consignee",
+            "path": "consignee",
+            "configKey": "detailField",
+            "widgetKey": "order-SelectConsignee",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "poNum",
+            "configKey": "detailField",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "refNum",
+            "configKey": "detailField",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "loadTenderNum",
+            "configKey": "detailField",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "totalMiles",
+            "configKey": "detailField",
+            "showOnTemplate": true
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "before": "documents",
+        "fields": [
+          {
+            "key": "commodities",
+            "configKey": "detailField",
+            "isEditable": true,
+            "showOnTemplate": true
+          },
+          {
+            "key": "totalCommoditiesWeight",
+            "configKey": "detailField",
+            "showOnTemplate": true
+          },
+          {
+            "key": "totalCommoditiesQuantity",
+            "before": null,
+            "configKey": "detailField",
+            "showOnTemplate": true
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "documents",
+        "label": "Documents",
+        "fields": [
+          {
+            "key": "documentCountLabel",
+            "path": "documentCountLabel",
+            "before": "documents",
+            "configKey": "detailField"
+          },
+          {
+            "key": "documents",
+            "path": "documents",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Documents",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-06-26T14:55:43.597Z",
+    "createdBy": "c032d4a2-d21c-4f34-823d-f46101966cff",
+    "targetKey": "order_external",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

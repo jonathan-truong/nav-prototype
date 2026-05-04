@@ -1,0 +1,79 @@
+{
+  "id": "ce0d8bb7-844a-4b3d-89f9-0b6692e9c8c0",
+  "type": "childBoard",
+  "name": "Customer A's board copy",
+  "json": {
+    "id": "ce0d8bb7-844a-4b3d-89f9-0b6692e9c8c0",
+    "icon": "😎",
+    "source": "manual",
+    "labelId": "Customer B's board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "customer",
+      "fullId",
+      "status",
+      "totalEarnings",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "driverName"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "customer",
+        "fullId",
+        "status",
+        "totalEarnings",
+        "requestedPickupWindow",
+        "requestedDeliveryWindow",
+        "orderETAStatus",
+        "deliveryEta",
+        "totalMiles",
+        "specialInstructions",
+        "poNum",
+        "refNum",
+        "loadTenderNum",
+        "driverName"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "customer",
+            "value": [
+              "25bbaaca-0bad-4a5a-9f39-e5e47cdbc3b7"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "customer"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ca12674e-fc08-46a2-91eb-b5bc9bb5adb3",
+  "type": "boardView",
+  "name": "Pending update",
+  "json": {
+    "key": "ted-pending-update",
+    "layout": "table",
+    "boardId": "479801b5-ea32-4a7c-900d-696382ed9ff9",
+    "filters": [
+      {
+        "path": "tags",
+        "value": [
+          "7dff1256-f52a-49e2-b4bd-fddf61e0c8d8"
+        ],
+        "operator": "in",
+        "fieldType": "ConnectionField",
+        "filterKey": "tags"
+      }
+    ],
+    "labelId": "Pending update",
+    "ordinal": 3,
+    "columnIds": [
+      "tedSuggestionsStatus",
+      "subject",
+      "syncStatus",
+      "lastReceived",
+      "referencedRecords",
+      "tags",
+      "labels",
+      "recipients",
+      "attachmentCountLabel",
+      "fullId",
+      "$createdByFullName",
+      "$updatedByFullName"
+    ],
+    "visibility": "board",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "lastReceived",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": ""
+  }
+}

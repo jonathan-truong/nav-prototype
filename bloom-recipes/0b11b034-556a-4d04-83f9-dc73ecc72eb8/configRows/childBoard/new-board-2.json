@@ -1,0 +1,53 @@
+{
+  "id": "60f8e95f-c385-4ddc-a182-3f0f2e8d0f21",
+  "type": "childBoard",
+  "name": "New Board",
+  "json": {
+    "id": "60f8e95f-c385-4ddc-a182-3f0f2e8d0f21",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "New Board",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "pickUpCompletionDateTime__c",
+      "pickUpArrivalDateTime__c",
+      "poNum",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "invoices"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "pickUpCompletionDateTime__c",
+        "pickUpArrivalDateTime__c",
+        "poNum",
+        "shipper_formattedAddress",
+        "consignee_formattedAddress",
+        "invoices"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

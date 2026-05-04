@@ -1,0 +1,53 @@
+{
+  "configKey": "board",
+  "key": "customsBrokerBoard__c",
+  "json": {
+    "key": "customsBrokerBoard__c",
+    "icon": "👤",
+    "label": "CustomsBroker Board",
+    "buttons": [
+      {
+        "key": "create",
+        "type": "primary",
+        "action": "async ({ context }): Promise<void> => {const resp: { id: string } = await context.createRecord({boardId: context.boardId,objectKey: 'customsBroker__c',json: {},});context.navigateToRecord({recordId: resp.id,objectKey: 'customsBroker__c',});}",
+        "labelId": "Create customsbroker",
+        "menuItems": [
+          {
+            "key": "openCSVImportOrderWidget",
+            "labelId": "CSV / Spreadsheet upload",
+            "onClick": "async ({ context }): Promise<void> => {\n                                context.openDialog('importPlatformDataDialog', {\n                                    dialogState: {\n                                        boardId: context.boardId,\n                                        objectKey: 'customsBroker__c',\n                                    },\n                                    dialogOptions: {\n                                        onClose: async () => {\n                                            await context.refetch();\n                                        },\n                                    },\n                                });\n                            }",
+            "leftIcon": "📊",
+            "subtitle": "Upload your data via CSV or spreadsheets in one click"
+          }
+        ],
+        "menuItemsHeader": "Create via..."
+      }
+    ],
+    "columns": [
+      {
+        "id": "fullId",
+        "key": "fullId",
+        "path": "fullId",
+        "label": "Full ID"
+      },
+      {
+        "id": "name",
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "isMixin": false,
+    "labelId": "CustomsBroker",
+    "summary": "customsBroker Board",
+    "configKey": "board",
+    "createdAt": "2025-05-06T20:40:21.076Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "customsBroker__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "customsBroker Board",
+    "securityFilters": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "7cebecb1-28f3-4429-8a84-59f7d35865fd",
+  "type": "boardView",
+  "name": "Legs",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "c4799dab-9bbb-4612-a3ef-d0b801c997be",
+    "filters": [
+      {
+        "path": "taskType",
+        "value": [
+          "leg"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "taskType"
+      }
+    ],
+    "labelId": "Legs",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "taskType",
+      "description",
+      "status",
+      "orderFullId",
+      "legPickupTime__c",
+      "legDeliveryTime__c"
+    ],
+    "createdAt": "2024-04-01T17:25:27.632Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2024-05-22T20:02:08.889Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

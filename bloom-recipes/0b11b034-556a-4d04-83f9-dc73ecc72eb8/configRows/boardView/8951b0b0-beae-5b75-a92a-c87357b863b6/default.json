@@ -1,0 +1,59 @@
+{
+  "id": "4297c22d-98db-4948-838a-b16dbdb825d7",
+  "type": "boardView",
+  "name": "Default",
+  "json": {
+    "id": "6f0fb441-9905-43f9-bd2b-c5b70c267674",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "filters": [
+      {
+        "path": "status",
+        "value": [],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Default",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "invoiceDate",
+      "dueDate",
+      "customer",
+      "totalAmount",
+      "orderId",
+      "documents",
+      "poNum",
+      "deliveryTime",
+      "platformTags",
+      "refNum",
+      "subTotal",
+      "loadTenderNum",
+      "sentAt",
+      "lastModifiedAt",
+      "lastExportedAt"
+    ],
+    "createdAt": "2024-04-11T02:41:21.449Z",
+    "createdBy": "7714f09e-9962-4808-ae9f-045aa8783489",
+    "isDefault": false,
+    "updatedAt": "2024-04-11T02:45:47.864Z",
+    "updatedBy": "7714f09e-9962-4808-ae9f-045aa8783489",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "status",
+      "invoiceDate",
+      "dueDate"
+    ],
+    "orderByColumnKey": "dueDate",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

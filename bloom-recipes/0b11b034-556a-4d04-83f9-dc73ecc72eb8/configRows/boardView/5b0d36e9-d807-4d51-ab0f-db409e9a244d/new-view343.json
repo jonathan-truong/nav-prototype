@@ -1,0 +1,51 @@
+{
+  "id": "73f3f437-1201-4523-9b3f-ac30ef742457",
+  "type": "boardView",
+  "name": "New view343",
+  "json": {
+    "name": "New view343",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "5b0d36e9-d807-4d51-ab0f-db409e9a244d",
+    "filters": [],
+    "labelId": "New view343",
+    "ordinal": 4,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "totalMiles",
+      "platformTags",
+      "drivers"
+    ],
+    "createdAt": "2025-07-16T16:05:43.221Z",
+    "createdBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "isDefault": false,
+    "updatedAt": "2025-07-16T16:05:43.221Z",
+    "updatedBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "visibility": "board",
+    "description": "This is a Board of previous shipments you have ran to reference for quoting",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "079f517a-2aad-4355-a36d-072b0b75fbb9",
+  "type": "boardView",
+  "name": "New Orders",
+  "json": {
+    "id": "079f517a-2aad-4355-a36d-072b0b75fbb9",
+    "name": "New Orders",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "c41c84c0-1efb-4f93-92d2-881e88f33943",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "New Orders",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "accountManagers",
+      "poNum"
+    ],
+    "createdAt": "2025-10-02T13:42:36.613Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-10-02T13:42:36.613Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+    "columnWidths": {},
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

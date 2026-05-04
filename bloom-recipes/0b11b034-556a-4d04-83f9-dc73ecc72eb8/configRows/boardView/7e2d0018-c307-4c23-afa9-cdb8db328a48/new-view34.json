@@ -1,0 +1,47 @@
+{
+  "id": "bbb221f1-142d-4883-99c8-ff44eef77035",
+  "type": "boardView",
+  "name": "New view34",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "7e2d0018-c307-4c23-afa9-cdb8db328a48",
+    "filters": [],
+    "labelId": "New view34",
+    "ordinal": 3,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalCommoditiesQuantity",
+      "totalCommoditiesWeight",
+      "totalMiles",
+      "platformTags",
+      "drivers"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board of previous shipments you have ran to reference for quoting",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "customer"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

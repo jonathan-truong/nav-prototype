@@ -1,0 +1,43 @@
+{
+  "id": "2ab53c8e-c909-416b-a1de-5bdb588f41d6",
+  "type": "boardView",
+  "name": "new",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "9e671f11-61f4-4c27-9073-91af8ddc57a5",
+    "filters": [],
+    "labelId": "new",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "drivers",
+      "assets",
+      "lastKnownLocation",
+      "manifestStartDate",
+      "totalStops",
+      "manifestEndDate",
+      "totalMiles",
+      "lastDelivery",
+      "totalCommoditiesQuantity",
+      "totalWeight",
+      "name",
+      "dispatchedAt",
+      "specialInstructions",
+      "tags"
+    ],
+    "createdAt": "2025-04-16T14:30:31.611Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-04-16T14:30:31.611Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

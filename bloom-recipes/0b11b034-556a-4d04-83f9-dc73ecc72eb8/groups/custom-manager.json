@@ -1,0 +1,4640 @@
+{
+  "configKey": "group",
+  "key": "$custom_manager",
+  "json": {
+    "key": "$custom_manager",
+    "isGroup": true,
+    "isMixin": true,
+    "objects": [
+      {
+        "key": "manifest",
+        "fields": [
+          {
+            "key": "orderedStops",
+            "before": "canvas",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "canvas",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "powerUnitNumber",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "powerUnitNumber",
+            "before": "trackingPhoneNumber",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "macropointTrackingEndTime",
+            "before": "$widgetsToClose",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$widgetsToClose",
+            "before": "totalCostExchangeRate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalCostExchangeRate",
+            "before": "totalCostInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalCostInOrgCurrency",
+            "before": "claimThisOrder__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "claimThisOrder__c",
+            "before": "shipperNotes",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "shipperNotes",
+            "before": "consigneeNotes",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "consigneeNotes",
+            "before": "$widgetToOpen",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$widgetToOpen",
+            "before": "paymentItems",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "paymentItems",
+            "before": "testBreak__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "testBreak__c",
+            "key": "testBreak__c",
+            "before": "orderTags__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderTags__c",
+            "key": "orderTags__c",
+            "before": "orderTagLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderTagLookup__c",
+            "key": "orderTagLookup__c",
+            "before": "hughsep10__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsep10__c",
+            "key": "hughsep10__c",
+            "before": "hughsep10B__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsep10B__c",
+            "key": "hughsep10B__c",
+            "before": "manifestTotalCostCustom__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manifestTotalCostCustom__c",
+            "key": "manifestTotalCostCustom__c",
+            "before": "totalBuyQuoteCustom__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalBuyQuoteCustom__c",
+            "key": "totalBuyQuoteCustom__c",
+            "before": "totalRev__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalRev__c",
+            "key": "totalRev__c",
+            "before": "totalRevSum__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalRevSum__c",
+            "key": "totalRevSum__c",
+            "before": "totalRevSumMargin__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalRevSumMargin__c",
+            "key": "totalRevSumMargin__c",
+            "before": "orderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderStatus__c",
+            "key": "orderStatus__c",
+            "before": "legDeclaredValues__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "legDeclaredValues__c",
+            "key": "legDeclaredValues__c",
+            "before": "totalDeclaredValue__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalDeclaredValue__c",
+            "key": "totalDeclaredValue__c",
+            "before": "pickupContainers__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pickupContainers__c",
+            "key": "pickupContainers__c",
+            "before": "stopsLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stopsLookup__c",
+            "key": "stopsLookup__c",
+            "before": "formulaTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest__c",
+            "key": "formulaTest__c",
+            "before": "multiselect__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "multiselect__c",
+            "key": "multiselect__c",
+            "before": "scheduledDeparture__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "scheduledDeparture__c",
+            "key": "scheduledDeparture__c",
+            "before": "shipperCity__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "shipperCity__c",
+            "key": "shipperCity__c",
+            "before": "shipperState__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "shipperState__c",
+            "key": "shipperState__c",
+            "before": "shippingState__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "shippingState__c",
+            "key": "shippingState__c",
+            "before": "carrierInvStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "carrierInvStatus__c",
+            "key": "carrierInvStatus__c",
+            "before": "kpTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "kpTest__c",
+            "key": "kpTest__c",
+            "before": "firstStopLocationSelfLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "firstStopLocationSelfLookup__c",
+            "key": "firstStopLocationSelfLookup__c",
+            "before": "zAndoTest1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoTest1__c",
+            "key": "zAndoTest1__c",
+            "before": "zAndoTest2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoTest2__c",
+            "key": "zAndoTest2__c",
+            "before": "zAndoTest3__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoTest3__c",
+            "key": "zAndoTest3__c",
+            "before": "zAndoTest4__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoTest4__c",
+            "key": "zAndoTest4__c",
+            "before": "testIndex__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testIndex__c",
+            "key": "testIndex__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "bill",
+        "fields": [
+          {
+            "key": "documents",
+            "before": "$createdByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdByFullName",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "tags",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "tags",
+            "before": "totalExchangeRate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalExchangeRate",
+            "before": "totalInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalInOrgCurrency",
+            "before": "canvas",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "canvas",
+            "before": "$createdAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdAt",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "invoiceS__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "invoiceS__c",
+            "key": "invoiceS__c",
+            "before": "freightAuditAndPay__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "freightAuditAndPay__c",
+            "key": "freightAuditAndPay__c",
+            "before": "freightAuditAndPay2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "freightAuditAndPay2__c",
+            "key": "freightAuditAndPay2__c",
+            "before": "manifestStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manifestStatus__c",
+            "key": "manifestStatus__c",
+            "before": "orderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderStatus__c",
+            "key": "orderStatus__c",
+            "before": "manifestStatus2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manifestStatus2__c",
+            "key": "manifestStatus2__c",
+            "before": "carrierInvoiceOnFile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "carrierInvoiceOnFile__c",
+            "key": "carrierInvoiceOnFile__c",
+            "before": "now__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "now__c",
+            "key": "now__c",
+            "before": "paidOn__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "paidOn__c",
+            "key": "paidOn__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "asset",
+        "fields": [
+          {
+            "key": "canvas",
+            "before": "$createdByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdByFullName",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "$createdAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdAt",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "terminalId",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "terminalId",
+            "before": "lineItems",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "lineItems",
+            "before": "terminalProvider",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "terminalProvider",
+            "before": "lastSeenTest__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "lastSeenTest__c",
+            "key": "lastSeenTest__c",
+            "before": "newTest1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newTest1__c",
+            "key": "newTest1__c",
+            "before": "newTest2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newTest2__c",
+            "key": "newTest2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "commodity",
+        "fields": [
+          {
+            "key": "canvas",
+            "before": "declaredValue",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "declaredValue",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "vin__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "vin__c",
+            "key": "vin__c",
+            "before": "l__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "l__c",
+            "key": "l__c",
+            "before": "w__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "w__c",
+            "key": "w__c",
+            "before": "h__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "h__c",
+            "key": "h__c",
+            "before": "volumeAir__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "volumeAir__c",
+            "key": "volumeAir__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "order",
+        "fields": [
+          {
+            "key": "fullId",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "status",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "shipper",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "consignee",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "requestedPickupWindow",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "requestedDeliveryWindow",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "actualPickupDate",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "actualDeliveryDate",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "specialInstructions",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "customer",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "csrs",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "accountManagers",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "commissionees",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "partner",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "partners",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "poNum",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "refNum",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "loadTenderNum",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalMiles",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "estimatedDuration",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "estimatedDurationFormatted",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "customsBroker",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "portOfEntry",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "declaredValue",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "currentLocation",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastSeenTime",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "accessorials",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "tags",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "tasks",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "sellQuote",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "buyQuotes",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "documents",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "billingParty",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lineItems",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "assetType",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "serviceType",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "services",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "assets",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "invoices",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "invoice",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "documentCountLabel",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastKnownLocation",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "assetWithLastKnownLocation",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "origins",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "destinations",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "firstLeg",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "pickups",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "pickedUpAt",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "deliveries",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "deliveredAt",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "pickupWindows",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "deliveryWindows",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "firstOriginStop",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "firstPickupTask",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "firstPickupTaskOriginAddress",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "firstPickupTaskTime",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastDestinationStop",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastDeliveryTask",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastDeliveryTaskDestinationAddress",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "shipperNotes",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "consigneeNotes",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "commodities",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalCommoditiesWeight",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalCommoditiesQuantity",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalAmount",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalEarnings",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalCost",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "miscExpensesTotalLabel",
+            "before": "integrationDATLoadId",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "integrationDATLoadId",
+            "before": "totalEarningsExchangeRate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalEarningsExchangeRate",
+            "before": "totalCostExchangeRate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "margin",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "multiCurrencyMargin",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "earnings",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "costs",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "stops",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "manifests",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "drivers",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "mapMarkers",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "isMultiStop",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "isActive",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "orderETAStatus",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "deliveryEta",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaLastUpdated",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaLastUpdatedFormatted",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalDriverCosts",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "totalMargin",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "payStubs",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "powerUnitNumber",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "trackingPhoneNumber",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "driverName",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "isTrackingEnabled",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "dataSourceLabel",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "lastUpdated",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "autoETAUpdatesEnabled",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "automaticUpdates",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaDelayNotifyEnabled",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaDelayNotifyLabel",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaDelayNotifyLimit",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "etaDelayLimitTime",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "integrationTruckstopUpdatedDate",
+            "before": "carrierBidQuote",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "carrierBidQuote",
+            "before": "carrierBidQuoteSummary",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "carrierBidQuoteSummary",
+            "before": "isTruckstopUpdateRequired",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isTruckstopUpdateRequired",
+            "before": "totalEarningsInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalEarningsInOrgCurrency",
+            "before": "tedSuggestionsStatus",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "tedSuggestionsStatus",
+            "before": "totalCostInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalCostInOrgCurrency",
+            "before": "missingDocuments",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "missingDocuments",
+            "before": "marginInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "marginInOrgCurrency",
+            "before": "integrationDATPostedBy",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "integrationDATPostedBy",
+            "before": "customerDistance",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "customerDistance",
+            "before": "integrationDATCreatedDate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "integrationDATCreatedDate",
+            "before": "formattedCustomerDistance",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "",
+            "key": "formattedCustomerDistance",
+            "before": "integrationDATUpdatedDate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "integrationDATUpdatedDate",
+            "before": "llmPromptSuggestions",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "llmPromptSuggestions",
+            "before": "isDATUpdateRequired",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isDATUpdateRequired",
+            "before": "selectLookup__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "selectLookup__c",
+            "key": "selectLookup__c",
+            "before": "division__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "division__c",
+            "key": "division__c",
+            "before": "testField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testField__c",
+            "key": "testField__c",
+            "before": "newField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newField__c",
+            "key": "newField__c",
+            "before": "task__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "task__c",
+            "key": "task__c",
+            "before": "testSelect__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testSelect__c",
+            "key": "testSelect__c",
+            "before": "testMaxNumber__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testMaxNumber__c",
+            "key": "testMaxNumber__c",
+            "before": "testCustomerConnection__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testCustomerConnection__c",
+            "key": "testCustomerConnection__c",
+            "before": "timeOfArrival__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "timeOfArrival__c",
+            "key": "timeOfArrival__c",
+            "before": "deliveredAt__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "deliveredAt__c",
+            "key": "deliveredAt__c",
+            "before": "pickupCity__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pickupCity__c",
+            "key": "pickupCity__c",
+            "before": "moneyLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "moneyLookup__c",
+            "key": "moneyLookup__c",
+            "before": "statusLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusLookup__c",
+            "key": "statusLookup__c",
+            "before": "seyanTestField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "seyanTestField__c",
+            "key": "seyanTestField__c",
+            "before": "automatedPartner__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "automatedPartner__c",
+            "key": "automatedPartner__c",
+            "before": "expiryDateTime",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "",
+            "key": "expiryDateTime",
+            "before": "shipmentID",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "shipmentID",
+            "key": "shipmentID",
+            "before": "docTypes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "docTypes__c",
+            "key": "docTypes__c",
+            "before": "hasPod__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hasPod__c",
+            "key": "hasPod__c",
+            "before": "pod__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pod__c",
+            "key": "pod__c",
+            "before": "pars__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pars__c",
+            "key": "pars__c",
+            "before": "deliveryDateTestMightBreakOrg__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "deliveryDateTestMightBreakOrg__c",
+            "key": "deliveryDateTestMightBreakOrg__c",
+            "before": "actualDeliveryDateLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "actualDeliveryDateLookup__c",
+            "key": "actualDeliveryDateLookup__c",
+            "before": "assignedCarrierS__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "assignedCarrierS__c",
+            "key": "assignedCarrierS__c",
+            "before": "assignedCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "assignedCarrier__c",
+            "key": "assignedCarrier__c",
+            "before": "carrierFilter__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "carrierFilter__c",
+            "key": "carrierFilter__c",
+            "before": "testField1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testField1__c",
+            "key": "testField1__c",
+            "before": "bills__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "bills__c",
+            "key": "bills__c",
+            "before": "brokenField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "brokenField__c",
+            "key": "brokenField__c",
+            "before": "thisFieldFixesIt__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "thisFieldFixesIt__c",
+            "key": "thisFieldFixesIt__c",
+            "before": "brick__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "brick__c",
+            "key": "brick__c",
+            "before": "deliveryDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "deliveryDate__c",
+            "key": "deliveryDate__c",
+            "before": "cuFt__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "cuFt__c",
+            "key": "cuFt__c",
+            "before": "testDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testDate__c",
+            "key": "testDate__c",
+            "before": "shtatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "shtatus__c",
+            "key": "shtatus__c",
+            "before": "shtatus2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "shtatus2__c",
+            "key": "shtatus2__c",
+            "before": "ryans__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "ryans__c",
+            "key": "ryans__c",
+            "before": "testboolean__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testboolean__c",
+            "key": "testboolean__c",
+            "before": "cowUnits__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "cowUnits__c",
+            "key": "cowUnits__c",
+            "before": "cargoValue__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "cargoValue__c",
+            "key": "cargoValue__c",
+            "before": "customCostTotal__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customCostTotal__c",
+            "key": "customCostTotal__c",
+            "before": "number__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "number__c",
+            "key": "number__c",
+            "before": "partnerStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerStatus__c",
+            "key": "partnerStatus__c",
+            "before": "cities__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "cities__c",
+            "key": "cities__c",
+            "before": "newMeasurement__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newMeasurement__c",
+            "key": "newMeasurement__c",
+            "before": "bestField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "bestField__c",
+            "key": "bestField__c",
+            "before": "toggle__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "toggle__c",
+            "key": "toggle__c",
+            "before": "wow__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "wow__c",
+            "key": "wow__c",
+            "before": "formulaTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest__c",
+            "key": "formulaTest__c",
+            "before": "bustedFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "bustedFormula__c",
+            "key": "bustedFormula__c",
+            "before": "hugh22__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hugh22__c",
+            "key": "hugh22__c",
+            "before": "containerNo__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "containerNo__c",
+            "key": "containerNo__c",
+            "before": "margin__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "margin__c",
+            "key": "margin__c",
+            "before": "brokenFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "brokenFormula__c",
+            "key": "brokenFormula__c",
+            "before": "jasonTMeasurement__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "jasonTMeasurement__c",
+            "key": "jasonTMeasurement__c",
+            "before": "miles50__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "miles50__c",
+            "key": "miles50__c",
+            "before": "ten__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "ten__c",
+            "key": "ten__c",
+            "before": "newFormulaField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newFormulaField__c",
+            "key": "newFormulaField__c",
+            "before": "hughsLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsLookup__c",
+            "key": "hughsLookup__c",
+            "before": "hughsLookup2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsLookup2__c",
+            "key": "hughsLookup2__c",
+            "before": "formulaTest2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest2__c",
+            "key": "formulaTest2__c",
+            "before": "101__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "101__c",
+            "key": "101__c",
+            "before": "miles1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "miles1__c",
+            "key": "miles1__c",
+            "before": "temperature__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "temperature__c",
+            "key": "temperature__c",
+            "before": "tankerVolume__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tankerVolume__c",
+            "key": "tankerVolume__c",
+            "before": "newMeasure__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newMeasure__c",
+            "key": "newMeasure__c",
+            "before": "fieldToHide__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "fieldToHide__c",
+            "key": "fieldToHide__c",
+            "before": "durationInMinutes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "durationInMinutes__c",
+            "key": "durationInMinutes__c",
+            "before": "5SalesCommission__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "5SalesCommission__c",
+            "key": "5SalesCommission__c",
+            "before": "milesToKilometers__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "milesToKilometers__c",
+            "key": "milesToKilometers__c",
+            "before": "marginPerMile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "marginPerMile__c",
+            "key": "marginPerMile__c",
+            "before": "testFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testFormula__c",
+            "key": "testFormula__c",
+            "before": "24Field__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "24Field__c",
+            "key": "24Field__c",
+            "before": "perMileProfitability__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "perMileProfitability__c",
+            "key": "perMileProfitability__c",
+            "before": "percentageMargin__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "percentageMargin__c",
+            "key": "percentageMargin__c",
+            "before": "newFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newFormula__c",
+            "key": "newFormula__c",
+            "before": "invalidFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "invalidFormula__c",
+            "key": "invalidFormula__c",
+            "before": "tonysField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tonysField__c",
+            "key": "tonysField__c",
+            "before": "erroredFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "erroredFormula__c",
+            "key": "erroredFormula__c",
+            "before": "isThisOnABoard__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "isThisOnABoard__c",
+            "key": "isThisOnABoard__c",
+            "before": "newTestFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "newTestFormula__c",
+            "key": "newTestFormula__c",
+            "before": "equipmentType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "equipmentType__c",
+            "key": "equipmentType__c",
+            "before": "costRate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "costRate__c",
+            "key": "costRate__c",
+            "before": "costRatePerMile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "costRatePerMile__c",
+            "key": "costRatePerMile__c",
+            "before": "customMeasure1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customMeasure1__c",
+            "key": "customMeasure1__c",
+            "before": "manifestCustomerNames__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manifestCustomerNames__c",
+            "key": "manifestCustomerNames__c",
+            "before": "hughsCustomField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsCustomField__c",
+            "key": "hughsCustomField__c",
+            "before": "1Test__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "1Test__c",
+            "key": "1Test__c",
+            "before": "stopsLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stopsLookup__c",
+            "key": "stopsLookup__c",
+            "before": "commoditiesWeightFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "commoditiesWeightFormula__c",
+            "key": "commoditiesWeightFormula__c",
+            "before": "ratePerMile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "ratePerMile__c",
+            "key": "ratePerMile__c",
+            "before": "profitPercentage__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "profitPercentage__c",
+            "key": "profitPercentage__c",
+            "before": "totalCommodityWeightFormula__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalCommodityWeightFormula__c",
+            "key": "totalCommodityWeightFormula__c",
+            "before": "commodityWeights__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "commodityWeights__c",
+            "key": "commodityWeights__c",
+            "before": "timeToDelivery__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "timeToDelivery__c",
+            "key": "timeToDelivery__c",
+            "before": "formulaTest3__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest3__c",
+            "key": "formulaTest3__c",
+            "before": "zAndoFormula1__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoFormula1__c",
+            "key": "zAndoFormula1__c",
+            "before": "zAndoMeasurement__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoMeasurement__c",
+            "key": "zAndoMeasurement__c",
+            "before": "zAndoNumber__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zAndoNumber__c",
+            "key": "zAndoNumber__c",
+            "before": "now__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "now__c",
+            "key": "now__c",
+            "before": "testFormula5__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testFormula5__c",
+            "key": "testFormula5__c",
+            "before": "test__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "test__c",
+            "key": "test__c",
+            "before": "formulaTest4__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest4__c",
+            "key": "formulaTest4__c",
+            "before": "costCad__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "costCad__c",
+            "key": "costCad__c",
+            "before": "testNumber__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "testNumber__c",
+            "key": "testNumber__c",
+            "before": "lookupTest6__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "lookupTest6__c",
+            "key": "lookupTest6__c",
+            "before": "customMoney__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customMoney__c",
+            "key": "customMoney__c",
+            "before": "assignThisCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "assignThisCarrier__c",
+            "key": "assignThisCarrier__c",
+            "before": "customerName__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customerName__c",
+            "key": "customerName__c",
+            "before": "driverName__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "driverName__c",
+            "key": "driverName__c",
+            "before": "originCity__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "originCity__c",
+            "key": "originCity__c",
+            "before": "originState__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "originState__c",
+            "key": "originState__c",
+            "before": "destinationCity__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "destinationCity__c",
+            "key": "destinationCity__c",
+            "before": "destinationState__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "destinationState__c",
+            "key": "destinationState__c",
+            "before": "pURegion__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "pURegion__c",
+            "key": "pURegion__c",
+            "before": "delRegion__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "delRegion__c",
+            "key": "delRegion__c",
+            "before": "pUAppointment__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "pUAppointment__c",
+            "key": "pUAppointment__c",
+            "before": "delAppointment__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "delAppointment__c",
+            "key": "delAppointment__c",
+            "before": "appointmentNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "appointmentNotes__c",
+            "key": "appointmentNotes__c",
+            "before": "manifestStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "manifestStatus__c",
+            "key": "manifestStatus__c",
+            "before": "etaStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "etaStatus__c",
+            "key": "etaStatus__c",
+            "before": "maxBuy__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "maxBuy__c",
+            "key": "maxBuy__c",
+            "before": "brokerAgent__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "brokerAgent__c",
+            "key": "brokerAgent__c",
+            "before": "brokerAgentEmail__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "brokerAgentEmail__c",
+            "key": "brokerAgentEmail__c",
+            "before": "brokerAgentPhone__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "brokerAgentPhone__c",
+            "key": "brokerAgentPhone__c",
+            "before": "apptReqdPU__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "apptReqdPU__c",
+            "key": "apptReqdPU__c",
+            "before": "apptReqdAtDel__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "apptReqdAtDel__c",
+            "key": "apptReqdAtDel__c",
+            "before": "equipment__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "equipment__c",
+            "key": "equipment__c",
+            "before": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "before": "claimStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "claimStatus__c",
+            "key": "claimStatus__c",
+            "before": "claimAmount__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "claimAmount__c",
+            "key": "claimAmount__c",
+            "before": "claimType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "claimType__c",
+            "key": "claimType__c",
+            "before": "claimSubmissionDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "claimSubmissionDate__c",
+            "key": "claimSubmissionDate__c",
+            "before": "reportedByClaims__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "reportedByClaims__c",
+            "key": "reportedByClaims__c",
+            "before": "responsibleParty__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "responsibleParty__c",
+            "key": "responsibleParty__c",
+            "before": "notesClaims__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "notesClaims__c",
+            "key": "notesClaims__c",
+            "before": "reportedOnClaims__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "reportedOnClaims__c",
+            "key": "reportedOnClaims__c",
+            "before": "totalFreightValueClaims__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "totalFreightValueClaims__c",
+            "key": "totalFreightValueClaims__c",
+            "before": "carrierInformation__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "carrierInformation__c",
+            "key": "carrierInformation__c",
+            "before": "grossMargin__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "grossMargin__c",
+            "key": "grossMargin__c",
+            "before": "onTimePickUp__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "onTimePickUp__c",
+            "key": "onTimePickUp__c",
+            "before": "onTimeDelivery__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "onTimeDelivery__c",
+            "key": "onTimeDelivery__c",
+            "before": "pickUpArrivalDateTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pickUpArrivalDateTime__c",
+            "key": "pickUpArrivalDateTime__c",
+            "before": "pickUpCompletionDateTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pickUpCompletionDateTime__c",
+            "key": "pickUpCompletionDateTime__c",
+            "before": "deliveryArrivalDateTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "deliveryArrivalDateTime__c",
+            "key": "deliveryArrivalDateTime__c",
+            "before": "deliveryCompletionDateTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "deliveryCompletionDateTime__c",
+            "key": "deliveryCompletionDateTime__c",
+            "before": "costPerMile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "costPerMile__c",
+            "key": "costPerMile__c",
+            "before": "zRequestedDuration__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zRequestedDuration__c",
+            "key": "zRequestedDuration__c",
+            "before": "today__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "today__c",
+            "key": "today__c",
+            "before": "externalUrl__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "externalUrl__c",
+            "key": "externalUrl__c",
+            "before": "link__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "link__c",
+            "key": "link__c",
+            "before": "attachedLink__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "attachedLink__c",
+            "key": "attachedLink__c",
+            "before": "dispatcher__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "dispatcher__c",
+            "key": "dispatcher__c",
+            "before": "zDispatcher__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zDispatcher__c",
+            "key": "zDispatcher__c",
+            "before": "derekTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "derekTest__c",
+            "key": "derekTest__c",
+            "before": "manualLocation__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manualLocation__c",
+            "key": "manualLocation__c",
+            "before": "quoteLineItemTypes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "quoteLineItemTypes__c",
+            "key": "quoteLineItemTypes__c",
+            "before": "trailerId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "trailerId__c",
+            "key": "trailerId__c",
+            "before": "numberOfStops__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "numberOfStops__c",
+            "key": "numberOfStops__c",
+            "before": "sdf__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "sdf__c",
+            "key": "sdf__c",
+            "before": "manifestNickname__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "manifestNickname__c",
+            "key": "manifestNickname__c",
+            "before": "bikeType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "bikeType__c",
+            "key": "bikeType__c",
+            "before": "concatTEst__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "concatTEst__c",
+            "key": "concatTEst__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "partner",
+        "fields": [
+          {
+            "key": "canvas",
+            "before": "complianceOverrideExpiresAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "complianceOverrideExpiresAt",
+            "before": "complianceOverrideReason",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "complianceOverrideSetBy",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "$createdByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdByFullName",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "rateDateCalculationSource",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "rateDateCalculationSource",
+            "before": "fmcsaCarrier",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "fmcsaCarrier",
+            "before": "mcIdFMCSA",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "qcMobileURL",
+            "before": "tariffs",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "tariffs",
+            "before": "defaultCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "defaultCurrency",
+            "before": "$widgetsToClose",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$widgetsToClose",
+            "before": "externalVendorId",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "externalVendorId",
+            "before": "insuranceExpiration__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "insuranceExpiration__c",
+            "before": "$createdAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdAt",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "insuranceProvider__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "insuranceProvider__c",
+            "before": "tradeReference",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "tradeReference",
+            "before": "insurancePolicyNumber__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "insurancePolicyNumber__c",
+            "before": "partnerCompliances",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "partnerCompliances",
+            "before": "$widgetToOpen",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$widgetToOpen",
+            "before": "agreementDate__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "agreementDate__c",
+            "key": "agreementDate__c",
+            "before": "liabilityInsurance__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "liabilityInsurance__c",
+            "key": "liabilityInsurance__c",
+            "before": "contractStartDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "contractStartDate__c",
+            "key": "contractStartDate__c",
+            "before": "contractEndDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "contractEndDate__c",
+            "key": "contractEndDate__c",
+            "before": "geoTabVerified__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "geoTabVerified__c",
+            "key": "geoTabVerified__c",
+            "before": "partnerIdLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerIdLookup__c",
+            "key": "partnerIdLookup__c",
+            "before": "overallRating__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "overallRating__c",
+            "key": "overallRating__c",
+            "before": "liabilityInsuranceExpiryDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "liabilityInsuranceExpiryDate__c",
+            "key": "liabilityInsuranceExpiryDate__c",
+            "before": "cargoInsuranceExpiryDate__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "cargoInsuranceExpiryDate__c",
+            "key": "cargoInsuranceExpiryDate__c",
+            "before": "workerComp__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "workerComp__c",
+            "key": "workerComp__c",
+            "before": "capabilities__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "capabilities__c",
+            "key": "capabilities__c",
+            "before": "wsib__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "wsib__c",
+            "key": "wsib__c",
+            "before": "liabilityInsuranceCoverage__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "liabilityInsuranceCoverage__c",
+            "key": "liabilityInsuranceCoverage__c",
+            "before": "cargoInsuranceCoverage__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "cargoInsuranceCoverage__c",
+            "key": "cargoInsuranceCoverage__c",
+            "before": "notes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "notes__c",
+            "key": "notes__c",
+            "before": "insuranceExpiry__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": true,
+            "permissionType": "viewer"
+          },
+          {
+            "id": "insuranceExpiry__c",
+            "key": "insuranceExpiry__c",
+            "before": "policyNumber__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "policyNumber__c",
+            "key": "policyNumber__c",
+            "before": "insuranceAmount__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "insuranceAmount__c",
+            "key": "insuranceAmount__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "customer",
+        "fields": [
+          {
+            "key": "etaDelayNotifyLabel",
+            "before": "distanceProviderUsed",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "distanceProviderUsed",
+            "before": "distanceProviderVersion",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "distanceProviderVersion",
+            "before": "etaDelayNotifyLimit",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "etaDelayNotifyLimit",
+            "before": "dedicatedCarrier__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "dedicatedCarrier__c",
+            "key": "dedicatedCarrier__c",
+            "before": "customsBroker__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customsBroker__c",
+            "key": "customsBroker__c",
+            "before": "moneyField__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "moneyField__c",
+            "key": "moneyField__c",
+            "before": "emailNotifs__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "emailNotifs__c",
+            "key": "emailNotifs__c",
+            "before": "customerOrders__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customerOrders__c",
+            "key": "customerOrders__c",
+            "before": "creditLimit__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "creditLimit__c",
+            "key": "creditLimit__c",
+            "before": "countableQuotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "countableQuotes__c",
+            "key": "countableQuotes__c",
+            "before": "assignedTo__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "assignedTo__c",
+            "key": "assignedTo__c",
+            "before": "usId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "usId__c",
+            "key": "usId__c",
+            "before": "caId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "caId__c",
+            "key": "caId__c",
+            "before": "usCustomerId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "usCustomerId__c",
+            "key": "usCustomerId__c",
+            "before": "caCustomerId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "caCustomerId__c",
+            "key": "caCustomerId__c",
+            "before": "requiredDocs__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "requiredDocs__c",
+            "key": "requiredDocs__c",
+            "before": "customerSentiment__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customerSentiment__c",
+            "key": "customerSentiment__c",
+            "before": "leadInfo__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "leadInfo__c",
+            "key": "leadInfo__c",
+            "before": "leadSentiment__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "leadSentiment__c",
+            "key": "leadSentiment__c",
+            "before": "leadStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "leadStatus__c",
+            "key": "leadStatus__c",
+            "before": "firstName__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "firstName__c",
+            "key": "firstName__c",
+            "before": "lastName__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "lastName__c",
+            "key": "lastName__c",
+            "before": "jobTitle__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "jobTitle__c",
+            "key": "jobTitle__c",
+            "before": "leadSource__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "leadSource__c",
+            "key": "leadSource__c",
+            "before": "leadNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "leadNotes__c",
+            "key": "leadNotes__c",
+            "before": "lastContacted__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "lastContacted__c",
+            "key": "lastContacted__c",
+            "before": "communicationType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "communicationType__c",
+            "key": "communicationType__c",
+            "before": "notesFromInteraction__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "notesFromInteraction__c",
+            "key": "notesFromInteraction__c",
+            "before": "nextFollowUp__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "nextFollowUp__c",
+            "key": "nextFollowUp__c",
+            "before": "followUpActionItems__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "followUpActionItems__c",
+            "key": "followUpActionItems__c",
+            "before": "relationship__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "relationship__c",
+            "key": "relationship__c",
+            "before": "website__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "website__c",
+            "key": "website__c",
+            "before": "zone__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "zone__c",
+            "key": "zone__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "invoice",
+        "fields": [
+          {
+            "key": "isActive",
+            "before": "totalExchangeRate",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalExchangeRate",
+            "before": "totalInOrgCurrency",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "totalInOrgCurrency",
+            "before": "codatExternalInvoiceId",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "codatExternalInvoiceId",
+            "before": "paymentTerm",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "paymentTerm",
+            "before": "lastExportedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "lastExportedAt",
+            "before": "errorMessages",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "errorMessages",
+            "before": "invoiceExportStatus",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "invoiceExportStatus",
+            "before": "orderDeliveryTime__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "orderDeliveryTime__c",
+            "key": "orderDeliveryTime__c",
+            "before": "contractedTotal__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "contractedTotal__c",
+            "key": "contractedTotal__c",
+            "before": "dueDatePassed__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "dueDatePassed__c",
+            "key": "dueDatePassed__c",
+            "before": "formulaTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "formulaTest__c",
+            "key": "formulaTest__c",
+            "before": "invoiceDateCustom__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "invoiceDateCustom__c",
+            "key": "invoiceDateCustom__c",
+            "before": "paymentDays__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "paymentDays__c",
+            "key": "paymentDays__c",
+            "before": "daysToDue__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "daysToDue__c",
+            "key": "daysToDue__c",
+            "before": "organizationId__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "organizationId__c",
+            "key": "organizationId__c",
+            "before": "billStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "billStatus__c",
+            "key": "billStatus__c",
+            "before": "invoiceNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "invoiceNotes__c",
+            "key": "invoiceNotes__c",
+            "before": "podOnFile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "podOnFile__c",
+            "key": "podOnFile__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "quote",
+        "fields": [
+          {
+            "key": "stops",
+            "before": "buyQuoteBidStatus",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "buyQuoteBidStatus",
+            "before": "isMultiStop",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isMultiStop",
+            "before": "tedSuggestionsStatus",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "tedSuggestionsStatus",
+            "before": "secondaryDocuments",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "secondaryDocuments",
+            "before": "orderFromBuyQuotes",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "orderFromBuyQuotes",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "isTestData",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isTestData",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "canvas",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "canvas",
+            "before": "llmPromptSuggestions",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "llmPromptSuggestions",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "quoteRequestNotes__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "quoteRequestNotes__c",
+            "key": "quoteRequestNotes__c",
+            "before": "helloWorld__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "helloWorld__c",
+            "key": "helloWorld__c",
+            "before": "test__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "test__c",
+            "key": "test__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "task",
+        "fields": [
+          {
+            "key": "isLeg",
+            "before": "allocatedBookingPercentage",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedBookingPercentage",
+            "before": "allocatedCostPercentage",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "connectedOrders",
+            "before": "legOriginCityState",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legOriginCityState",
+            "before": "allocatedBookingAmount",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedBookingAmount",
+            "before": "allocatedCostAmount",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedCostAmount",
+            "before": "legOriginPostalCode",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legOriginPostalCode",
+            "before": "allocations",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocations",
+            "before": "allocatedRevenue",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedRevenue",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "allocatedExpense",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedExpense",
+            "before": "geofenceArrivalTime",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "geofenceArrivalTime",
+            "before": "geofenceDepartureTime",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "geofenceDepartureTime",
+            "before": "allocatedMargin",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedMargin",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "allocatedMarginPercentage",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "allocatedMarginPercentage",
+            "before": "legPositionInOrder",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legPositionInOrder",
+            "before": "legOrdinal",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legOrdinal",
+            "before": "legDestinationCityState",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legDestinationCityState",
+            "before": "stopAddress",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "stopAddress",
+            "before": "legDestinationPostalCode",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "legDestinationPostalCode",
+            "before": "legPickupTime__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "legPickupTime__c",
+            "key": "legPickupTime__c",
+            "before": "legDeliveryTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "legDeliveryTime__c",
+            "key": "legDeliveryTime__c",
+            "before": "originRequestedTimeV2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "originRequestedTimeV2__c",
+            "key": "originRequestedTimeV2__c",
+            "before": "mathMoney__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "mathMoney__c",
+            "key": "mathMoney__c",
+            "before": "hughsLookup__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsLookup__c",
+            "key": "hughsLookup__c",
+            "before": "hughsLookup2__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hughsLookup2__c",
+            "key": "hughsLookup2__c",
+            "before": "customerSurfaceTest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customerSurfaceTest__c",
+            "key": "customerSurfaceTest__c",
+            "before": "stopLocation__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stopLocation__c",
+            "key": "stopLocation__c",
+            "before": "declaredValue__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declaredValue__c",
+            "key": "declaredValue__c",
+            "before": "taskSpecificAssets__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "taskSpecificAssets__c",
+            "key": "taskSpecificAssets__c",
+            "before": "timeInTransit__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "timeInTransit__c",
+            "key": "timeInTransit__c",
+            "before": "hourBeforeDelivery__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "hourBeforeDelivery__c",
+            "key": "hourBeforeDelivery__c",
+            "before": "detentionTime__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "detentionTime__c",
+            "key": "detentionTime__c",
+            "before": "orderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderStatus__c",
+            "key": "orderStatus__c",
+            "before": "pURegion__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pURegion__c",
+            "key": "pURegion__c",
+            "before": "delRegion__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "delRegion__c",
+            "key": "delRegion__c",
+            "before": "orderType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderType__c",
+            "key": "orderType__c",
+            "before": "pod__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "pod__c",
+            "key": "pod__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "driverProfile",
+        "fields": [
+          {
+            "key": "name",
+            "before": "$createdByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdByFullName",
+            "before": "$updatedByFullName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedByFullName",
+            "before": "userProfile",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "userProfile",
+            "before": "$createdAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdAt",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "canvas",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "canvas",
+            "before": "orgId",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "orgId",
+            "before": "firstName",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "documents",
+            "before": "isActive",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "isActive",
+            "before": "insuranceExpiry__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "insuranceExpiry__c",
+            "key": "insuranceExpiry__c",
+            "before": "yearsOfService__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "yearsOfService__c",
+            "key": "yearsOfService__c",
+            "before": "currentManifest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "currentManifest__c",
+            "key": "currentManifest__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "financialLineItem",
+        "fields": [
+          {
+            "key": "externalFinancialLineItemId",
+            "before": "manifestStartTime__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "manifestStartTime__c",
+            "key": "manifestStartTime__c",
+            "before": "glCode__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "glCode__c",
+            "key": "glCode__c",
+            "before": "glCategory__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "glCategory__c",
+            "key": "glCategory__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "partnerCompliance",
+        "fields": [
+          {
+            "key": "status",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "key": "partner",
+            "before": "$createdAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$createdAt",
+            "before": "$updatedAt",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "$updatedAt",
+            "before": "documentCountLabel",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "key": "documentCountLabel",
+            "before": "test__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "test__c",
+            "key": "test__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "payStub",
+        "fields": [
+          {
+            "key": "$updatedAt",
+            "before": "orders__c",
+            "configKey": "ObjectFieldPermission"
+          },
+          {
+            "id": "orders__c",
+            "key": "orders__c",
+            "before": "customers__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "customers__c",
+            "key": "customers__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "payTemplate",
+        "before": "threadClassification",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "threadClassification",
+        "before": "analyticsSchedule",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "analyticsSchedule",
+        "before": "email",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "email",
+        "before": "thread",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "thread",
+        "before": "aiAgent",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "aiAgent",
+        "before": "fmcsaCarrier",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "fmcsaCarrier",
+        "before": "aiAgentJob",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "key": "aiAgentJob",
+        "before": "waterfallTender",
+        "configKey": "ObjectPermission"
+      },
+      {
+        "id": "",
+        "key": "waterfallTender",
+        "before": "Onboarding__c",
+        "fields": [
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "stuff__c",
+            "key": "stuff__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerCarrier__c",
+            "key": "partnerCarrier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "tenderStatus__c",
+            "key": "tenderStatus__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "partnerRatingTier__c",
+            "key": "partnerRatingTier__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "order__c",
+            "key": "order__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "declineNotes__c",
+            "key": "declineNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "statusOfTender__c",
+            "key": "statusOfTender__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission"
+      },
+      {
+        "id": "Onboarding__c",
+        "key": "Onboarding__c",
+        "before": "bike__c",
+        "fields": [
+          {
+            "id": "description__c",
+            "key": "description__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "videoLink__c",
+            "key": "videoLink__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "helpCentreLink__c",
+            "key": "helpCentreLink__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "category__c",
+            "key": "category__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "sortOrder__c",
+            "key": "sortOrder__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "difficulty__c",
+            "key": "difficulty__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "estimatedTimeToCompletion__c",
+            "key": "estimatedTimeToCompletion__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "module__c",
+            "key": "module__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "status__c",
+            "key": "status__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "notes__c",
+            "key": "notes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "title__c",
+            "key": "title__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "businessType__c",
+            "key": "businessType__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission",
+        "objectKey": "Onboarding__c"
+      },
+      {
+        "id": "bike__c",
+        "key": "bike__c",
+        "fields": [
+          {
+            "id": "connection__c",
+            "key": "connection__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "orderAppointmentNotes__c",
+            "key": "orderAppointmentNotes__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          },
+          {
+            "id": "carrierInformationOnOrder__c",
+            "key": "carrierInformationOnOrder__c",
+            "configKey": "ObjectFieldPermission",
+            "isDisabled": false,
+            "permissionType": "editor"
+          }
+        ],
+        "configKey": "ObjectPermission",
+        "objectKey": "bike__c"
+      }
+    ],
+    "configKey": "group",
+    "targetKey": "manager",
+    "widgetSequence": [
+      {
+        "key": "order",
+        "widgets": [
+          {
+            "key": "order-SelectCustomer",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-EnableMacropoint",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-ManageStopsAndTasks",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-CreatePlatformInvoice",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-ScheduleStatusRequest",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-SendToCarrier",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-SelectPartner",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-AddOrderNumbers",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-ShareOrRedirectToBoard",
+            "before": "order-ViewCarrierBidQuotes",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-ViewCarrierBidQuotes",
+            "before": "order-SubmitCarrierBidQuote",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-SubmitCarrierBidQuote",
+            "before": "order-WelcomeDriverDispatch",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-WelcomeDriverDispatch",
+            "before": "order-FinancialSummaryTiles",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-FinancialSummaryTiles",
+            "before": "order-FinancialOverview",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-FinancialOverview",
+            "before": "orderManifest-RelatedDocuments",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "orderManifest-RelatedDocuments",
+            "before": "order-AddPartnerCostsByLeg",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-AddPartnerCostsByLeg",
+            "before": "order-SelectPartnerForLegs",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-SelectPartnerForLegs",
+            "before": "manifest-EmbeddedRelatedDocumentsBoard",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "manifest-EmbeddedRelatedDocumentsBoard",
+            "before": "order-LegAllocationSummary",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-LegAllocationSummary",
+            "before": "order-AddPartnerCostsByShipment",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-AddPartnerCostsByShipment",
+            "before": "order-ShareManifestWithDriver",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-ShareManifestWithDriver",
+            "before": "order-CreateAndAssignDriver",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-CreateAndAssignDriver",
+            "before": "order-SendToDriverReadOnly",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-SendToDriverReadOnly",
+            "before": "order-ShipmentAllocationSummary",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-ShipmentAllocationSummary",
+            "before": "order-FinancialSummary",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-FinancialSummary",
+            "before": "order-SelectPartnerForShipments",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "",
+            "key": "order-SelectPartnerForShipments",
+            "before": "order-EmbeddedAllocationShipmentsBoard",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-EmbeddedAllocationShipmentsBoard",
+            "before": "order-AddDriverPay",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-AddDriverPay",
+            "before": "order-CompleteTasks",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-CompleteTasks",
+            "before": "order-CreateManifest",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-CreateManifest",
+            "before": "order-AllocationSummary",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "order-AllocationSummary",
+            "before": "order-DataBotImport",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-DataBotImport",
+            "before": "order-EmbeddedShipmentsBoard",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-EmbeddedShipmentsBoard",
+            "before": "order-EmbeddedPlanningBoard",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-EmbeddedPlanningBoard",
+            "before": "order-SelectFilteredAssets",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-SelectFilteredAssets",
+            "before": "order-Allocations",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "",
+            "key": "order-Allocations",
+            "before": "order-CreatePayStub",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-CreatePayStub",
+            "before": "order-AssignPartner",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-AssignPartner",
+            "before": "order-AddTemplateDetails",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-AddTemplateDetails",
+            "before": "order-ETADelayNotifications",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-SendETAUpdate",
+            "before": "order-WelcomeToRosie",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "order-WelcomeToRosie",
+            "before": "order-UpdateETAStatus",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "order-UpdateETAStatus",
+            "before": "order-SendToDriver",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "order-SendToDriver",
+            "key": "order-SendToDriver",
+            "before": "order-TextToDriverTracking",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "order-TextToDriverTracking",
+            "key": "order-TextToDriverTracking",
+            "before": "order-SelectDriver",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "order-SelectDriver",
+            "key": "order-SelectDriver",
+            "before": "testTasks__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "testTasks__c",
+            "before": "enterAccessorials__c",
+            "configKey": "WidgetPermission",
+            "widgetKey": "testTasks__c",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "enterAccessorials__c",
+            "before": "testWidgetPleaseIgnore__c",
+            "configKey": "WidgetPermission",
+            "widgetKey": "enterAccessorials__c",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "testWidgetPleaseIgnore__c",
+            "before": "order-AcceptOrRejectEDIOrder",
+            "configKey": "WidgetPermission",
+            "widgetKey": "testWidgetPleaseIgnore__c",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "order-AcceptOrRejectEDIOrder",
+            "before": "order-ExpandManifestForDriverPay",
+            "configKey": "WidgetPermission",
+            "isDisabled": true
+          },
+          {
+            "id": "order-ExpandManifestForDriverPay",
+            "key": "order-ExpandManifestForDriverPay",
+            "before": "order-PostToLoadBoard2",
+            "configKey": "WidgetPermission",
+            "isDisabled": true
+          },
+          {
+            "id": "order-PostToLoadBoard2",
+            "key": "order-PostToLoadBoard2",
+            "before": "order-SelectCustomerWithTip",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "order-SelectCustomerWithTip",
+            "before": "order-CreatePlatformInvoiceWithTip",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "",
+            "key": "order-CreatePlatformInvoiceWithTip",
+            "before": "tankerVolume__c",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "tankerVolume__c",
+            "key": "tankerVolume__c",
+            "before": "order-AddQuoteWithTip",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "order-AddQuoteWithTip",
+            "before": "brokerInfo__c",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "brokerInfo__c",
+            "key": "brokerInfo__c",
+            "before": "appointmentDetails__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "appointmentDetails__c",
+            "key": "appointmentDetails__c",
+            "before": "maxBuy__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "maxBuy__c",
+            "key": "maxBuy__c",
+            "before": "brokerDetails__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "brokerDetails__c",
+            "key": "brokerDetails__c",
+            "before": "fileClaim__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "fileClaim__c",
+            "key": "fileClaim__c",
+            "before": "setDispatcher__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "setDispatcher__c",
+            "key": "setDispatcher__c",
+            "before": "addAccManagers__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "addAccManagers__c",
+            "key": "addAccManagers__c",
+            "before": "orderType__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "orderType__c",
+            "key": "orderType__c",
+            "before": "newTest__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "newTest__c",
+            "key": "newTest__c",
+            "before": "order-SelectAssets",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "order-SelectAssets",
+            "key": "order-SelectAssets",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          }
+        ],
+        "configKey": "WidgetSequencePermission"
+      },
+      {
+        "key": "manifest",
+        "widgets": [
+          {
+            "key": "manifest-SignRateCon",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "manifest-SubmitInvoice",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "manifest-ArriveAtStop",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "key": "manifest-PlaceholderButtons",
+            "before": "manifest-AddPartnerAndManualCosts",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "manifest-AddPartnerAndManualCosts",
+            "key": "manifest-AddPartnerAndManualCosts",
+            "before": "manifest-AddDriverPay",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "manifest-AddDriverPay",
+            "key": "manifest-AddDriverPay",
+            "before": "manifest-SelectDriver",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          },
+          {
+            "id": "manifest-SelectDriver",
+            "key": "manifest-SelectDriver",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          }
+        ],
+        "configKey": "WidgetSequencePermission"
+      },
+      {
+        "key": "partner",
+        "widgets": [
+          {
+            "key": "partner-EmbeddedComplianceDocumentsBoard",
+            "before": "partner-EmbeddedDocumentsBoardTier1",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "partner-EmbeddedDocumentsBoardTier1",
+            "before": "partner-EmbeddedComplianceBoard",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "partner-EmbeddedComplianceBoard",
+            "before": "partner-UpdatePartnerDetails",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "key": "partner-UpdatePartnerDetails",
+            "before": "carrierServices__c",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "",
+            "key": "carrierServices__c",
+            "before": "addContractDetails__c",
+            "configKey": "WidgetPermission",
+            "widgetKey": "carrierServices__c",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "addContractDetails__c",
+            "before": "addInsuranceLimit__c",
+            "configKey": "WidgetPermission",
+            "widgetKey": "addContractDetails__c",
+            "isDisabled": false
+          },
+          {
+            "id": "",
+            "key": "addInsuranceLimit__c",
+            "configKey": "WidgetPermission",
+            "widgetKey": "addInsuranceLimit__c",
+            "isDisabled": false
+          }
+        ],
+        "configKey": "WidgetSequencePermission"
+      },
+      {
+        "key": "customer",
+        "widgets": [
+          {
+            "key": "customer-SelectDistanceProvider",
+            "before": "lead__c",
+            "configKey": "WidgetPermission"
+          },
+          {
+            "id": "lead__c",
+            "key": "lead__c",
+            "configKey": "WidgetPermission",
+            "isDisabled": false
+          }
+        ],
+        "configKey": "WidgetSequencePermission"
+      }
+    ]
+  }
+}

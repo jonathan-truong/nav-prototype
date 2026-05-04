@@ -1,0 +1,59 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_asset",
+  "json": {
+    "key": "$custom_asset",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "lastSeenTest__c",
+            "path": "lastSeenTest__c",
+            "before": "lastSeenLocation",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastSeenLocation",
+            "path": "lastSeenLocation",
+            "before": "lastSeenTime",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastSeenTime",
+            "path": "lastSeenTime",
+            "before": "fullId",
+            "isHidden": false,
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "before": "status",
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "people",
+        "fields": [],
+        "labelId": "People",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-01-18T17:19:08.352Z",
+    "createdBy": "2df4d420-bb32-4c94-9816-18591f49850b",
+    "targetKey": "asset",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

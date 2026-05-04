@@ -1,0 +1,366 @@
+{
+  "configKey": "object",
+  "key": "$custom_commodity",
+  "json": {
+    "key": "$custom_commodity",
+    "fields": [
+      {
+        "key": "commodityType",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "pallet",
+              "labelId": "Pallet",
+              "isCustom": false
+            },
+            {
+              "value": "skid",
+              "labelId": "Skid",
+              "isCustom": false
+            },
+            {
+              "value": "package",
+              "labelId": "Package",
+              "isCustom": false
+            },
+            {
+              "value": "bundle",
+              "labelId": "Bundle",
+              "isCustom": false
+            },
+            {
+              "value": "carton",
+              "labelId": "Carton",
+              "isCustom": false
+            },
+            {
+              "value": "container",
+              "labelId": "Container",
+              "isCustom": false
+            },
+            {
+              "value": "crate",
+              "labelId": "Crate",
+              "isCustom": false
+            },
+            {
+              "value": "other",
+              "labelId": "Other",
+              "isCustom": false
+            },
+            {
+              "value": "bulk",
+              "labelId": "Bulk",
+              "isCustom": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "weightUnit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "kgs",
+              "labelId": "kg",
+              "isCustom": false
+            },
+            {
+              "value": "lbs",
+              "labelId": "lb",
+              "isCustom": false
+            },
+            {
+              "value": "metric tonnes",
+              "labelId": "tonne",
+              "isCustom": false
+            },
+            {
+              "value": "tons",
+              "labelId": "ton",
+              "isCustom": false
+            },
+            {
+              "value": "shortTon",
+              "labelId": "short ton",
+              "isCustom": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "volumeUnit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "gallons",
+              "labelId": "gallon",
+              "isCustom": false
+            },
+            {
+              "value": "litres",
+              "labelId": "litre",
+              "isCustom": false
+            },
+            {
+              "value": "cubic feet",
+              "labelId": "ft3",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "dimensionUnit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "cm",
+              "labelId": "cm",
+              "isCustom": false
+            },
+            {
+              "value": "in",
+              "labelId": "in",
+              "isCustom": false
+            },
+            {
+              "value": "ft",
+              "labelId": "ft",
+              "isCustom": false
+            },
+            {
+              "value": "usShortTons",
+              "labelId": "US Short Tons",
+              "isCustom": true
+            }
+          ]
+        }
+      },
+      {
+        "key": "temperatureUnit",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "f",
+              "isCustom": false
+            },
+            {
+              "value": "c",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "packingGroupNumber",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "pgi",
+              "isCustom": false
+            },
+            {
+              "value": "pgii",
+              "isCustom": false
+            },
+            {
+              "value": "pgiii",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "hazmatClass",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "value": "class1",
+              "isCustom": false
+            },
+            {
+              "value": "class2",
+              "isCustom": false
+            },
+            {
+              "value": "class3",
+              "isCustom": false
+            },
+            {
+              "value": "class4",
+              "isCustom": false
+            },
+            {
+              "value": "class5",
+              "isCustom": false
+            },
+            {
+              "value": "class6",
+              "isCustom": false
+            },
+            {
+              "value": "class7",
+              "isCustom": false
+            },
+            {
+              "value": "class8",
+              "isCustom": false
+            },
+            {
+              "value": "class9",
+              "isCustom": false
+            }
+          ]
+        }
+      },
+      {
+        "key": "unNumber",
+        "before": "$createdAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$createdAt",
+        "before": "$updatedAt",
+        "configKey": "field"
+      },
+      {
+        "key": "$updatedAt",
+        "before": "$source",
+        "configKey": "field"
+      },
+      {
+        "key": "$source",
+        "before": "tasks",
+        "configKey": "field"
+      },
+      {
+        "key": "tasks",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "vin__c",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "vin__c",
+        "type": "text",
+        "label": "VIN",
+        "before": "l__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_commodity",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "l__c",
+        "type": "measurement",
+        "label": "L",
+        "before": "w__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitCategory": "length",
+          "canBeNegative": false,
+          "currentUnitType": "centimeter",
+          "defaultUnitType": "centimeter"
+        },
+        "$declarator": {
+          "key": "$custom_commodity",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "w__c",
+        "type": "measurement",
+        "label": "W",
+        "before": "h__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitCategory": "length",
+          "canBeNegative": false,
+          "currentUnitType": "centimeter",
+          "defaultUnitType": "centimeter"
+        },
+        "$declarator": {
+          "key": "$custom_commodity",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "h__c",
+        "type": "measurement",
+        "label": "H",
+        "before": "volumeAir__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitCategory": "length",
+          "canBeNegative": false,
+          "currentUnitType": "centimeter",
+          "defaultUnitType": "centimeter"
+        },
+        "$declarator": {
+          "key": "$custom_commodity",
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "volumeAir__c",
+        "type": "any",
+        "label": "Volume (Air)",
+        "paths": [
+          "l__c",
+          "w__c",
+          "h__c"
+        ],
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "toNumber(toLength({l__c},'in')*toLength({w__c},'in')*toLength({h__c},'in')/366)",
+        "typeConfig": {
+          "$stub": true
+        },
+        "$declarator": {
+          "key": "$custom_commodity",
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "formula"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-06-28T13:41:44.599Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "commodity",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

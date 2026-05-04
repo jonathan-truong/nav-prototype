@@ -1,0 +1,43 @@
+{
+  "configKey": "board",
+  "key": "OnboardingBoard__c",
+  "json": {
+    "key": "OnboardingBoard__c",
+    "icon": "👤",
+    "label": "Onboarding Board",
+    "buttons": [
+      {
+        "key": "create",
+        "type": "primary",
+        "action": "async ({ context }): Promise<void> => {const resp: { id: string } = await context.createRecord({boardId: context.boardId,objectKey: 'Onboarding__c',json: {},});context.navigateToRecord({recordId: resp.id,objectKey: 'Onboarding__c',});}",
+        "labelId": "Create onboarding"
+      }
+    ],
+    "columns": [
+      {
+        "id": "fullId",
+        "key": "fullId",
+        "path": "fullId",
+        "label": "Full ID"
+      },
+      {
+        "id": "name",
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "isMixin": false,
+    "labelId": "Onboarding",
+    "summary": "A tool to help your team onboard into Rose Rocket Board",
+    "configKey": "board",
+    "createdAt": "2025-06-23T20:01:52.475Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "Onboarding__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "A tool to help your team onboard into Rose Rocket Board",
+    "securityFilters": []
+  }
+}

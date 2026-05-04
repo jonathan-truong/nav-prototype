@@ -1,0 +1,83 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_driverDetail",
+  "json": {
+    "key": "$custom_driverDetail",
+    "label": "Driver",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "Address",
+            "before": "insuranceExpiry__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "insuranceExpiry__c",
+            "path": "insuranceExpiry__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "fuelCardDetails",
+        "fields": [
+          {
+            "key": "fuelCards",
+            "before": "isFuelDeductionEnabled",
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Fuel Card Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "eldDetails",
+        "fields": [],
+        "labelId": "ELD Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "payDetails",
+        "fields": [],
+        "labelId": "Pay",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "manageDrivers",
+        "fields": [
+          {
+            "key": "hasDriverMobileAccess",
+            "before": "phone",
+            "configKey": "detailField"
+          },
+          {
+            "key": "phone",
+            "path": "phone",
+            "before": "lastLoginAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastLoginAt",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-06-13T16:57:32.875Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "objectKey": "driverProfile",
+    "targetKey": "driverDetail",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

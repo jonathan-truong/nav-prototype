@@ -1,0 +1,43 @@
+{
+  "configKey": "board",
+  "key": "orderCostsBoard__c",
+  "json": {
+    "key": "orderCostsBoard__c",
+    "icon": "📎",
+    "label": "Order Costs Board",
+    "buttons": [
+      {
+        "key": "create",
+        "type": "primary",
+        "action": "async ({ context }): Promise<void> => {const resp: { id: string } = await context.createRecord({boardId: context.boardId,objectKey: 'orderCosts__c',json: {},});context.navigateToRecord({recordId: resp.id,objectKey: 'orderCosts__c',});}",
+        "labelId": "Create order costs"
+      }
+    ],
+    "columns": [
+      {
+        "id": "fullId",
+        "key": "fullId",
+        "path": "fullId",
+        "label": "Full ID"
+      },
+      {
+        "id": "name",
+        "key": "name",
+        "path": "name",
+        "label": "Name"
+      }
+    ],
+    "isMixin": false,
+    "labelId": "Order Costs",
+    "summary": "Order Costs Board",
+    "configKey": "board",
+    "createdAt": "2025-06-05T21:48:30.843Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "orderCosts__c",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDisabled": false,
+    "description": "Order Costs Board",
+    "securityFilters": []
+  }
+}

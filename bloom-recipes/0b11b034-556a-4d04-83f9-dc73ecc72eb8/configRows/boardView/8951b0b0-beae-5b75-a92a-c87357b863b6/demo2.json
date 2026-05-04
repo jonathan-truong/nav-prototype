@@ -1,0 +1,32 @@
+{
+  "id": "af9587e6-765c-4912-94a5-8b4b5f6cf938",
+  "type": "boardView",
+  "name": "Demo2",
+  "json": {
+    "id": "af9587e6-765c-4912-94a5-8b4b5f6cf938",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "8951b0b0-beae-5b75-a92a-c87357b863b6",
+    "filters": [],
+    "labelId": "Demo2",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "totalAmount",
+      "totalAmountAllocated"
+    ],
+    "createdAt": "2025-03-05T15:29:42.998Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-03-05T15:29:42.998Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

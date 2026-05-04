@@ -1,0 +1,47 @@
+{
+  "id": "c6a12380-5ccf-4566-a352-3af5c8b792c1",
+  "type": "boardView",
+  "name": "In Transit Orders",
+  "json": {
+    "layout": "table",
+    "boardId": "c41c84c0-1efb-4f93-92d2-881e88f33943",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "in transit"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "In Transit Orders",
+    "ordinal": 2,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "assetWithLastKnownLocation",
+      "loadTenderNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "deliveryEta",
+      "customer",
+      "csrs",
+      "accountManagers"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

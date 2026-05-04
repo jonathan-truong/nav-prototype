@@ -1,0 +1,229 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_platformInvoice",
+  "json": {
+    "key": "$custom_platformInvoice",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "details",
+        "before": "financials",
+        "fields": [
+          {
+            "key": "fullId",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "customer",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customer",
+            "before": "orders",
+            "configKey": "detailField"
+          },
+          {
+            "key": "orders",
+            "path": "orders",
+            "before": "loadTenderNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "loadTenderNum",
+            "before": "poNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "poNum",
+            "before": "refNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "refNum",
+            "before": "Docs",
+            "configKey": "detailField"
+          },
+          {
+            "key": "Docs",
+            "before": "documentCountLabel",
+            "configKey": "detailField"
+          },
+          {
+            "key": "documentCountLabel",
+            "path": "documentCountLabel",
+            "before": "podOnFile__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "podOnFile__c",
+            "path": "podOnFile__c",
+            "before": "organizationId__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "organizationId__c",
+            "path": "organizationId__c",
+            "before": "paymentTerm",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "paymentTerm",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "before": "general",
+        "fields": [
+          {
+            "key": "subTotal",
+            "before": "taxTotal",
+            "configKey": "detailField"
+          },
+          {
+            "key": "paymentDate",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "general",
+        "before": "additionalInformation",
+        "fields": [
+          {
+            "key": "invoiceDate",
+            "before": "dueDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dueDate",
+            "before": "sentAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "sentAt",
+            "path": "sentAt",
+            "before": "terms",
+            "configKey": "detailField"
+          },
+          {
+            "key": "terms",
+            "before": "billingTerms",
+            "configKey": "detailField"
+          },
+          {
+            "key": "billingTerms",
+            "before": "remitToAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "remitToAddress",
+            "before": "customerAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerAddress",
+            "before": "lineItems",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lineItems",
+            "path": "lineItems",
+            "before": "notes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "notes",
+            "before": "invoiceNotes__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "invoiceNotes__c",
+            "path": "invoiceNotes__c",
+            "before": "billStatus__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "billStatus__c",
+            "path": "billStatus__c",
+            "before": "daysToDue__c",
+            "isCustom": true,
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "daysToDue__c",
+            "path": "daysToDue__c",
+            "before": "paymentDays__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "paymentDays__c",
+            "path": "paymentDays__c",
+            "before": "formulaTest__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "formulaTest__c",
+            "path": "formulaTest__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "before": "quickBooksOnline",
+        "fields": [],
+        "labelId": "Additional information",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "quickBooksOnline",
+        "fields": [
+          {
+            "key": "externalCustomerId",
+            "before": "lastExportedAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "invoiceExportStatus",
+            "before": "qboCustomerId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "qboCustomerId",
+            "path": "",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "QuickBooks Online",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-06-20T22:26:21.999Z",
+    "createdBy": "3830fa40-460d-40e0-b9ea-4b736650dfee",
+    "targetKey": "platformInvoice",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

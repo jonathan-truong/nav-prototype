@@ -1,0 +1,50 @@
+{
+  "id": "9b827feb-575b-4035-a00c-775ded80d40b",
+  "type": "boardView",
+  "name": "new view",
+  "json": {
+    "id": "9b827feb-575b-4035-a00c-775ded80d40b",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "207129f9-8887-412d-90bf-f9292687b7cd",
+    "filters": [],
+    "labelId": "new view",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "manifests",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "orderETAStatus",
+      "deliveryEta",
+      "etaLastUpdated",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "services",
+      "lastUpdated",
+      "driverName",
+      "zAndoMeasurement__c",
+      "zAndoNumber__c"
+    ],
+    "createdAt": "2025-03-03T16:25:26.009Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-03-03T16:25:39.249Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": "",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

@@ -1,0 +1,1961 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_manifest",
+  "json": {
+    "key": "$custom_manifest",
+    "views": [
+      {
+        "key": "view1__c",
+        "label": "Tasks to Assign",
+        "configKey": "view",
+        "panelGroups": [
+          {
+            "key": "group-1__c",
+            "panels": [
+              {
+                "key": "panel-1__c",
+                "layout": "tabs",
+                "widgets": [
+                  {
+                    "key": "widget-1__c",
+                    "label": "Current Tasks",
+                    "configKey": "widgetDisplay",
+                    "widgetKey": "config-RecordTasksPanel"
+                  }
+                ],
+                "configKey": "panel"
+              }
+            ],
+            "configKey": "panelGroup",
+            "isCollapsible": true,
+            "panelsDirection": "horizontal"
+          },
+          {
+            "key": "group-2__c",
+            "panels": [
+              {
+                "key": "panel-2__c",
+                "layout": "tabs",
+                "widgets": [
+                  {
+                    "key": "widget-2__c",
+                    "label": "Unassigned Tasks",
+                    "configKey": "widgetDisplay",
+                    "widgetKey": "config-ConfigurableEmbeddedBoard",
+                    "runtimeConfig": {
+                      "boardKey": "task"
+                    }
+                  }
+                ],
+                "configKey": "panel"
+              }
+            ],
+            "configKey": "panelGroup",
+            "isCollapsible": true,
+            "panelsDirection": "horizontal"
+          }
+        ],
+        "panelGroupsDirection": "horizontal"
+      }
+    ],
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "tracking",
+        "before": "quotes",
+        "fields": [
+          {
+            "key": "lastKnownLocation",
+            "field": {
+              "key": "lastKnownLocation",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Last known location",
+              "paths": [
+                "currentLocation",
+                "tasks.stops.location",
+                "tasks.subTasks.stops.location"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Last known location"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastUpdated",
+            "field": {
+              "key": "lastUpdated",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last updated",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Last updated based on timestamp of last MP location ping",
+              "isImportable": false
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "macropointTrackingStartTime",
+            "field": {
+              "key": "macropointTrackingStartTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Macropoint tracking start time",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "When MacroPoint tracking was started"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "macropointTrackingEndTime",
+            "field": {
+              "key": "macropointTrackingEndTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Macropoint tracking end time",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "When MacroPoint tracking was ended"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "macropointSource",
+            "field": {
+              "key": "macropointSource",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Macropoint source",
+              "paths": [
+                "trackingPhoneNumber",
+                "powerUnitNumber"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Returns the source of the Macropoint tracking information"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "isTrackingEnabled",
+            "field": {
+              "key": "isTrackingEnabled",
+              "type": {
+                "key": "toggle",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Tracking enabled",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Indicates if tracking is enabled for the manifest"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      },
+      {
+        "key": "quotes",
+        "label": "Quotes",
+        "before": "general",
+        "fields": [
+          {
+            "key": "documents",
+            "path": "documents",
+            "field": {
+              "key": "documents",
+              "type": {
+                "key": "document",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Documents",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Documents associated with the manifest."
+            },
+            "before": "pickupContainers__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "pickupContainers__c",
+            "path": "pickupContainers__c",
+            "field": {
+              "key": "pickupContainers__c",
+              "type": {
+                "key": "fullId",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Pickup containers",
+              "paths": [
+                "pickups.taskSpecificAssets__c.fullId"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({pickups.taskSpecificAssets__c.fullId})",
+              "typeConfig": {
+                "format": "ASSET-{1}"
+              },
+              "derivationType": "lookup"
+            },
+            "before": "legDeclaredValues__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legDeclaredValues__c",
+            "path": "legDeclaredValues__c",
+            "field": {
+              "key": "legDeclaredValues__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Leg declared values",
+              "paths": [
+                "allocatableLegTasks.declaredValue__c"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({allocatableLegTasks.declaredValue__c})",
+              "typeConfig": {
+                "canBeNegative": false
+              },
+              "derivationType": "lookup"
+            },
+            "before": "totalDeclaredValue__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalDeclaredValue__c",
+            "path": "totalDeclaredValue__c",
+            "field": {
+              "key": "totalDeclaredValue__c",
+              "type": {
+                "key": "multiCurrencyMoney",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total declared value",
+              "paths": [
+                "legDeclaredValues__c"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "sum({legDeclaredValues__c})",
+              "derivationType": "formula"
+            },
+            "before": "costs",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "costs",
+            "path": "costs",
+            "field": {
+              "key": "costs",
+              "type": {
+                "key": "financialLineItem",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Costs",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Lists of costs line items"
+            },
+            "before": "totalRevSum__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalRevSum__c",
+            "path": "totalRevSum__c",
+            "field": {
+              "key": "totalRevSum__c",
+              "type": {
+                "key": "multiCurrencyMoney",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "totalRevSum",
+              "paths": [
+                "totalRev__c"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "sum({totalRev__c})",
+              "derivationType": "formula"
+            },
+            "before": "totalRev__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalRev__c",
+            "path": "totalRev__c",
+            "field": {
+              "key": "totalRev__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "totalRev",
+              "paths": [
+                "orders.totalEarnings"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({orders.totalEarnings})",
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "derivationType": "lookup"
+            },
+            "before": "manifestBuyQuotes",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestBuyQuotes",
+            "path": "manifestBuyQuotes",
+            "field": {
+              "key": "manifestBuyQuotes",
+              "type": {
+                "key": "quote",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Manifest buy quotes",
+              "paths": [
+                "buyQuote.lineItems",
+                "buyQuotes.lineItems",
+                "buyQuotes.driver",
+                "drivers"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false
+            },
+            "before": "totalRevSumMargin__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalRevSumMargin__c",
+            "path": "totalRevSumMargin__c",
+            "field": {
+              "key": "totalRevSumMargin__c",
+              "type": {
+                "key": "multiCurrencyMoney",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "totalRevSumMargin",
+              "paths": [
+                "totalRev__c",
+                "totalCost"
+              ],
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "sum({totalRev__c}) - {totalCost}",
+              "derivationType": "formula"
+            },
+            "before": "buyQuote",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "buyQuote",
+            "path": "buyQuote",
+            "field": {
+              "key": "buyQuote",
+              "type": {
+                "key": "quote",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Buy quote",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Carrier quote associated with the manifest."
+            },
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Quotes",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "general",
+        "before": "planning",
+        "fields": [
+          {
+            "key": "loadTenderNum",
+            "field": {
+              "key": "loadTenderNumbersLabel",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Load tender No.",
+              "paths": [
+                "orders"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The load tender numbers of all associated orders"
+            },
+            "before": "refNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "refNum",
+            "field": {
+              "key": "refNumbersLabel",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "REF No.",
+              "paths": [
+                "orders"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The ref numbers of all associated orders"
+            },
+            "before": "customerNames",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerNames",
+            "path": "customerNames",
+            "field": {
+              "key": "customerNames",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Customer names",
+              "paths": [
+                "tasks.order.customer",
+                "tasks.parentTasks.order.customer",
+                "tasks.subTasks.order.customer"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Customer names from the associated orders assigned to the manifest"
+            },
+            "before": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "fullId",
+            "field": {
+              "key": "fullId",
+              "type": {
+                "key": "fullId",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Full ID",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "TRIP-{1}"
+              },
+              "description": "Human-readable identifier for manifest"
+            },
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "field": {
+              "key": "status",
+              "type": {
+                "key": "status",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Status",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": true,
+              "typeConfig": {
+                "options": [
+                  {
+                    "color": "status-grey",
+                    "value": "new",
+                    "labelId": "New"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "planned",
+                    "labelId": "Planned"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "dispatched",
+                    "labelId": "Dispatched"
+                  },
+                  {
+                    "color": "status-purple",
+                    "value": "inTransit",
+                    "labelId": "In transit"
+                  },
+                  {
+                    "color": "status-green",
+                    "value": "completed",
+                    "labelId": "Completed"
+                  },
+                  {
+                    "color": "status-grey",
+                    "value": "problem",
+                    "labelId": "Problem"
+                  },
+                  {
+                    "color": "status-red",
+                    "value": "drop",
+                    "labelId": "Drop"
+                  },
+                  {
+                    "color": "status-pink",
+                    "value": "hook",
+                    "labelId": "Hook"
+                  },
+                  {
+                    "color": "status-cyan",
+                    "value": "delayed",
+                    "labelId": "Delayed"
+                  }
+                ],
+                "statusMap": {
+                  "new": {
+                    "color": "status-grey",
+                    "labelId": "New"
+                  },
+                  "drop": {
+                    "color": "status-red",
+                    "labelId": "Drop"
+                  },
+                  "hook": {
+                    "color": "status-pink",
+                    "labelId": "Hook"
+                  },
+                  "planned": {
+                    "color": "status-cyan",
+                    "labelId": "Planned"
+                  },
+                  "problem": {
+                    "color": "status-grey",
+                    "labelId": "Problem"
+                  },
+                  "completed": {
+                    "color": "status-green",
+                    "labelId": "Completed"
+                  },
+                  "inTransit": {
+                    "color": "status-purple",
+                    "labelId": "In transit"
+                  },
+                  "dispatched": {
+                    "color": "status-cyan",
+                    "labelId": "Dispatched"
+                  }
+                }
+              },
+              "description": "The status of the manifest.",
+              "initializer": "new"
+            },
+            "before": "partner",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partner",
+            "field": {
+              "key": "partner",
+              "type": {
+                "key": "partner",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Broker specific. The partner carrier assigned to the manifest."
+            },
+            "before": "name",
+            "configKey": "detailField"
+          },
+          {
+            "key": "name",
+            "field": {
+              "key": "name",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Name",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The name of this manifest",
+              "isAutoImported": true
+            },
+            "before": "totalStops",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalStops",
+            "field": {
+              "key": "totalStops",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total stops",
+              "paths": [
+                "stops"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": ""
+              },
+              "description": "Total stop count"
+            },
+            "before": "totalMiles",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalMiles",
+            "field": {
+              "key": "totalMiles",
+              "type": {
+                "key": "measurement",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total miles",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": true,
+                "unitLabel": "",
+                "unitCategory": "length",
+                "canBeNegative": false,
+                "currentUnitType": "mile",
+                "defaultUnitType": "mile"
+              },
+              "description": "Total number of miles between two stops. This is a field that is calculated from the stops addresses using a polyline distance calculation provided by our map api provider."
+            },
+            "before": "orders",
+            "configKey": "detailField"
+          },
+          {
+            "key": "orders",
+            "field": {
+              "key": "orders",
+              "type": {
+                "key": "order",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Orders",
+              "paths": [
+                "tasks.order",
+                "tasks.order.buyQuotes",
+                "tasks.order.assetType",
+                "tasks.order.classicAccessorials",
+                "tasks.parentTasks.order",
+                "tasks.parentTasks.order.buyQuotes",
+                "tasks.parentTasks.order.assetType",
+                "tasks.parentTasks.order.classicAccessorials",
+                "tasks.subTasks.order",
+                "tasks.subTasks.order.buyQuotes",
+                "tasks.subTasks.order.assetType",
+                "tasks.subTasks.order.classicAccessorials",
+                "tasks.subTasks.parentTasks.order",
+                "tasks.subTasks.parentTasks.order.buyQuotes",
+                "tasks.subTasks.parentTasks.order.assetType",
+                "tasks.subTasks.parentTasks.order.classicAccessorials",
+                "tasks.subTasks.subTasks.order",
+                "tasks.subTasks.subTasks.order.buyQuotes",
+                "tasks.subTasks.subTasks.order.assetType",
+                "tasks.subTasks.subTasks.order.classicAccessorials"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Orders associated with the manifest"
+            },
+            "before": "poNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "poNum",
+            "field": {
+              "key": "poNumbersLabel",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "PO No.",
+              "paths": [
+                "orders"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The PO numbers of all associated orders"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "currentLocation",
+            "field": {
+              "key": "currentLocation",
+              "type": {
+                "key": "address",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Current location",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Address of the manifest's current location"
+            },
+            "before": "partnerInvoice",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerInvoice",
+            "field": {
+              "key": "fullId",
+              "type": {
+                "key": "fullId",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Full ID",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "format": "PI-{1}"
+              },
+              "description": "An incrementing identifier for each record"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "planning",
+        "before": "details",
+        "fields": [
+          {
+            "key": "manifestStartDate",
+            "field": {
+              "key": "manifestStartDate",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Manifest start date",
+              "paths": [
+                "tasks.subTasks",
+                "tasks.parentTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              }
+            },
+            "before": "manifestEndDate",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestEndDate",
+            "field": {
+              "key": "manifestEndDate",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Manifest end date",
+              "paths": [
+                "tasks.subTasks",
+                "tasks.parentTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              }
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstStopLocation",
+            "field": {
+              "key": "firstStopLocation",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First stop location",
+              "paths": [
+                "tasks.stops.location"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstStopType",
+            "field": {
+              "key": "firstStopType",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First stop type",
+              "paths": [
+                "tasks.stops",
+                "tasks.subTasks.stops"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastStopLocation",
+            "field": {
+              "key": "lastStopLocation",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last stop location",
+              "paths": [
+                "tasks.stops.location"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "deadHeadDurationFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "deadHeadDurationFormatted",
+            "field": {
+              "key": "deadHeadDurationFormatted",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Deadhead duration",
+              "paths": [
+                "deadHeadDuration"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Estimated total time required to drive to all the stops and complete all the tasks on the manifest."
+            },
+            "before": "shipperNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "shipperNotes",
+            "field": {
+              "key": "shipperNotes",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Shipper notes",
+              "paths": [
+                "pickups.specialInstructions"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "lastStopType",
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastStopType",
+            "field": {
+              "key": "lastStopType",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last stop type",
+              "paths": [
+                "tasks.stops",
+                "tasks.subTasks.stops"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": "estimatedDuration",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedDuration",
+            "field": {
+              "key": "estimatedDuration",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Estimated duration",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": ""
+              },
+              "description": "DNU, represents data in seconds, used by estimatedDurationFormatted to create a human readable field"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "deadHeadMiles",
+            "field": {
+              "key": "deadHeadMiles",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Deadhead miles",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": true,
+                "unitLabel": ""
+              },
+              "description": "Miles traveled by the vehicle when not carrying any cargo, typically between jobs."
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "deadHeadDuration",
+            "field": {
+              "key": "deadHeadDuration",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Deadhead duration",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": ""
+              },
+              "description": "DNU, represents data in seconds, used by deadHeadDurationFormatted to create a human readable field"
+            },
+            "before": "consigneeNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "consigneeNotes",
+            "field": {
+              "key": "consigneeNotes",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Delivery notes",
+              "paths": [
+                "deliveries.specialInstructions"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Planning",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "label": "Dispatch Details",
+        "before": "dispatch",
+        "fields": [
+          {
+            "key": "assetType",
+            "field": {
+              "key": "name",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Asset Type Name",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Defines the name for the Asset Type"
+            },
+            "before": "firstPickup",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "firstPickup",
+            "field": {
+              "key": "firstStopLocation",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First stop location",
+              "paths": [
+                "tasks.stops.location"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedPickupWindow",
+            "field": {
+              "key": "firstPickupTaskTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First pickup task time",
+              "paths": [
+                "tasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "First pickup requested time"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "actualPickupTime",
+            "field": {
+              "key": "firstPickupTaskActualTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "First pickup task actual time",
+              "paths": [
+                "tasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "First pickup actual time"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "lastDelivery",
+            "field": {
+              "key": "lastStopLocation",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last stop location",
+              "paths": [
+                "tasks.stops.location"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              }
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedDeliveryWindow",
+            "field": {
+              "key": "lastDeliveryTaskTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last delivery task time",
+              "paths": [
+                "tasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Last delivery requested time"
+            },
+            "before": "partnerTariff",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerTariff",
+            "field": {
+              "key": "partnerTariff",
+              "type": {
+                "key": "tariff",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Partner tariff",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Partner tariff assigned to the manifest"
+            },
+            "before": "actualDeliveryTime",
+            "configKey": "detailField"
+          },
+          {
+            "key": "actualDeliveryTime",
+            "field": {
+              "key": "lastDeliveryTaskActualTime",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Last delivery task actual time",
+              "paths": [
+                "tasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Last delivery actual time"
+            },
+            "before": "estimatedDurationFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedDurationFormatted",
+            "field": {
+              "key": "estimatedDurationFormatted",
+              "type": {
+                "key": "any",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Estimated duration",
+              "paths": [
+                "estimatedDuration"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Estimated total time required to drive to all the stops and complete all the tasks on the manifest."
+            },
+            "before": "dispatchedOn",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatchedOn",
+            "field": {
+              "key": "dispatchedAt",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Dispatched at",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Time and date when the manifest status was changed to dispatched"
+            },
+            "before": "macropointDriverPhNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "macropointDriverPhNum",
+            "before": "dispatchedAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatchedAt",
+            "field": {
+              "key": "dispatchedAt",
+              "type": {
+                "key": "dateTime",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Dispatched at",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isRange": false
+              },
+              "description": "Time and date when the manifest status was changed to dispatched"
+            },
+            "before": "dispatcher",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatcher",
+            "field": {
+              "key": "name",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Name",
+              "paths": [],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The users name"
+            },
+            "before": "dispatcherPhNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatcherPhNum",
+            "field": {
+              "key": "phone",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Phone Number",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The phone number of the user."
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Dispatch Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "dispatch",
+        "before": "commodities",
+        "fields": [
+          {
+            "key": "macropointDriverName",
+            "before": "drivers",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "drivers",
+            "field": {
+              "key": "drivers",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Drivers",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "List of all drivers assigned to the manifest (platform as the data source)."
+            },
+            "before": "assets",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "assets",
+            "field": {
+              "key": "assets",
+              "type": {
+                "key": "asset",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Assets",
+              "paths": [
+                "tasks.assets",
+                "tasks.subTasks.assets"
+              ],
+              "isArray": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "description": "Assets assigned to the manifest"
+            },
+            "before": "driverName",
+            "configKey": "detailField"
+          },
+          {
+            "key": "driverName",
+            "field": {
+              "key": "name",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Name",
+              "paths": [],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The users name"
+            },
+            "before": "driverPhNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "driverPhNum",
+            "field": {
+              "key": "phone",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Phone Number",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "The phone number of the user."
+            },
+            "before": "dispatcher__1",
+            "configKey": "detailField"
+          },
+          {
+            "key": "dispatcher__1",
+            "path": "dispatcher",
+            "field": {
+              "key": "dispatcher",
+              "type": {
+                "key": "user",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Dispatcher",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Dispatcher assigned to the manifest"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Dispatch",
+        "isHidden": true,
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "before": "financials",
+        "fields": [
+          {
+            "key": "commodities",
+            "field": {
+              "key": "commodityNames",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Commodity names",
+              "paths": [
+                "tasks.commodities",
+                "tasks.subTasks.commodities"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Commodity names associated with the manifest"
+            },
+            "before": "weight",
+            "configKey": "detailField"
+          },
+          {
+            "key": "weight",
+            "field": {
+              "key": "weightLbs",
+              "type": {
+                "key": "number",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Weight (lbs)",
+              "paths": [
+                "tasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isInteger": false,
+                "unitLabel": "lbs"
+              },
+              "description": "Total weight in lbs"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "quantity",
+            "field": {
+              "key": "totalCommoditiesQuantity",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total commodities quantity",
+              "paths": [
+                "tasks.commodities",
+                "tasks.commodities.quantity",
+                "tasks.commodities.commodityType",
+                "tasks.subTasks.commodities",
+                "tasks.subTasks.commodities.quantity",
+                "tasks.subTasks.commodities.commodityType",
+                "tasks.subTasks.subTasks"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Total QTY"
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "before": "additionalInformation",
+        "fields": [
+          {
+            "key": "bill",
+            "field": {
+              "key": "bill",
+              "type": {
+                "key": "bill",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Bill",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "The bill associated with the manifest."
+            },
+            "before": "buyQuotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "buyQuotes",
+            "field": {
+              "key": "buyQuotes",
+              "type": {
+                "key": "quote",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Buy quotes",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "List of all carrier quotes associated with the manifest."
+            },
+            "before": "totalCost",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCost",
+            "field": {
+              "key": "totalCost",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total cost",
+              "paths": [
+                "costs",
+                "costs.total"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "description": "Total cost for the manifest"
+            },
+            "before": "estimatedCustomerQuote",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedCustomerQuote",
+            "field": {
+              "key": "estimatedCustomerQuote",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Estimated customer quote",
+              "paths": [
+                "orders"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              }
+            },
+            "before": "manifestTotalCostCustom__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifestTotalCostCustom__c",
+            "path": "manifestTotalCostCustom__c",
+            "field": {
+              "key": "manifestTotalCostCustom__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Manifest Total Cost Custom",
+              "paths": [
+                "totalCost"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({totalCost})",
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "derivationType": "lookup"
+            },
+            "before": "totalBuyQuoteCustom__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalBuyQuoteCustom__c",
+            "path": "totalBuyQuoteCustom__c",
+            "field": {
+              "key": "totalBuyQuoteCustom__c",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Total Buy Quote Custom",
+              "paths": [
+                "buyQuote.totalCost"
+              ],
+              "isArray": true,
+              "isCustom": true,
+              "configKey": "field",
+              "isDerived": true,
+              "expression": "LOOKUP({buyQuote.totalCost})",
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              },
+              "derivationType": "lookup"
+            },
+            "before": "driverPayTotalCost",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "driverPayTotalCost",
+            "field": {
+              "key": "driverPayTotalCost",
+              "type": {
+                "key": "money",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Driver pay total cost",
+              "paths": [
+                "driverPayLineItems",
+                "driverPayLineItems.total"
+              ],
+              "isArray": false,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "format": "",
+                "canBeNegative": true
+              }
+            },
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "before": "edi",
+        "fields": [
+          {
+            "key": "accessorials",
+            "field": {
+              "key": "accessorialsLabel",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Deprecated - Accessorials label",
+              "paths": [],
+              "isArray": false,
+              "isHidden": true,
+              "configKey": "field",
+              "isDerived": true,
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Deprecated - Accessorials assigned to the manifest"
+            },
+            "before": "specialInstructions",
+            "configKey": "detailField"
+          },
+          {
+            "key": "specialInstructions",
+            "field": {
+              "key": "specialInstructions",
+              "type": {
+                "key": "text",
+                "ref": true,
+                "configKey": "type"
+              },
+              "label": "Special instructions",
+              "isArray": false,
+              "configKey": "field",
+              "isRequired": false,
+              "typeConfig": {
+                "isMultiLine": false
+              },
+              "description": "Special instructions for the manifest"
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "platformTags",
+            "field": {
+              "key": "tags",
+              "type": {
+                "key": "tag",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Tags",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "description": "Tags that are associated with this manifest."
+            },
+            "configKey": "detailField"
+          },
+          {
+            "key": "platformAccessorials",
+            "field": {
+              "key": "accessorials",
+              "type": {
+                "key": "accessorial",
+                "ref": true,
+                "configKey": "object"
+              },
+              "label": "Accessorials",
+              "isArray": true,
+              "configKey": "field",
+              "isRequired": false,
+              "activityLog": {
+                "paths": [
+                  "name"
+                ],
+                "widgetKey": "events-TagTile"
+              },
+              "description": "List of accessorials that are associated with the manifest"
+            },
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "edi",
+        "label": "EDI",
+        "fields": [],
+        "labelId": "EDI",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-04-23T23:55:08.135Z",
+    "createdBy": "__migration",
+    "objectKey": "manifest",
+    "targetKey": "manifest",
+    "taskPanel": {
+      "key": "detailTaskPanel",
+      "buttons": [
+        {
+          "key": "addTaskButton",
+          "kind": "primary",
+          "labelId": "Add Task",
+          "configKey": "button"
+        },
+        {
+          "key": "addStopButton",
+          "kind": "tertiary",
+          "labelId": "Add Stop",
+          "configKey": "button",
+          "widgetKey": "manifest-AddStop"
+        }
+      ],
+      "viewOptions": [
+        "stops"
+      ]
+    },
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

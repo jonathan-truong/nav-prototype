@@ -1,0 +1,53 @@
+{
+  "id": "a7e63b50-4249-4d1d-8448-d89e61e2e8b6",
+  "type": "boardView",
+  "name": "View 1",
+  "json": {
+    "name": "View 1",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "a6870169-4028-41ae-bb44-d0d8799a64f6",
+    "filters": [
+      {
+        "path": "totalCost",
+        "value": {
+          "max": 1000,
+          "min": 100
+        },
+        "operator": "equals",
+        "fieldType": "MoneyField",
+        "filterKey": "totalCost"
+      }
+    ],
+    "labelId": "View 1",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "manifests",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "requestedPickupWindow",
+      "requestedDeliveryWindow",
+      "totalMiles",
+      "specialInstructions",
+      "poNum",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId"
+    ],
+    "createdAt": "2025-04-21T20:00:18.641Z",
+    "createdBy": "0435c03c-cad1-4865-a411-b63c31b2cf15",
+    "isDefault": false,
+    "updatedAt": "2025-04-21T20:00:40.253Z",
+    "updatedBy": "0435c03c-cad1-4865-a411-b63c31b2cf15",
+    "visibility": "board",
+    "description": "fsdafsdaf",
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

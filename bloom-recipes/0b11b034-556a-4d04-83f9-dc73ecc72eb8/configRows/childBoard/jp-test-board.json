@@ -1,0 +1,91 @@
+{
+  "id": "79da88b0-222e-432c-9962-f1f50df16920",
+  "type": "childBoard",
+  "name": "JP Test Board",
+  "json": {
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "JP Test Board",
+    "parents": [
+      {
+        "id": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+        "key": "task",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "4afb954d-31f8-50b1-9a24-69b9894eedaa",
+    "objectKey": "task",
+    "parentKey": "task",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "taskETAStatus",
+      "partnerNotes",
+      "taskType",
+      "description",
+      "status",
+      "orderFullId",
+      "manifestFullId",
+      "manifestName",
+      "refNum",
+      "specialInstructions",
+      "legOriginTaskType",
+      "originRequestedTime",
+      "originCompletedTime",
+      "originArrivalTime",
+      "legDestinationTaskType",
+      "destinationRequestedTime",
+      "destinationCompletedTime",
+      "destinationArrivalTime",
+      "previousLeg",
+      "previousLegStatus",
+      "legPickupTime__c",
+      "legDeliveryTime__c",
+      "containerNo__c",
+      "hughsLookup__c",
+      "hughsLookup2__c",
+      "declaredValue__c"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "taskETAStatus",
+        "partnerNotes",
+        "taskType",
+        "description",
+        "status",
+        "orderFullId",
+        "manifestFullId",
+        "manifestName",
+        "refNum",
+        "specialInstructions",
+        "legOriginTaskType",
+        "originRequestedTime",
+        "originCompletedTime",
+        "originArrivalTime",
+        "legDestinationTaskType",
+        "destinationRequestedTime",
+        "destinationCompletedTime",
+        "destinationArrivalTime",
+        "previousLeg",
+        "previousLegStatus",
+        "legPickupTime__c",
+        "legDeliveryTime__c",
+        "containerNo__c",
+        "hughsLookup__c",
+        "hughsLookup2__c",
+        "declaredValue__c"
+      ],
+      "description": "",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "id": "8f1545af-519c-4132-b008-e4e5345016f8",
+  "type": "boardView",
+  "name": "Invoiced Orders",
+  "json": {
+    "name": "Invoiced Orders",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "layout": "table",
+    "boardId": "3fdbdce0-6490-46a6-b820-d1e25ea91ae2",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "invoiced"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Invoiced Orders",
+    "ordinal": 4,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "assetWithLastKnownLocation",
+      "loadTenderNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "deliveryEta",
+      "customer",
+      "csrs",
+      "accountManagers"
+    ],
+    "createdAt": "2025-10-02T13:42:36.631Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2025-10-02T13:42:36.631Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

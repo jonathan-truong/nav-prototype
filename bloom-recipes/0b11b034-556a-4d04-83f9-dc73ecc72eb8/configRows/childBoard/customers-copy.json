@@ -1,0 +1,22 @@
+{
+  "id": "0d6d1c19-3987-4910-bdc7-8c668c70e48a",
+  "type": "childBoard",
+  "name": "Customers copy",
+  "json": {
+    "icon": "🏢",
+    "source": "manual",
+    "labelId": "Customers copy",
+    "parents": [
+      {
+        "id": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+        "key": "platformCustomer",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "af1c0e83-5253-517d-aeff-e25a37f59beb",
+    "objectKey": "customer",
+    "parentKey": "platformCustomer",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+  }
+}

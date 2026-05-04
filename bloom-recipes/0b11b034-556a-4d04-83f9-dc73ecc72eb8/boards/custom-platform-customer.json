@@ -1,0 +1,258 @@
+{
+  "configKey": "board",
+  "key": "$custom_platformCustomer",
+  "json": {
+    "key": "$custom_platformCustomer",
+    "columns": [
+      {
+        "key": "dedicatedCarrier__c",
+        "path": "dedicatedCarrier__c",
+        "labelId": "Dedicated Carrier",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "customsBroker__c",
+        "path": "customsBroker__c",
+        "labelId": "Customs Broker",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "moneyField__c",
+        "path": "moneyField__c",
+        "labelId": "Money field",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "emailNotifs__c",
+        "path": "emailNotifs__c",
+        "labelId": "Email notifs",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "customerOrders__c",
+        "path": "customerOrders__c",
+        "labelId": "Customer Orders",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "creditLimit__c",
+        "path": "creditLimit__c",
+        "labelId": "Credit Limit",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "countableQuotes__c",
+        "path": "countableQuotes__c",
+        "labelId": "countableQuotes",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "assignedTo__c",
+        "path": "assignedTo__c",
+        "labelId": "Assigned to",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "currency__c",
+        "path": "currency__c",
+        "labelId": "Currency",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "usId__c",
+        "path": "usId__c",
+        "labelId": "US ID",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "caId__c",
+        "path": "caId__c",
+        "labelId": "CA ID",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "usCustomerId__c",
+        "path": "usCustomerId__c",
+        "labelId": "US Customer ID",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "caCustomerId__c",
+        "path": "caCustomerId__c",
+        "labelId": "CA Customer ID",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "requiredDocs__c",
+        "path": "requiredDocs__c",
+        "labelId": "Required Docs",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "website__c",
+        "path": "website__c",
+        "labelId": "Website",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zone__c",
+        "path": "zone__c",
+        "labelId": "Zone",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "dedicatedCarrier__c",
+        "path": "dedicatedCarrier__c",
+        "labelId": "Dedicated Carrier",
+        "columnKey": "dedicatedCarrier__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customsBroker__c",
+        "path": "customsBroker__c",
+        "labelId": "Customs Broker",
+        "columnKey": "customsBroker__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "moneyField__c",
+        "path": "moneyField__c",
+        "labelId": "Money field",
+        "columnKey": "moneyField__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "emailNotifs__c",
+        "path": "emailNotifs__c",
+        "labelId": "Email notifs",
+        "columnKey": "emailNotifs__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customerOrders__c",
+        "path": "customerOrders__c",
+        "labelId": "Customer Orders",
+        "columnKey": "customerOrders__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "creditLimit__c",
+        "path": "creditLimit__c",
+        "labelId": "Credit Limit",
+        "columnKey": "creditLimit__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "countableQuotes__c",
+        "path": "countableQuotes__c",
+        "labelId": "countableQuotes",
+        "columnKey": "countableQuotes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "assignedTo__c",
+        "path": "assignedTo__c",
+        "labelId": "Assigned to",
+        "columnKey": "assignedTo__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "currency__c",
+        "path": "currency__c",
+        "labelId": "Currency",
+        "columnKey": "currency__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "usId__c",
+        "path": "usId__c",
+        "labelId": "US ID",
+        "columnKey": "usId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "caId__c",
+        "path": "caId__c",
+        "labelId": "CA ID",
+        "columnKey": "caId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "usCustomerId__c",
+        "path": "usCustomerId__c",
+        "labelId": "US Customer ID",
+        "columnKey": "usCustomerId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "caCustomerId__c",
+        "path": "caCustomerId__c",
+        "labelId": "CA Customer ID",
+        "columnKey": "caCustomerId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "requiredDocs__c",
+        "path": "requiredDocs__c",
+        "labelId": "Required Docs",
+        "columnKey": "requiredDocs__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "website__c",
+        "path": "website__c",
+        "labelId": "Website",
+        "columnKey": "website__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zone__c",
+        "path": "zone__c",
+        "labelId": "Zone",
+        "columnKey": "zone__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-03-20T15:05:15.922Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "platformCustomer",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

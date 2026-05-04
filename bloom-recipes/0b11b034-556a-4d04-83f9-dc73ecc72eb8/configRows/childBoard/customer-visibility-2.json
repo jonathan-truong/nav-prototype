@@ -1,0 +1,65 @@
+{
+  "id": "c41c84c0-1efb-4f93-92d2-881e88f33943",
+  "type": "childBoard",
+  "name": "Customer Visibility",
+  "json": {
+    "id": "c41c84c0-1efb-4f93-92d2-881e88f33943",
+    "icon": "👀",
+    "source": "manual",
+    "labelId": "Customer Visibility",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "isHidden": null,
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "poNum",
+      "status",
+      "assetWithLastKnownLocation",
+      "loadTenderNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "deliveryEta",
+      "customer",
+      "csrs",
+      "accountManagers"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "poNum",
+        "status",
+        "assetWithLastKnownLocation",
+        "loadTenderNum",
+        "shipper_formattedAddress",
+        "requestedPickupWindow",
+        "consignee_formattedAddress",
+        "requestedDeliveryWindow",
+        "deliveryEta",
+        "customer",
+        "csrs",
+        "accountManagers"
+      ],
+      "description": "This is a Board shared externally with your customer ABC Co. so they can see status updates on their orders",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": []
+  }
+}

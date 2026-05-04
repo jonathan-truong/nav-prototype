@@ -1,0 +1,63 @@
+{
+  "configKey": "board",
+  "key": "$custom_baseDriverProfile",
+  "json": {
+    "key": "$custom_baseDriverProfile",
+    "columns": [
+      {
+        "key": "insuranceExpiry__c",
+        "path": "insuranceExpiry__c",
+        "labelId": "Insurance Expiry",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "yearsOfService__c",
+        "path": "yearsOfService__c",
+        "labelId": "Years of Service",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "currentManifest__c",
+        "path": "currentManifest__c",
+        "labelId": "Current Manifest",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "insuranceExpiry__c",
+        "path": "insuranceExpiry__c",
+        "labelId": "Insurance Expiry",
+        "columnKey": "insuranceExpiry__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "yearsOfService__c",
+        "path": "yearsOfService__c",
+        "labelId": "Years of Service",
+        "columnKey": "yearsOfService__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "currentManifest__c",
+        "path": "currentManifest__c",
+        "labelId": "Current Manifest",
+        "columnKey": "currentManifest__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-06-13T16:57:19.931Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "baseDriverProfile",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_carrier-ttl-order",
+  "json": {
+    "key": "$custom_carrier-ttl-order",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "order-EnableMacropoint",
+        "before": "order-CreateManifest",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreateManifest",
+        "before": "order-ExpandManifestForDriverPay",
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ExpandManifestForDriverPay",
+        "before": "order-SendETAUpdate",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendETAUpdate",
+        "before": "order-SelectDriver",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectDriver",
+        "before": "order-DataBotImport",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-DataBotImport",
+        "before": "order-PostToLoadBoard2",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-PostToLoadBoard2",
+        "before": "order-AssignPartner",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AssignPartner",
+        "before": "order-SendToCarrier",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToCarrier",
+        "before": "order-ScheduleStatusRequest",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-ScheduleStatusRequest",
+        "before": "order-SendToDriver",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SendToDriver",
+        "before": "order-AddCost",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddCost",
+        "before": "order-SelectPartner",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectPartner",
+        "before": "order-AddTemplateDetails",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddTemplateDetails",
+        "before": "order-OrderRequest",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-OrderRequest",
+        "before": "order-SelectCustomer",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectCustomer",
+        "before": "order-AddOrderNumbers",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddOrderNumbers",
+        "before": "orderType__c",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "orderType__c",
+        "before": "regionDetails__c",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "orderType__c"
+      },
+      {
+        "key": "regionDetails__c",
+        "before": "appointmentDetails__c",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "regionDetails__c"
+      },
+      {
+        "key": "appointmentDetails__c",
+        "before": "order-ManageStopsAndTasks",
+        "isHidden": false,
+        "configKey": "widgetRef",
+        "widgetKey": "appointmentDetails__c"
+      },
+      {
+        "key": "order-ManageStopsAndTasks",
+        "before": "order-AddQuote",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-AddQuote",
+        "before": "order-CompleteTasks",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CompleteTasks",
+        "before": "order-CreatePlatformInvoice",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-CreatePlatformInvoice",
+        "before": "order-SelectAssets",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "order-SelectAssets",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2024-11-12T21:40:42.057Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "targetKey": "carrier-ttl-order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "widgetsHidden": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+    ]
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "configKey": "board",
+  "key": "$custom_driverAppManifests",
+  "json": {
+    "key": "$custom_driverAppManifests",
+    "columns": [
+      {
+        "key": "shipperCity__c",
+        "path": "shipperCity__c",
+        "labelId": "Shipper City",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "shippingState__c",
+        "path": "shippingState__c",
+        "labelId": "Shipping State",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "carrierInvStatus__c",
+        "path": "carrierInvStatus__c",
+        "labelId": "Carrier INV Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "testBreak__c",
+        "path": "testBreak__c",
+        "labelId": "test break",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "hughsep10__c",
+        "path": "hughsep10__c",
+        "labelId": "hughsep10",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "hughsep10B__c",
+        "path": "hughsep10B__c",
+        "labelId": "hughsep10b",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "manifestTotalCostCustom__c",
+        "path": "manifestTotalCostCustom__c",
+        "labelId": "Manifest Total Cost Custom",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "totalBuyQuoteCustom__c",
+        "path": "totalBuyQuoteCustom__c",
+        "labelId": "Total Buy Quote Custom",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "totalRev__c",
+        "path": "totalRev__c",
+        "labelId": "totalRev",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "totalRevSum__c",
+        "path": "totalRevSum__c",
+        "labelId": "totalRevSum",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "totalRevSumMargin__c",
+        "path": "totalRevSumMargin__c",
+        "labelId": "totalRevSumMargin",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "orderStatus__c",
+        "path": "orderStatus__c",
+        "labelId": "Order status",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "legDeclaredValues__c",
+        "path": "legDeclaredValues__c",
+        "labelId": "Leg declared values",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "totalDeclaredValue__c",
+        "path": "totalDeclaredValue__c",
+        "labelId": "Total declared value",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "pickupContainers__c",
+        "path": "pickupContainers__c",
+        "labelId": "Pickup containers",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "stopsLookup__c",
+        "path": "stopsLookup__c",
+        "labelId": "Stops Lookup",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "formulaTest__c",
+        "path": "formulaTest__c",
+        "labelId": "formula test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "multiselect__c",
+        "path": "multiselect__c",
+        "labelId": "Multiselect",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "kpTest__c",
+        "path": "kpTest__c",
+        "labelId": "KP test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "firstStopLocationSelfLookup__c",
+        "path": "firstStopLocationSelfLookup__c",
+        "labelId": "First stop location (self lookup)",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "zAndoTest1__c",
+        "path": "zAndoTest1__c",
+        "labelId": "z-andoTest1",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zAndoTest2__c",
+        "path": "zAndoTest2__c",
+        "labelId": "z-andoTest2",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zAndoTest3__c",
+        "path": "zAndoTest3__c",
+        "labelId": "z-andoTest3",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zAndoTest4__c",
+        "path": "zAndoTest4__c",
+        "labelId": "z-andoTest4",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "testIndex__c",
+        "path": "testIndex__c",
+        "labelId": "testIndex",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "shipperCity__c",
+        "path": "shipperCity__c",
+        "labelId": "Shipper City",
+        "columnKey": "shipperCity__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "shippingState__c",
+        "path": "shippingState__c",
+        "labelId": "Shipping State",
+        "columnKey": "shippingState__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "carrierInvStatus__c",
+        "path": "carrierInvStatus__c",
+        "labelId": "Carrier INV Status",
+        "columnKey": "carrierInvStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "testBreak__c",
+        "path": "testBreak__c",
+        "labelId": "test break",
+        "columnKey": "testBreak__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "hughsep10__c",
+        "path": "hughsep10__c",
+        "labelId": "hughsep10",
+        "columnKey": "hughsep10__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "hughsep10B__c",
+        "path": "hughsep10B__c",
+        "labelId": "hughsep10b",
+        "columnKey": "hughsep10B__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "manifestTotalCostCustom__c",
+        "path": "manifestTotalCostCustom__c",
+        "labelId": "Manifest Total Cost Custom",
+        "columnKey": "manifestTotalCostCustom__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalBuyQuoteCustom__c",
+        "path": "totalBuyQuoteCustom__c",
+        "labelId": "Total Buy Quote Custom",
+        "columnKey": "totalBuyQuoteCustom__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalRev__c",
+        "path": "totalRev__c",
+        "labelId": "totalRev",
+        "columnKey": "totalRev__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalRevSum__c",
+        "path": "totalRevSum__c",
+        "labelId": "totalRevSum",
+        "columnKey": "totalRevSum__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalRevSumMargin__c",
+        "path": "totalRevSumMargin__c",
+        "labelId": "totalRevSumMargin",
+        "columnKey": "totalRevSumMargin__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "orderStatus__c",
+        "path": "orderStatus__c",
+        "labelId": "Order status",
+        "columnKey": "orderStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "legDeclaredValues__c",
+        "path": "legDeclaredValues__c",
+        "labelId": "Leg declared values",
+        "columnKey": "legDeclaredValues__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalDeclaredValue__c",
+        "path": "totalDeclaredValue__c",
+        "labelId": "Total declared value",
+        "columnKey": "totalDeclaredValue__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pickupContainers__c",
+        "path": "pickupContainers__c",
+        "labelId": "Pickup containers",
+        "columnKey": "pickupContainers__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "stopsLookup__c",
+        "path": "stopsLookup__c",
+        "labelId": "Stops Lookup",
+        "columnKey": "stopsLookup__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "formulaTest__c",
+        "path": "formulaTest__c",
+        "labelId": "formula test",
+        "columnKey": "formulaTest__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "multiselect__c",
+        "path": "multiselect__c",
+        "labelId": "Multiselect",
+        "columnKey": "multiselect__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "kpTest__c",
+        "path": "kpTest__c",
+        "labelId": "KP test",
+        "columnKey": "kpTest__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "firstStopLocationSelfLookup__c",
+        "path": "firstStopLocationSelfLookup__c",
+        "labelId": "First stop location (self lookup)",
+        "columnKey": "firstStopLocationSelfLookup__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoTest1__c",
+        "path": "zAndoTest1__c",
+        "labelId": "z-andoTest1",
+        "columnKey": "zAndoTest1__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoTest2__c",
+        "path": "zAndoTest2__c",
+        "labelId": "z-andoTest2",
+        "columnKey": "zAndoTest2__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoTest3__c",
+        "path": "zAndoTest3__c",
+        "labelId": "z-andoTest3",
+        "columnKey": "zAndoTest3__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoTest4__c",
+        "path": "zAndoTest4__c",
+        "labelId": "z-andoTest4",
+        "columnKey": "zAndoTest4__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "testIndex__c",
+        "path": "testIndex__c",
+        "labelId": "testIndex",
+        "columnKey": "testIndex__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-03-26T15:57:22.217Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "driverAppManifests",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

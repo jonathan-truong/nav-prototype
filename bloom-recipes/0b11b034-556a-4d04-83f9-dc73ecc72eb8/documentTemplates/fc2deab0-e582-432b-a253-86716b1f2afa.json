@@ -1,0 +1,23 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "fc2deab0-e582-432b-a253-86716b1f2afa",
+  "json": {
+    "name": "Ryan's rate con template",
+    "fullId": {
+      "arg": 44,
+      "formattedValue": "DOCT-44"
+    },
+    "$source": "manual",
+    "version": 3,
+    "$version": 2,
+    "$widgets": [],
+    "$createdAt": "2025-04-21T19:58:01.386Z",
+    "$createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "$updatedAt": "2025-04-21T19:58:28.767Z",
+    "$updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "$externalId": null,
+    "documentType": "rateConfirmation",
+    "rootObjectKey": "manifest",
+    "dataFormatVersion": "1"
+  }
+}

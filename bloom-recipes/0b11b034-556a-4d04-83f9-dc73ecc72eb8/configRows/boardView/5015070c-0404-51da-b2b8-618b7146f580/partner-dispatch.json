@@ -1,0 +1,36 @@
+{
+  "id": "2deab1fa-7c40-47be-b36e-025982e4c4ab",
+  "type": "boardView",
+  "name": "Partner Dispatch",
+  "json": {
+    "id": "2deab1fa-7c40-47be-b36e-025982e4c4ab",
+    "name": "Partner Dispatch",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "5015070c-0404-51da-b2b8-618b7146f580",
+    "filters": [],
+    "labelId": "Partner Dispatch",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "partner",
+      "ordersFullId",
+      "$createdAt",
+      "$updatedAt",
+      "drivers"
+    ],
+    "createdAt": "2025-01-09T14:50:50.697Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-08-28T17:34:31.496Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "columnWidths": {},
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

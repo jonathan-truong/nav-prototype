@@ -1,0 +1,52 @@
+{
+  "id": "d4d3d32e-c28c-47c4-a976-cec273573a74",
+  "type": "boardView",
+  "name": "Booked",
+  "json": {
+    "boardId": "d25f7334-5acc-4496-9390-89586953da70",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "booked"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Booked",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow"
+    ],
+    "isDefault": false,
+    "visibility": "board",
+    "description": "This is a Board to track where your drivers are and what they are working on",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId",
+      "drivers",
+      "status",
+      "assetWithLastKnownLocation",
+      "deliveryEta",
+      "assets",
+      "totalMiles",
+      "estimatedDurationFormatted"
+    ],
+    "orderByColumnKey": "fullId",
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

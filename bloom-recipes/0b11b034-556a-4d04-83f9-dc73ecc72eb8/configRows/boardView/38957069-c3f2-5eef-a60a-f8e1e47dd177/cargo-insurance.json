@@ -1,0 +1,47 @@
+{
+  "id": "c72cb3d8-7164-4c51-8af9-412c5482b80d",
+  "type": "boardView",
+  "name": "Cargo Insurance",
+  "json": {
+    "id": "2d4def42-c3e8-4086-9cd8-1f7bc61f107f",
+    "orgId": "9fd81271-0a24-43aa-b5fb-d5ff275265b0",
+    "boardId": "38957069-c3f2-5eef-a60a-f8e1e47dd177",
+    "filters": [
+      {
+        "path": "services",
+        "value": [
+          "cargoInsurance"
+        ],
+        "operator": "in",
+        "fieldType": "SelectField",
+        "filterKey": "services"
+      }
+    ],
+    "labelId": "Cargo Insurance",
+    "isPinned": false,
+    "columnIds": [
+      "services",
+      "partner",
+      "providerName",
+      "insuranceAmount",
+      "status",
+      "policyNumber",
+      "expiryDate",
+      "effectiveDate",
+      "documentCountLabel"
+    ],
+    "createdAt": "2025-01-06T15:23:34.636Z",
+    "createdBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "isDefault": false,
+    "updatedAt": "2025-01-06T15:23:34.636Z",
+    "updatedBy": "b4158743-f9df-43f5-a1ec-c05fdbb52441",
+    "visibility": "board",
+    "description": "This View shows all Partner Carriers & their Cargo Insurance Details.",
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "services"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": ""
+  }
+}

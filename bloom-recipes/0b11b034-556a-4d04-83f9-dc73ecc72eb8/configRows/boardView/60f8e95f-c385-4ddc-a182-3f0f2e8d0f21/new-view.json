@@ -1,0 +1,34 @@
+{
+  "id": "3ffaad9f-8cf6-443a-824f-c45a886fc0fb",
+  "type": "boardView",
+  "name": "New View",
+  "json": {
+    "id": "defaultView",
+    "layout": "table",
+    "boardId": "60f8e95f-c385-4ddc-a182-3f0f2e8d0f21",
+    "filters": [],
+    "labelId": "New View",
+    "ordinal": 1,
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "pickUpCompletionDateTime__c",
+      "pickUpArrivalDateTime__c",
+      "poNum",
+      "shipper_formattedAddress",
+      "consignee_formattedAddress",
+      "invoices"
+    ],
+    "createdAt": "",
+    "isDefault": false,
+    "visibility": "board",
+    "description": "sdfsdfsdf",
+    "layoutOptions": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

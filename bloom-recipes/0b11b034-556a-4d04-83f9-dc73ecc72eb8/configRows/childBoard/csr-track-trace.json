@@ -1,0 +1,78 @@
+{
+  "id": "d9180b16-554d-464d-90ff-50f83ce8b7f6",
+  "type": "childBoard",
+  "name": "CSR Track & Trace",
+  "json": {
+    "icon": "🔍",
+    "source": "manual",
+    "labelId": "CSR Track & Trace",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "drivers",
+      "assets",
+      "deliveryEta",
+      "assetWithLastKnownLocation",
+      "status",
+      "customer",
+      "loadTenderNum",
+      "refNum",
+      "poNum",
+      "shipper_formattedAddress",
+      "requestedPickupWindow",
+      "consignee_formattedAddress",
+      "requestedDeliveryWindow",
+      "specialInstructions",
+      "totalMiles",
+      "platformTags",
+      "csrs"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "drivers",
+        "assets",
+        "deliveryEta",
+        "assetWithLastKnownLocation",
+        "status",
+        "customer",
+        "loadTenderNum",
+        "refNum",
+        "poNum",
+        "shipper_formattedAddress",
+        "requestedPickupWindow",
+        "consignee_formattedAddress",
+        "requestedDeliveryWindow",
+        "specialInstructions",
+        "totalMiles",
+        "platformTags",
+        "csrs"
+      ],
+      "description": "This is a Board for a CSR to better manage orders",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId",
+        "drivers",
+        "assets",
+        "deliveryEta",
+        "assetWithLastKnownLocation"
+      ],
+      "orderByColumnKey": "fullId",
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "templateKey": "trackAndTrace"
+  }
+}

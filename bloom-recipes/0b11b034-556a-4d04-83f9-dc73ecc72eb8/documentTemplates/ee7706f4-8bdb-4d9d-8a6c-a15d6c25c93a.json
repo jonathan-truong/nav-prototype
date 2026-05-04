@@ -1,0 +1,17 @@
+{
+  "objectKey": "documentTemplate",
+  "key": "ee7706f4-8bdb-4d9d-8a6c-a15d6c25c93a",
+  "json": {
+    "name": "New template",
+    "fullId": {
+      "arg": 47,
+      "formattedValue": "DOCT-47"
+    },
+    "$source": "manual",
+    "version": 4,
+    "$widgets": [],
+    "documentType": "ace",
+    "rootObjectKey": "manifest",
+    "dataFormatVersion": "1"
+  }
+}

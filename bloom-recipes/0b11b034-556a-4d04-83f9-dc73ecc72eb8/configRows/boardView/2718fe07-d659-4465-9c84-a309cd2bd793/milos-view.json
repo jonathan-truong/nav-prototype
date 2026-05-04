@@ -1,0 +1,46 @@
+{
+  "id": "e6e36e60-9e94-44e1-b020-f80dc5bf7ad6",
+  "type": "boardView",
+  "name": "Milos' View",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "2718fe07-d659-4465-9c84-a309cd2bd793",
+    "filters": [
+      {
+        "path": "status",
+        "value": [
+          "new",
+          "booked"
+        ],
+        "operator": "in",
+        "fieldType": "StatusField",
+        "filterKey": "status"
+      }
+    ],
+    "labelId": "Milos' View",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "status",
+      "customer",
+      "partner",
+      "estimatedDurationFormatted",
+      "totalEarnings",
+      "totalCost",
+      "margin",
+      "totalMiles",
+      "buyQuotes"
+    ],
+    "createdAt": "2024-03-15T18:37:59.623Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "isDefault": false,
+    "updatedAt": "2024-06-17T16:32:25.127Z",
+    "updatedBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

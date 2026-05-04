@@ -1,0 +1,71 @@
+{
+  "id": "2bbb5b92-ce6d-40bc-a35a-8026db452b5c",
+  "type": "childBoard",
+  "name": "HOT",
+  "json": {
+    "id": "2bbb5b92-ce6d-40bc-a35a-8026db452b5c",
+    "icon": "🆕",
+    "source": "manual",
+    "labelId": "HOT",
+    "parents": [
+      {
+        "id": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+        "key": "order",
+        "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8"
+      }
+    ],
+    "parentId": "c92e646d-cb29-5294-9e53-2b4885e6d7ad",
+    "objectKey": "order",
+    "parentKey": "order",
+    "rootOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "columnKeys": [
+      "fullId",
+      "status",
+      "refNum",
+      "loadTenderNum",
+      "sellQuoteFullId",
+      "$updatedAt",
+      "$createdAt",
+      "services",
+      "lastUpdated"
+    ],
+    "defaultView": {
+      "filters": [],
+      "columnIds": [
+        "fullId",
+        "status",
+        "refNum",
+        "loadTenderNum",
+        "sellQuoteFullId",
+        "$updatedAt",
+        "$createdAt",
+        "services",
+        "lastUpdated"
+      ],
+      "description": "All orders that have ASAP or HOT in the name",
+      "filtersOperator": "and",
+      "stickyColumnIds": [
+        "fullId"
+      ],
+      "orderByDirection": "asc",
+      "mainLinkColumnKey": ""
+    },
+    "parentOrgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "securityFilters": [
+      {
+        "filters": [
+          {
+            "path": "tags",
+            "value": [
+              "9d510829-d826-4520-a9c7-4fc5766e2ef4"
+            ],
+            "operator": "in",
+            "fieldType": "ConnectionField",
+            "filterKey": "platformTags"
+          }
+        ],
+        "operator": "and"
+      }
+    ]
+  }
+}

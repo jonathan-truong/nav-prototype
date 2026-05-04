@@ -1,0 +1,737 @@
+{
+  "configKey": "object",
+  "key": "$custom_partner",
+  "json": {
+    "key": "$custom_partner",
+    "fields": [
+      {
+        "key": "address",
+        "before": "compliances",
+        "configKey": "field"
+      },
+      {
+        "key": "compliances",
+        "before": "status",
+        "configKey": "field"
+      },
+      {
+        "key": "status",
+        "configKey": "field",
+        "typeConfig": {
+          "options": [
+            {
+              "color": "status-green",
+              "value": "active",
+              "labelId": "Active"
+            },
+            {
+              "color": "status-cyan",
+              "value": "pending",
+              "labelId": "Pending"
+            },
+            {
+              "color": "status-pink",
+              "value": "doNotUse",
+              "labelId": "Do Not Use"
+            },
+            {
+              "color": "status-red",
+              "value": "inactive",
+              "labelId": "Inactive"
+            }
+          ],
+          "statusMap": {
+            "active": {
+              "color": "status-green",
+              "labelId": "Active"
+            },
+            "pending": {
+              "color": "status-cyan",
+              "labelId": "Pending"
+            },
+            "doNotUse": {
+              "color": "status-pink",
+              "labelId": "Do Not Use"
+            },
+            "inactive": {
+              "color": "status-red",
+              "labelId": "Inactive"
+            }
+          }
+        }
+      },
+      {
+        "key": "requestedOnboardingDocuments",
+        "before": "isActive",
+        "configKey": "field"
+      },
+      {
+        "key": "isActive",
+        "before": "rateDateCalculationSource",
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "rateDateCalculationSource",
+        "before": "partnerRateCards",
+        "configKey": "field"
+      },
+      {
+        "key": "partnerRateCards",
+        "before": "accessorials",
+        "configKey": "field"
+      },
+      {
+        "key": "accessorials",
+        "before": "tariffs",
+        "configKey": "field"
+      },
+      {
+        "key": "tariffs",
+        "before": "partnerCompliances",
+        "configKey": "field"
+      },
+      {
+        "key": "partnerCompliances",
+        "before": "scac",
+        "configKey": "field"
+      },
+      {
+        "key": "scac",
+        "before": "smc3BillingAccNum",
+        "configKey": "field"
+      },
+      {
+        "key": "billingContact",
+        "before": "fmcsaCarrier",
+        "configKey": "field"
+      },
+      {
+        "key": "fmcsaCarrier",
+        "before": "legalName",
+        "configKey": "field"
+      },
+      {
+        "key": "legalName",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "usdotNumber",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "usdotStatus",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "mcIdFMCSA",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "geotabVerified",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "physicalAddress",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "mailingAddress",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "email",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "phoneNumber",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "operatingAuthorityStatus",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "carrierOperation",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fleetVocation",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "powerUnits",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "activePowerUnits",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "averageEngineHours",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "activeTrailers",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "totalDrivers",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "activeDrivers",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "recentMileage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "recentMileageYear",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "mcs150Mileage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "safetyRating",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "safetyRatingDate",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "safetyReviewDate",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "safetyReviewType",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "safetyPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "unsafeDrivingMeasure",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "speedingPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "seatbeltPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "harshAccelerationPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "harshConcerningPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "harshBrakingPercentile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "vehicleMaintenanceMeasure",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "hosComplianceMeasure",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "drugAlcoholMeasure",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "driverFitnessMeasure",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "totalInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "vehicleInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceVehicleInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceVehicleInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "driverInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceDriverInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceDriverInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "hazmatInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceHazmatInspections",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceHazmatInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "totalCrashes",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fatalCrashes",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "injuryCrashes",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "towCrashes",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "nationalAverageOutOfServiceVehicleInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "nationalAverageOutOfServiceDriverInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "nationalAverageOutOfServiceHazmatInspectionsPercentage",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bipdInsuranceRequired",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bipdInsuranceOnFile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bipdRequiredAmount",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "cargoInsuranceRequired",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "cargoInsuranceOnFile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bondInsuranceRequired",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "bondInsuranceOnFile",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "entityType",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "outOfServiceDate",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "mcs150FormDate",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "dbaName",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fmcsaCompanySnapshotURL",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fmcsaSMSOverviewURL",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fmcsaCensusTimestamp",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fmcsaLicensingAndInsuranceURL",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "fmcsaLicensingAndInsuranceLastSynced",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "transportationGovDataURL",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "transportationGovDataLastSynced",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "qcMobileURL",
+        "type": "any",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "qcMobileTimestamp",
+        "type": "any",
+        "before": "tradeReference",
+        "isArray": true,
+        "configKey": "field",
+        "isImportable": true
+      },
+      {
+        "key": "tradeReference",
+        "before": null,
+        "configKey": "field"
+      },
+      {
+        "key": "agreementDate__c",
+        "type": "date",
+        "label": "Agreement date",
+        "before": "contractStartDate__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "description": "Broker-carrier agreement date",
+        "isImportable": true
+      },
+      {
+        "key": "contractStartDate__c",
+        "type": "date",
+        "label": "Contract start date",
+        "before": "contractEndDate__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "contractEndDate__c",
+        "type": "date",
+        "label": "Contract end date",
+        "before": "geoTabVerified__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true
+      },
+      {
+        "key": "geoTabVerified__c",
+        "type": "toggle",
+        "label": "GeoTab Verified",
+        "before": "partnerIdLookup__c",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {},
+        "$declarator": {
+          "key": "$custom_partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "description": "Shares that the Carrier is verified by GeoTab",
+        "isImportable": true
+      },
+      {
+        "key": "partnerIdLookup__c",
+        "type": "any",
+        "label": "Partner ID Lookup",
+        "paths": [
+          "fullId"
+        ],
+        "before": "liabilityInsurance__c",
+        "isArray": true,
+        "isCustom": true,
+        "configKey": "field",
+        "expression": "LOOKUP({fullId})",
+        "typeConfig": {
+          "format": "PARTNER-{1}"
+        },
+        "$declarator": {
+          "key": "$custom_partner",
+          "ref": true,
+          "configKey": "object"
+        },
+        "isImportable": true,
+        "derivationType": "lookup"
+      },
+      {
+        "key": "liabilityInsurance__c",
+        "type": "number",
+        "label": "Liability insurance",
+        "isCustom": true,
+        "configKey": "field",
+        "typeConfig": {
+          "max": null,
+          "min": null,
+          "isInteger": true,
+          "unitLabel": ""
+        }
+      }
+    ],
+    "isMixin": true,
+    "configKey": "object",
+    "createdAt": "2024-03-06T15:23:42.396Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

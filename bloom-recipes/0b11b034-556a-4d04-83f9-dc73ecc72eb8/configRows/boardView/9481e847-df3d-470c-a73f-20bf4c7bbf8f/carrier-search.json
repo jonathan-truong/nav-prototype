@@ -1,0 +1,32 @@
+{
+  "id": "26f582e5-af9b-452e-ab68-ea7b53754872",
+  "type": "boardView",
+  "name": "Carrier Search",
+  "json": {
+    "id": "26f582e5-af9b-452e-ab68-ea7b53754872",
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "9481e847-df3d-470c-a73f-20bf4c7bbf8f",
+    "filters": [],
+    "labelId": "Carrier Search",
+    "isPinned": true,
+    "columnIds": [
+      "name",
+      "assets",
+      "serviceTypes",
+      "geoTabVerified__c",
+      "dotId"
+    ],
+    "createdAt": "2024-06-06T15:50:31.561Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "isDefault": false,
+    "updatedAt": "2024-06-06T15:54:08.128Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "visibility": "board",
+    "description": null,
+    "filtersOperator": "and",
+    "stickyColumnIds": [],
+    "orderByColumnKey": "dotId",
+    "orderByDirection": "desc",
+    "mainLinkColumnKey": "name"
+  }
+}

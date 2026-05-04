@@ -1,0 +1,993 @@
+{
+  "configKey": "board",
+  "key": "$custom_order",
+  "json": {
+    "key": "$custom_order",
+    "columns": [
+      {
+        "key": "originState__c",
+        "path": "originState__c",
+        "labelId": "Origin State",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "destinationCity__c",
+        "path": "destinationCity__c",
+        "labelId": "Destination City",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "destinationState__c",
+        "path": "destinationState__c",
+        "labelId": "Destination State",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "pUAppointment__c",
+        "path": "pUAppointment__c",
+        "labelId": "P/U Appointment",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "delAppointment__c",
+        "path": "delAppointment__c",
+        "labelId": "DEL Appointment",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "appointmentNotes__c",
+        "path": "appointmentNotes__c",
+        "labelId": "Appointment Notes",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "etaStatus__c",
+        "path": "etaStatus__c",
+        "labelId": "ETA Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "maxBuy__c",
+        "path": "maxBuy__c",
+        "labelId": "Carrier Offerings",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "equipment__c",
+        "path": "equipment__c",
+        "labelId": "Equipment",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "claimStatus__c",
+        "path": "claimStatus__c",
+        "labelId": "Claim Status",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "claimAmount__c",
+        "path": "claimAmount__c",
+        "labelId": "Claim Amount",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "claimType__c",
+        "path": "claimType__c",
+        "labelId": "Claim Type",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "claimSubmissionDate__c",
+        "path": "claimSubmissionDate__c",
+        "labelId": "Claim Submission Date",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "reportedByClaims__c",
+        "path": "reportedByClaims__c",
+        "labelId": "Reported By-Claims",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "responsibleParty__c",
+        "path": "responsibleParty__c",
+        "labelId": "Responsible Party-Claims",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "notesClaims__c",
+        "path": "notesClaims__c",
+        "labelId": "Notes-Claims",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "reportedOnClaims__c",
+        "path": "reportedOnClaims__c",
+        "labelId": "Reported on-Claims",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "totalFreightValueClaims__c",
+        "path": "totalFreightValueClaims__c",
+        "labelId": "Total Freight Value-Claims",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "pod__c",
+        "path": "pod__c",
+        "labelId": "POD",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "manifestStatus__c",
+        "path": "manifestStatus__c",
+        "labelId": "Manifest Status",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "carrierInformation__c",
+        "path": "carrierInformation__c",
+        "labelId": "Carrier Information",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "stopsLookup__c",
+        "path": "stopsLookup__c",
+        "labelId": "Stops Lookup",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "ratePerMile__c",
+        "path": "ratePerMile__c",
+        "labelId": "Rate Per Mile",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "grossMargin__c",
+        "path": "grossMargin__c",
+        "labelId": "Gross Margin (%)",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "onTimePickUp__c",
+        "path": "onTimePickUp__c",
+        "labelId": "On Time Pick Up?",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "onTimeDelivery__c",
+        "path": "onTimeDelivery__c",
+        "labelId": "On Time Delivery",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "pickUpArrivalDateTime__c",
+        "path": "pickUpArrivalDateTime__c",
+        "labelId": "Pick Up Arrival Date & Time",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "pickUpCompletionDateTime__c",
+        "path": "pickUpCompletionDateTime__c",
+        "labelId": "Pick Up Completion Date & Time",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "deliveryArrivalDateTime__c",
+        "path": "deliveryArrivalDateTime__c",
+        "labelId": "Delivery Arrival Date & Time",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "deliveryCompletionDateTime__c",
+        "path": "deliveryCompletionDateTime__c",
+        "labelId": "Delivery Completion Date & Time",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "costPerMile__c",
+        "path": "costPerMile__c",
+        "labelId": "Cost Per Mile",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "profitPercentage__c",
+        "path": "profitPercentage__c",
+        "labelId": "Profit Percentage",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "commodityWeights__c",
+        "path": "commodityWeights__c",
+        "labelId": "Commodity Weights",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "formulaTest2__c",
+        "path": "formulaTest2__c",
+        "labelId": "Formula test 2",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "timeToDelivery__c",
+        "path": "timeToDelivery__c",
+        "labelId": "Time to delivery",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "formulaTest3__c",
+        "path": "formulaTest3__c",
+        "labelId": "Formula test 3",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zAndoMeasurement__c",
+        "path": "zAndoMeasurement__c",
+        "labelId": "zAndoMeasurement 2",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "now__c",
+        "path": "now__c",
+        "labelId": "now",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "testFormula5__c",
+        "path": "testFormula5__c",
+        "labelId": "test formula 5",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "test",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "formulaTest4__c",
+        "path": "formulaTest4__c",
+        "labelId": "formula test 4",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "costCad__c",
+        "path": "costCad__c",
+        "labelId": "Cost (CAD)",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "testNumber__c",
+        "path": "testNumber__c",
+        "labelId": "Test number",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "lookupTest6__c",
+        "path": "lookupTest6__c",
+        "labelId": "Lookup Test 6",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "customMoney__c",
+        "path": "customMoney__c",
+        "labelId": "Custom money",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "assignThisCarrier__c",
+        "path": "assignThisCarrier__c",
+        "labelId": "Assign this Carrier",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "customerName__c",
+        "path": "customerName__c",
+        "labelId": "Customer name",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "driverName__c",
+        "path": "driverName__c",
+        "labelId": "Driver name",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "statusLookup__c",
+        "path": "statusLookup__c",
+        "labelId": "Status lookup",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "zRequestedDuration__c",
+        "path": "zRequestedDuration__c",
+        "labelId": "zRequestedDuration",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "toggle__c",
+        "path": "toggle__c",
+        "labelId": "Toggle",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "externalUrl__c",
+        "path": "externalUrl__c",
+        "labelId": "External URL",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "link__c",
+        "path": "link__c",
+        "labelId": "Link",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "attachedLink__c",
+        "path": "attachedLink__c",
+        "labelId": "Attached Link",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "zAndoTest3__c",
+        "path": "zAndoTest3__c",
+        "labelId": "z_andoTest3",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "derekTest__c",
+        "path": "derekTest__c",
+        "labelId": "DerekTest",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "manualLocation__c",
+        "path": "manualLocation__c",
+        "labelId": "manual location",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "originCity__c",
+        "path": "originCity__c",
+        "labelId": "origin City",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "quoteLineItemTypes__c",
+        "path": "quoteLineItemTypes__c",
+        "labelId": "Quote Line Item Types",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "trailerId__c",
+        "path": "trailerId__c",
+        "labelId": "trailer id",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "numberOfStops__c",
+        "path": "numberOfStops__c",
+        "labelId": "Number of stops",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "sdf__c",
+        "path": "sdf__c",
+        "labelId": "sdf",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "manifestNickname__c",
+        "path": "manifestNickname__c",
+        "labelId": "Manifest Nickname",
+        "configKey": "column",
+        "isEditable": false,
+        "isEditableInline": false
+      },
+      {
+        "key": "bikeType__c",
+        "path": "bikeType__c",
+        "labelId": "Bike Type",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      },
+      {
+        "key": "concatTEst__c",
+        "path": "concatTEst__c",
+        "labelId": "Concat TEst",
+        "configKey": "column",
+        "isEditable": true,
+        "isEditableInline": true
+      }
+    ],
+    "filters": [
+      {
+        "key": "originState__c",
+        "path": "originState__c",
+        "labelId": "Origin State",
+        "columnKey": "originState__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "destinationCity__c",
+        "path": "destinationCity__c",
+        "labelId": "Destination City",
+        "columnKey": "destinationCity__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "destinationState__c",
+        "path": "destinationState__c",
+        "labelId": "Destination State",
+        "columnKey": "destinationState__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pUAppointment__c",
+        "path": "pUAppointment__c",
+        "labelId": "P/U Appointment",
+        "columnKey": "pUAppointment__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "delAppointment__c",
+        "path": "delAppointment__c",
+        "labelId": "DEL Appointment",
+        "columnKey": "delAppointment__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "appointmentNotes__c",
+        "path": "appointmentNotes__c",
+        "labelId": "Appointment Notes",
+        "columnKey": "appointmentNotes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "etaStatus__c",
+        "path": "etaStatus__c",
+        "labelId": "ETA Status",
+        "columnKey": "etaStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "maxBuy__c",
+        "path": "maxBuy__c",
+        "labelId": "Carrier Offerings",
+        "columnKey": "maxBuy__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "equipment__c",
+        "path": "equipment__c",
+        "labelId": "Equipment",
+        "columnKey": "equipment__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "claimStatus__c",
+        "path": "claimStatus__c",
+        "labelId": "Claim Status",
+        "columnKey": "claimStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "claimAmount__c",
+        "path": "claimAmount__c",
+        "labelId": "Claim Amount",
+        "columnKey": "claimAmount__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "claimType__c",
+        "path": "claimType__c",
+        "labelId": "Claim Type",
+        "columnKey": "claimType__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "claimSubmissionDate__c",
+        "path": "claimSubmissionDate__c",
+        "labelId": "Claim Submission Date",
+        "columnKey": "claimSubmissionDate__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "reportedByClaims__c",
+        "path": "reportedByClaims__c",
+        "labelId": "Reported By-Claims",
+        "columnKey": "reportedByClaims__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "responsibleParty__c",
+        "path": "responsibleParty__c",
+        "labelId": "Responsible Party-Claims",
+        "columnKey": "responsibleParty__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "notesClaims__c",
+        "path": "notesClaims__c",
+        "labelId": "Notes-Claims",
+        "columnKey": "notesClaims__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "reportedOnClaims__c",
+        "path": "reportedOnClaims__c",
+        "labelId": "Reported on-Claims",
+        "columnKey": "reportedOnClaims__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "totalFreightValueClaims__c",
+        "path": "totalFreightValueClaims__c",
+        "labelId": "Total Freight Value-Claims",
+        "columnKey": "totalFreightValueClaims__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pod__c",
+        "path": "pod__c",
+        "labelId": "POD",
+        "columnKey": "pod__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "manifestStatus__c",
+        "path": "manifestStatus__c",
+        "labelId": "Manifest Status",
+        "columnKey": "manifestStatus__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "carrierInformation__c",
+        "path": "carrierInformation__c",
+        "labelId": "Carrier Information",
+        "columnKey": "carrierInformation__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "stopsLookup__c",
+        "path": "stopsLookup__c",
+        "labelId": "Stops Lookup",
+        "columnKey": "stopsLookup__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "ratePerMile__c",
+        "path": "ratePerMile__c",
+        "labelId": "Rate Per Mile",
+        "columnKey": "ratePerMile__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "grossMargin__c",
+        "path": "grossMargin__c",
+        "labelId": "Gross Margin (%)",
+        "columnKey": "grossMargin__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "onTimePickUp__c",
+        "path": "onTimePickUp__c",
+        "labelId": "On Time Pick Up?",
+        "columnKey": "onTimePickUp__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "onTimeDelivery__c",
+        "path": "onTimeDelivery__c",
+        "labelId": "On Time Delivery",
+        "columnKey": "onTimeDelivery__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pickUpArrivalDateTime__c",
+        "path": "pickUpArrivalDateTime__c",
+        "labelId": "Pick Up Arrival Date & Time",
+        "columnKey": "pickUpArrivalDateTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "pickUpCompletionDateTime__c",
+        "path": "pickUpCompletionDateTime__c",
+        "labelId": "Pick Up Completion Date & Time",
+        "columnKey": "pickUpCompletionDateTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "deliveryArrivalDateTime__c",
+        "path": "deliveryArrivalDateTime__c",
+        "labelId": "Delivery Arrival Date & Time",
+        "columnKey": "deliveryArrivalDateTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "deliveryCompletionDateTime__c",
+        "path": "deliveryCompletionDateTime__c",
+        "labelId": "Delivery Completion Date & Time",
+        "columnKey": "deliveryCompletionDateTime__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "costPerMile__c",
+        "path": "costPerMile__c",
+        "labelId": "Cost Per Mile",
+        "columnKey": "costPerMile__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "profitPercentage__c",
+        "path": "profitPercentage__c",
+        "labelId": "Profit Percentage",
+        "columnKey": "profitPercentage__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "commodityWeights__c",
+        "path": "commodityWeights__c",
+        "labelId": "Commodity Weights",
+        "columnKey": "commodityWeights__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "formulaTest2__c",
+        "path": "formulaTest2__c",
+        "labelId": "Formula test 2",
+        "columnKey": "formulaTest2__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "timeToDelivery__c",
+        "path": "timeToDelivery__c",
+        "labelId": "Time to delivery",
+        "columnKey": "timeToDelivery__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "formulaTest3__c",
+        "path": "formulaTest3__c",
+        "labelId": "Formula test 3",
+        "columnKey": "formulaTest3__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoMeasurement__c",
+        "path": "zAndoMeasurement__c",
+        "labelId": "zAndoMeasurement 2",
+        "columnKey": "zAndoMeasurement__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "now__c",
+        "path": "now__c",
+        "labelId": "now",
+        "columnKey": "now__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "testFormula5__c",
+        "path": "testFormula5__c",
+        "labelId": "test formula 5",
+        "columnKey": "testFormula5__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "test__c",
+        "path": "test__c",
+        "labelId": "test",
+        "columnKey": "test__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "formulaTest4__c",
+        "path": "formulaTest4__c",
+        "labelId": "formula test 4",
+        "columnKey": "formulaTest4__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "costCad__c",
+        "path": "costCad__c",
+        "labelId": "Cost (CAD)",
+        "columnKey": "costCad__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "testNumber__c",
+        "path": "testNumber__c",
+        "labelId": "Test number",
+        "columnKey": "testNumber__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "lookupTest6__c",
+        "path": "lookupTest6__c",
+        "labelId": "Lookup Test 6",
+        "columnKey": "lookupTest6__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customMoney__c",
+        "path": "customMoney__c",
+        "labelId": "Custom money",
+        "columnKey": "customMoney__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "assignThisCarrier__c",
+        "path": "assignThisCarrier__c",
+        "labelId": "Assign this Carrier",
+        "columnKey": "assignThisCarrier__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "customerName__c",
+        "path": "customerName__c",
+        "labelId": "Customer name",
+        "columnKey": "customerName__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "driverName__c",
+        "path": "driverName__c",
+        "labelId": "Driver name",
+        "columnKey": "driverName__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "statusLookup__c",
+        "path": "statusLookup__c",
+        "labelId": "Status lookup",
+        "columnKey": "statusLookup__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zRequestedDuration__c",
+        "path": "zRequestedDuration__c",
+        "labelId": "zRequestedDuration",
+        "columnKey": "zRequestedDuration__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "toggle__c",
+        "path": "toggle__c",
+        "labelId": "Toggle",
+        "columnKey": "toggle__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "externalUrl__c",
+        "path": "externalUrl__c",
+        "labelId": "External URL",
+        "columnKey": "externalUrl__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "link__c",
+        "path": "link__c",
+        "labelId": "Link",
+        "columnKey": "link__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "attachedLink__c",
+        "path": "attachedLink__c",
+        "labelId": "Attached Link",
+        "columnKey": "attachedLink__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "zAndoTest3__c",
+        "path": "zAndoTest3__c",
+        "labelId": "z_andoTest3",
+        "columnKey": "zAndoTest3__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "derekTest__c",
+        "path": "derekTest__c",
+        "labelId": "DerekTest",
+        "columnKey": "derekTest__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "manualLocation__c",
+        "path": "manualLocation__c",
+        "labelId": "manual location",
+        "columnKey": "manualLocation__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "originCity__c",
+        "path": "originCity__c",
+        "labelId": "origin City",
+        "columnKey": "originCity__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "quoteLineItemTypes__c",
+        "path": "quoteLineItemTypes__c",
+        "labelId": "Quote Line Item Types",
+        "columnKey": "quoteLineItemTypes__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "trailerId__c",
+        "path": "trailerId__c",
+        "labelId": "trailer id",
+        "columnKey": "trailerId__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "numberOfStops__c",
+        "path": "numberOfStops__c",
+        "labelId": "Number of stops",
+        "columnKey": "numberOfStops__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "sdf__c",
+        "path": "sdf__c",
+        "labelId": "sdf",
+        "columnKey": "sdf__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "manifestNickname__c",
+        "path": "manifestNickname__c",
+        "labelId": "Manifest Nickname",
+        "columnKey": "manifestNickname__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "bikeType__c",
+        "path": "bikeType__c",
+        "labelId": "Bike Type",
+        "columnKey": "bikeType__c",
+        "configKey": "filter"
+      },
+      {
+        "key": "concatTEst__c",
+        "path": "concatTEst__c",
+        "labelId": "Concat TEst",
+        "columnKey": "concatTEst__c",
+        "configKey": "filter"
+      }
+    ],
+    "isMixin": true,
+    "configKey": "board",
+    "createdAt": "2024-03-28T20:25:46.200Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

@@ -1,0 +1,398 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_task",
+  "json": {
+    "key": "$custom_task",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "before": "commodities",
+        "fields": [
+          {
+            "key": "totalEarnings",
+            "path": "totalEarnings",
+            "before": "legOriginAndDestinationAddress",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legOriginAndDestinationAddress",
+            "path": "legOriginAndDestinationAddress",
+            "before": "taskFullID",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "taskFullID",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "taskType",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legOriginName",
+            "path": "legOriginName",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legOriginAddress",
+            "path": "legOriginAddress",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legOriginCityState",
+            "path": "legOriginCityState",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legDestinationName",
+            "path": "legDestinationName",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legDestinationAddress",
+            "path": "legDestinationAddress",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legDestinationCityState",
+            "path": "legDestinationCityState",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "stops",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "notes",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "accessorials",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "previousLegDrivers",
+            "path": "previousLegDrivers",
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "order",
+            "path": "order",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalMiles",
+            "path": "totalMiles",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerSurfaceTest__c",
+            "path": "customerSurfaceTest__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "originRequestedTimeV2__c",
+            "path": "originRequestedTimeV2__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "earnings",
+            "path": "earnings",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "connectedTasks",
+            "path": "connectedTasks",
+            "before": null,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legDeliveryTime__c",
+            "path": "legDeliveryTime__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "legPickupTime__c",
+            "path": "legPickupTime__c",
+            "before": null,
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "stopAddress",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "before": "details",
+        "fields": [
+          {
+            "key": "totalCommoditiesQuantity",
+            "before": "commodities",
+            "configKey": "detailField"
+          },
+          {
+            "key": "commodities",
+            "before": "totalCommoditiesWeight",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCommoditiesWeight",
+            "before": "relatedCommoditiesLabel",
+            "configKey": "detailField"
+          },
+          {
+            "key": "relatedCommoditiesLabel",
+            "path": "relatedCommoditiesLabel",
+            "before": "relatedCommodities",
+            "configKey": "detailField"
+          },
+          {
+            "key": "relatedCommodities",
+            "path": "relatedCommodities",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "label": "Partner Carrier Details",
+        "before": "template",
+        "fields": [
+          {
+            "key": "manifestFullId",
+            "before": "asset",
+            "configKey": "detailField"
+          },
+          {
+            "key": "asset",
+            "before": "manifest",
+            "isHidden": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "manifest",
+            "path": "manifest",
+            "before": "partner",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partner",
+            "before": "totalCost",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCost",
+            "path": "totalCost",
+            "before": "requestedTime",
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedTime",
+            "before": "arrivedAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "arrivedAt",
+            "path": "arrivedAt",
+            "before": "actualArrivalTime",
+            "configKey": "detailField",
+            "$declarator": {
+              "key": "$custom_task",
+              "configKey": "detailView"
+            }
+          },
+          {
+            "key": "actualArrivalTime",
+            "before": "completedAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "completedAt",
+            "path": "completedAt",
+            "before": "completedTime",
+            "configKey": "detailField",
+            "$declarator": {
+              "key": "$custom_task",
+              "configKey": "detailView"
+            }
+          },
+          {
+            "key": "completedTime",
+            "before": "taskETAStatus",
+            "configKey": "detailField"
+          },
+          {
+            "key": "taskETAStatus",
+            "before": "assignees",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assignees",
+            "before": "description",
+            "configKey": "detailField"
+          },
+          {
+            "key": "description",
+            "before": "partnerNotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partnerNotes",
+            "before": "taskRefNum",
+            "configKey": "detailField"
+          },
+          {
+            "key": "taskRefNum",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Partner Carrier Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "template",
+        "before": null,
+        "fields": [
+          {
+            "key": "templateFullId",
+            "before": "templateName",
+            "configKey": "detailField"
+          },
+          {
+            "key": "templateDescription",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      },
+      {
+        "key": "Task",
+        "label": "Task",
+        "before": "general",
+        "fields": [
+          {
+            "key": "taskSpecificAssets__c",
+            "path": "taskSpecificAssets__c",
+            "before": "declaredValue__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "declaredValue__c",
+            "path": "declaredValue__c",
+            "before": "containerNo__c",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "containerNo__c",
+            "path": "containerNo__c",
+            "before": "accessorials__1",
+            "isCustom": true,
+            "configKey": "detailField"
+          },
+          {
+            "key": "accessorials__1",
+            "path": "accessorials",
+            "before": "inprogressAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "inprogressAt",
+            "path": "inprogressAt",
+            "before": "incompleteAt",
+            "configKey": "detailField"
+          },
+          {
+            "key": "incompleteAt",
+            "path": "incompleteAt",
+            "before": "documents",
+            "configKey": "detailField"
+          },
+          {
+            "key": "documents",
+            "path": "documents",
+            "before": "destinationAddressPostCode",
+            "configKey": "detailField"
+          },
+          {
+            "key": "destinationAddressPostCode",
+            "path": "destinationAddressPostCode",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Task",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "Leg",
+        "label": "Leg",
+        "before": "details",
+        "fields": [
+          {
+            "key": "LegId",
+            "path": "",
+            "before": "destinationAddress",
+            "configKey": "detailField"
+          },
+          {
+            "key": "destinationAddress",
+            "path": "destinationAddress",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Leg",
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-05-22T19:59:06.486Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "targetKey": "task",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

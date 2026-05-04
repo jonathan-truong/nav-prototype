@@ -1,0 +1,39 @@
+{
+  "id": "29291cfd-7559-4e0d-92fc-c3cfb582f765",
+  "type": "boardView",
+  "name": "Demo",
+  "json": {
+    "orgId": "0b11b034-556a-4d04-83f9-dc73ecc72eb8",
+    "boardId": "9e671f11-61f4-4c27-9073-91af8ddc57a5",
+    "filters": [],
+    "labelId": "Demo",
+    "isPinned": false,
+    "columnIds": [
+      "fullId",
+      "totalDeclaredValue__c",
+      "name",
+      "drivers",
+      "tasksStopsFullId",
+      "totalMiles",
+      "estimatedDurationFormatted",
+      "ordersFullId",
+      "tasksFullId",
+      "dispatchedAt",
+      "legDeclaredValues__c"
+    ],
+    "createdAt": "2025-01-22T15:41:52.434Z",
+    "createdBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "isDefault": false,
+    "updatedAt": "2025-02-14T05:25:43.944Z",
+    "updatedBy": "9a3c0c42-f30f-451c-acb9-28372001d641",
+    "visibility": "board",
+    "description": null,
+    "searchTermList": [],
+    "filtersOperator": "and",
+    "stickyColumnIds": [
+      "fullId"
+    ],
+    "orderByDirection": "asc",
+    "mainLinkColumnKey": "fullId"
+  }
+}

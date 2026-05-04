@@ -1,0 +1,104 @@
+{
+  "configKey": "widget",
+  "key": "onboardingPartner__c",
+  "json": {
+    "key": "onboardingPartner__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "liabilityInsuranceCoverage__c",
+        "path": "liabilityInsuranceCoverage__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "liabilityInsuranceExpiryDate__c",
+        "path": "liabilityInsuranceExpiryDate__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "cargoInsuranceCoverage__c",
+        "path": "cargoInsuranceCoverage__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "cargoInsuranceExpiryDate__c",
+        "path": "cargoInsuranceExpiryDate__c",
+        "isHidden": true,
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      },
+      {
+        "key": "insuranceProvider__c",
+        "path": "insuranceProvider__c",
+        "field": {
+          "key": "insuranceProvider__c",
+          "type": {
+            "key": "text",
+            "ref": true,
+            "configKey": "type"
+          },
+          "label": "Insurance Provider",
+          "paths": [
+            "compliances.provider"
+          ],
+          "isArray": true,
+          "isCustom": true,
+          "configKey": "field",
+          "expression": "LOOKUP({compliances.provider})",
+          "$declarator": {
+            "key": "$custom_partner",
+            "configKey": "object"
+          },
+          "isImportable": true,
+          "derivationType": "lookup"
+        },
+        "configKey": "widgetField",
+        "$declarator": {
+          "key": "onboardingPartner__c",
+          "configKey": "widget"
+        }
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "Delete 1"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "objectKey": "partner",
+    "updatedAt": "2026-03-31T19:58:38.138Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

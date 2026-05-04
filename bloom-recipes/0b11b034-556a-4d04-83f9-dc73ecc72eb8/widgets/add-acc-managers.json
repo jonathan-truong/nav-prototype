@@ -1,0 +1,38 @@
+{
+  "configKey": "widget",
+  "key": "addAccManagers__c",
+  "json": {
+    "key": "addAccManagers__c",
+    "theme": "custom",
+    "fields": [
+      {
+        "key": "accountManagers",
+        "path": "accountManagers",
+        "label": "Account Managers"
+      }
+    ],
+    "actions": [],
+    "version": 1,
+    "isCustom": true,
+    "messages": {
+      "en": {
+        "docs": {
+          "description": ""
+        },
+        "title": "add acc managers"
+      }
+    },
+    "component": "CustomWidget",
+    "condition": {
+      "open": "true",
+      "close": "false"
+    },
+    "configKey": "widget",
+    "createdAt": "2025-06-26T13:18:10.630Z",
+    "createdBy": "7095967b-a87a-4be5-8b9c-08c10174dd32",
+    "objectKey": "order",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "dependencies": []
+  }
+}

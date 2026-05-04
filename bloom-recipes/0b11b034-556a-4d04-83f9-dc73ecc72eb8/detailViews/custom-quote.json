@@ -1,0 +1,227 @@
+{
+  "configKey": "detailView",
+  "key": "$custom_quote",
+  "json": {
+    "key": "$custom_quote",
+    "label": "Internal",
+    "isMixin": true,
+    "sections": [
+      {
+        "key": "general",
+        "fields": [
+          {
+            "key": "quoteType",
+            "before": "test__c",
+            "configKey": "detailField"
+          },
+          {
+            "key": "test__c",
+            "path": "test__c",
+            "before": "status",
+            "configKey": "detailField"
+          },
+          {
+            "key": "status",
+            "before": "fullId",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customer",
+            "before": "requestedPickupWindow",
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedPickupWindow",
+            "before": "shipper",
+            "configKey": "detailField"
+          },
+          {
+            "key": "shipper",
+            "before": "requestedDeliveryWindow",
+            "configKey": "detailField"
+          },
+          {
+            "key": "requestedDeliveryWindow",
+            "before": "consignee",
+            "configKey": "detailField"
+          },
+          {
+            "key": "consignee",
+            "before": "totalMiles",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalMiles",
+            "before": "order",
+            "configKey": "detailField"
+          },
+          {
+            "key": "order",
+            "before": "specialInstructions",
+            "configKey": "detailField"
+          },
+          {
+            "key": "specialInstructions",
+            "before": "services",
+            "configKey": "detailField"
+          },
+          {
+            "key": "services",
+            "before": "notes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "notes",
+            "before": "partner",
+            "configKey": "detailField"
+          },
+          {
+            "key": "partner",
+            "before": "customerAccessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "customerAccessorials",
+            "before": "accessorials",
+            "configKey": "detailField"
+          },
+          {
+            "key": "accessorials",
+            "before": "buyQuotes",
+            "configKey": "detailField"
+          },
+          {
+            "key": "platformTags",
+            "before": "estimatedDurationFormatted",
+            "configKey": "detailField"
+          },
+          {
+            "key": "estimatedDurationFormatted",
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "General",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "connectedQuotes",
+        "fields": [
+          {
+            "key": "buyQuotes",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Connected quotes",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "details",
+        "fields": [
+          {
+            "key": "estimatedDuration",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Details",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "additionalInformation",
+        "fields": [
+          {
+            "key": "serviceType",
+            "before": "assetType",
+            "configKey": "detailField"
+          },
+          {
+            "key": "assetType",
+            "before": null,
+            "isHidden": true,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Additional information",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "commodities",
+        "fields": [
+          {
+            "key": "commodities",
+            "before": "totalCommoditiesWeight",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCommoditiesQuantity",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Commodities",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "financials",
+        "label": "Financials",
+        "before": "details",
+        "fields": [
+          {
+            "key": "billingParty",
+            "before": "totalCost",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalCost",
+            "before": "totalEarnings",
+            "configKey": "detailField"
+          },
+          {
+            "key": "totalEarnings",
+            "before": "margin",
+            "configKey": "detailField"
+          },
+          {
+            "key": "margin",
+            "before": "multiCurrencyMargin",
+            "configKey": "detailField"
+          },
+          {
+            "key": "multiCurrencyMargin",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "labelId": "Financials",
+        "configKey": "detailSection"
+      },
+      {
+        "key": "template",
+        "before": null,
+        "fields": [
+          {
+            "key": "templateFullId",
+            "before": "templateName",
+            "configKey": "detailField"
+          },
+          {
+            "key": "templateDescription",
+            "before": null,
+            "configKey": "detailField"
+          }
+        ],
+        "configKey": "detailSection"
+      }
+    ],
+    "configKey": "detailView",
+    "createdAt": "2024-07-03T15:10:20.226Z",
+    "createdBy": "6c6968ac-804a-4b63-be5a-c168db9f67ab",
+    "objectKey": "quote",
+    "targetKey": "quote",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}

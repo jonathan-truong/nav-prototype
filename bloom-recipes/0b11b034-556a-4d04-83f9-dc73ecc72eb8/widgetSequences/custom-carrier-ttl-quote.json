@@ -1,0 +1,56 @@
+{
+  "configKey": "widgetSequence",
+  "key": "$custom_carrier-ttl-quote",
+  "json": {
+    "key": "$custom_carrier-ttl-quote",
+    "isMixin": true,
+    "widgets": [
+      {
+        "key": "quote-AddPartnerCosts",
+        "before": "quote-SelectCustomer",
+        "isHidden": true,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-SelectCustomer",
+        "before": "quote-AddPickupAndDelivery",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-AddPickupAndDelivery",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-AddCommodities",
+        "before": "quote-AddQuote",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-AddQuote",
+        "before": "quote-SendToCustomer",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-SendToCustomer",
+        "isHidden": false,
+        "configKey": "widgetRef"
+      },
+      {
+        "key": "quote-UpdateQuoteStatus",
+        "before": null,
+        "isHidden": false,
+        "configKey": "widgetRef"
+      }
+    ],
+    "configKey": "widgetSequence",
+    "createdAt": "2025-05-05T15:53:39.184Z",
+    "createdBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd",
+    "targetKey": "carrier-ttl-quote",
+    "updatedAt": "2026-03-31T19:58:38.139Z",
+    "updatedBy": "50e60786-1934-49b2-ad09-c1d6b87cadfd"
+  }
+}
